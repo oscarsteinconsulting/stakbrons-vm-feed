@@ -1,0 +1,83 @@
+name: Generate Stakbrons VM Feed
+
+on:
+  schedule:
+    # Tider i UTC. Svensk sommartid = UTC+2.
+    - cron: '15 4 * * *'   # 06:15 svensk — morgonens analys genereras
+    - cron: '0 6 * * *'    # 08:00 svensk — regenerera med färska odds + SKICKA PUSH
+    - cron: '0 12 * * *'   # 14:00 svensk — fräscha odds inför kvällen
+    - cron: '0 17 * * *'   # 19:00 svensk — sista uppdateringen före kvällsmatcherna
+  workflow_dispatch:
+    inputs:
+      send_push:
+        description: 'Skicka push-notis efter genereringen'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vm-feed
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generera feed.json
+        env:
+          # Valfri men rekommenderad: gratis token från football-data.org —
+          # ger resultaträttning för ALLA matcher inkl. slutspel.
+          # Utan token används vm2026-facit-repots results.json (gruppspelet).
+          FOOTBALLDATA_TOKEN: ${{ secrets.FOOTBALLDATA_TOKEN }}
+        run: python3 scripts/generate.py
+
+      - name: Skicka morgonens push-notis (kl 08:00-körningen)
+        if: github.event.schedule == '0 6 * * *' || (github.event_name == 'workflow_dispatch' && inputs.send_push)
+        env:
+          FCM_SERVICE_ACCOUNT: ${{ secrets.FCM_SERVICE_ACCOUNT }}
+        run: |
+          pip install --quiet google-auth requests
+          python3 scripts/send_push.py
+
+      - name: Commit & push om något ändrats
+        run: |
+          set -e
+          git config user.name  "Stakbrons VM Bot"
+          git config user.email "vm-bot@stakbrons.local"
+
+          # Retry-loop för concurrent push-konflikter (samma mönster som
+          # stakbrons-golf-feed): feeden är ren output från Kambi + Elo,
+          # så det är alltid säkert att regenerera mot färsk remote.
+          for attempt in 1 2 3; do
+            git add data/
+            if git diff --staged --quiet; then
+              echo "Inga ändringar — hoppar över push"
+              exit 0
+            fi
+            git commit -m "feed: $(date -u +'%Y-%m-%d %H:%M UTC') auto-uppdatering"
+
+            if git push; then
+              echo "Push lyckades på försök $attempt"
+              exit 0
+            fi
+
+            echo "::warning::Push rejected, syncar mot remote (försök $attempt/3)"
+            git reset --soft HEAD~1
+            git reset
+            git fetch origin
+            git reset --hard origin/main
+            python3 scripts/generate.py
+          done
+
+          echo "::error::Push misslyckades efter 3 försök"
+          exit 1

@@ -1,0 +1,434 @@
+{
+ "1025861995": {
+  "away": "Sydafrika",
+  "home": "Mexiko",
+  "kickoff": "2026-06-11T19:00:00Z",
+  "stage": "Grupp A"
+ },
+ "1025862007": {
+  "away": "Sydkorea",
+  "home": "Mexiko",
+  "kickoff": "2026-06-19T01:00:00Z",
+  "stage": "Grupp A"
+ },
+ "1025862008": {
+  "away": "Sydkorea",
+  "home": "Sydafrika",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "stage": "Grupp A"
+ },
+ "1025862009": {
+  "away": "Schweiz",
+  "home": "Qatar",
+  "kickoff": "2026-06-13T19:00:00Z",
+  "stage": "Grupp B"
+ },
+ "1025862010": {
+  "away": "Qatar",
+  "home": "Kanada",
+  "kickoff": "2026-06-18T22:00:00Z",
+  "stage": "Grupp B"
+ },
+ "1025862011": {
+  "away": "Kanada",
+  "home": "Schweiz",
+  "kickoff": "2026-06-24T19:00:00Z",
+  "stage": "Grupp B"
+ },
+ "1025862021": {
+  "away": "Marocko",
+  "home": "Brasilien",
+  "kickoff": "2026-06-13T22:00:00Z",
+  "stage": "Grupp C"
+ },
+ "1025862022": {
+  "away": "Haiti",
+  "home": "Brasilien",
+  "kickoff": "2026-06-20T00:30:00Z",
+  "stage": "Grupp C"
+ },
+ "1025862024": {
+  "away": "Brasilien",
+  "home": "Skottland",
+  "kickoff": "2026-06-24T22:00:00Z",
+  "stage": "Grupp C"
+ },
+ "1025862032": {
+  "away": "Marocko",
+  "home": "Skottland",
+  "kickoff": "2026-06-19T22:00:00Z",
+  "stage": "Grupp C"
+ },
+ "1025862033": {
+  "away": "Haiti",
+  "home": "Marocko",
+  "kickoff": "2026-06-24T22:00:00Z",
+  "stage": "Grupp C"
+ },
+ "1025862034": {
+  "away": "Skottland",
+  "home": "Haiti",
+  "kickoff": "2026-06-14T01:00:00Z",
+  "stage": "Grupp C"
+ },
+ "1025862118": {
+  "away": "Paraguay",
+  "home": "USA",
+  "kickoff": "2026-06-13T01:00:00Z",
+  "stage": "Grupp D"
+ },
+ "1025862119": {
+  "away": "Australien",
+  "home": "USA",
+  "kickoff": "2026-06-19T19:00:00Z",
+  "stage": "Grupp D"
+ },
+ "1025862125": {
+  "away": "Australien",
+  "home": "Paraguay",
+  "kickoff": "2026-06-26T02:00:00Z",
+  "stage": "Grupp D"
+ },
+ "1025862126": {
+  "away": "Curacao",
+  "home": "Tyskland",
+  "kickoff": "2026-06-14T17:00:00Z",
+  "stage": "Grupp E"
+ },
+ "1025862128": {
+  "away": "Elfenbenskusten",
+  "home": "Tyskland",
+  "kickoff": "2026-06-20T20:00:00Z",
+  "stage": "Grupp E"
+ },
+ "1025862129": {
+  "away": "Tyskland",
+  "home": "Ecuador",
+  "kickoff": "2026-06-25T20:00:00Z",
+  "stage": "Grupp E"
+ },
+ "1025862134": {
+  "away": "Elfenbenskusten",
+  "home": "Curacao",
+  "kickoff": "2026-06-25T20:00:00Z",
+  "stage": "Grupp E"
+ },
+ "1025862135": {
+  "away": "Ecuador",
+  "home": "Elfenbenskusten",
+  "kickoff": "2026-06-14T23:00:00Z",
+  "stage": "Grupp E"
+ },
+ "1025862136": {
+  "away": "Curacao",
+  "home": "Ecuador",
+  "kickoff": "2026-06-21T00:00:00Z",
+  "stage": "Grupp E"
+ },
+ "1025862137": {
+  "away": "Japan",
+  "home": "Nederländerna",
+  "kickoff": "2026-06-14T20:00:00Z",
+  "stage": "Grupp F"
+ },
+ "1025862144": {
+  "away": "Nederländerna",
+  "home": "Tunisien",
+  "kickoff": "2026-06-25T23:00:00Z",
+  "stage": "Grupp F"
+ },
+ "1025862145": {
+  "away": "Japan",
+  "home": "Tunisien",
+  "kickoff": "2026-06-21T04:00:00Z",
+  "stage": "Grupp F"
+ },
+ "1025862146": {
+  "away": "Egypten",
+  "home": "Belgien",
+  "kickoff": "2026-06-15T19:00:00Z",
+  "stage": "Grupp G"
+ },
+ "1025862147": {
+  "away": "Iran",
+  "home": "Belgien",
+  "kickoff": "2026-06-21T19:00:00Z",
+  "stage": "Grupp G"
+ },
+ "1025862154": {
+  "away": "Belgien",
+  "home": "Nya Zeeland",
+  "kickoff": "2026-06-27T03:00:00Z",
+  "stage": "Grupp G"
+ },
+ "1025862156": {
+  "away": "Egypten",
+  "home": "Nya Zeeland",
+  "kickoff": "2026-06-22T01:00:00Z",
+  "stage": "Grupp G"
+ },
+ "1025862159": {
+  "away": "Iran",
+  "home": "Egypten",
+  "kickoff": "2026-06-27T03:00:00Z",
+  "stage": "Grupp G"
+ },
+ "1025862161": {
+  "away": "Nya Zeeland",
+  "home": "Iran",
+  "kickoff": "2026-06-16T01:00:00Z",
+  "stage": "Grupp G"
+ },
+ "1025862165": {
+  "away": "Kap Verde",
+  "home": "Spanien",
+  "kickoff": "2026-06-15T16:00:00Z",
+  "stage": "Grupp H"
+ },
+ "1025862166": {
+  "away": "Saudiarabien",
+  "home": "Spanien",
+  "kickoff": "2026-06-21T16:00:00Z",
+  "stage": "Grupp H"
+ },
+ "1025862167": {
+  "away": "Spanien",
+  "home": "Uruguay",
+  "kickoff": "2026-06-27T00:00:00Z",
+  "stage": "Grupp H"
+ },
+ "1025862168": {
+  "away": "Kap Verde",
+  "home": "Uruguay",
+  "kickoff": "2026-06-21T22:00:00Z",
+  "stage": "Grupp H"
+ },
+ "1025862169": {
+  "away": "Saudiarabien",
+  "home": "Kap Verde",
+  "kickoff": "2026-06-27T00:00:00Z",
+  "stage": "Grupp H"
+ },
+ "1025862177": {
+  "away": "Uruguay",
+  "home": "Saudiarabien",
+  "kickoff": "2026-06-15T22:00:00Z",
+  "stage": "Grupp H"
+ },
+ "1025862178": {
+  "away": "Senegal",
+  "home": "Frankrike",
+  "kickoff": "2026-06-16T19:00:00Z",
+  "stage": "Grupp I"
+ },
+ "1025862184": {
+  "away": "Frankrike",
+  "home": "Norge",
+  "kickoff": "2026-06-26T19:00:00Z",
+  "stage": "Grupp I"
+ },
+ "1025862185": {
+  "away": "Senegal",
+  "home": "Norge",
+  "kickoff": "2026-06-23T00:00:00Z",
+  "stage": "Grupp I"
+ },
+ "1025862198": {
+  "away": "Argentina",
+  "home": "Jordanien",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "stage": "Grupp J"
+ },
+ "1025862199": {
+  "away": "Algeriet",
+  "home": "Argentina",
+  "kickoff": "2026-06-17T01:00:00Z",
+  "stage": "Grupp J"
+ },
+ "1025862208": {
+  "away": "Österrike",
+  "home": "Argentina",
+  "kickoff": "2026-06-22T17:00:00Z",
+  "stage": "Grupp J"
+ },
+ "1025862252": {
+  "away": "Jordanien",
+  "home": "Österrike",
+  "kickoff": "2026-06-17T04:00:00Z",
+  "stage": "Grupp J"
+ },
+ "1025862253": {
+  "away": "Österrike",
+  "home": "Algeriet",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "stage": "Grupp J"
+ },
+ "1025862264": {
+  "away": "Uzbekistan",
+  "home": "Portugal",
+  "kickoff": "2026-06-23T17:00:00Z",
+  "stage": "Grupp K"
+ },
+ "1025862265": {
+  "away": "Portugal",
+  "home": "Colombia",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "stage": "Grupp K"
+ },
+ "1025862266": {
+  "away": "Colombia",
+  "home": "Uzbekistan",
+  "kickoff": "2026-06-18T02:00:00Z",
+  "stage": "Grupp K"
+ },
+ "1025862274": {
+  "away": "Kroatien",
+  "home": "England",
+  "kickoff": "2026-06-17T20:00:00Z",
+  "stage": "Grupp L"
+ },
+ "1025862275": {
+  "away": "Ghana",
+  "home": "England",
+  "kickoff": "2026-06-23T20:00:00Z",
+  "stage": "Grupp L"
+ },
+ "1025862276": {
+  "away": "England",
+  "home": "Panama",
+  "kickoff": "2026-06-27T21:00:00Z",
+  "stage": "Grupp L"
+ },
+ "1025862277": {
+  "away": "Kroatien",
+  "home": "Panama",
+  "kickoff": "2026-06-23T23:00:00Z",
+  "stage": "Grupp L"
+ },
+ "1025862278": {
+  "away": "Ghana",
+  "home": "Kroatien",
+  "kickoff": "2026-06-27T21:00:00Z",
+  "stage": "Grupp L"
+ },
+ "1025862284": {
+  "away": "Panama",
+  "home": "Ghana",
+  "kickoff": "2026-06-17T23:00:00Z",
+  "stage": "Grupp L"
+ },
+ "1025882121": {
+  "away": "Algeriet",
+  "home": "Jordanien",
+  "kickoff": "2026-06-23T03:00:00Z",
+  "stage": "Grupp J"
+ },
+ "1027164901": {
+  "away": "Turkiet",
+  "home": "Australien",
+  "kickoff": "2026-06-14T04:00:00Z",
+  "stage": "Grupp D"
+ },
+ "1027164902": {
+  "away": "Tunisien",
+  "home": "Sverige",
+  "kickoff": "2026-06-15T02:00:00Z",
+  "stage": "Grupp F"
+ },
+ "1027164903": {
+  "away": "USA",
+  "home": "Turkiet",
+  "kickoff": "2026-06-26T02:00:00Z",
+  "stage": "Grupp D"
+ },
+ "1027164904": {
+  "away": "Paraguay",
+  "home": "Turkiet",
+  "kickoff": "2026-06-20T03:00:00Z",
+  "stage": "Grupp D"
+ },
+ "1027164905": {
+  "away": "Bosnien",
+  "home": "Schweiz",
+  "kickoff": "2026-06-18T19:00:00Z",
+  "stage": "Grupp B"
+ },
+ "1027164906": {
+  "away": "Sverige",
+  "home": "Nederländerna",
+  "kickoff": "2026-06-20T17:00:00Z",
+  "stage": "Grupp F"
+ },
+ "1027164907": {
+  "away": "Qatar",
+  "home": "Bosnien",
+  "kickoff": "2026-06-24T19:00:00Z",
+  "stage": "Grupp B"
+ },
+ "1027164908": {
+  "away": "Sverige",
+  "home": "Japan",
+  "kickoff": "2026-06-25T23:00:00Z",
+  "stage": "Grupp F"
+ },
+ "1027164909": {
+  "away": "Bosnien",
+  "home": "Kanada",
+  "kickoff": "2026-06-12T19:00:00Z",
+  "stage": "Grupp B"
+ },
+ "1027164910": {
+  "away": "Sydafrika",
+  "home": "Tjeckien",
+  "kickoff": "2026-06-18T16:00:00Z",
+  "stage": "Grupp A"
+ },
+ "1027164911": {
+  "away": "Tjeckien",
+  "home": "Sydkorea",
+  "kickoff": "2026-06-12T02:00:00Z",
+  "stage": "Grupp A"
+ },
+ "1027164912": {
+  "away": "Mexiko",
+  "home": "Tjeckien",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "stage": "Grupp A"
+ },
+ "1027165772": {
+  "away": "Uzbekistan",
+  "home": "DR Kongo",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "stage": "Grupp K"
+ },
+ "1027165775": {
+  "away": "DR Kongo",
+  "home": "Portugal",
+  "kickoff": "2026-06-17T17:00:00Z",
+  "stage": "Grupp K"
+ },
+ "1027165778": {
+  "away": "DR Kongo",
+  "home": "Colombia",
+  "kickoff": "2026-06-24T02:00:00Z",
+  "stage": "Grupp K"
+ },
+ "1027168306": {
+  "away": "Irak",
+  "home": "Frankrike",
+  "kickoff": "2026-06-22T21:00:00Z",
+  "stage": "Grupp I"
+ },
+ "1027168307": {
+  "away": "Irak",
+  "home": "Senegal",
+  "kickoff": "2026-06-26T19:00:00Z",
+  "stage": "Grupp I"
+ },
+ "1027168308": {
+  "away": "Norge",
+  "home": "Irak",
+  "kickoff": "2026-06-16T22:00:00Z",
+  "stage": "Grupp I"
+ }
+}
