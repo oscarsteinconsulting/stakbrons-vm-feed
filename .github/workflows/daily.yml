@@ -24,7 +24,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20   # turneringssimuleringen (Monte Carlo) tar några minuter
 
     steps:
       - uses: actions/checkout@v4

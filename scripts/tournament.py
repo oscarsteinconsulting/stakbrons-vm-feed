@@ -1,0 +1,544 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Turneringssimulator för VM 2026 — outright-spelen (Slutplacering).
+
+Två delar:
+  1. Kambi: outright-eventet "VM 2026" har fem betOffers med criterion
+     "Slutplacering" (Vinnare/Topp 2/Topp 4/Topp 8/Topp 16, 48 outcomes
+     vardera). Implicita sannolikheter avvigas per marknad så de summerar
+     till antalet platser (Vinnare→1, Topp 2→2, ... Topp 16→16).
+  2. Monte Carlo: hela turneringen simuleras N gånger med matchmodellen i
+     wc_model.py (Oscars funderingar). Gruppspel → tabeller → 32 lag till
+     slutspel → KO-rundor till final. Per lag räknas hur ofta det når
+     varje runda → pTop16/pTop8/pTop4/pTop2/pWin.
+
+Edge per (lag, marknad): simsannolikheten krymps mot det avvigade
+marknadspriset innan edge räknas. Turneringssimulering bär större
+modellfel än matchmodellen (bracketen approximeras, och varje simulerad
+turnering staplar 100+ matchers osäkerhet på varandra) — därför är
+modellvikten här lägre än matchspelens 0.70: w = max(0.35, 0.55−0.004·odds).
+
+Körs utan pip-paket (bara standardbiblioteket), Python 3.9+.
+"""
+import bisect
+import datetime
+import itertools
+import json
+import os
+import random
+import sys
+import urllib.request
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from wc_data import TEAMS, FLAG_OF, short_of
+from wc_model import MatchModel
+
+KAMBI_BASE = "https://eu.offering-api.kambicdn.com/offering/v2018/svenskaspel"
+KAMBI_QUERY = "channel_id=1&client_id=200&lang=sv_SE&market=SE"
+OUTRIGHT_EVENT_NAME = "VM 2026"
+OUTRIGHT_EVENT_ID_FALLBACK = "1019275296"  # kända id:t om listan inte hittas
+TIMEOUT = 20
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) Safari/605.1.15"
+
+MATCH_ID = "vm2026-outright"
+MATCH_NAME = "VM 2026"
+
+# Värdemärkning och Kelly — identiska med generate.py
+EDGE_PLAY = 0.08
+EDGE_AVOID = -0.04
+CHANS_ODDS = 4.0
+KELLY_FRACTION = 0.25
+MAX_TOP_BETS = 10
+MAX_PER_TEAM_TOP = 2
+MAX_PER_MARKET = 5
+
+MIN_P_USED = 0.02     # picks under 2 % använd sannolikhet hoppas över
+MAX_ODDS = 100.0      # extrema longshots prissätts för osäkert
+
+# (nyckel, namn, ikon, antal platser, index i räknararrayen)
+# Räknararrayen per lag är [top16, top8, top4, top2, win].
+MARKETS = [
+    ("vinnare", "Vinnare",                  "🏆", 1,  4),
+    ("topp2",   "Topp 2 (final)",           "🥈", 2,  3),
+    ("topp4",   "Topp 4 (semifinal)",       "🏅", 4,  2),
+    ("topp8",   "Topp 8 (kvartsfinal)",     "🎖", 8,  1),
+    ("topp16",  "Topp 16 (åttondelsfinal)", "⚽", 16, 0),
+]
+KAMBI_DESC2KEY = {"Vinnare": "vinnare", "Topp 2": "topp2", "Topp 4": "topp4",
+                  "Topp 8": "topp8", "Topp 16": "topp16"}
+DETAIL_OF = {
+    "vinnare": "Vinner hela VM 2026",
+    "topp2":   "Når finalen (topp 2)",
+    "topp4":   "Når semifinal (topp 4)",
+    "topp8":   "Når kvartsfinal (topp 8)",
+    "topp16":  "Når åttondelsfinal (topp 16)",
+}
+
+# Grupperna A–L med sina fyra lag, i TEAMS-ordning
+GROUPS = {}
+for _g, _short, _elo, _flag in TEAMS:
+    GROUPS.setdefault(_g, []).append(_short)
+GROUP_ITEMS = sorted(GROUPS.items())
+ALL_SHORTS = [t[1] for t in TEAMS]
+
+
+# ---------------------------------------------------------------------------
+# DEL 1 — Kambi-odds (Slutplacering)
+# ---------------------------------------------------------------------------
+
+def _get(url):
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT,
+                                               "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+        return json.load(r)
+
+
+def _odds(raw):
+    if raw is None:
+        return None
+    try:
+        v = float(raw) / 1000.0
+    except (TypeError, ValueError):
+        return None
+    return v if v > 1.0 else None
+
+
+def fetch_outright_odds():
+    """{marknadsnyckel: {kortnamn: odds}} för de fem Slutplacering-marknaderna.
+
+    Outright-eventet hittas i competitions-listan (taggen COMPETITION och
+    namnet "VM 2026"); kända id:t används som reserv om listan ändras.
+    """
+    url = "%s/listView/football/world_cup_2026/all/all/competitions.json?%s" % (
+        KAMBI_BASE, KAMBI_QUERY)
+    event_id = OUTRIGHT_EVENT_ID_FALLBACK
+    try:
+        data = _get(url)
+        for wrapper in data.get("events", []):
+            ev = wrapper.get("event") or {}
+            if ("COMPETITION" in (ev.get("tags") or [])
+                    and ev.get("name") == OUTRIGHT_EVENT_NAME):
+                event_id = str(ev["id"])
+                break
+    except Exception as e:
+        print("  ! competitions-listan failade (%s), provar kända id:t" % e,
+              file=sys.stderr)
+
+    detail = _get("%s/betoffer/event/%s.json?%s" % (KAMBI_BASE, event_id, KAMBI_QUERY))
+    out = {}
+    for bo in detail.get("betOffers", []):
+        if (bo.get("criterion") or {}).get("label") != "Slutplacering":
+            continue
+        key = KAMBI_DESC2KEY.get(bo.get("description"))
+        if not key:
+            continue
+        teams = {}
+        for o in bo.get("outcomes", []):
+            if o.get("status", "OPEN") != "OPEN":
+                continue
+            team = short_of(o.get("participant"))
+            odds = _odds(o.get("odds"))
+            if team and odds:
+                teams[team] = odds
+        if teams:
+            out[key] = teams
+    return out
+
+
+def devig_outright(odds_by_team, n_places):
+    """Avviga en slutplaceringsmarknad: implicita sannolikheter 1/odds
+    normaliseras så de summerar till antalet platser (Topp 4 → 4 osv)."""
+    inv = {t: 1.0 / o for t, o in odds_by_team.items()}
+    s = sum(inv.values())
+    if s <= 0:
+        return {}
+    return {t: min(0.999, n_places * v / s) for t, v in inv.items()}
+
+
+# ---------------------------------------------------------------------------
+# DEL 2 — Monte Carlo-simulering av hela turneringen
+# ---------------------------------------------------------------------------
+
+def _pair_dist(t1, t2, ratings, cache):
+    """Kumulativ målfördelning för paret (t1, t2), cachad kanoniskt.
+
+    Returnerar (cum, scores, p1_pen, swapped):
+      cum/scores — kumulativ fördelning över 11×11-rutnätet,
+      p1_pen — P(kanoniska lag 1 vinner | inte oavgjort), straffproxyn.
+    Rutnätet är symmetriskt under lagbyte (transponat), så bara den
+    lexikografiskt lägre ordningen byggs och cachas.
+    """
+    swapped = t1 > t2
+    a, b = (t2, t1) if swapped else (t1, t2)
+    d = cache.get((a, b))
+    if d is None:
+        grid = MatchModel(a, b, ratings).grid
+        cum, scores = [], []
+        acc = 0.0
+        p1 = p2 = 0.0
+        for h, row in enumerate(grid):
+            for aw, p in enumerate(row):
+                acc += p
+                cum.append(acc)
+                scores.append((h, aw))
+                if h > aw:
+                    p1 += p
+                elif aw > h:
+                    p2 += p
+        p1_pen = p1 / (p1 + p2) if (p1 + p2) > 0 else 0.5
+        d = (cum, scores, p1_pen)
+        cache[(a, b)] = d
+    return d[0], d[1], d[2], swapped
+
+
+def _sample_score(t1, t2, ratings, cache, rng):
+    """Sampla ett resultat (mål t1, mål t2) ur matchens rutnät."""
+    cum, scores, _pen, swapped = _pair_dist(t1, t2, ratings, cache)
+    i = bisect.bisect_left(cum, rng.random())
+    if i >= len(scores):
+        i = len(scores) - 1
+    g1, g2 = scores[i]
+    return (g2, g1) if swapped else (g1, g2)
+
+
+def _ko_winner(t1, t2, ratings, cache, rng):
+    """KO-match: vid oavgjort avgörs 'straffläggningen' med en slant viktad
+    P(t1-vinst)/(P(t1-vinst)+P(t2-vinst)) ur samma rutnät."""
+    cum, scores, p1_pen, swapped = _pair_dist(t1, t2, ratings, cache)
+    i = bisect.bisect_left(cum, rng.random())
+    if i >= len(scores):
+        i = len(scores) - 1
+    g1, g2 = scores[i]
+    if swapped:
+        g1, g2 = g2, g1
+        p1_pen = 1.0 - p1_pen
+    if g1 > g2:
+        return t1
+    if g2 > g1:
+        return t2
+    return t1 if rng.random() < p1_pen else t2
+
+
+def _draw_r32(rng, winners, runners, thirds):
+    """Sextondelsfinalerna: strukturerad slumpdragning, 16 par.
+
+    Ärlig brasklapp: FIFA:s exakta bracket (fasta positioner per grupp och
+    en kombinationstabell för vilka treor som hamnar var) approximeras här
+    med en slumpdragning som bevarar STRUKTUREN: 8 gruppettor möter de 8
+    treorna, 4 gruppettor möter 4 grupptvåor, resterande 8 tvåor möts
+    inbördes — aldrig lag ur samma grupp. Det bevarar marginal-
+    sannolikheterna "når runda X", vilket är exakt det vi prissätter; den
+    exakta bracketgeometrin (vem som KAN mötas i vilken kvart) modelleras
+    inte. winners/runners/thirds är listor av (lag, grupp).
+
+    Kör dragningen fast (gruppkrock), dras om — i praktiken några få varv.
+    """
+    for _attempt in range(1000):
+        ws = list(winners)
+        rng.shuffle(ws)
+        ts = list(thirds)
+        rng.shuffle(ts)
+        rs = list(runners)
+        rng.shuffle(rs)
+        pairs = []
+        ok = True
+        # 8 ettor mot de 8 treorna (aldrig samma grupp)
+        for (wt, wg), (tt, tg) in zip(ws[:8], ts):
+            if wg == tg:
+                ok = False
+                break
+            pairs.append((wt, tt))
+        if not ok:
+            continue
+        # 4 ettor mot 4 tvåor (aldrig samma grupp)
+        for (wt, wg), (rt, rg) in zip(ws[8:], rs[:4]):
+            if wg == rg:
+                ok = False
+                break
+            pairs.append((wt, rt))
+        if not ok:
+            continue
+        # Resterande 8 tvåor möts inbördes — alla tvåor kommer ur olika
+        # grupper, så gruppkrock är omöjlig här; para rakt av.
+        rest = rs[4:]
+        for i in range(0, 8, 2):
+            pairs.append((rest[i][0], rest[i + 1][0]))
+        return pairs
+    # Nås i praktiken aldrig (per-försök-chansen är ~35 %); ge upp grupp-
+    # villkoret hellre än att hänga.
+    ws = [w for w, _g in winners]
+    rs = [r for r, _g in runners]
+    ts = [t for t, _g in thirds]
+    pairs = list(zip(ws[:8], ts)) + list(zip(ws[8:], rs[:4]))
+    rest = rs[4:]
+    pairs += [(rest[i], rest[i + 1]) for i in range(0, 8, 2)]
+    return pairs
+
+
+def simulate_tournament(ratings, sims, rng):
+    """Kör hela turneringen `sims` gånger.
+
+    Returnerar {lag: (pTop16, pTop8, pTop4, pTop2, pWin)} där pTop16 är
+    sannolikheten att vinna sin sextondelsfinal (= nå åttondelsfinal) osv.
+    """
+    counts = {s: [0, 0, 0, 0, 0] for s in ALL_SHORTS}
+    cache = {}  # (lag1, lag2) → kumulativ målfördelning, byggd en gång per par
+
+    for _sim in range(sims):
+        winners, runners, third_cands = [], [], []
+
+        # --- Gruppspel: 6 matcher per grupp, tabell på poäng/MS/GM/slump ---
+        for gname, teams in GROUP_ITEMS:
+            pts = {t: 0 for t in teams}
+            gf = {t: 0 for t in teams}
+            ga = {t: 0 for t in teams}
+            for a, b in itertools.combinations(teams, 2):
+                sa, sb = _sample_score(a, b, ratings, cache, rng)
+                gf[a] += sa
+                ga[a] += sb
+                gf[b] += sb
+                ga[b] += sa
+                if sa > sb:
+                    pts[a] += 3
+                elif sb > sa:
+                    pts[b] += 3
+                else:
+                    pts[a] += 1
+                    pts[b] += 1
+            order = sorted(teams,
+                           key=lambda t: (pts[t], gf[t] - ga[t], gf[t], rng.random()),
+                           reverse=True)
+            winners.append((order[0], gname))
+            runners.append((order[1], gname))
+            t3 = order[2]
+            third_cands.append((pts[t3], gf[t3] - ga[t3], gf[t3], rng.random(), t3, gname))
+
+        # --- De 8 bästa treorna (poäng, målskillnad, gjorda mål, slump) ---
+        third_cands.sort(reverse=True)
+        thirds = [(row[4], row[5]) for row in third_cands[:8]]
+
+        # --- Sextondelsfinal (R32): strukturerad slumpdragning ---
+        pairs = _draw_r32(rng, winners, runners, thirds)
+        alive = [_ko_winner(a, b, ratings, cache, rng) for a, b in pairs]
+        for t in alive:
+            counts[t][0] += 1  # vann sin R32-match → topp 16
+
+        # --- KO-rundor: vinnarna paras i bracket-ordning till final ---
+        stage = 1
+        while len(alive) > 1:
+            nxt = [_ko_winner(alive[i], alive[i + 1], ratings, cache, rng)
+                   for i in range(0, len(alive), 2)]
+            for t in nxt:
+                counts[t][stage] += 1
+            alive = nxt
+            stage += 1
+
+    inv = 1.0 / float(sims)
+    return {t: tuple(c * inv for c in cnt) for t, cnt in counts.items()}
+
+
+# ---------------------------------------------------------------------------
+# DEL 3 — edge, Bet-objekt och sektionen
+# ---------------------------------------------------------------------------
+
+def now_utc_iso():
+    return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def slugify(s):
+    # Samma som generate.py — duplicerad medvetet för att slippa importera
+    # hela genereringsmodulen härifrån.
+    keep = []
+    for c in s.lower():
+        if c.isalnum():
+            keep.append(c)
+        elif keep and keep[-1] != "-":
+            keep.append("-")
+    return "".join(keep).strip("-")[:40] or "x"
+
+
+def kelly(p, odds):
+    b = odds - 1.0
+    if b <= 0:
+        return 0.0
+    f = (p * b - (1.0 - p)) / b
+    return max(0.0, f) * KELLY_FRACTION
+
+
+def value_label(edge, odds):
+    if edge >= EDGE_PLAY:
+        return "Chans" if odds > CHANS_ODDS else "Spelvärt"
+    if edge >= EDGE_AVOID:
+        return "Neutralt"
+    return "Undvik"
+
+
+def _make_outright_bet(date_str, team, market_key, market_name, odds,
+                       p_sim, p_mkt, sims, mss):
+    """Ett Bet-objekt med exakt samma nycklar som feedens matchspel."""
+    # Turneringssim har större modellfel än matchmodellen (bracket-
+    # approximation + 100+ matchers staplad osäkerhet per simulering),
+    # därför lägre modellvikt än matchspelens 0.70 — och ännu lägre vid
+    # höga odds där longshot-bias förstorar modellfel.
+    w = max(0.35, 0.55 - 0.004 * odds)
+    p_used = min(0.999, w * p_sim + (1.0 - w) * p_mkt)
+    edge = p_used * odds - 1.0
+    if market_key == "vinnare":
+        selection = "%s vinner VM" % team
+    else:
+        selection = "%s topp %s" % (team, market_key.replace("topp", ""))
+    mss_txt = ("%.0f" % mss) if mss is not None else "–"
+    rationale = ("Simuleringen (%d turneringar) ger %.1f%% mot marknadens "
+                 "%.1f%% (MSS %s). Edge %+.1f%%." % (
+                     sims, p_sim * 100, p_mkt * 100, mss_txt, edge * 100))
+    return {
+        "id": "%s-%s-%s-%s" % (date_str, MATCH_ID, market_key, slugify(selection)),
+        "matchId": MATCH_ID,
+        "match": MATCH_NAME,
+        "homeFlag": FLAG_OF.get(team, ""), "awayFlag": "",
+        "kickoff": None,
+        "categoryKey": market_key, "category": market_name,
+        "selection": selection, "detail": DETAIL_OF[market_key],
+        "odds": round(odds, 2),
+        "modelProb": round(p_used, 4),
+        "marketProb": round(p_mkt, 4),
+        "edge": round(edge, 4),
+        "value": value_label(edge, odds),
+        "kelly": round(kelly(p_used, odds), 5),
+        "stakeWeight": 0.0,
+        "confidence": 3 if edge >= 0.12 else 2,
+        "rationale": rationale,
+        "settleMarket": "OUTRIGHT", "settlePick": market_key,
+        "settleLine": None, "settlePlayer": team,
+    }
+
+
+def _build_section(probs, odds_map, mss_map, sims, date_str):
+    """Sätt ihop turneringssektionen ur simsannolikheter + Kambi-odds."""
+    markets_out = []
+    all_bets = []
+    for key, name, icon, n_places, prob_idx in MARKETS:
+        odds_by_team = odds_map.get(key) or {}
+        mkt_probs = devig_outright(odds_by_team, n_places)
+        bets = []
+        for team, odds in odds_by_team.items():
+            if odds > MAX_ODDS or team not in probs:
+                continue
+            p_sim = probs[team][prob_idx]
+            p_mkt = mkt_probs.get(team)
+            if p_mkt is None:
+                continue
+            bet = _make_outright_bet(date_str, team, key, name, odds,
+                                     p_sim, p_mkt, sims, mss_map.get(team))
+            if bet["modelProb"] < MIN_P_USED:
+                continue
+            bets.append(bet)
+        bets.sort(key=lambda b: -b["edge"])
+        markets_out.append({"key": key, "name": name, "icon": icon,
+                            "bets": bets[:MAX_PER_MARKET]})
+        all_bets.extend(bets)
+
+    # Topp 10 över alla fem marknaderna, max 2 per lag
+    top_bets, per_team = [], {}
+    for b in sorted(all_bets, key=lambda b: -b["edge"]):
+        team = b["settlePlayer"]
+        if per_team.get(team, 0) >= MAX_PER_TEAM_TOP:
+            continue
+        top_bets.append(b)
+        per_team[team] = per_team.get(team, 0) + 1
+        if len(top_bets) >= MAX_TOP_BETS:
+            break
+
+    note = ("Monte Carlo på Oscars funderingar-modellen: hela turneringen "
+            "simuleras %d gånger (slutspelsbracketen approximeras med "
+            "strukturerad slumpdragning) och vägs mot avvigade Kambi-priser "
+            "per slutplaceringsmarknad." % sims)
+    return {
+        "generatedAt": now_utc_iso(),
+        "note": note,
+        "topBets": top_bets,
+        "markets": markets_out,
+    }
+
+
+def build_tournament_section(ratings, mss_map, date_str):
+    """Hela kedjan: Kambi-outrights + Monte Carlo → sektion för feeden.
+
+    Returnerar None om oddsen inte gick att hämta (nätfel) — feeden ska
+    kunna genereras utan turneringsdelen.
+    """
+    try:
+        odds_map = fetch_outright_odds()
+    except Exception as e:
+        print("  ! outright-odds failade: %s" % e, file=sys.stderr)
+        return None
+    if not odds_map:
+        print("  ! inga Slutplacering-marknader hittades", file=sys.stderr)
+        return None
+
+    sims = max(1, int(os.environ.get("VM_SIMS", "4000")))
+    # Deterministisk seed per datum → samma dagsrapport vid omkörning
+    rng = random.Random(int(date_str.replace("-", "")))
+    probs = simulate_tournament(ratings, sims, rng)
+    return _build_section(probs, odds_map, mss_map, sims, date_str)
+
+
+# ---------------------------------------------------------------------------
+# Självtest — körs utan nät med syntetiska ratings och odds
+# ---------------------------------------------------------------------------
+
+BET_KEYS = ["id", "matchId", "match", "homeFlag", "awayFlag", "kickoff",
+            "categoryKey", "category", "selection", "detail", "odds",
+            "modelProb", "marketProb", "edge", "value", "kelly",
+            "stakeWeight", "confidence", "rationale",
+            "settleMarket", "settlePick", "settleLine", "settlePlayer"]
+
+
+def _selftest():
+    """Sanity-tester på simulering och bet-bygge, helt utan nätverk."""
+    print("tournament.py självtest ...")
+    # Syntetiska ratings: jämn stege över Elo-spannet, deterministisk
+    ratings = {s: 1450.0 + 14.0 * i for i, s in enumerate(ALL_SHORTS)}
+    rng = random.Random(20260611)
+    sims = 400
+    probs = simulate_tournament(ratings, sims, rng)
+
+    s_win = sum(p[4] for p in probs.values())
+    s_t16 = sum(p[0] for p in probs.values())
+    assert abs(s_win - 1.0) <= 0.02, "sum(pWin)=%.4f" % s_win
+    assert abs(s_t16 - 16.0) <= 0.5, "sum(pTop16)=%.4f" % s_t16
+    for t, p in probs.items():
+        # Monotont: nå R16 ≥ nå kvart ≥ nå semi ≥ nå final ≥ vinna
+        assert p[0] >= p[1] >= p[2] >= p[3] >= p[4], "%s: %s" % (t, p)
+
+    # Syntetiska odds ur simsannolikheterna med ~8 % marginal
+    odds_map = {}
+    for key, _name, _icon, n_places, idx in MARKETS:
+        teams = {}
+        for t, p in probs.items():
+            fair = max(p[idx], 0.003)
+            teams[t] = max(1.01, min(750.0, 1.0 / (fair * 1.08)))
+        odds_map[key] = teams
+    sect = _build_section(probs, odds_map, {s: 50.0 for s in ALL_SHORTS},
+                          sims, "2026-06-11")
+
+    assert len(sect["markets"]) == 5, "förväntade 5 marknader"
+    assert len(sect["topBets"]) <= MAX_TOP_BETS
+    for mk in sect["markets"]:
+        assert len(mk["bets"]) <= MAX_PER_MARKET
+    per_team = {}
+    for b in sect["topBets"]:
+        per_team[b["settlePlayer"]] = per_team.get(b["settlePlayer"], 0) + 1
+    assert all(v <= MAX_PER_TEAM_TOP for v in per_team.values())
+    for b in sect["topBets"] + [b for mk in sect["markets"] for b in mk["bets"]]:
+        assert sorted(b.keys()) == sorted(BET_KEYS), "fel nycklar: %s" % sorted(b.keys())
+        assert -1.0 <= b["edge"] <= 4.0, "orimlig edge: %s" % b["edge"]
+        assert b["modelProb"] >= MIN_P_USED and b["odds"] <= MAX_ODDS
+        assert b["settleMarket"] == "OUTRIGHT" and b["matchId"] == MATCH_ID
+    print("  OK: sum(pWin)=%.3f, sum(pTop16)=%.2f, %d marknader, %d topBets"
+          % (s_win, s_t16, len(sect["markets"]), len(sect["topBets"])))
+
+
+if __name__ == "__main__":
+    _selftest()

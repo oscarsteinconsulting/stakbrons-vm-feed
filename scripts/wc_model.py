@@ -38,6 +38,11 @@ MSS_BLEND = 0.30        # andel fryst MSS i den effektiva ratingen
 DC_RHO = -0.08          # Dixon-Coles lågmålskorrelation
 SHRINK_MODEL = 0.70     # p_used = 0.70·modell + 0.30·avvigad marknad
 MAX_GOALS = 10
+MAX_GOALS_HALF = 7      # räcker gott för en halvlek — och håller HT/FT snabb
+
+# Empirisk målfördelning över halvlekarna: ~44 % av målen görs i första
+# halvlek, ~56 % i andra (lägre tempo tidigt, öppnare och tröttare sent).
+HALF_SHARE = {1: 0.44, 2: 0.56}
 
 
 def _fetch(url, timeout=30):
@@ -135,10 +140,10 @@ def _pois(lam, k):
     return math.exp(-lam) * lam ** k / math.factorial(k)
 
 
-def score_grid(lam_h, lam_a):
-    """P(h, a) för 0–10 mål per lag, Dixon-Coles-justerad och renormaliserad."""
-    g = [[_pois(lam_h, h) * _pois(lam_a, a) for a in range(MAX_GOALS + 1)]
-         for h in range(MAX_GOALS + 1)]
+def score_grid(lam_h, lam_a, max_goals=MAX_GOALS):
+    """P(h, a) för 0–max_goals mål per lag, Dixon-Coles-justerad och renormaliserad."""
+    g = [[_pois(lam_h, h) * _pois(lam_a, a) for a in range(max_goals + 1)]
+         for h in range(max_goals + 1)]
     r = DC_RHO
     g[0][0] *= 1.0 - lam_h * lam_a * r
     g[0][1] *= 1.0 + lam_h * r
@@ -161,6 +166,7 @@ class MatchModel:
         self.lam_h = max(0.15, MU_TOTAL / 2.0 + delta / 2.0)
         self.lam_a = max(0.15, MU_TOTAL / 2.0 - delta / 2.0)
         self.grid = score_grid(self.lam_h, self.lam_a)
+        self._half_grids = {}
 
     def p_1x2(self):
         ph = sum(self.grid[h][a] for h in range(MAX_GOALS + 1) for a in range(MAX_GOALS + 1) if h > a)
@@ -175,6 +181,75 @@ class MatchModel:
 
     def lam_total(self):
         return self.lam_h + self.lam_a
+
+    def p_double_chance(self):
+        """(p1X, p12, pX2) — direkt ur 1X2-sannolikheterna."""
+        ph, pd, pa = self.p_1x2()
+        return ph + pd, ph + pa, pd + pa
+
+    def p_handicap(self, line):
+        """P(hemmalaget täcker handikappet) för en HALVLINJE (t.ex. −1.5,
+        −0.5, +0.5): summan av rutnätet där h + line > a. Halvlinjer kan
+        aldrig sluta push — därför hanteras inga hel-/kvartslinjer."""
+        return sum(p for h, row in enumerate(self.grid)
+                   for a, p in enumerate(row) if h + line > a)
+
+    def p_score(self, h, a):
+        """P(exakt resultat h–a) ur rutnätet (0 utanför 0–10)."""
+        if 0 <= h <= MAX_GOALS and 0 <= a <= MAX_GOALS:
+            return self.grid[h][a]
+        return 0.0
+
+    def half_grid(self, which):
+        """Målrutnät för halvlek 1 eller 2: λ skalas med den empiriska
+        målandelen (44 % första, 56 % andra — se HALF_SHARE). Cachas."""
+        g = self._half_grids.get(which)
+        if g is None:
+            share = HALF_SHARE[which]
+            g = score_grid(self.lam_h * share, self.lam_a * share, MAX_GOALS_HALF)
+            self._half_grids[which] = g
+        return g
+
+    def p_1x2_first_half(self):
+        g = self.half_grid(1)
+        n = len(g)
+        ph = sum(g[h][a] for h in range(n) for a in range(n) if h > a)
+        pd = sum(g[h][h] for h in range(n))
+        return ph, pd, 1.0 - ph - pd
+
+    def p_over_first_half(self, line):
+        g = self.half_grid(1)
+        return sum(p for h, row in enumerate(g) for a, p in enumerate(row) if h + a > line)
+
+    def p_btts_first_half(self):
+        g = self.half_grid(1)
+        return sum(p for h, row in enumerate(g) for a, p in enumerate(row) if h >= 1 and a >= 1)
+
+    def p_htft(self):
+        """Halvtid/Fulltid: {"1/1", "1/X", ..., "2/2"} ur produkten av de
+        två halvleksrutnäten — HT-utfall ur (h1, a1), FT ur (h1+h2, a1+a2)."""
+        g1, g2 = self.half_grid(1), self.half_grid(2)
+        n = len(g1)
+        out = {"%s/%s" % (a, b): 0.0 for a in "1X2" for b in "1X2"}
+        for h1 in range(n):
+            for a1 in range(n):
+                p1 = g1[h1][a1]
+                if p1 < 1e-12:
+                    continue
+                ht = "1" if h1 > a1 else ("X" if h1 == a1 else "2")
+                for h2 in range(n):
+                    for a2 in range(n):
+                        hf, af = h1 + h2, a1 + a2
+                        ft = "1" if hf > af else ("X" if hf == af else "2")
+                        out[ht + "/" + ft] += p1 * g2[h2][a2]
+        return out
+
+    @staticmethod
+    def p_team_over(lam_team, line):
+        """Poisson-svans: P(lagets mål > line) för en halvlinje — för
+        lagmålsmarknaden (och hörnor, som saknar egen modell)."""
+        k_max = int(math.floor(line))
+        return 1.0 - sum(_pois(lam_team, k) for k in range(k_max + 1))
 
 
 # ---------------------------------------------------------------------------

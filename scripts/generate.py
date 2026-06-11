@@ -10,8 +10,10 @@ Kedjan varje morgon:
   3. Modellsannolikhet vs avvigat marknadspris → edge per spel.
   4. Värdemärkning: Spelvärt / Chans / Neutralt / Undvik.
   5. Kvarts-Kelly-vikter för dagsbudgeten (appen räknar kronor av vikterna).
-  6. Topp 10 över alla kategorier + topp 5 per Svenska Spel-kategori.
+  6. Topp 10 över alla kategorier + topp 5 per Svenska Spel-kategori
+     (12 kategorier som speglar Svenska Spels VM-meny).
   7. Resultat för spelade matcher (results_wc.py) → appens auto-rättning.
+  8. Turneringssektionen (tournament.py, Monte Carlo) — failsafe-integrerad.
 
 Körs utan pip-paket (bara standardbiblioteket), Python 3.9+.
 """
@@ -35,7 +37,7 @@ FEED_PATH = os.path.join(ROOT, "data", "feed.json")
 DAYS_DIR = os.path.join(ROOT, "data", "days")
 FIXTURES_PATH = os.path.join(ROOT, "data", "fixtures.json")
 
-MODEL_VERSION = "1.0.0"
+MODEL_VERSION = "1.1.0"
 
 # Värdemärkning (efter krympning mot marknaden)
 EDGE_PLAY = 0.08      # Spelvärt/Chans-tröskel
@@ -55,17 +57,46 @@ MARGIN_TWOPLUS = 1.10
 MARGIN_SHOTS = 1.06
 PLAYER_MAX_ODDS = 15.0
 
+# Oddstak för utfallsrika marknader (Korrekt resultat, Halvtid/Fulltid):
+# över detta dominerar longshot-marginalen och en "edge" är bara brus.
+SCORE_MAX_ODDS = 35.0
+
+HTFT_KEYS = ("1/1", "1/X", "1/2", "X/1", "X/X", "X/2", "2/1", "2/X", "2/2")
+
 
 def player_margin(base, odds):
     return base * (1.0 + 0.004 * odds)
 
+# Speglar Svenska Spels VM-meny, i menyns ordning.
 CATEGORIES = [
     ("fulltid", "Fulltid", "⚽"),
+    ("dubbelchans", "Dubbelchans", "🛡"),
+    ("handikapp", "Handikapp", "⚖️"),
     ("antal_mal", "Antal mål", "🥅"),
     ("btts", "Båda lagen gör mål", "🤝"),
-    ("malgorare", "Målgörare", "🎯"),
+    ("korrekt_resultat", "Korrekt resultat", "🎯"),
+    ("halvlek", "Halvlek", "⏱"),
+    ("halvtid_fulltid", "Halvtid/Fulltid", "🔁"),
+    ("malgorare", "Målgörare", "👤"),
     ("spelarspecial", "Spelarspecial", "👟"),
+    ("hornor", "Hörnor", "🚩"),
+    ("kort", "Kort", "🟨"),
 ]
+
+
+def implied_lambda_poisson(p_over, line, lo=0.5, hi=25.0):
+    """Lös λ ur P(Poisson(λ) > line) = p_over (bisektion) — samma mönster
+    som implied_lambda_total men ren Poisson, för marknader utan egen
+    modell (hörnor)."""
+    if p_over is None or not (0.02 < p_over < 0.98):
+        return None
+    for _ in range(60):
+        mid = (lo + hi) / 2.0
+        if MatchModel.p_team_over(mid, line) < p_over:
+            lo = mid
+        else:
+            hi = mid
+    return (lo + hi) / 2.0
 
 
 def now_utc_iso():
@@ -179,6 +210,46 @@ def bets_for_match(date_str, m, model, markets):
                                   pm_, pmk, rat, ("1X2", sel, None, None)))
         out["fulltid"].append(max(cands, key=lambda b: b["edge"]))
 
+    # --- Dubbelchans: ETT spel per match (bästa edge av 1X/12/X2) ---
+    dc = markets.get("dubbelchans") or {}
+    o1x, o12, ox2 = dc.get("1X"), dc.get("12"), dc.get("X2")
+    mkt = devig([o1x, o12, ox2])
+    if mkt:
+        # OBS: 1X/12/X2 överlappar — varje grundutfall täcks av två av dem,
+        # så de sanna sannolikheterna summerar till 2 (inte 1). Skala upp.
+        mkt = [p * 2.0 for p in mkt]
+        p1x, p12, px2 = model.p_double_chance()
+        cands = []
+        for sel, pm_, om_, pmk, name in (
+                ("1X", p1x, o1x, mkt[0], "%s eller oavgjort" % m["home"]),
+                ("12", p12, o12, mkt[1], "%s eller %s vinner" % (m["home"], m["away"])),
+                ("X2", px2, ox2, mkt[2], "Oavgjort eller %s" % m["away"])):
+            rat = ("Två utfall täcks: modellen ger %s %.0f%% mot marknadens "
+                   "%.0f%%." % (name.lower(), shrink(pm_, pmk) * 100, pmk * 100))
+            cands.append(make_bet(date_str, m, "dubbelchans", "Dubbelchans",
+                                  "%s (%s)" % (sel, name), "Dubbelchans hela matchen",
+                                  om_, pm_, pmk, rat, ("DC", sel, None, None)))
+        out["dubbelchans"].append(max(cands, key=lambda b: b["edge"]))
+
+    # --- Handikapp (asiatisk halvlinje): parvis avvigning, bästa sidan ---
+    hk = markets.get("handikapp") or {}
+    hk_line, ohk, oak = hk.get("line"), hk.get("home"), hk.get("away")
+    if hk_line is not None and ohk and oak:
+        mkt = devig([ohk, oak])
+        p_cover = model.p_handicap(hk_line)
+        cands = []
+        for sel, pm_, om_, pmk, pick, ln in (
+                ("%s %+.1f" % (m["home"], hk_line), p_cover, ohk, mkt[0], "home", hk_line),
+                ("%s %+.1f" % (m["away"], -hk_line), 1.0 - p_cover, oak, mkt[1], "away", -hk_line)):
+            rat = ("Med handikapp %+.1f täcker %s i %.0f%% av rutnätet "
+                   "mot prisade %.0f%% (målförväntan %.1f–%.1f)." % (
+                       ln, sel.split(" ")[0], shrink(pm_, pmk) * 100, pmk * 100,
+                       model.lam_h, model.lam_a))
+            cands.append(make_bet(date_str, m, "handikapp", "Handikapp",
+                                  sel, "Asiatiskt handikapp, halvlinje", om_,
+                                  pm_, pmk, rat, ("AH", pick, hk_line, None)))
+        out["handikapp"].append(max(cands, key=lambda b: b["edge"]))
+
     # --- Antal mål (huvudlinje Ö/U) ---
     ou = markets.get("antal_mal") or {}
     line, oo, ou_ = ou.get("line"), ou.get("over"), ou.get("under")
@@ -201,6 +272,31 @@ def bets_for_match(date_str, m, model, markets):
                                   pm_, pmk, rat, ("OU", pick, line, None)))
         out["antal_mal"].append(max(cands, key=lambda b: b["edge"]))
 
+    # --- Lagmål (Antal mål för {lag}, huvudlinje): Poisson-svans mot λ ---
+    lagmal = markets.get("lagmal") or {}
+    for side, lam_team, team in (("home", model.lam_h, m["home"]),
+                                 ("away", model.lam_a, m["away"])):
+        row = lagmal.get(side) or {}
+        tl, to_, tu = row.get("line"), row.get("over"), row.get("under")
+        if tl is None or not to_ or not tu:
+            continue
+        mkt = devig([to_, tu])
+        if not mkt:
+            continue
+        p_over_t = MatchModel.p_team_over(lam_team, tl)
+        cands = []
+        for sel, pm_, om_, pmk, pick in (
+                ("över", p_over_t, to_, mkt[0], side + "_over"),
+                ("under", 1.0 - p_over_t, tu, mkt[1], side + "_under")):
+            rat = ("%s väntas göra %.2f mål: %s %.1f ger %.0f%% mot "
+                   "prisade %.0f%%." % (team, lam_team, sel, tl,
+                                        shrink(pm_, pmk) * 100, pmk * 100))
+            cands.append(make_bet(date_str, m, "antal_mal", "Antal mål",
+                                  "%s %s %.1f mål" % (team, sel, tl),
+                                  "Antal mål för laget", om_, pm_, pmk, rat,
+                                  ("TEAM_OU", pick, tl, None)))
+        out["antal_mal"].append(max(cands, key=lambda b: b["edge"]))
+
     # --- Båda lagen gör mål ---
     btts = markets.get("btts") or {}
     oy, on = btts.get("yes"), btts.get("no")
@@ -218,6 +314,95 @@ def bets_for_match(date_str, m, model, markets):
                                   "Minst ett mål av vardera lag", om_,
                                   pm_, pmk, rat, ("BTTS", pick, None, None)))
         out["btts"].append(max(cands, key=lambda b: b["edge"]))
+
+    # --- Korrekt resultat: HELA marknaden avvigas gemensamt, upp till 2 spel ---
+    cs = markets.get("korrekt_resultat") or {}
+    cs_rows = []
+    for lab, odds in sorted(cs.items()):
+        try:
+            sh, sa = [int(x) for x in lab.split("-", 1)]
+        except ValueError:
+            continue
+        if odds:
+            cs_rows.append((lab, sh, sa, odds))
+    mkt = devig([r[3] for r in cs_rows]) if cs_rows else None
+    if mkt:
+        cands = []
+        for (lab, sh, sa, odds), pmk in zip(cs_rows, mkt):
+            if odds > SCORE_MAX_ODDS:
+                continue  # longshot-resultat: marginalbrus, ingen riktig edge
+            pm_ = model.p_score(sh, sa)
+            rat = ("Rutnätet ger %s %.1f%% mot marknadens %.1f%% "
+                   "(hela resultatmarknaden avvigad gemensamt)." % (
+                       lab, shrink(pm_, pmk, odds) * 100, pmk * 100))
+            cands.append(make_bet(date_str, m, "korrekt_resultat", "Korrekt resultat",
+                                  "Resultat %s" % lab, "Slutresultat efter full tid",
+                                  odds, pm_, pmk, rat, ("CS", lab, None, None)))
+        cands.sort(key=lambda b: -b["edge"])
+        out["korrekt_resultat"].extend(cands[:2])
+
+    # --- Halvlek: Halvtid-1X2 + Antal mål 1:a halvlek — de 2 bästa.
+    #     Rättas manuellt i appen (auto-rättningen gäller bara fulltid). ---
+    hl_cands = []
+    ht = markets.get("halvtid_1x2") or {}
+    h1, hx, h2 = ht.get("1"), ht.get("X"), ht.get("2")
+    mkt = devig([h1, hx, h2])
+    if mkt:
+        p1h, pxh, p2h = model.p_1x2_first_half()
+        trio = []
+        for sel, pm_, om_, pmk, name in (
+                ("1", p1h, h1, mkt[0], "%s leder i halvtid" % m["home"]),
+                ("X", pxh, hx, mkt[1], "Oavgjort i halvtid"),
+                ("2", p2h, h2, mkt[2], "%s leder i halvtid" % m["away"])):
+            rat = ("Första halvlek väntas ge %.2f mål (44%% av matchens %.2f): "
+                   "%s %.0f%% mot prisade %.0f%%. Rättas manuellt." % (
+                       model.lam_total() * 0.44, model.lam_total(),
+                       name.lower(), shrink(pm_, pmk) * 100, pmk * 100))
+            trio.append(make_bet(date_str, m, "halvlek", "Halvlek",
+                                 "Halvtid: %s (%s)" % (sel, name),
+                                 "Resultat efter första halvlek", om_,
+                                 pm_, pmk, rat, ("1H_1X2", sel, None, None)))
+        hl_cands.append(max(trio, key=lambda b: b["edge"]))
+
+    ou1 = markets.get("antal_mal_1h") or {}
+    l1, oo1, uu1 = ou1.get("line"), ou1.get("over"), ou1.get("under")
+    if l1 is not None and oo1 and uu1:
+        mkt = devig([oo1, uu1])
+        p_over1 = model.p_over_first_half(l1)
+        pair = []
+        for sel, pm_, om_, pmk, pick in (("Över", p_over1, oo1, mkt[0], "over"),
+                                         ("Under", 1.0 - p_over1, uu1, mkt[1], "under")):
+            rat = ("Halvleksrutnätet (λ×0.44) ger %s %.1f i första halvlek "
+                   "%.0f%% mot prisade %.0f%%. Rättas manuellt." % (
+                       sel.lower(), l1, shrink(pm_, pmk) * 100, pmk * 100))
+            pair.append(make_bet(date_str, m, "halvlek", "Halvlek",
+                                 "%s %.1f mål i 1:a halvlek" % (sel, l1),
+                                 "Antal mål i första halvlek", om_,
+                                 pm_, pmk, rat, ("1H_OU", pick, l1, None)))
+        hl_cands.append(max(pair, key=lambda b: b["edge"]))
+    hl_cands.sort(key=lambda b: -b["edge"])
+    out["halvlek"].extend(hl_cands[:2])
+
+    # --- Halvtid/Fulltid: 9-vägsmarknaden avvigas gemensamt, bästa utfallet ---
+    htft = markets.get("halvtid_fulltid") or {}
+    keys = [k for k in HTFT_KEYS if htft.get(k)]
+    mkt = devig([htft[k] for k in keys]) if len(keys) >= 2 else None
+    if mkt:
+        p_map = model.p_htft()
+        cands = []
+        for k, pmk in zip(keys, mkt):
+            odds = htft[k]
+            if odds > SCORE_MAX_ODDS:
+                continue
+            pm_ = p_map.get(k, 0.0)
+            rat = ("Halvleksrutnäten (44/56-delning av λ) ger %s %.1f%% mot "
+                   "marknadens %.1f%%." % (k, shrink(pm_, pmk, odds) * 100, pmk * 100))
+            cands.append(make_bet(date_str, m, "halvtid_fulltid", "Halvtid/Fulltid",
+                                  "Halvtid/Fulltid %s" % k,
+                                  "Resultat vid halvtid / vid fulltid",
+                                  odds, pm_, pmk, rat, ("HTFT", k, None, None)))
+        if cands:
+            out["halvtid_fulltid"].append(max(cands, key=lambda b: b["edge"]))
 
     # --- Spelarmarknader: tilt = modellens målförväntan vs marknadens ---
     ratio = 1.0
@@ -266,6 +451,51 @@ def bets_for_match(date_str, m, model, markets):
             "%s över %.1f skott på mål" % (row["player"], row["line"]),
             "Opta-avgjord spelarmarknad", row["odds"], p_adj, None, rat,
             ("PLAYER", "shots", row["line"], row["player"]), player_market=True))
+
+    # --- Hörnor: ingen hörnmodell finns — ärlig marknadsankring som
+    #     spelarmarknaderna. Implicit hörn-λ löses ur den avvigade
+    #     Över-sannolikheten (Poisson-inversion) och tiltas med
+    #     √(λ_modell/λ_marknad) för MÅLEN, hårt clampat [0.92, 1.10]:
+    #     anfallstryck korrelerar bara svagt med hörnor. ---
+    hor = markets.get("hornor") or {}
+    cl, co, cu = hor.get("line"), hor.get("over"), hor.get("under")
+    if cl is not None and co and cu:
+        mkt = devig([co, cu])
+        lam_corner = implied_lambda_poisson(mkt[0], cl) if mkt else None
+        if lam_corner:
+            tilt = 1.0
+            if lam_mkt and lam_mkt > 0.3:
+                tilt = max(0.92, min(1.10, (lam_tot / lam_mkt) ** 0.5))
+            p_over_c = MatchModel.p_team_over(lam_corner * tilt, cl)
+            cands = []
+            for sel, pm_, om_, pmk, pick in (("Över", p_over_c, co, mkt[0], "over"),
+                                             ("Under", 1.0 - p_over_c, cu, mkt[1], "under")):
+                rat = ("Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk "
+                       "modelltilt ×%.2f från målförväntan: %s %.1f hörnor "
+                       "%.0f%% mot prisade %.0f%%. Rättas manuellt." % (
+                           tilt, sel.lower(), cl, pm_ * 100, pmk * 100))
+                cands.append(make_bet(date_str, m, "hornor", "Hörnor",
+                                      "%s %.1f hörnor" % (sel, cl),
+                                      "Totalt antal hörnor i matchen", om_,
+                                      pm_, pmk, rat, ("CORNERS", pick, cl, None),
+                                      player_market=True))
+            out["hornor"].append(max(cands, key=lambda b: b["edge"]))
+
+    # --- Kort: ren avvigning (tilt 1.0) — bara för överblick, ingen modell ---
+    krt = markets.get("kort") or {}
+    kl, ko_, ku = krt.get("line"), krt.get("over"), krt.get("under")
+    if kl is not None and ko_ and ku:
+        mkt = devig([ko_, ku])
+        if mkt:
+            rat = ("Marknadsprissatt — modellen har ingen kortmodell; "
+                   "visas för överblick. Rättas manuellt.")
+            for sel, om_, pmk, pick in (("Över", ko_, mkt[0], "over"),
+                                        ("Under", ku, mkt[1], "under")):
+                out["kort"].append(make_bet(date_str, m, "kort", "Kort",
+                                            "%s %.1f kort" % (sel, kl),
+                                            "Totalt antal kort i matchen", om_,
+                                            pmk, pmk, rat, ("CARDS", pick, kl, None),
+                                            player_market=True))
 
     return out
 
@@ -364,7 +594,7 @@ def main():
         model = MatchModel(m["home"], m["away"], ratings)
         day_matches.append(match_info(m, model, mss_map))
         try:
-            mk = kambi_wc.fetch_match_markets(m["kambiId"])
+            mk = kambi_wc.fetch_match_markets(m["kambiId"], m["home"], m["away"])
         except Exception as e:
             print("  ! detaljmarknader failade för %s: %s" % (m["kambiId"], e), file=sys.stderr)
             mk = {"fulltid": {"1": m.get("odds1"), "X": m.get("oddsX"), "2": m.get("odds2")},
@@ -384,6 +614,17 @@ def main():
         per_match[b["matchId"]] = per_match.get(b["matchId"], 0) + 1
         if len(top_bets) >= MAX_TOP_BETS:
             break
+    # Topp 10-garanti: dagar med få matcher fyller cap-passet inte listan —
+    # fyll på med resterande spel sorterade på edge, utan per-match-tak.
+    if len(top_bets) < MAX_TOP_BETS:
+        chosen = set(map(id, top_bets))
+        for b in sorted(all_bets, key=lambda b: -b["edge"]):
+            if id(b) in chosen:
+                continue
+            top_bets.append(b)
+            chosen.add(id(b))
+            if len(top_bets) >= MAX_TOP_BETS:
+                break
     allocate_weights(top_bets)
 
     # --- Topp 5 per kategori (max 2 per match inom kategorin) ---
@@ -410,6 +651,18 @@ def main():
         upcoming.append({"date": d.isoformat(), "matches": rows})
 
     results = results_wc.fetch_results()
+
+    # --- Turneringssektionen (scripts/tournament.py — Monte Carlo-simulering,
+    #     ägs av separat modul). Failsafe: feeden ska genereras även om
+    #     tournament.py saknas eller simuleringen failar. ---
+    tour = None
+    try:
+        import tournament
+        tour = tournament.build_tournament_section(ratings, mss_map, date_str)
+    except Exception as e:
+        print("  ! turneringssektionen failade: %s" % e, file=sys.stderr)
+        tour = None
+
     headline, summary = build_headline(today_local, day_matches, top_bets)
     push = build_push(today_local, top_bets, day_matches, next_day)
 
@@ -434,6 +687,7 @@ def main():
             "categories": categories,
         },
         "upcoming": upcoming,
+        "tournament": tour,
         "results": results,
         "push": push,
     }
