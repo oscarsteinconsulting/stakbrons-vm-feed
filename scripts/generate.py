@@ -12,7 +12,8 @@ Kedjan varje morgon:
   5. Kvarts-Kelly-vikter för dagsbudgeten (appen räknar kronor av vikterna).
   6. Topp 10 över alla kategorier + topp 5 per Svenska Spel-kategori
      (12 kategorier som speglar Svenska Spels VM-meny).
-  7. Resultat för spelade matcher (results_wc.py) → appens auto-rättning.
+  7. Resultat för spelade matcher (results_wc.py) → appens auto-rättning,
+     plus progress-sektionen (avancemang per turneringsmarknad topp16…vinnare).
   8. Turneringssektionen (tournament.py, Monte Carlo) — failsafe-integrerad.
 
 Körs utan pip-paket (bara standardbiblioteket), Python 3.9+.
@@ -650,7 +651,9 @@ def main():
             rows.append(match_info(m, model, mss_map))
         upcoming.append({"date": d.isoformat(), "matches": rows})
 
-    results = results_wc.fetch_results()
+    # Resultat + avancemang: progress är alltid en komplett dict (tomma
+    # listor innan slutspelet) så appen kan avkoda den ovillkorligt.
+    results, progress = results_wc.fetch_results()
 
     # --- Turneringssektionen (scripts/tournament.py — Monte Carlo-simulering,
     #     ägs av separat modul). Failsafe: feeden ska genereras även om
@@ -689,6 +692,7 @@ def main():
         "upcoming": upcoming,
         "tournament": tour,
         "results": results,
+        "progress": progress,
         "push": push,
     }
 

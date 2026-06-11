@@ -76,11 +76,31 @@ Hörnor · Kort.
 
 ## Resultat & rättning
 
-`results`-fältet i feeden ger slutresultat för spelade matcher så appen rättar
-1X2/Över-Under/BTTS-spel automatiskt. Källa: football-data.org (gratis-token,
-repo-secret `FOOTBALLDATA_TOKEN`) med vm2026-facit-repots `results.json` som
-tokenfri reserv. Spelarmarknader, halvleksspel, hörnor och kort rättas
-manuellt i appen (auto-rättningen gäller bara fulltidsresultatet).
+`results`-fältet i feeden ger resultat för spelade matcher så appen auto-rättar
+nästan alla spel. Varje resultatpost innehåller (nya fält är optionella/null så
+äldre appversioner inte bryts):
+
+| Fält | Vad | Rättar |
+|---|---|---|
+| `scoreHome`/`scoreAway` | **90-minutersresultatet** (`regularTime` vid förlängning — fullTime hos football-data inkluderar förlängningen, men spelbolagen rättar fulltidsspel på 90 min) | Fulltid, Dubbelchans, Handikapp, Antal mål, BTTS, Korrekt resultat |
+| `htHome`/`htAway` | Halvtidsresultatet | Halvlek, Halvtid/Fulltid |
+| `duration` | `REGULAR`/`EXTRA_TIME`/`PENALTY_SHOOTOUT` | — (kontext) |
+| `winner` | `home`/`away`/`draw` — avancemangsvinnaren INKL. straffläggning | Slutspelsavancemang |
+| `scorers` | `[{name, team, goals}]` — exkl. straffläggningsmål och självmål | Målgörare, 2+ mål |
+
+Dessutom finns toppnivåfältet `progress` med turneringsmarknadernas läge:
+`{"topp16"/"topp8"/"topp4"/"topp2"/"vinnare": {"qualified": [...], "eliminated": [...]}}`
+— `qualified` är lag som klarat marknaden, `eliminated` lag som definitivt
+missat den (eliminering kaskaderar till senare steg). Innan slutspelet är
+listorna tomma.
+
+Källa: football-data.org (gratis-token, repo-secret `FOOTBALLDATA_TOKEN`);
+målgörarna hämtas per match via `/v4/matches/{id}` och cachas persistent i
+`data/results_cache.json` (10 anrop/min-gränsen respekteras). **Utan token
+används vm2026-facit-repots `results.json` som reserv — den ger bara
+slutresultat: halvtid, målgörare och avancemang (`progress`) kräver
+`FOOTBALLDATA_TOKEN`.** Hörnor, kort och skott på mål rättas fortfarande
+manuellt i appen.
 
 ## Secrets
 

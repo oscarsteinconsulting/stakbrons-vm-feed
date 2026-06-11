@@ -147,10 +147,13 @@ def short_of(name):
 def stage_for(home, away, kickoff_iso):
     """Turneringsfas: gruppnamn om lagen delar grupp, annars slutspelsfas
     utifrån datum (spelschemat är känt i förväg)."""
-    gh, ga = GROUP_OF.get(home), GROUP_OF.get(away)
-    if gh and gh == ga:
-        return "Grupp " + gh
     d = (kickoff_iso or "")[:10]
+    gh, ga = GROUP_OF.get(home), GROUP_OF.get(away)
+    if gh and gh == ga and (not d or d <= "2026-06-27"):
+        # Gruppkollen gäller bara under gruppspelsfönstret: från kvartsfinalen
+        # och framåt KAN två lag ur samma grupp mötas igen — då ska datumet,
+        # inte gruppen, avgöra fasen (viktigt för progress-bygget i results_wc).
+        return "Grupp " + gh
     if d <= "2026-06-27":
         return "Gruppspel"
     if d <= "2026-07-03":
