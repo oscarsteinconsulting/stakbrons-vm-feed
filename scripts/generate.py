@@ -666,6 +666,18 @@ def main():
         print("  ! turneringssektionen failade: %s" % e, file=sys.stderr)
         tour = None
 
+    # --- VM-tipset-kupongen (scripts/vmtipset.py — Svenska Spels öppna
+    #     omgång, ägs av separat modul). Failsafe som tournament: feeden ska
+    #     genereras även om vmtipset.py saknas eller kupongen failar; fältet
+    #     är None när ingen omgång är öppen (optional i appen). ---
+    vmt = None
+    try:
+        import vmtipset
+        vmt = vmtipset.build_vmtipset_section(ratings, date_str)
+    except Exception as e:
+        print("  ! vmtipset-sektionen failade: %s" % e, file=sys.stderr)
+        vmt = None
+
     headline, summary = build_headline(today_local, day_matches, top_bets)
     push = build_push(today_local, top_bets, day_matches, next_day)
 
@@ -691,6 +703,7 @@ def main():
         },
         "upcoming": upcoming,
         "tournament": tour,
+        "vmtipset": vmt,
         "results": results,
         "progress": progress,
         "push": push,

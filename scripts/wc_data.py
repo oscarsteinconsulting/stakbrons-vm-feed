@@ -74,6 +74,7 @@ SHORT_FROM_ELO = {t[2]: t[1] for t in TEAMS}
 EXTRA_ALIASES = {
     # Kambi / svenska varianter
     "bosnien hercegovina": "Bosnien", "bosnien och hercegovina": "Bosnien",
+    "bosnien & hercegovina": "Bosnien",  # Svenska Spel (VM-tipset) participants.name
     "curacao": "Curacao", "curaçao": "Curacao",
     "elfenbenskusten": "Elfenbenskusten",
     "kap verde": "Kap Verde", "kapverde": "Kap Verde",
