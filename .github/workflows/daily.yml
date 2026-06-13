@@ -2,11 +2,24 @@ name: Generate Stakbrons VM Feed
 
 on:
   schedule:
-    # Tider i UTC. Svensk sommartid = UTC+2.
-    - cron: '15 4 * * *'   # 06:15 svensk — morgonens analys genereras
-    - cron: '0 6 * * *'    # 08:00 svensk — regenerera med färska odds + SKICKA PUSH
-    - cron: '0 12 * * *'   # 14:00 svensk — fräscha odds inför kvällen
-    - cron: '0 17 * * *'   # 19:00 svensk — sista uppdateringen före kvällsmatcherna
+    # Tider i UTC (svensk sommartid = UTC+2). VM-matcher spelas på svensk
+    # kvälls-/nattid (NA-eftermiddag → natt), så feeden måste hållas färsk
+    # DYGNET RUNT — inte bara dagtid. GitHubs schemalagda cron är "best effort"
+    # och hoppas ofta över, SÄRSKILT på heltimme (xx:00) när lasten är som högst.
+    # Därför: körningar var ~2:a timme på UDDA minuter, så en missad körning
+    # aldrig lämnar feeden inaktuell mer än ett par timmar.
+    - cron: '12 4 * * *'    # 06:12 svensk — morgon
+    - cron: '5 6 * * *'     # 08:05 svensk — morgonrapport + SKICKA PUSH
+    - cron: '23 8 * * *'    # 10:23
+    - cron: '23 10 * * *'   # 12:23
+    - cron: '37 12 * * *'   # 14:37
+    - cron: '37 14 * * *'   # 16:37
+    - cron: '23 16 * * *'   # 18:23 — kvällsmatcherna börjar
+    - cron: '23 18 * * *'   # 20:23
+    - cron: '37 20 * * *'   # 22:37
+    - cron: '37 22 * * *'   # 00:37 — sena NA-matcher
+    - cron: '23 0 * * *'    # 02:23 — NA-nattmatcher pågår
+    - cron: '23 2 * * *'    # 04:23 — NA-nattmatcher avslutas
   workflow_dispatch:
     inputs:
       send_push:
@@ -42,7 +55,7 @@ jobs:
         run: python3 scripts/generate.py
 
       - name: Skicka morgonens push-notis (kl 08:00-körningen)
-        if: github.event.schedule == '0 6 * * *' || (github.event_name == 'workflow_dispatch' && inputs.send_push)
+        if: github.event.schedule == '5 6 * * *' || (github.event_name == 'workflow_dispatch' && inputs.send_push)
         env:
           FCM_SERVICE_ACCOUNT: ${{ secrets.FCM_SERVICE_ACCOUNT }}
         run: |
