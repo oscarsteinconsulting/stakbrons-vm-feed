@@ -31,6 +31,7 @@ from wc_model import (MatchModel, build_ratings, devig, shrink,
                       implied_lambda_total, MU_TOTAL, MSS_BLEND, SHRINK_MODEL)
 import kambi_wc
 import results_wc
+import tv_channels
 
 STOCKHOLM = ZoneInfo("Europe/Stockholm")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -508,6 +509,7 @@ def match_info(m, model, mss_map):
         "stage": stage_for(m["home"], m["away"], m["kickoff"]),
         "home": m["home"], "away": m["away"],
         "homeFlag": FLAG_OF.get(m["home"], ""), "awayFlag": FLAG_OF.get(m["away"], ""),
+        "channel": tv_channels.channel_for(m["home"], m["away"]),
         "pHome": round(ph, 3), "pDraw": round(pd, 3), "pAway": round(pa, 3),
         "oddsHome": m.get("odds1"), "oddsDraw": m.get("oddsX"), "oddsAway": m.get("odds2"),
         "lambdaHome": round(model.lam_h, 2), "lambdaAway": round(model.lam_a, 2),
@@ -587,15 +589,19 @@ def normalize_results_orientation(results, fixtures, matches):
     return results
 
 
-def build_past(fixtures, results, ratings, mss_map, today_local, exclude=None):
-    """Spelade matcher (matchdag <= idag som har ett resultat), grupperade per
-    dag, äldst först. Samma kortform som match_info så appen renderar identiska
-    matchkort; odds = null (Kambi har släppt spelade matcher) och slutställningen
-    kommer ur feedens `results` via appens matchStatus. Modellens 1X2 räknas om
-    ur lagstyrkorna för överblick. `exclude` (frozenset av {home, away}) hoppar
-    över dagens ÄNNU OSPELADE matcher som redan ligger i `day`-sektionen — dagens
-    REDAN spelade matcher tas med (date == idag) så appen kan slå ihop dem i
-    Idag-sektionen i stället för att de blir osynliga tills nästa matchdag."""
+def build_past(fixtures, results, ratings, mss_map, today_local, now, exclude=None):
+    """Spelade (och dagens pågående) matcher t.o.m. idag, grupperade per dag,
+    äldst först. Samma kortform som match_info så appen renderar identiska
+    matchkort; odds = null (Kambi har släppt avsparkade matcher) och slut-
+    ställningen kommer ur feedens `results` via appens matchStatus. Modellens
+    1X2 räknas om ur lagstyrkorna för överblick.
+
+    Inklusion: matcher med resultat (historik, visas som FT) PLUS dagens redan
+    AVSPARKADE matcher utan resultat än (pågår just nu / resultat på väg) — Kambi
+    tar bort dem ur `day` när de börjar, så utan detta blir live-matchen osynlig
+    under hela speltiden. `exclude` (frozenset {home, away}) hoppar över dagens
+    ännu ospelade matcher som redan ligger i `day`. Appen slår ihop date==idag i
+    Idag-sektionen."""
     exclude = exclude or set()
 
     def has_result(home, away, ko):
@@ -617,13 +623,18 @@ def build_past(fixtures, results, ratings, mss_map, today_local, exclude=None):
     by_day = {}
     for kid, fx in fixtures.items():
         ko = fx.get("kickoff")
-        md = stockholm_matchday(parse_kickoff(ko)) if ko else None
+        kdt = parse_kickoff(ko)
+        md = stockholm_matchday(kdt) if kdt else None
         if md is None or md > today_local:
             continue
         if frozenset((fx.get("home"), fx.get("away"))) in exclude:
             continue
         if not has_result(fx.get("home"), fx.get("away"), ko):
-            continue
+            # Inget resultat än: ta bara med dagens redan avsparkade matcher
+            # (pågår nu / resultat på väg). Äldre matcher utan resultat (uppskjutna
+            # / dataglapp) hoppas över så de inte visas som spökkort i historiken.
+            if not (md == today_local and kdt and kdt < now):
+                continue
         m = {"kambiId": kid, "kickoff": ko, "home": fx["home"], "away": fx["away"]}
         model = MatchModel(fx["home"], fx["away"], ratings)
         by_day.setdefault(md, []).append(match_info(m, model, mss_map))
@@ -785,7 +796,7 @@ def main():
     # ännu ospelade matcher (redan i `day`) exkluderas för att undvika dubblett.
     day_keys = {frozenset((mi["home"], mi["away"])) for mi in day_matches}
     past = build_past(fixtures, results, ratings, mss_map, today_local,
-                      exclude=day_keys)
+                      now_utc, exclude=day_keys)
 
     # --- Turneringssektionen (scripts/tournament.py — Monte Carlo-simulering,
     #     ägs av separat modul). Failsafe: feeden ska genereras även om
