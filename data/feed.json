@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-14T23:30:33Z",
+ "generatedAt": "2026-06-14T23:51:53Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -238,7 +238,7 @@
     "settlePlayer": null
    },
    {
-    "id": "2026-06-14-1027164902-spelarspecial-viktor-gyökeres-över-0-5-skott-på-mål",
+    "id": "2026-06-14-1027164902-spelarspecial-alexander-isak-över-0-5-skott-på-mål",
     "matchId": "1027164902",
     "match": "Sverige – Tunisien",
     "homeFlag": "🇸🇪",
@@ -246,7 +246,7 @@
     "kickoff": "2026-06-15T02:00:00Z",
     "categoryKey": "spelarspecial",
     "category": "Spelarspecial",
-    "selection": "Viktor Gyökeres över 0.5 skott på mål",
+    "selection": "Alexander Isak över 0.5 skott på mål",
     "detail": "Opta-avgjord spelarmarknad",
     "odds": 1.3,
     "modelProb": 0.7342,
@@ -260,10 +260,10 @@
     "settleMarket": "PLAYER",
     "settlePick": "shots",
     "settleLine": 0.5,
-    "settlePlayer": "Viktor Gyökeres"
+    "settlePlayer": "Alexander Isak"
    },
    {
-    "id": "2026-06-14-1027164902-spelarspecial-alexander-isak-över-0-5-skott-på-mål",
+    "id": "2026-06-14-1027164902-spelarspecial-viktor-gyökeres-över-0-5-skott-på-mål",
     "matchId": "1027164902",
     "match": "Sverige – Tunisien",
     "homeFlag": "🇸🇪",
@@ -271,12 +271,12 @@
     "kickoff": "2026-06-15T02:00:00Z",
     "categoryKey": "spelarspecial",
     "category": "Spelarspecial",
-    "selection": "Alexander Isak över 0.5 skott på mål",
+    "selection": "Viktor Gyökeres över 0.5 skott på mål",
     "detail": "Opta-avgjord spelarmarknad",
-    "odds": 1.33,
-    "modelProb": 0.7176,
+    "odds": 1.29,
+    "modelProb": 0.7399,
     "marketProb": null,
-    "edge": -0.0457,
+    "edge": -0.0455,
     "value": "Undvik",
     "kelly": 0.0,
     "stakeWeight": 0.0,
@@ -285,7 +285,7 @@
     "settleMarket": "PLAYER",
     "settlePick": "shots",
     "settleLine": 0.5,
-    "settlePlayer": "Alexander Isak"
+    "settlePlayer": "Viktor Gyökeres"
    }
   ],
   "categories": [
@@ -683,7 +683,7 @@
     "icon": "👟",
     "bets": [
      {
-      "id": "2026-06-14-1027164902-spelarspecial-viktor-gyökeres-över-0-5-skott-på-mål",
+      "id": "2026-06-14-1027164902-spelarspecial-alexander-isak-över-0-5-skott-på-mål",
       "matchId": "1027164902",
       "match": "Sverige – Tunisien",
       "homeFlag": "🇸🇪",
@@ -691,7 +691,7 @@
       "kickoff": "2026-06-15T02:00:00Z",
       "categoryKey": "spelarspecial",
       "category": "Spelarspecial",
-      "selection": "Viktor Gyökeres över 0.5 skott på mål",
+      "selection": "Alexander Isak över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
       "odds": 1.3,
       "modelProb": 0.7342,
@@ -705,10 +705,10 @@
       "settleMarket": "PLAYER",
       "settlePick": "shots",
       "settleLine": 0.5,
-      "settlePlayer": "Viktor Gyökeres"
+      "settlePlayer": "Alexander Isak"
      },
      {
-      "id": "2026-06-14-1027164902-spelarspecial-alexander-isak-över-0-5-skott-på-mål",
+      "id": "2026-06-14-1027164902-spelarspecial-viktor-gyökeres-över-0-5-skott-på-mål",
       "matchId": "1027164902",
       "match": "Sverige – Tunisien",
       "homeFlag": "🇸🇪",
@@ -716,12 +716,12 @@
       "kickoff": "2026-06-15T02:00:00Z",
       "categoryKey": "spelarspecial",
       "category": "Spelarspecial",
-      "selection": "Alexander Isak över 0.5 skott på mål",
+      "selection": "Viktor Gyökeres över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
-      "odds": 1.33,
-      "modelProb": 0.7176,
+      "odds": 1.29,
+      "modelProb": 0.7399,
       "marketProb": null,
-      "edge": -0.0457,
+      "edge": -0.0455,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -730,7 +730,7 @@
       "settleMarket": "PLAYER",
       "settlePick": "shots",
       "settleLine": 0.5,
-      "settlePlayer": "Alexander Isak"
+      "settlePlayer": "Viktor Gyökeres"
      }
     ]
    },
@@ -1410,7 +1410,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-14T23:30:32Z",
+  "generatedAt": "2026-06-14T23:51:52Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
