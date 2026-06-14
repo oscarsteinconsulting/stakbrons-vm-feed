@@ -1,0 +1,34 @@
+name: CI — feed-självtester
+
+# Kör datapipelinens självtester vid varje push och pull request, så
+# regressioner fångas innan de når den schemalagda feed-genereringen.
+on:
+  push:
+    paths: ['scripts/**', '.github/workflows/ci.yml']
+  pull_request:
+    paths: ['scripts/**']
+  workflow_dispatch: {}
+
+jobs:
+  selftest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Resultaträttning — självtest
+        run: python3 scripts/results_wc.py --selftest
+
+      - name: VM-tipset-kupong — självtest
+        run: python3 scripts/vmtipset.py --selftest
+
+      - name: Alla moduler importerar
+        run: |
+          cd scripts
+          python3 -c "import generate, tournament, wc_model, wc_data, kambi_wc, results_wc, vmtipset, send_push; print('IMPORT OK')"
+
+      - name: Syntaxkoll (kompilerar alla skript)
+        run: python3 -m compileall -q scripts
