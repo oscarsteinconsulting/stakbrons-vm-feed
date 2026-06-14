@@ -90,5 +90,27 @@
    "name": "Deniz Undav",
    "team": "Tyskland"
   }
+ ],
+ "espn:760425": [
+  {
+   "goals": 1,
+   "name": "Virgil van Dijk",
+   "team": "Nederländerna"
+  },
+  {
+   "goals": 1,
+   "name": "Keito Nakamura",
+   "team": "Japan"
+  },
+  {
+   "goals": 1,
+   "name": "Crysencio Summerville",
+   "team": "Nederländerna"
+  },
+  {
+   "goals": 1,
+   "name": "Daichi Kamada",
+   "team": "Japan"
+  }
  ]
 }
