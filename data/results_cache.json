@@ -53,5 +53,42 @@
    "name": "Connor Metcalfe",
    "team": "Australien"
   }
+ ],
+ "espn:760422": [
+  {
+   "goals": 1,
+   "name": "Felix Nmecha",
+   "team": "Tyskland"
+  },
+  {
+   "goals": 1,
+   "name": "Livano Comenencia",
+   "team": "Curacao"
+  },
+  {
+   "goals": 1,
+   "name": "Nico Schlotterbeck",
+   "team": "Tyskland"
+  },
+  {
+   "goals": 2,
+   "name": "Kai Havertz",
+   "team": "Tyskland"
+  },
+  {
+   "goals": 1,
+   "name": "Jamal Musiala",
+   "team": "Tyskland"
+  },
+  {
+   "goals": 1,
+   "name": "Nathaniel Brown",
+   "team": "Tyskland"
+  },
+  {
+   "goals": 1,
+   "name": "Deniz Undav",
+   "team": "Tyskland"
+  }
  ]
 }
