@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-14T11:21:54Z",
+ "generatedAt": "2026-06-14T11:32:47Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -2083,7 +2083,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-14T11:21:53Z",
+  "generatedAt": "2026-06-14T11:32:47Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3228,7 +3228,18 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": null
+   "scorers": [
+    {
+     "name": "Julián Quiñones",
+     "team": "Mexiko",
+     "goals": 1
+    },
+    {
+     "name": "Raúl Jiménez",
+     "team": "Mexiko",
+     "goals": 1
+    }
+   ]
   },
   {
    "date": "2026-06-12",
@@ -3240,18 +3251,6 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": null
-  },
-  {
-   "date": "2026-06-12",
-   "home": "Kanada",
-   "away": "Bosnien",
-   "scoreHome": 1,
-   "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
    "scorers": null
   },
   {
@@ -3276,7 +3275,13 @@
    "htAway": 1,
    "duration": "REGULAR",
    "winner": "draw",
-   "scorers": null
+   "scorers": [
+    {
+     "name": "Breel Embolo",
+     "team": "Schweiz",
+     "goals": 1
+    }
+   ]
   },
   {
    "date": "2026-06-13",
@@ -3288,7 +3293,18 @@
    "htAway": 1,
    "duration": "REGULAR",
    "winner": "draw",
-   "scorers": null
+   "scorers": [
+    {
+     "name": "Ismael Saibari",
+     "team": "Marocko",
+     "goals": 1
+    },
+    {
+     "name": "Vinícius Júnior",
+     "team": "Brasilien",
+     "goals": 1
+    }
+   ]
   },
   {
    "date": "2026-06-14",
@@ -3312,7 +3328,18 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": null
+   "scorers": [
+    {
+     "name": "Nestory Irankunda",
+     "team": "Australien",
+     "goals": 1
+    },
+    {
+     "name": "Connor Metcalfe",
+     "team": "Australien",
+     "goals": 1
+    }
+   ]
   }
  ],
  "progress": {

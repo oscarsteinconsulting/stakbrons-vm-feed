@@ -1,0 +1,45 @@
+{
+ "espn:760415": [
+  {
+   "goals": 1,
+   "name": "Julián Quiñones",
+   "team": "Mexiko"
+  },
+  {
+   "goals": 1,
+   "name": "Raúl Jiménez",
+   "team": "Mexiko"
+  }
+ ],
+ "espn:760419": [
+  {
+   "goals": 1,
+   "name": "Ismael Saibari",
+   "team": "Marocko"
+  },
+  {
+   "goals": 1,
+   "name": "Vinícius Júnior",
+   "team": "Brasilien"
+  }
+ ],
+ "espn:760420": [
+  {
+   "goals": 1,
+   "name": "Breel Embolo",
+   "team": "Schweiz"
+  }
+ ],
+ "espn:760421": [
+  {
+   "goals": 1,
+   "name": "Nestory Irankunda",
+   "team": "Australien"
+  },
+  {
+   "goals": 1,
+   "name": "Connor Metcalfe",
+   "team": "Australien"
+  }
+ ]
+}
