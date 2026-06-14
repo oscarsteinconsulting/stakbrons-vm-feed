@@ -1,25 +1,28 @@
 name: Generate Stakbrons VM Feed
 
+# HEARTBEAT-MODELL. GitHubs schemalagda cron är "best effort" och droppar ofta
+# körningar (särskilt nattetid) — att bara lista många cron-rader räcker inte.
+# Lösning: varje körning är en LOOP som regenererar feeden var 20:e minut i upp
+# till ~2,5 h. Cron var 2:a timme startar om loopen, och `cancel-in-progress`
+# låter den nya körningen sömlöst ta över. Då räcker det att cron lyckas fyra
+# NÅGON gång varannan timme — en missad slot täcks av den redan löpande loopen,
+# som fortsätter sina 2,5 h. Publikt repo = obegränsade Actions-minuter.
+
 on:
   schedule:
-    # Tider i UTC (svensk sommartid = UTC+2). VM-matcher spelas på svensk
-    # kvälls-/nattid (NA-eftermiddag → natt), så feeden måste hållas färsk
-    # DYGNET RUNT — inte bara dagtid. GitHubs schemalagda cron är "best effort"
-    # och hoppas ofta över, SÄRSKILT på heltimme (xx:00) när lasten är som högst.
-    # Därför: körningar var ~2:a timme på UDDA minuter, så en missad körning
-    # aldrig lämnar feeden inaktuell mer än ett par timmar.
-    - cron: '12 4 * * *'    # 06:12 svensk — morgon
-    - cron: '5 6 * * *'     # 08:05 svensk — morgonrapport + SKICKA PUSH
-    - cron: '23 8 * * *'    # 10:23
-    - cron: '23 10 * * *'   # 12:23
-    - cron: '37 12 * * *'   # 14:37
-    - cron: '37 14 * * *'   # 16:37
-    - cron: '23 16 * * *'   # 18:23 — kvällsmatcherna börjar
-    - cron: '23 18 * * *'   # 20:23
-    - cron: '37 20 * * *'   # 22:37
-    - cron: '37 22 * * *'   # 00:37 — sena NA-matcher
-    - cron: '23 0 * * *'    # 02:23 — NA-nattmatcher pågår
-    - cron: '23 2 * * *'    # 04:23 — NA-nattmatcher avslutas
+    # Tider i UTC (svensk sommartid = UTC+2). Udda minuter (xx:00 droppas oftast).
+    - cron: '11 0 * * *'
+    - cron: '13 2 * * *'
+    - cron: '12 4 * * *'
+    - cron: '7 6 * * *'      # ~08:xx svensk — morgonrapporten skickar push i loopen
+    - cron: '23 8 * * *'
+    - cron: '23 10 * * *'
+    - cron: '37 12 * * *'
+    - cron: '37 14 * * *'
+    - cron: '23 16 * * *'
+    - cron: '23 18 * * *'
+    - cron: '37 20 * * *'
+    - cron: '37 22 * * *'
   workflow_dispatch:
     inputs:
       send_push:
@@ -32,12 +35,12 @@ permissions:
 
 concurrency:
   group: vm-feed
-  cancel-in-progress: false
+  cancel-in-progress: true   # en ny körning tar sömlöst över den löpande loopen
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20   # turneringssimuleringen (Monte Carlo) tar några minuter
+    timeout-minutes: 160      # loopen kör ~2,5 h; gott om marginal under 6h-taket
 
     steps:
       - uses: actions/checkout@v4
@@ -46,51 +49,61 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generera feed.json
+      - name: Heartbeat — regenerera feeden var 20:e minut i ~2,5 h
         env:
-          # Valfri men rekommenderad: gratis token från football-data.org —
-          # ger resultaträttning för ALLA matcher inkl. slutspel.
-          # Utan token används vm2026-facit-repots results.json (gruppspelet).
+          # Gratis token från football-data.org — resultaträttning inkl. slutspel.
           FOOTBALLDATA_TOKEN: ${{ secrets.FOOTBALLDATA_TOKEN }}
-        run: python3 scripts/generate.py
-
-      - name: Skicka morgonens push-notis (kl 08:00-körningen)
-        if: github.event.schedule == '5 6 * * *' || (github.event_name == 'workflow_dispatch' && inputs.send_push)
-        env:
           FCM_SERVICE_ACCOUNT: ${{ secrets.FCM_SERVICE_ACCOUNT }}
+          # workflow_dispatch med send_push=true → skicka push på första varvet.
+          DISPATCH_PUSH: ${{ github.event_name == 'workflow_dispatch' && inputs.send_push }}
         run: |
-          pip install --quiet google-auth requests
-          python3 scripts/send_push.py
-
-      - name: Commit & push om något ändrats
-        run: |
-          set -e
+          set -uo pipefail
           git config user.name  "Stakbrons VM Bot"
           git config user.email "vm-bot@stakbrons.local"
 
-          # Retry-loop för concurrent push-konflikter (samma mönster som
-          # stakbrons-golf-feed): feeden är ren output från Kambi + Elo,
-          # så det är alltid säkert att regenerera mot färsk remote.
-          for attempt in 1 2 3; do
+          LOOP_END=$(( $(date -u +%s) + 140*60 ))   # kör i ~2 h 20 min
+          PUSHED=0
+
+          regenerate_and_push() {
+            # Synka mot remote först (manuella dispatchar delar concurrency-grupp).
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 scripts/generate.py || { echo "::warning::generate failade"; return; }
             git add data/
             if git diff --staged --quiet; then
-              echo "Inga ändringar — hoppar över push"
-              exit 0
+              echo "Inga ändringar denna gång."
+              return
             fi
-            git commit -m "feed: $(date -u +'%Y-%m-%d %H:%M UTC') auto-uppdatering"
+            git commit -q -m "feed: $(date -u +'%Y-%m-%d %H:%M UTC') auto"
+            for attempt in 1 2 3; do
+              if git push -q; then echo "Push OK (försök $attempt)"; return; fi
+              echo "::warning::Push rejected, synkar (försök $attempt/3)"
+              git fetch -q origin main && git reset -q --hard origin/main
+              python3 scripts/generate.py || return
+              git add data/
+              git diff --staged --quiet && return
+              git commit -q -m "feed: $(date -u +'%Y-%m-%d %H:%M UTC') auto (retry)"
+            done
+            echo "::warning::Kunde inte pusha efter 3 försök — nästa varv tar det."
+          }
 
-            if git push; then
-              echo "Push lyckades på försök $attempt"
-              exit 0
+          maybe_push_notification() {
+            # Skicka morgonpushen EN gång när UTC-timmen är 06 (08:xx svensk),
+            # eller vid manuell dispatch med send_push. Kräver FCM_SERVICE_ACCOUNT.
+            local hour; hour=$(date -u +%H)
+            if [ "$PUSHED" = "0" ] && { [ "$hour" = "06" ] || [ "${DISPATCH_PUSH}" = "true" ]; }; then
+              if [ -n "${FCM_SERVICE_ACCOUNT:-}" ]; then
+                pip install --quiet google-auth requests || true
+                python3 scripts/send_push.py || echo "::warning::push failade"
+              fi
+              PUSHED=1
             fi
+          }
 
-            echo "::warning::Push rejected, syncar mot remote (försök $attempt/3)"
-            git reset --soft HEAD~1
-            git reset
-            git fetch origin
-            git reset --hard origin/main
-            python3 scripts/generate.py
+          # Första varvet direkt, sedan var 20:e minut tills loopfönstret tar slut.
+          while : ; do
+            regenerate_and_push
+            maybe_push_notification
+            [ $(date -u +%s) -ge $LOOP_END ] && break
+            sleep 1200
           done
-
-          echo "::error::Push misslyckades efter 3 försök"
-          exit 1
+          echo "Heartbeat klar — nästa cron/körning tar vid."
