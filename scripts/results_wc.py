@@ -44,6 +44,15 @@ MATCH_DETAIL_URL = "https://api.football-data.org/v4/matches/%s"
 # detaljanropen så en spelomgångs alla nya matcher hinner hämtas utan 429.
 DETAIL_SLEEP_S = 6.5
 
+# ESPN:s publika VM-API — GRATIS målgörarkälla. football-datas gratisnivå ger
+# slutresultat men INTE goals[] (vem som gjorde mål). ESPN:s match-summary
+# innehåller målgörarna, så vi fyller scorers därifrån när football-data saknar
+# dem. Reservkälla: failar den, lämnas scorers=null (appen rättar manuellt).
+ESPN_SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=%s"
+ESPN_SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=%s"
+ESPN_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) Safari/605.1.15"
+ESPN_SLEEP_S = 1.0
+
 # Samma gruppspels-fixture-ordning som vm2026-facit (omgång 1-3 per grupp).
 # Lagen sorteras fallande på MSS inom gruppen — index nedan pekar i den ordningen.
 ROUNDROBIN = [((0, 3), (1, 2)), ((0, 2), (3, 1)), ((0, 1), (2, 3))]
@@ -183,6 +192,102 @@ def _fetch_detail_entry(token, mid):
     return _entry_from_detail(d, mid)
 
 
+# ---------------------------------------------------------------------------
+# ESPN målgörar-reserv (när football-data saknar goals[])
+# ---------------------------------------------------------------------------
+
+def _espn_scorers_from_summary(summary):
+    """ESPN match-summary → [{name, team, goals}] (anytime-målgörare).
+
+    Räknar varje keyEvent med scoringPlay=True. Exkluderar (som spelbolagen):
+      • straffläggningsmål (shootout=True)
+      • självmål (texten innehåller "own goal")
+    Skytten är participants[0] (efterföljande är assist). Lagnamn mappas till
+    kanoniskt kortnamn via short_of. Vanliga straffar under matchen räknas."""
+    counts, order = {}, []
+    for p in summary.get("keyEvents") or []:
+        if not p.get("scoringPlay"):
+            continue
+        if p.get("shootout"):
+            continue
+        if "own goal" in (p.get("text") or "").lower():
+            continue
+        parts = p.get("participants") or []
+        if not parts:
+            continue
+        name = ((parts[0].get("athlete") or {}).get("displayName") or "").strip()
+        if not name:
+            continue
+        raw_team = (p.get("team") or {}).get("displayName") or ""
+        team = short_of(raw_team) or raw_team or None
+        key = (name, team)
+        if key not in counts:
+            counts[key] = 0
+            order.append(key)
+        counts[key] += 1
+    return [{"name": n, "team": t, "goals": counts[(n, t)]} for (n, t) in order]
+
+
+def _espn_event_key(event):
+    """ESPN-event → frozenset({homeShort, awayShort}) eller None."""
+    comp = (event.get("competitions") or [{}])[0]
+    teams = {}
+    for c in comp.get("competitors") or []:
+        s = short_of(((c.get("team") or {}).get("displayName")) or "")
+        if s:
+            teams[c.get("homeAway")] = s
+    if "home" in teams and "away" in teams:
+        return frozenset((teams["home"], teams["away"]))
+    return None
+
+
+def fill_scorers_from_espn(rows, cache):
+    """Fyll i scorers för resultatposter där de saknas, från ESPN. Muterar
+    rows in-place, cachar per ESPN-event ('espn:<id>'), returnerar antal
+    ifyllda. Helt failsafe: vid fel/ingen träff lämnas scorers=None."""
+    need = [r for r in rows if r.get("scorers") is None and r.get("date")]
+    if not need:
+        return 0
+    by_date = {}
+    for r in need:
+        by_date.setdefault(r["date"].replace("-", ""), []).append(r)
+
+    filled = 0
+    for yyyymmdd, day_rows in by_date.items():
+        try:
+            sb = _fetch(ESPN_SCOREBOARD_URL % yyyymmdd, headers={"User-Agent": ESPN_UA})
+        except Exception as e:
+            print("  ! ESPN scoreboard %s failade: %s" % (yyyymmdd, e), file=sys.stderr)
+            continue
+        ev_by_key = {}
+        for e in sb.get("events") or []:
+            comp = (e.get("competitions") or [{}])[0]
+            if ((comp.get("status") or {}).get("type") or {}).get("state") != "post":
+                continue
+            k = _espn_event_key(e)
+            if k:
+                ev_by_key[k] = str(e.get("id"))
+        for r in day_rows:
+            eid = ev_by_key.get(frozenset((r["home"], r["away"])))
+            if not eid:
+                continue
+            ck = "espn:" + eid
+            entry = cache.get(ck)
+            if entry is None:
+                try:
+                    time.sleep(ESPN_SLEEP_S)
+                    summ = _fetch(ESPN_SUMMARY_URL % eid, headers={"User-Agent": ESPN_UA})
+                    entry = _espn_scorers_from_summary(summ)
+                    cache[ck] = entry          # cachas även om tom (matchen är klar)
+                except Exception as e:
+                    print("  ! ESPN summary %s failade: %s" % (eid, e), file=sys.stderr)
+                    continue
+            if entry:
+                r["scorers"] = entry
+                filled += 1
+    return filled
+
+
 def _score90(score, entry):
     """90-minutersresultatet ur ett football-data score-objekt.
 
@@ -268,6 +373,13 @@ def from_football_data(token):
         return entry
 
     out = _rows_from_payload(data, get_detail)
+    # ESPN-reserv: fyll målgörare där football-data saknar dem (gratisnivån
+    # ger inte goals[]). Failsafe — påverkar inget annat än scorers-fältet.
+    try:
+        if fill_scorers_from_espn(out, cache) > 0:
+            dirty = True
+    except Exception as e:
+        print("  ! ESPN-ifyllning hoppades över: %s" % e, file=sys.stderr)
     if dirty:
         _save_cache(cache)
     return out
@@ -507,7 +619,39 @@ def _selftest():
     nul = build_progress([facit_row])
     assert all(nul[k] == {"qualified": [], "eliminated": []} for k in nul)
 
-    print("SELFTEST OK — förlängning, straffar, scorers och progress beter sig rätt.")
+    # ESPN-målgörarparsern: normalt mål + dubbel + straff (räknas), självmål +
+    # straffläggning (exkluderas). Skytten = participants[0], assist ignoreras.
+    espn = {"keyEvents": [
+        {"scoringPlay": True, "text": "Goal! ...", "team": {"displayName": "Mexico"},
+         "participants": [{"athlete": {"displayName": "Raúl Jiménez"}},
+                          {"athlete": {"displayName": "Assist Spelare"}}]},
+        {"scoringPlay": True, "text": "Penalty Goal", "team": {"displayName": "Mexico"},
+         "participants": [{"athlete": {"displayName": "Raúl Jiménez"}}]},
+        {"scoringPlay": True, "text": "Goal!", "team": {"displayName": "South Africa"},
+         "participants": [{"athlete": {"displayName": "Themba Zwane"}}]},
+        {"scoringPlay": True, "text": "Own goal by someone", "team": {"displayName": "Mexico"},
+         "participants": [{"athlete": {"displayName": "Self Mål"}}]},
+        {"scoringPlay": True, "shootout": True, "text": "Penalty shootout",
+         "team": {"displayName": "Mexico"},
+         "participants": [{"athlete": {"displayName": "Straff Läggare"}}]},
+        {"scoringPlay": False, "text": "Kickoff"},
+    ]}
+    sc = _espn_scorers_from_summary(espn)
+    assert {"name": "Raúl Jiménez", "team": "Mexiko", "goals": 2} in sc, "straff + öppet spel = 2"
+    assert {"name": "Themba Zwane", "team": "Sydafrika", "goals": 1} in sc
+    assert all(s["name"] not in ("Self Mål", "Straff Läggare", "Assist Spelare") for s in sc), \
+        "självmål, straffläggning och assist ska inte räknas som målgörare"
+    assert len(sc) == 2, "exakt två målgörare"
+    # Event-nyckel ur ESPN-scoreboard-format.
+    ev = {"competitions": [{"competitors": [
+        {"homeAway": "home", "team": {"displayName": "Germany"}},
+        {"homeAway": "away", "team": {"displayName": "Curaçao"}}]}]}
+    assert _espn_event_key(ev) == frozenset(("Tyskland", "Curacao"))
+    # fill_scorers_from_espn rör inte poster som redan har scorers eller saknar date.
+    assert fill_scorers_from_espn([{"scorers": [], "date": "2026-06-11"}], {}) == 0
+    assert fill_scorers_from_espn([{"scorers": None, "date": None}], {}) == 0
+
+    print("SELFTEST OK — förlängning, straffar, scorers (inkl. ESPN) och progress beter sig rätt.")
 
 
 if __name__ == "__main__":
