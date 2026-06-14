@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-14T11:32:47Z",
+ "generatedAt": "2026-06-14T11:48:38Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1971,9 +1971,9 @@
      "pHome": 0.266,
      "pDraw": 0.277,
      "pAway": 0.457,
-     "oddsHome": 2.14,
+     "oddsHome": 2.23,
      "oddsDraw": 3.4,
-     "oddsAway": 3.75,
+     "oddsAway": 3.5,
      "lambdaHome": 1.1,
      "lambdaAway": 1.5,
      "mssHome": 40.2,
@@ -2083,7 +2083,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-14T11:32:47Z",
+  "generatedAt": "2026-06-14T11:48:37Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3029,15 +3029,15 @@
     "away": "Panama",
     "homeFlag": "🇬🇭",
     "awayFlag": "🇵🇦",
-    "pHome": 0.3227,
+    "pHome": 0.3172,
     "pDraw": 0.2797,
-    "pAway": 0.3976,
+    "pAway": 0.4031,
     "folketOne": 65,
     "folketX": 22,
     "folketTwo": 13,
-    "oddsOne": 2.14,
+    "oddsOne": 2.23,
     "oddsX": 3.4,
-    "oddsTwo": 3.75
+    "oddsTwo": 3.5
    },
    {
     "n": 3,
@@ -3177,8 +3177,8 @@
     "pDraw": 0.2452,
     "pAway": 0.1681,
     "folketOne": 83,
-    "folketX": 11,
-    "folketTwo": 6,
+    "folketX": 12,
+    "folketTwo": 5,
     "oddsOne": 1.61,
     "oddsX": 4.2,
     "oddsTwo": 6.0
@@ -3230,14 +3230,14 @@
    "winner": "home",
    "scorers": [
     {
+     "goals": 1,
      "name": "Julián Quiñones",
-     "team": "Mexiko",
-     "goals": 1
+     "team": "Mexiko"
     },
     {
+     "goals": 1,
      "name": "Raúl Jiménez",
-     "team": "Mexiko",
-     "goals": 1
+     "team": "Mexiko"
     }
    ]
   },
@@ -3277,9 +3277,9 @@
    "winner": "draw",
    "scorers": [
     {
+     "goals": 1,
      "name": "Breel Embolo",
-     "team": "Schweiz",
-     "goals": 1
+     "team": "Schweiz"
     }
    ]
   },
@@ -3295,14 +3295,14 @@
    "winner": "draw",
    "scorers": [
     {
+     "goals": 1,
      "name": "Ismael Saibari",
-     "team": "Marocko",
-     "goals": 1
+     "team": "Marocko"
     },
     {
+     "goals": 1,
      "name": "Vinícius Júnior",
-     "team": "Brasilien",
-     "goals": 1
+     "team": "Brasilien"
     }
    ]
   },
@@ -3330,14 +3330,14 @@
    "winner": "home",
    "scorers": [
     {
+     "goals": 1,
      "name": "Nestory Irankunda",
-     "team": "Australien",
-     "goals": 1
+     "team": "Australien"
     },
     {
+     "goals": 1,
      "name": "Connor Metcalfe",
-     "team": "Australien",
-     "goals": 1
+     "team": "Australien"
     }
    ]
   }
