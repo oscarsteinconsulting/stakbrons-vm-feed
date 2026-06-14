@@ -26,7 +26,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from wc_data import FLAG_OF, GROUP_OF, stage_for
+from wc_data import FLAG_OF, stage_for
 from wc_model import (MatchModel, build_ratings, devig, shrink,
                       implied_lambda_total, MU_TOTAL, MSS_BLEND, SHRINK_MODEL)
 import kambi_wc

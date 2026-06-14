@@ -25,7 +25,7 @@ import math
 import sys
 import urllib.request
 
-from wc_data import TEAMS, ELO_NAME_OF, SHORT_FROM_ELO, HOSTS, ELO_CODE2SHORT, short_of
+from wc_data import TEAMS, SHORT_FROM_ELO, HOSTS, ELO_CODE2SHORT, short_of
 
 ELO_NOW_URL = "https://www.eloratings.net/World.tsv"
 ELO_MIN, ELO_MAX = 1000.0, 2400.0
