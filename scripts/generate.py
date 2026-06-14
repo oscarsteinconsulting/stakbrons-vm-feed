@@ -515,6 +515,125 @@ def match_info(m, model, mss_map):
     }
 
 
+def load_fixtures():
+    """Fixture-liggaren: {kambiId: {home, away, kickoff, stage}} — ackumulerar
+    alla matcher feeden någonsin listat. Saknad/trasig fil → tom dict."""
+    if os.path.exists(FIXTURES_PATH):
+        try:
+            with open(FIXTURES_PATH, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def _iso_date(s):
+    try:
+        return datetime.date.fromisoformat((s or "")[:10])
+    except ValueError:
+        return None
+
+
+def normalize_results_orientation(results, fixtures, matches):
+    """Vänder ett resultats home/away (och ställning, halvtid, winner) så att det
+    matchar fixturens/Kambis lagordning. Resultatkällorna (football-data och
+    facit-reserven) kan lista lagen i omvänd ordning mot Kambi; utan detta hittar
+    varken historiken (`past`) eller appens matchStatus/auto-rättning matchen — de
+    jämför home==home && away==away — och slutställningen skulle visas spegelvänd.
+
+    Orienteringen avgörs PER MATCHINSTANS, inte per oordnat lagpar: samma lagpar
+    kan mötas två gånger i ett VM (gruppspel A–B, sedan slutspel B–A) och Kambi
+    kan då sätta hemma/borta olika. Vi samlar alla kandidat-orienteringar för
+    paret (med datum) och väljer den vars avspark ligger närmast resultatets
+    datum. Saknar resultatet datum (facit-reserven) används parets orientering
+    bara om ALLA kandidater är eniga — annars lämnas resultatet orört (hellre
+    oförändrat än spegelvänt). Idempotent: redan rättvända resultat rörs inte."""
+    cands = {}  # frozenset({home, away}) -> [(date_prefix, home, away), ...]
+
+    def add(home, away, kickoff):
+        if home and away:
+            cands.setdefault(frozenset((home, away)), []).append(
+                ((kickoff or "")[:10], home, away))
+
+    for m in matches:
+        add(m.get("home"), m.get("away"), m.get("kickoff"))
+    for fx in fixtures.values():
+        add(fx.get("home"), fx.get("away"), fx.get("kickoff"))
+
+    def canon_for(home, away, rdate):
+        opts = cands.get(frozenset((home, away)))
+        if not opts:
+            return None
+        rd = _iso_date(rdate)
+        dated = [o for o in opts if _iso_date(o[0])]
+        if rd and dated:
+            best = min(dated, key=lambda o: abs((_iso_date(o[0]) - rd).days))
+            return (best[1], best[2])
+        # Utan datum: bara entydig orientering används; tvetydigt -> rör inte.
+        orients = {(o[1], o[2]) for o in opts}
+        return next(iter(orients)) if len(orients) == 1 else None
+
+    for r in results:
+        canon = canon_for(r.get("home"), r.get("away"), r.get("date"))
+        if canon and canon == (r.get("away"), r.get("home")):
+            r["home"], r["away"] = r["away"], r["home"]
+            r["scoreHome"], r["scoreAway"] = r.get("scoreAway"), r.get("scoreHome")
+            if r.get("htHome") is not None and r.get("htAway") is not None:
+                r["htHome"], r["htAway"] = r.get("htAway"), r.get("htHome")
+            if r.get("winner") == "home":
+                r["winner"] = "away"
+            elif r.get("winner") == "away":
+                r["winner"] = "home"
+    return results
+
+
+def build_past(fixtures, results, ratings, mss_map, today_local, exclude=None):
+    """Spelade matcher (matchdag <= idag som har ett resultat), grupperade per
+    dag, äldst först. Samma kortform som match_info så appen renderar identiska
+    matchkort; odds = null (Kambi har släppt spelade matcher) och slutställningen
+    kommer ur feedens `results` via appens matchStatus. Modellens 1X2 räknas om
+    ur lagstyrkorna för överblick. `exclude` (frozenset av {home, away}) hoppar
+    över dagens ÄNNU OSPELADE matcher som redan ligger i `day`-sektionen — dagens
+    REDAN spelade matcher tas med (date == idag) så appen kan slå ihop dem i
+    Idag-sektionen i stället för att de blir osynliga tills nästa matchdag."""
+    exclude = exclude or set()
+
+    def has_result(home, away, ko):
+        d = (ko or "")[:10]
+        for r in results:
+            if r.get("home") != home or r.get("away") != away:
+                continue
+            rd = (r.get("date") or "")[:10]
+            if not rd or not d:
+                return True
+            try:
+                if abs((datetime.date.fromisoformat(rd)
+                        - datetime.date.fromisoformat(d)).days) <= 2:
+                    return True
+            except ValueError:
+                return True
+        return False
+
+    by_day = {}
+    for kid, fx in fixtures.items():
+        ko = fx.get("kickoff")
+        md = stockholm_matchday(parse_kickoff(ko)) if ko else None
+        if md is None or md > today_local:
+            continue
+        if frozenset((fx.get("home"), fx.get("away"))) in exclude:
+            continue
+        if not has_result(fx.get("home"), fx.get("away"), ko):
+            continue
+        m = {"kambiId": kid, "kickoff": ko, "home": fx["home"], "away": fx["away"]}
+        model = MatchModel(fx["home"], fx["away"], ratings)
+        by_day.setdefault(md, []).append(match_info(m, model, mss_map))
+    out = []
+    for d in sorted(by_day):
+        rows = sorted(by_day[d], key=lambda r: r.get("kickoff") or "")
+        out.append({"date": d.isoformat(), "matches": rows})
+    return out
+
+
 def allocate_weights(bets):
     """Normalisera kvarts-Kelly till stakeWeight över de rekommenderade spelen."""
     rec = [b for b in bets if b["value"] in ("Spelvärt", "Chans") and b["kelly"] > 0]
@@ -655,6 +774,19 @@ def main():
     # listor innan slutspelet) så appen kan avkoda den ovillkorligt.
     results, progress = results_wc.fetch_results()
 
+    # Resultaten orienteras till Kambis lagordning (källorna kan lista lagen
+    # omvänt) så historik, matchStatus och auto-rättning hittar matchen och
+    # visar ställningen rättvänd.
+    fixtures = load_fixtures()
+    results = normalize_results_orientation(results, fixtures, matches)
+
+    # Historik: spelade matcher (t.o.m. idag med resultat) ur fixture-liggaren,
+    # så Matcher-vyn kan visa hela turneringen bakåt markerad som FT. Dagens
+    # ännu ospelade matcher (redan i `day`) exkluderas för att undvika dubblett.
+    day_keys = {frozenset((mi["home"], mi["away"])) for mi in day_matches}
+    past = build_past(fixtures, results, ratings, mss_map, today_local,
+                      exclude=day_keys)
+
     # --- Turneringssektionen (scripts/tournament.py — Monte Carlo-simulering,
     #     ägs av separat modul). Failsafe: feeden ska genereras även om
     #     tournament.py saknas eller simuleringen failar. ---
@@ -702,6 +834,7 @@ def main():
             "categories": categories,
         },
         "upcoming": upcoming,
+        "past": past,
         "tournament": tour,
         "vmtipset": vmt,
         "results": results,
@@ -716,14 +849,8 @@ def main():
     with open(os.path.join(DAYS_DIR, "%s.json" % date_str), "w", encoding="utf-8") as f:
         json.dump(feed, f, ensure_ascii=False, indent=1)
 
-    # Fixture-liggare: ackumulera alla listade matcher (för historik/analys)
-    fixtures = {}
-    if os.path.exists(FIXTURES_PATH):
-        try:
-            with open(FIXTURES_PATH, encoding="utf-8") as f:
-                fixtures = json.load(f)
-        except Exception:
-            fixtures = {}
+    # Fixture-liggare: uppdatera den redan inlästa liggaren med dagens/kommande
+    # matcher (för historik/analys) och spara.
     for m in matches:
         fixtures[m["kambiId"]] = {
             "home": m["home"], "away": m["away"], "kickoff": m["kickoff"],
