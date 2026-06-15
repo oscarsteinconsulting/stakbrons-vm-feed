@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-15T23:42:13Z",
+ "generatedAt": "2026-06-15T23:59:04Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -772,7 +772,7 @@
     "icon": "🟨",
     "bets": [
      {
-      "id": "2026-06-15-1025862161-kort-över-4-5-kort",
+      "id": "2026-06-15-1025862161-kort-över-3-5-kort",
       "matchId": "1025862161",
       "match": "Iran – Nya Zeeland",
       "homeFlag": "🇮🇷",
@@ -780,12 +780,12 @@
       "kickoff": "2026-06-16T01:00:00Z",
       "categoryKey": "kort",
       "category": "Kort",
-      "selection": "Över 4.5 kort",
+      "selection": "Över 3.5 kort",
       "detail": "Totalt antal kort i matchen",
-      "odds": 2.33,
-      "modelProb": 0.3948,
-      "marketProb": 0.3948,
-      "edge": -0.0801,
+      "odds": 1.87,
+      "modelProb": 0.4918,
+      "marketProb": 0.4918,
+      "edge": -0.0802,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -793,11 +793,11 @@
       "rationale": "Marknadsprissatt — modellen har ingen kortmodell; visas för överblick. Rättas manuellt.",
       "settleMarket": "CARDS",
       "settlePick": "over",
-      "settleLine": 4.5,
+      "settleLine": 3.5,
       "settlePlayer": null
      },
      {
-      "id": "2026-06-15-1025862161-kort-under-4-5-kort",
+      "id": "2026-06-15-1025862161-kort-under-3-5-kort",
       "matchId": "1025862161",
       "match": "Iran – Nya Zeeland",
       "homeFlag": "🇮🇷",
@@ -805,12 +805,12 @@
       "kickoff": "2026-06-16T01:00:00Z",
       "categoryKey": "kort",
       "category": "Kort",
-      "selection": "Under 4.5 kort",
+      "selection": "Under 3.5 kort",
       "detail": "Totalt antal kort i matchen",
-      "odds": 1.52,
-      "modelProb": 0.6052,
-      "marketProb": 0.6052,
-      "edge": -0.0801,
+      "odds": 1.81,
+      "modelProb": 0.5082,
+      "marketProb": 0.5082,
+      "edge": -0.0802,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -818,7 +818,7 @@
       "rationale": "Marknadsprissatt — modellen har ingen kortmodell; visas för överblick. Rättas manuellt.",
       "settleMarket": "CARDS",
       "settlePick": "under",
-      "settleLine": 4.5,
+      "settleLine": 3.5,
       "settlePlayer": null
      }
     ]
@@ -841,9 +841,9 @@
      "pHome": 0.54,
      "pDraw": 0.261,
      "pAway": 0.199,
-     "oddsHome": 1.46,
+     "oddsHome": 1.45,
      "oddsDraw": 4.5,
-     "oddsAway": 8.0,
+     "oddsAway": 8.5,
      "lambdaHome": 1.67,
      "lambdaAway": 0.93,
      "mssHome": 83.9,
@@ -1495,7 +1495,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-15T23:42:13Z",
+  "generatedAt": "2026-06-15T23:59:04Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2444,9 +2444,9 @@
     "pHome": 0.3196,
     "pDraw": 0.2792,
     "pAway": 0.4012,
-    "folketOne": 64,
+    "folketOne": 63,
     "folketX": 23,
-    "folketTwo": 13,
+    "folketTwo": 14,
     "oddsOne": 2.2,
     "oddsX": 3.45,
     "oddsTwo": 3.65
