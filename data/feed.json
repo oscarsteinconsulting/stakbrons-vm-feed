@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-15T20:03:36Z",
+ "generatedAt": "2026-06-15T20:20:23Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1103,7 +1103,7 @@
       "settlePlayer": "Darwin Núñez"
      },
      {
-      "id": "2026-06-15-1025862177-spelarspecial-nicolás-de-la-cruz-över-0-5-skott-på-mål",
+      "id": "2026-06-15-1025862177-spelarspecial-federico-viñas-över-0-5-skott-på-mål",
       "matchId": "1025862177",
       "match": "Saudiarabien – Uruguay",
       "homeFlag": "🇸🇦",
@@ -1111,7 +1111,7 @@
       "kickoff": "2026-06-15T22:00:00Z",
       "categoryKey": "spelarspecial",
       "category": "Spelarspecial",
-      "selection": "Nicolás de la Cruz över 0.5 skott på mål",
+      "selection": "Federico Viñas över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
       "odds": 1.6,
       "modelProb": 0.5929,
@@ -1125,7 +1125,7 @@
       "settleMarket": "PLAYER",
       "settlePick": "shots",
       "settleLine": 0.5,
-      "settlePlayer": "Nicolás de la Cruz"
+      "settlePlayer": "Federico Viñas"
      }
     ]
    },
@@ -1331,9 +1331,9 @@
      "pHome": 0.115,
      "pDraw": 0.223,
      "pAway": 0.663,
-     "oddsHome": 20.0,
-     "oddsDraw": 8.0,
-     "oddsAway": 1.17,
+     "oddsHome": 18.0,
+     "oddsDraw": 7.5,
+     "oddsAway": 1.2,
      "lambdaHome": 0.68,
      "lambdaAway": 1.92,
      "mssHome": 28.8,
@@ -1945,7 +1945,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-15T20:03:36Z",
+  "generatedAt": "2026-06-15T20:20:22Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2943,8 +2943,8 @@
     "pDraw": 0.1937,
     "pAway": 0.0881,
     "folketOne": 82,
-    "folketX": 13,
-    "folketTwo": 5,
+    "folketX": 12,
+    "folketTwo": 6,
     "oddsOne": 1.26,
     "oddsX": 6.25,
     "oddsTwo": 14.0
