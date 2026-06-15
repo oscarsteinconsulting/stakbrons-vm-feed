@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-15T08:23:11Z",
+ "generatedAt": "2026-06-15T08:44:47Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1585,15 +1585,15 @@
       "category": "Hörnor",
       "selection": "Över 8.5 hörnor",
       "detail": "Totalt antal hörnor i matchen",
-      "odds": 1.81,
-      "modelProb": 0.5323,
-      "marketProb": 0.5134,
-      "edge": -0.0366,
+      "odds": 1.78,
+      "modelProb": 0.5416,
+      "marketProb": 0.5228,
+      "edge": -0.0359,
       "value": "Neutralt",
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.02 från målförväntan: över 8.5 hörnor 53% mot prisade 51%. Rättas manuellt.",
+      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.02 från målförväntan: över 8.5 hörnor 54% mot prisade 52%. Rättas manuellt.",
       "settleMarket": "CORNERS",
       "settlePick": "over",
       "settleLine": 8.5,
@@ -2322,6 +2322,26 @@
      "mssAway": 59.7
     },
     {
+     "id": "1025862135",
+     "kickoff": "2026-06-14T23:00:00Z",
+     "stage": "Grupp E",
+     "home": "Elfenbenskusten",
+     "away": "Ecuador",
+     "homeFlag": "🇨🇮",
+     "awayFlag": "🇪🇨",
+     "channel": "TV4",
+     "pHome": 0.208,
+     "pDraw": 0.264,
+     "pAway": 0.528,
+     "oddsHome": null,
+     "oddsDraw": null,
+     "oddsAway": null,
+     "lambdaHome": 0.95,
+     "lambdaAway": 1.65,
+     "mssHome": 54.8,
+     "mssAway": 60.6
+    },
+    {
      "id": "1027164902",
      "kickoff": "2026-06-15T02:00:00Z",
      "stage": "Grupp F",
@@ -2345,7 +2365,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-15T08:23:10Z",
+  "generatedAt": "2026-06-15T08:44:47Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3704,6 +3724,24 @@
      "goals": 1,
      "name": "Daichi Kamada",
      "team": "Japan"
+    }
+   ]
+  },
+  {
+   "date": "2026-06-14",
+   "home": "Elfenbenskusten",
+   "away": "Ecuador",
+   "scoreHome": 1,
+   "scoreAway": 0,
+   "htHome": 0,
+   "htAway": 0,
+   "duration": "REGULAR",
+   "winner": "home",
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Amad Diallo",
+     "team": "Elfenbenskusten"
     }
    ]
   },
