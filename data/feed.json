@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-15T11:59:12Z",
+ "generatedAt": "2026-06-15T12:14:35Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1503,10 +1503,10 @@
       "category": "Spelarspecial",
       "selection": "Romelu Lukaku över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
-      "odds": 1.27,
-      "modelProb": 0.7368,
+      "odds": 1.24,
+      "modelProb": 0.7547,
       "marketProb": null,
-      "edge": -0.0643,
+      "edge": -0.0642,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -1776,8 +1776,8 @@
      "pHome": 0.542,
      "pDraw": 0.261,
      "pAway": 0.198,
-     "oddsHome": 1.48,
-     "oddsDraw": 4.4,
+     "oddsHome": 1.47,
+     "oddsDraw": 4.5,
      "oddsAway": 8.0,
      "lambdaHome": 1.68,
      "lambdaAway": 0.92,
@@ -2325,7 +2325,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-15T11:59:12Z",
+  "generatedAt": "2026-06-15T12:14:34Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3399,15 +3399,15 @@
     "away": "Sverige",
     "homeFlag": "🇳🇱",
     "awayFlag": "🇸🇪",
-    "pHome": 0.5259,
-    "pDraw": 0.2617,
-    "pAway": 0.2124,
+    "pHome": 0.527,
+    "pDraw": 0.2612,
+    "pAway": 0.2117,
     "folketOne": 50,
     "folketX": 28,
     "folketTwo": 22,
     "oddsOne": 1.7,
-    "oddsX": 3.95,
-    "oddsTwo": 5.3
+    "oddsX": 4.0,
+    "oddsTwo": 5.4
    },
    {
     "n": 11,
