@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-15T12:47:55Z",
+ "generatedAt": "2026-06-15T13:04:36Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1525,31 +1525,6 @@
     "icon": "🚩",
     "bets": [
      {
-      "id": "2026-06-15-1025862165-hornor-under-9-5-hörnor",
-      "matchId": "1025862165",
-      "match": "Spanien – Kap Verde",
-      "homeFlag": "🇪🇸",
-      "awayFlag": "🇨🇻",
-      "kickoff": "2026-06-15T16:00:00Z",
-      "categoryKey": "hornor",
-      "category": "Hörnor",
-      "selection": "Under 9.5 hörnor",
-      "detail": "Totalt antal hörnor i matchen",
-      "odds": 1.88,
-      "modelProb": 0.5961,
-      "marketProb": 0.4946,
-      "edge": 0.1207,
-      "value": "Spelvärt",
-      "kelly": 0.0343,
-      "stakeWeight": 0.0,
-      "confidence": 3,
-      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×0.92 från målförväntan: under 9.5 hörnor 60% mot prisade 49%. Rättas manuellt.",
-      "settleMarket": "CORNERS",
-      "settlePick": "under",
-      "settleLine": 9.5,
-      "settlePlayer": null
-     },
-     {
       "id": "2026-06-15-1025862161-hornor-över-8-5-hörnor",
       "matchId": "1025862161",
       "match": "Iran – Nya Zeeland",
@@ -1572,6 +1547,31 @@
       "settleMarket": "CORNERS",
       "settlePick": "over",
       "settleLine": 8.5,
+      "settlePlayer": null
+     },
+     {
+      "id": "2026-06-15-1025862165-hornor-under-9-5-hörnor",
+      "matchId": "1025862165",
+      "match": "Spanien – Kap Verde",
+      "homeFlag": "🇪🇸",
+      "awayFlag": "🇨🇻",
+      "kickoff": "2026-06-15T16:00:00Z",
+      "categoryKey": "hornor",
+      "category": "Hörnor",
+      "selection": "Under 9.5 hörnor",
+      "detail": "Totalt antal hörnor i matchen",
+      "odds": 1.78,
+      "modelProb": 0.6225,
+      "marketProb": 0.5228,
+      "edge": 0.1081,
+      "value": "Spelvärt",
+      "kelly": 0.03464,
+      "stakeWeight": 0.0,
+      "confidence": 2,
+      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×0.92 från målförväntan: under 9.5 hörnor 62% mot prisade 52%. Rättas manuellt.",
+      "settleMarket": "CORNERS",
+      "settlePick": "under",
+      "settleLine": 9.5,
       "settlePlayer": null
      },
      {
@@ -1816,7 +1816,7 @@
      "pHome": 0.664,
      "pDraw": 0.222,
      "pAway": 0.114,
-     "oddsHome": 1.41,
+     "oddsHome": 1.42,
      "oddsDraw": 4.8,
      "oddsAway": 9.5,
      "lambdaHome": 1.93,
@@ -1861,8 +1861,8 @@
      "pHome": 0.675,
      "pDraw": 0.218,
      "pAway": 0.107,
-     "oddsHome": 1.28,
-     "oddsDraw": 6.0,
+     "oddsHome": 1.29,
+     "oddsDraw": 5.8,
      "oddsAway": 12.5,
      "lambdaHome": 1.95,
      "lambdaAway": 0.65,
@@ -2365,7 +2365,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-15T12:47:55Z",
+  "generatedAt": "2026-06-15T13:04:35Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3439,15 +3439,15 @@
     "away": "Sverige",
     "homeFlag": "🇳🇱",
     "awayFlag": "🇸🇪",
-    "pHome": 0.527,
-    "pDraw": 0.2612,
-    "pAway": 0.2117,
+    "pHome": 0.5259,
+    "pDraw": 0.2617,
+    "pAway": 0.2124,
     "folketOne": 50,
     "folketX": 28,
     "folketTwo": 22,
     "oddsOne": 1.7,
-    "oddsX": 4.0,
-    "oddsTwo": 5.4
+    "oddsX": 3.95,
+    "oddsTwo": 5.3
    },
    {
     "n": 11,
