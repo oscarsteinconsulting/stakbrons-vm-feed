@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-15T21:28:14Z",
+ "generatedAt": "2026-06-15T21:45:09Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1088,10 +1088,10 @@
       "category": "Spelarspecial",
       "selection": "Darwin Núñez över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
-      "odds": 1.27,
-      "modelProb": 0.7525,
+      "odds": 1.26,
+      "modelProb": 0.7585,
       "marketProb": null,
-      "edge": -0.0444,
+      "edge": -0.0443,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -1113,10 +1113,10 @@
       "category": "Spelarspecial",
       "selection": "Federico Viñas över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
-      "odds": 1.58,
-      "modelProb": 0.6041,
+      "odds": 1.56,
+      "modelProb": 0.6119,
       "marketProb": null,
-      "edge": -0.0456,
+      "edge": -0.0455,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -1311,7 +1311,7 @@
      "pHome": 0.54,
      "pDraw": 0.261,
      "pAway": 0.199,
-     "oddsHome": 1.46,
+     "oddsHome": 1.47,
      "oddsDraw": 4.5,
      "oddsAway": 8.0,
      "lambdaHome": 1.67,
@@ -1945,7 +1945,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-15T21:28:14Z",
+  "generatedAt": "2026-06-15T21:45:08Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
