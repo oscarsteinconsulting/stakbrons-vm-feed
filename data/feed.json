@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-15T00:34:31Z",
+ "generatedAt": "2026-06-15T00:55:50Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -491,9 +491,9 @@
       "selection": "Resultat 1-1",
       "detail": "Slutresultat efter full tid",
       "odds": 6.4,
-      "modelProb": 0.1219,
-      "marketProb": 0.1106,
-      "edge": -0.2202,
+      "modelProb": 0.122,
+      "marketProb": 0.1111,
+      "edge": -0.2189,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -505,7 +505,7 @@
       "settlePlayer": null
      },
      {
-      "id": "2026-06-14-1027164902-korrekt_resultat-resultat-1-2",
+      "id": "2026-06-14-1027164902-korrekt_resultat-resultat-0-0",
       "matchId": "1027164902",
       "match": "Sverige – Tunisien",
       "homeFlag": "🇸🇪",
@@ -513,19 +513,19 @@
       "kickoff": "2026-06-15T02:00:00Z",
       "categoryKey": "korrekt_resultat",
       "category": "Korrekt resultat",
-      "selection": "Resultat 1-2",
+      "selection": "Resultat 0-0",
       "detail": "Slutresultat efter full tid",
-      "odds": 13.0,
-      "modelProb": 0.0576,
-      "marketProb": 0.0545,
-      "edge": -0.251,
+      "odds": 10.0,
+      "modelProb": 0.0762,
+      "marketProb": 0.0711,
+      "edge": -0.2378,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Rutnätet ger 1-2 5.8% mot marknadens 5.4% (hela resultatmarknaden avvigad gemensamt).",
+      "rationale": "Rutnätet ger 0-0 7.6% mot marknadens 7.1% (hela resultatmarknaden avvigad gemensamt).",
       "settleMarket": "CS",
-      "settlePick": "1-2",
+      "settlePick": "0-0",
       "settleLine": null,
       "settlePlayer": null
      }
@@ -1410,7 +1410,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-15T00:34:30Z",
+  "generatedAt": "2026-06-15T00:55:49Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
