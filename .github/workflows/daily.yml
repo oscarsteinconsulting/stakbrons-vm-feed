@@ -1,30 +1,25 @@
-name: Generate Stakbrons VM Feed
+name: Generate Stakbrons VM Feed (reserv)
 
-# HEARTBEAT-MODELL. GitHubs schemalagda cron är "best effort" och droppar ofta
-# körningar (särskilt nattetid) — att bara lista många cron-rader räcker inte.
-# Lösning: varje körning är en LOOP som regenererar feeden var 20:e minut i upp
-# till ~2,5 h. Cron var 2:a timme startar om loopen, och `cancel-in-progress`
-# låter den nya körningen sömlöst ta över. Då räcker det att cron lyckas fyra
-# NÅGON gång varannan timme — en missad slot täcks av den redan löpande loopen,
-# som fortsätter sina 2,5 h. Publikt repo = obegränsade Actions-minuter.
+# PRIMÄR backend är Mac mini-servern: launchd kör scripts/generate.py var 15:e
+# minut och pushar feeden hit (se server/SETUP.md). En riktig launchd-cron stryps
+# INTE som GitHubs schemalagda workflows (som droppade ~8 h i sträck nattetid och
+# frös feeden). Den här workflowen är därför bara en RESERV:
+#   - Den kollar hur gammal data/feed.json är. Är den FÄRSK (< 30 min) lever minin
+#     och reserven gör ingenting (ingen dubbel-push, inget brus).
+#   - Är den GAMMAL (minin nere/offline) regenererar och pushar reserven själv.
+# GitHub-cron är best-effort (kan droppas nattetid), så reserven garanterar inget
+# på egen hand — den fångar bara upp när minin är nere på dagtid. Morgonpushen
+# deduppas mot minin via en commitad datummarkör (data/.last_morning_push).
 
 on:
   schedule:
-    # Tider i UTC (svensk sommartid = UTC+2). Udda minuter (xx:00 droppas oftast).
-    - cron: '11 0 * * *'
-    - cron: '13 2 * * *'
-    - cron: '12 4 * * *'
-    - cron: '7 6 * * *'      # ~08:xx svensk — morgonrapporten skickar push i loopen
-    - cron: '23 8 * * *'
-    - cron: '23 10 * * *'
-    - cron: '37 12 * * *'
-    - cron: '37 14 * * *'
-    - cron: '23 16 * * *'
-    - cron: '23 18 * * *'
-    - cron: '37 20 * * *'
-    - cron: '37 22 * * *'
+    - cron: '17 * * * *'      # varje timme (best-effort reserv)
   workflow_dispatch:
     inputs:
+      force:
+        description: 'Regenerera även om feeden är färsk'
+        type: boolean
+        default: false
       send_push:
         description: 'Skicka push-notis efter genereringen'
         type: boolean
@@ -35,75 +30,64 @@ permissions:
 
 concurrency:
   group: vm-feed
-  cancel-in-progress: true   # en ny körning tar sömlöst över den löpande loopen
+  cancel-in-progress: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 160      # loopen kör ~2,5 h; gott om marginal under 6h-taket
+    timeout-minutes: 20
 
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Heartbeat — regenerera feeden var 20:e minut i ~2,5 h
+      - name: Reserv — regenerera bara om feeden blivit gammal (minin nere)
         env:
-          # Gratis token från football-data.org — resultaträttning inkl. slutspel.
           FOOTBALLDATA_TOKEN: ${{ secrets.FOOTBALLDATA_TOKEN }}
           FCM_SERVICE_ACCOUNT: ${{ secrets.FCM_SERVICE_ACCOUNT }}
-          # workflow_dispatch med send_push=true → skicka push på första varvet.
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force }}
           DISPATCH_PUSH: ${{ github.event_name == 'workflow_dispatch' && inputs.send_push }}
         run: |
           set -uo pipefail
-          git config user.name  "Stakbrons VM Bot"
+          git config user.name  "Stakbrons VM Bot (reserv)"
           git config user.email "vm-bot@stakbrons.local"
 
-          LOOP_END=$(( $(date -u +%s) + 140*60 ))   # kör i ~2 h 20 min
-          PUSHED=0
+          git fetch -q origin main && git reset -q --hard origin/main
 
-          regenerate_and_push() {
-            # Synka mot remote först (manuella dispatchar delar concurrency-grupp).
-            git fetch -q origin main && git reset -q --hard origin/main
-            python3 scripts/generate.py || { echo "::warning::generate failade"; return; }
+          LAST=$(git log -1 --format=%ct -- data/feed.json 2>/dev/null || echo 0)
+          AGE=$(( $(date -u +%s) - LAST ))
+          if [ "${FORCE}" != "true" ] && [ "${DISPATCH_PUSH}" != "true" ] && [ "$AGE" -lt 1800 ]; then
+            echo "Feeden färsk ($AGE s gammal) — Mac minin lever, reserven vilar."
+            exit 0
+          fi
+          echo "Feeden ${AGE}s gammal (eller forcerad) — reserven genererar."
+
+          regen() {
+            python3 scripts/generate.py || { echo "::error::generate failade"; return 1; }
             git add data/
-            if git diff --staged --quiet; then
-              echo "Inga ändringar denna gång."
-              return
-            fi
-            git commit -q -m "feed: $(date -u +'%Y-%m-%d %H:%M UTC') auto"
-            for attempt in 1 2 3; do
-              if git push -q; then echo "Push OK (försök $attempt)"; return; fi
-              echo "::warning::Push rejected, synkar (försök $attempt/3)"
-              git fetch -q origin main && git reset -q --hard origin/main
-              python3 scripts/generate.py || return
-              git add data/
-              git diff --staged --quiet && return
-              git commit -q -m "feed: $(date -u +'%Y-%m-%d %H:%M UTC') auto (retry)"
-            done
-            echo "::warning::Kunde inte pusha efter 3 försök — nästa varv tar det."
+            git diff --staged --quiet && { echo "Inga ändringar."; return 0; }
+            git commit -q -m "feed: $(date -u +'%Y-%m-%d %H:%M UTC') auto (reserv)"
           }
-
-          maybe_push_notification() {
-            # Skicka morgonpushen EN gång när UTC-timmen är 06 (08:xx svensk),
-            # eller vid manuell dispatch med send_push. Kräver FCM_SERVICE_ACCOUNT.
-            local hour; hour=$(date -u +%H)
-            if [ "$PUSHED" = "0" ] && { [ "$hour" = "06" ] || [ "${DISPATCH_PUSH}" = "true" ]; }; then
-              if [ -n "${FCM_SERVICE_ACCOUNT:-}" ]; then
-                pip install --quiet google-auth requests || true
-                python3 scripts/send_push.py || echo "::warning::push failade"
-              fi
-              PUSHED=1
-            fi
-          }
-
-          # Första varvet direkt, sedan var 20:e minut tills loopfönstret tar slut.
-          while : ; do
-            regenerate_and_push
-            maybe_push_notification
-            [ $(date -u +%s) -ge $LOOP_END ] && break
-            sleep 1200
+          regen || exit 1
+          for a in 1 2 3; do
+            git push -q && { echo "push OK ($a)"; break; }
+            echo "::warning::push avvisad, synkar ($a/3)"
+            git fetch -q origin main && git reset -q --hard origin/main
+            regen || exit 1
           done
-          echo "Heartbeat klar — nästa cron/körning tar vid."
+
+          # Morgonpush 06 UTC (08 svensk), deduppad mot minin via commitad markör.
+          HOUR=$(date -u +%H); TODAY=$(date -u +%F); MARK="data/.last_morning_push"
+          if [ -n "${FCM_SERVICE_ACCOUNT:-}" ] \
+             && { [ "$HOUR" = "06" ] || [ "${DISPATCH_PUSH}" = "true" ]; } \
+             && { [ "${DISPATCH_PUSH}" = "true" ] || [ ! -f "$MARK" ] || [ "$(cat "$MARK" 2>/dev/null)" != "$TODAY" ]; }; then
+            pip install --quiet google-auth requests || true
+            if python3 scripts/send_push.py && [ "${DISPATCH_PUSH}" != "true" ]; then
+              echo "$TODAY" > "$MARK"
+              git add "$MARK" && git commit -q -m "feed: morgonpush $TODAY (reserv)" \
+                && git push -q 2>/dev/null || true
+            fi
+          fi
+          echo "Reserv klar."

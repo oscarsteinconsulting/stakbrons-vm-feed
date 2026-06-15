@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Mac mini-serverns hemligheter och loggar — ska ALDRIG committas.
+server/.env
+server/fcm_service_account.json
+server/run_feed.log
+server/*.lock
