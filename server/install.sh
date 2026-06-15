@@ -68,10 +68,18 @@ cat > "$PLIST" <<PLIST_EOF
 PLIST_EOF
 echo "▸ Plist skriven."
 
-# 5. Ladda om jobbet.
-launchctl unload "$PLIST" 2>/dev/null || true
-launchctl load -w "$PLIST" && echo "▸ launchd-jobbet laddat (var ${INTERVAL}:e sekund)." \
-  || { echo "FEL: launchctl load misslyckades."; exit 1; }
+# 5. Ladda jobbet i den GRAFISKA sessionen (gui/<uid>) så det funkar även när
+#    install.sh körs över SSH (vanliga `launchctl load` hamnar då i fel domän).
+UID_N="$(id -u)"
+launchctl bootout "gui/$UID_N/$LABEL" 2>/dev/null || true
+if launchctl bootstrap "gui/$UID_N" "$PLIST" 2>/dev/null; then
+  echo "▸ launchd-jobbet laddat i gui/$UID_N (var ${INTERVAL}:e sekund)."
+else
+  launchctl load -w "$PLIST" 2>/dev/null \
+    && echo "▸ launchd-jobbet laddat (load-fallback)." \
+    || { echo "FEL: kunde inte ladda launchd-jobbet."; exit 1; }
+fi
+launchctl enable "gui/$UID_N/$LABEL" 2>/dev/null || true
 
 # 6. Kör en gång direkt som röktest.
 echo; echo "▸ Testkörning…"
