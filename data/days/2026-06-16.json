@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-16T20:13:10Z",
+ "generatedAt": "2026-06-16T20:30:33Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1612,26 +1612,6 @@
    "date": "2026-06-12",
    "matches": [
     {
-     "id": "1027164909",
-     "kickoff": "2026-06-12T19:00:00Z",
-     "stage": "Grupp B",
-     "home": "Kanada",
-     "away": "Bosnien",
-     "homeFlag": "🇨🇦",
-     "awayFlag": "🇧🇦",
-     "channel": "SVT",
-     "pHome": 0.54,
-     "pDraw": 0.261,
-     "pAway": 0.199,
-     "oddsHome": null,
-     "oddsDraw": null,
-     "oddsAway": null,
-     "lambdaHome": 1.67,
-     "lambdaAway": 0.93,
-     "mssHome": 51.5,
-     "mssAway": 39.8
-    },
-    {
      "id": "1025862118",
      "kickoff": "2026-06-13T01:00:00Z",
      "stage": "Grupp D",
@@ -1935,7 +1915,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-16T20:13:10Z",
+  "generatedAt": "2026-06-16T20:30:33Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -1952,9 +1932,9 @@
     "odds": 11.0,
     "modelProb": 0.1236,
     "marketProb": 0.0733,
-    "edge": 0.3598,
+    "edge": 0.3597,
     "value": "Chans",
-    "kelly": 0.009,
+    "kelly": 0.00899,
     "stakeWeight": 0.0,
     "confidence": 3,
     "rationale": "Simuleringen (4000 turneringar) ger 17.3% mot marknadens 7.3% (MSS 82). Edge +36.0%.",
@@ -2209,9 +2189,9 @@
       "odds": 11.0,
       "modelProb": 0.1236,
       "marketProb": 0.0733,
-      "edge": 0.3598,
+      "edge": 0.3597,
       "value": "Chans",
-      "kelly": 0.009,
+      "kelly": 0.00899,
       "stakeWeight": 0.0,
       "confidence": 3,
       "rationale": "Simuleringen (4000 turneringar) ger 17.3% mot marknadens 7.3% (MSS 82). Edge +36.0%.",
@@ -2234,7 +2214,7 @@
       "odds": 41.0,
       "modelProb": 0.0246,
       "marketProb": 0.0197,
-      "edge": 0.0094,
+      "edge": 0.0093,
       "value": "Neutralt",
       "kelly": 6e-05,
       "stakeWeight": 0.0,
@@ -2256,15 +2236,15 @@
       "category": "Vinnare",
       "selection": "Spanien vinner VM",
       "detail": "Vinner hela VM 2026",
-      "odds": 5.49,
-      "modelProb": 0.1739,
-      "marketProb": 0.1469,
-      "edge": -0.0455,
+      "odds": 5.5,
+      "modelProb": 0.1737,
+      "marketProb": 0.1466,
+      "edge": -0.0445,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Simuleringen (4000 turneringar) ger 19.8% mot marknadens 14.7% (MSS 86). Edge -4.6%.",
+      "rationale": "Simuleringen (4000 turneringar) ger 19.8% mot marknadens 14.7% (MSS 86). Edge -4.5%.",
       "settleMarket": "OUTRIGHT",
       "settlePick": "vinnare",
       "settleLine": null,
@@ -2309,7 +2289,7 @@
       "odds": 11.0,
       "modelProb": 0.0688,
       "marketProb": 0.0733,
-      "edge": -0.2427,
+      "edge": -0.2428,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -3013,8 +2993,8 @@
     "pDraw": 0.263,
     "pAway": 0.2141,
     "folketOne": 46,
-    "folketX": 29,
-    "folketTwo": 25,
+    "folketX": 30,
+    "folketTwo": 24,
     "oddsOne": 1.73,
     "oddsX": 3.9,
     "oddsTwo": 5.2
@@ -3104,29 +3084,6 @@
    "duration": "REGULAR",
    "winner": "home",
    "scorers": null
-  },
-  {
-   "date": "2026-06-12",
-   "home": "Kanada",
-   "away": "Bosnien",
-   "scoreHome": 1,
-   "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Jovo Lukic",
-     "team": "Bosnien"
-    },
-    {
-     "goals": 1,
-     "name": "Cyle Larin",
-     "team": "Kanada"
-    }
-   ]
   },
   {
    "date": "2026-06-13",
