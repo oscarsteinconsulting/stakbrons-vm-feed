@@ -655,14 +655,18 @@ def allocate_weights(bets):
         b["stakeWeight"] = round(b["kelly"] / total, 4)
 
 
-def build_push(date_local, top_bets, day_matches, next_day):
+def build_push(date_local, top_bets, day_matches, next_day, played_today=False):
     play = [b for b in top_bets if b["value"] in ("Spelvärt", "Chans")]
     months = ["januari", "februari", "mars", "april", "maj", "juni", "juli",
               "augusti", "september", "oktober", "november", "december"]
     nice = "%d %s" % (date_local.day, months[date_local.month - 1])
     if not day_matches:
-        title = "VM-vilodag %s" % nice
-        body = "Inga matcher idag."
+        if played_today:
+            title = "Dagens matcher spelade %s" % nice
+            body = "Alla dagens matcher har spelats. Resultaten finns i appen."
+        else:
+            title = "VM-vilodag %s" % nice
+            body = "Inga matcher idag."
         if next_day:
             body += " Nästa matchdag: %s." % next_day
         return {"title": title, "body": body}
@@ -678,8 +682,15 @@ def build_push(date_local, top_bets, day_matches, next_day):
     return {"title": title, "body": body}
 
 
-def build_headline(date_local, day_matches, top_bets):
+def build_headline(date_local, day_matches, top_bets, played_today=False):
     if not day_matches:
+        # Tom day.matches betyder bara att inga KOMMANDE matcher finns kvar idag.
+        # Hade dagen matcher som redan sparkat igång (played_today) är det ingen
+        # vilodag — undvik den missvisande rubriken (annars står "Vilodag" i det
+        # nattfönster då alla dagens matcher börjat men dygnet ännu inte rullat).
+        if played_today:
+            return ("Dagens matcher är spelade",
+                    "Alla dagens matcher har spelats — resultat och historik finns i appen.")
         return "Vilodag — inga VM-matcher idag", "Vila benen. Statistiken och historiken finns i appen."
     names = ["%s–%s" % (mi["home"], mi["away"]) for mi in day_matches]
     play = [b for b in top_bets if b["value"] in ("Spelvärt", "Chans")]
@@ -821,8 +832,11 @@ def main():
         print("  ! vmtipset-sektionen failade: %s" % e, file=sys.stderr)
         vmt = None
 
-    headline, summary = build_headline(today_local, day_matches, top_bets)
-    push = build_push(today_local, top_bets, day_matches, next_day)
+    # Hade dagens matchdag matcher som redan sparkat igång? (då är tom day.matches
+    # ingen vilodag, bara "alla dagens matcher spelade").
+    played_today = any(d.get("date") == date_str for d in past)
+    headline, summary = build_headline(today_local, day_matches, top_bets, played_today)
+    push = build_push(today_local, top_bets, day_matches, next_day, played_today)
 
     feed = {
         "schemaVersion": 1,
