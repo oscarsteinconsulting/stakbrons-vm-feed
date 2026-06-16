@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-16T22:13:36Z",
+ "generatedAt": "2026-06-16T22:30:48Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1065,8 +1065,8 @@
      "pHome": 0.464,
      "pDraw": 0.276,
      "pAway": 0.26,
-     "oddsHome": 2.1,
-     "oddsDraw": 3.4,
+     "oddsHome": 2.12,
+     "oddsDraw": 3.35,
      "oddsAway": 4.0,
      "lambdaHome": 1.52,
      "lambdaAway": 1.08,
@@ -1534,7 +1534,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-16T22:13:36Z",
+  "generatedAt": "2026-06-16T22:30:47Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2592,14 +2592,14 @@
     "away": "Paraguay",
     "homeFlag": "🇹🇷",
     "awayFlag": "🇵🇾",
-    "pHome": 0.4645,
-    "pDraw": 0.2797,
+    "pHome": 0.4632,
+    "pDraw": 0.281,
     "pAway": 0.2558,
     "folketOne": 59,
     "folketX": 25,
     "folketTwo": 16,
-    "oddsOne": 2.1,
-    "oddsX": 3.4,
+    "oddsOne": 2.12,
+    "oddsX": 3.35,
     "oddsTwo": 4.0
    },
    {
