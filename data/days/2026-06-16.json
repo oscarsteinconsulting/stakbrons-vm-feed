@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-16T13:21:15Z",
+ "generatedAt": "2026-06-16T13:38:24Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -857,8 +857,8 @@
       "detail": "Slutresultat efter full tid",
       "odds": 13.0,
       "modelProb": 0.0659,
-      "marketProb": 0.0542,
-      "edge": -0.1432,
+      "marketProb": 0.0541,
+      "edge": -0.1435,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -883,7 +883,7 @@
       "odds": 8.0,
       "modelProb": 0.1062,
       "marketProb": 0.088,
-      "edge": -0.1501,
+      "edge": -0.1504,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -1283,8 +1283,8 @@
       "category": "Spelarspecial",
       "selection": "Lionel Messi över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
-      "odds": 1.2,
-      "modelProb": 0.7761,
+      "odds": 1.21,
+      "modelProb": 0.7697,
       "marketProb": null,
       "edge": -0.0687,
       "value": "Undvik",
@@ -1308,10 +1308,10 @@
       "category": "Spelarspecial",
       "selection": "Lautaro Martínez över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
-      "odds": 1.4,
-      "modelProb": 0.6647,
+      "odds": 1.42,
+      "modelProb": 0.6553,
       "marketProb": null,
-      "edge": -0.0694,
+      "edge": -0.0695,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -2305,7 +2305,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-16T13:21:15Z",
+  "generatedAt": "2026-06-16T13:38:23Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
