@@ -139,5 +139,22 @@
    "name": "Maxi Araújo",
    "team": "Uruguay"
   }
+ ],
+ "espn:760432": [
+  {
+   "goals": 2,
+   "name": "Kylian Mbappé",
+   "team": "Frankrike"
+  },
+  {
+   "goals": 1,
+   "name": "Bradley Barcola",
+   "team": "Frankrike"
+  },
+  {
+   "goals": 1,
+   "name": "Ibrahim Mbaye",
+   "team": "Senegal"
+  }
  ]
 }
