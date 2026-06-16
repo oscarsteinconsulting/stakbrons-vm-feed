@@ -127,5 +127,17 @@
    "team": "Egypten"
   }
  ],
- "espn:760428": []
+ "espn:760428": [],
+ "espn:760429": [
+  {
+   "goals": 1,
+   "name": "Abdulelah Al-Amri",
+   "team": "Saudiarabien"
+  },
+  {
+   "goals": 1,
+   "name": "Maxi Araújo",
+   "team": "Uruguay"
+  }
+ ]
 }
