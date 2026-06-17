@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-17T03:41:38Z",
+ "generatedAt": "2026-06-17T03:59:02Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -97,7 +97,7 @@
    "matches": [
     {
      "id": "1025862252",
-     "kickoff": "2026-06-17T04:00:00Z",
+     "kickoff": "2026-06-17T04:05:00Z",
      "stage": "Grupp J",
      "home": "Österrike",
      "away": "Jordanien",
@@ -107,9 +107,9 @@
      "pHome": 0.547,
      "pDraw": 0.259,
      "pAway": 0.194,
-     "oddsHome": 1.37,
-     "oddsDraw": 5.2,
-     "oddsAway": 10.5,
+     "oddsHome": 1.38,
+     "oddsDraw": 4.9,
+     "oddsAway": 9.5,
      "lambdaHome": 1.69,
      "lambdaAway": 0.91,
      "mssHome": 57.0,
@@ -167,9 +167,9 @@
      "pHome": 0.265,
      "pDraw": 0.277,
      "pAway": 0.458,
-     "oddsHome": 2.2,
-     "oddsDraw": 3.4,
-     "oddsAway": 3.7,
+     "oddsHome": 2.17,
+     "oddsDraw": 3.35,
+     "oddsAway": 3.75,
      "lambdaHome": 1.09,
      "lambdaAway": 1.51,
      "mssHome": 40.2,
@@ -846,7 +846,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-17T03:41:38Z",
+  "generatedAt": "2026-06-17T03:59:01Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
