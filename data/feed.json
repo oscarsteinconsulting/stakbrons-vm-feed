@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-17T23:10:27Z",
+ "generatedAt": "2026-06-17T23:28:16Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -862,7 +862,7 @@
      "pDraw": 0.25,
      "pAway": 0.168,
      "oddsHome": 1.52,
-     "oddsDraw": 4.3,
+     "oddsDraw": 4.35,
      "oddsAway": 7.0,
      "lambdaHome": 1.76,
      "lambdaAway": 0.84,
@@ -1665,7 +1665,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-17T23:10:26Z",
+  "generatedAt": "2026-06-17T23:28:16Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2630,9 +2630,9 @@
     "pHome": 0.4231,
     "pDraw": 0.2784,
     "pAway": 0.2985,
-    "folketOne": 46,
+    "folketOne": 45,
     "folketX": 30,
-    "folketTwo": 24,
+    "folketTwo": 25,
     "oddsOne": 2.35,
     "oddsX": 3.55,
     "oddsTwo": 3.1
@@ -2659,15 +2659,15 @@
     "away": "Ghana",
     "homeFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     "awayFlag": "🇬🇭",
-    "pHome": 0.7867,
-    "pDraw": 0.1608,
-    "pAway": 0.0526,
-    "folketOne": 83,
-    "folketX": 12,
+    "pHome": 0.7926,
+    "pDraw": 0.1572,
+    "pAway": 0.0501,
+    "folketOne": 84,
+    "folketX": 11,
     "folketTwo": 5,
-    "oddsOne": 1.3,
-    "oddsX": 5.8,
-    "oddsTwo": 12.5
+    "oddsOne": 1.27,
+    "oddsX": 6.25,
+    "oddsTwo": 14.0
    },
    {
     "n": 6,
@@ -2742,8 +2742,8 @@
     "pHome": 0.6884,
     "pDraw": 0.206,
     "pAway": 0.1056,
-    "folketOne": 92,
-    "folketX": 7,
+    "folketOne": 93,
+    "folketX": 6,
     "folketTwo": 1,
     "oddsOne": 1.32,
     "oddsX": 5.5,
@@ -2759,8 +2759,8 @@
     "pDraw": 0.1444,
     "pAway": 0.8018,
     "folketOne": 8,
-    "folketX": 23,
-    "folketTwo": 69,
+    "folketX": 22,
+    "folketTwo": 70,
     "oddsOne": 7.0,
     "oddsX": 4.8,
     "oddsTwo": 1.46
@@ -2774,8 +2774,8 @@
     "pHome": 0.1925,
     "pDraw": 0.2598,
     "pAway": 0.5478,
-    "folketOne": 23,
-    "folketX": 29,
+    "folketOne": 22,
+    "folketX": 30,
     "folketTwo": 48,
     "oddsOne": 4.6,
     "oddsX": 3.6,
