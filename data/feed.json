@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-17T09:32:22Z",
+ "generatedAt": "2026-06-17T09:49:57Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1108,11 +1108,11 @@
       "selection": "Halvtid: X (Oavgjort i halvtid)",
       "detail": "Resultat efter första halvlek",
       "odds": 2.55,
-      "modelProb": 0.399,
-      "marketProb": 0.3627,
-      "edge": 0.0176,
+      "modelProb": 0.3986,
+      "marketProb": 0.3613,
+      "edge": 0.0165,
       "value": "Neutralt",
-      "kelly": 0.00283,
+      "kelly": 0.00266,
       "stakeWeight": 0.0,
       "confidence": 2,
       "rationale": "Första halvlek väntas ge 1.14 mål (44% av matchens 2.60): oavgjort i halvtid 40% mot prisade 36%. Rättas manuellt.",
@@ -1240,14 +1240,14 @@
       "selection": "Halvtid/Fulltid X/X",
       "detail": "Resultat vid halvtid / vid fulltid",
       "odds": 7.5,
-      "modelProb": 0.1266,
-      "marketProb": 0.1058,
-      "edge": -0.0502,
+      "modelProb": 0.1265,
+      "marketProb": 0.1055,
+      "edge": -0.0513,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Halvleksrutnäten (44/56-delning av λ) ger X/X 12.7% mot marknadens 10.6%.",
+      "rationale": "Halvleksrutnäten (44/56-delning av λ) ger X/X 12.6% mot marknadens 10.5%.",
       "settleMarket": "HTFT",
       "settlePick": "X/X",
       "settleLine": null,
@@ -1361,7 +1361,7 @@
       "settlePlayer": "Harry Kane"
      },
      {
-      "id": "2026-06-17-1025862274-malgorare-marcus-rashford-gör-mål",
+      "id": "2026-06-17-1025862274-malgorare-anthony-gordon-gör-mål",
       "matchId": "1025862274",
       "match": "England – Kroatien",
       "homeFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
@@ -1369,7 +1369,7 @@
       "kickoff": "2026-06-17T20:00:00Z",
       "categoryKey": "malgorare",
       "category": "Målgörare",
-      "selection": "Marcus Rashford gör mål",
+      "selection": "Anthony Gordon gör mål",
       "detail": "Målgörare när som helst i matchen",
       "odds": 3.4,
       "modelProb": 0.2774,
@@ -1383,7 +1383,7 @@
       "settleMarket": "PLAYER",
       "settlePick": "scorer",
       "settleLine": null,
-      "settlePlayer": "Marcus Rashford"
+      "settlePlayer": "Anthony Gordon"
      },
      {
       "id": "2026-06-17-1025862266-malgorare-luis-díaz-gör-mål",
@@ -2037,8 +2037,8 @@
      "pDraw": 0.231,
      "pAway": 0.639,
      "oddsHome": 8.0,
-     "oddsDraw": 4.25,
-     "oddsAway": 1.5,
+     "oddsDraw": 4.2,
+     "oddsAway": 1.52,
      "lambdaHome": 0.72,
      "lambdaAway": 1.88,
      "mssHome": 32.1,
@@ -2565,7 +2565,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-17T09:32:22Z",
+  "generatedAt": "2026-06-17T09:49:56Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3531,8 +3531,8 @@
     "pDraw": 0.2621,
     "pAway": 0.2068,
     "folketOne": 68,
-    "folketX": 21,
-    "folketTwo": 11,
+    "folketX": 22,
+    "folketTwo": 10,
     "oddsOne": 1.76,
     "oddsX": 3.8,
     "oddsTwo": 5.0
@@ -3671,15 +3671,15 @@
     "away": "Japan",
     "homeFlag": "🇹🇳",
     "awayFlag": "🇯🇵",
-    "pHome": 0.1271,
-    "pDraw": 0.2306,
-    "pAway": 0.6423,
+    "pHome": 0.1273,
+    "pDraw": 0.2318,
+    "pAway": 0.6409,
     "folketOne": 6,
     "folketX": 15,
     "folketTwo": 79,
     "oddsOne": 8.0,
-    "oddsX": 4.25,
-    "oddsTwo": 1.5
+    "oddsX": 4.2,
+    "oddsTwo": 1.52
    },
    {
     "n": 13,
