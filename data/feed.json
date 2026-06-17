@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-17T06:54:04Z",
+ "generatedAt": "2026-06-17T07:11:38Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1757,20 +1757,20 @@
       "settlePlayer": null
      },
      {
-      "id": "2026-06-17-1027165775-kort-över-2-5-kort",
-      "matchId": "1027165775",
-      "match": "Portugal – DR Kongo",
-      "homeFlag": "🇵🇹",
-      "awayFlag": "🇨🇩",
-      "kickoff": "2026-06-17T17:00:00Z",
+      "id": "2026-06-17-1025862266-kort-över-3-5-kort",
+      "matchId": "1025862266",
+      "match": "Uzbekistan – Colombia",
+      "homeFlag": "🇺🇿",
+      "awayFlag": "🇨🇴",
+      "kickoff": "2026-06-18T02:00:00Z",
       "categoryKey": "kort",
       "category": "Kort",
-      "selection": "Över 2.5 kort",
+      "selection": "Över 3.5 kort",
       "detail": "Totalt antal kort i matchen",
-      "odds": 1.67,
-      "modelProb": 0.5511,
-      "marketProb": 0.5511,
-      "edge": -0.0797,
+      "odds": 2.15,
+      "modelProb": 0.4267,
+      "marketProb": 0.4267,
+      "edge": -0.0827,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -1778,7 +1778,7 @@
       "rationale": "Marknadsprissatt — modellen har ingen kortmodell; visas för överblick. Rättas manuellt.",
       "settleMarket": "CARDS",
       "settlePick": "over",
-      "settleLine": 2.5,
+      "settleLine": 3.5,
       "settlePlayer": null
      }
     ]
@@ -1887,8 +1887,8 @@
      "pDraw": 0.28,
      "pAway": 0.289,
      "oddsHome": 1.64,
-     "oddsDraw": 4.2,
-     "oddsAway": 5.6,
+     "oddsDraw": 4.25,
+     "oddsAway": 5.8,
      "lambdaHome": 1.45,
      "lambdaAway": 1.15,
      "mssHome": 58.3,
@@ -1991,9 +1991,9 @@
      "pHome": 0.55,
      "pDraw": 0.258,
      "pAway": 0.191,
-     "oddsHome": 1.53,
-     "oddsDraw": 4.5,
-     "oddsAway": 6.75,
+     "oddsHome": 1.55,
+     "oddsDraw": 4.4,
+     "oddsAway": 6.4,
      "lambdaHome": 1.69,
      "lambdaAway": 0.91,
      "mssHome": 79.8,
@@ -2565,7 +2565,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-17T06:54:04Z",
+  "generatedAt": "2026-06-17T07:11:38Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3591,15 +3591,15 @@
     "away": "Australien",
     "homeFlag": "🇺🇸",
     "awayFlag": "🇦🇺",
-    "pHome": 0.4798,
-    "pDraw": 0.2657,
-    "pAway": 0.2545,
+    "pHome": 0.4814,
+    "pDraw": 0.2654,
+    "pAway": 0.2531,
     "folketOne": 67,
     "folketX": 22,
     "folketTwo": 11,
     "oddsOne": 1.64,
-    "oddsX": 4.2,
-    "oddsTwo": 5.6
+    "oddsX": 4.25,
+    "oddsTwo": 5.8
    },
    {
     "n": 8,
@@ -3655,15 +3655,15 @@
     "away": "Elfenbenskusten",
     "homeFlag": "🇩🇪",
     "awayFlag": "🇨🇮",
-    "pHome": 0.5768,
-    "pDraw": 0.246,
-    "pAway": 0.1771,
+    "pHome": 0.5735,
+    "pDraw": 0.2472,
+    "pAway": 0.1793,
     "folketOne": 79,
     "folketX": 14,
     "folketTwo": 7,
-    "oddsOne": 1.53,
-    "oddsX": 4.5,
-    "oddsTwo": 6.75
+    "oddsOne": 1.55,
+    "oddsX": 4.4,
+    "oddsTwo": 6.4
    },
    {
     "n": 12,
@@ -3691,8 +3691,8 @@
     "pDraw": 0.2623,
     "pAway": 0.5281,
     "folketOne": 8,
-    "folketX": 21,
-    "folketTwo": 71,
+    "folketX": 20,
+    "folketTwo": 72,
     "oddsOne": 6.25,
     "oddsX": 4.0,
     "oddsTwo": 1.62
