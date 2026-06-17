@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-17T03:06:51Z",
+ "generatedAt": "2026-06-17T03:24:15Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -107,9 +107,9 @@
      "pHome": 0.547,
      "pDraw": 0.259,
      "pAway": 0.194,
-     "oddsHome": 1.4,
-     "oddsDraw": 4.9,
-     "oddsAway": 9.5,
+     "oddsHome": 1.37,
+     "oddsDraw": 5.2,
+     "oddsAway": 10.5,
      "lambdaHome": 1.69,
      "lambdaAway": 0.91,
      "mssHome": 57.0,
@@ -483,26 +483,6 @@
    "date": "2026-06-12",
    "matches": [
     {
-     "id": "1027164909",
-     "kickoff": "2026-06-12T19:00:00Z",
-     "stage": "Grupp B",
-     "home": "Kanada",
-     "away": "Bosnien",
-     "homeFlag": "🇨🇦",
-     "awayFlag": "🇧🇦",
-     "channel": "SVT",
-     "pHome": 0.54,
-     "pDraw": 0.261,
-     "pAway": 0.199,
-     "oddsHome": null,
-     "oddsDraw": null,
-     "oddsAway": null,
-     "lambdaHome": 1.67,
-     "lambdaAway": 0.93,
-     "mssHome": 51.5,
-     "mssAway": 39.8
-    },
-    {
      "id": "1025862118",
      "kickoff": "2026-06-13T01:00:00Z",
      "stage": "Grupp D",
@@ -846,7 +826,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-17T03:06:51Z",
+  "generatedAt": "2026-06-17T03:24:14Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -1923,9 +1903,9 @@
     "pHome": 0.522,
     "pDraw": 0.2639,
     "pAway": 0.2141,
-    "folketOne": 46,
+    "folketOne": 45,
     "folketX": 30,
-    "folketTwo": 24,
+    "folketTwo": 25,
     "oddsOne": 1.74,
     "oddsX": 3.85,
     "oddsTwo": 5.2
@@ -2015,29 +1995,6 @@
    "duration": "REGULAR",
    "winner": "home",
    "scorers": null
-  },
-  {
-   "date": "2026-06-12",
-   "home": "Kanada",
-   "away": "Bosnien",
-   "scoreHome": 1,
-   "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Jovo Lukic",
-     "team": "Bosnien"
-    },
-    {
-     "goals": 1,
-     "name": "Cyle Larin",
-     "team": "Kanada"
-    }
-   ]
   },
   {
    "date": "2026-06-13",
@@ -2358,6 +2315,18 @@
      "team": "Norge"
     }
    ]
+  },
+  {
+   "date": "2026-06-17",
+   "home": "Argentina",
+   "away": "Algeriet",
+   "scoreHome": 3,
+   "scoreAway": 0,
+   "htHome": 1,
+   "htAway": 0,
+   "duration": "REGULAR",
+   "winner": "home",
+   "scorers": null
   }
  ],
  "progress": {
