@@ -202,5 +202,32 @@
    "name": "Yoane Wissa",
    "team": "DR Kongo"
   }
+ ],
+ "espn:760437": [
+  {
+   "goals": 2,
+   "name": "Harry Kane",
+   "team": "England"
+  },
+  {
+   "goals": 1,
+   "name": "Martin Baturina",
+   "team": "Kroatien"
+  },
+  {
+   "goals": 1,
+   "name": "Petar Musa",
+   "team": "Kroatien"
+  },
+  {
+   "goals": 1,
+   "name": "Jude Bellingham",
+   "team": "England"
+  },
+  {
+   "goals": 1,
+   "name": "Marcus Rashford",
+   "team": "England"
+  }
  ]
 }
