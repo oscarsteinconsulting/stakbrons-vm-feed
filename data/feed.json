@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-18T11:38:32Z",
+ "generatedAt": "2026-06-18T11:56:39Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1396,15 +1396,15 @@
       "category": "Målgörare",
       "selection": "Breel Embolo gör mål",
       "detail": "Målgörare när som helst i matchen",
-      "odds": 2.25,
-      "modelProb": 0.4045,
+      "odds": 2.15,
+      "modelProb": 0.4235,
       "marketProb": null,
-      "edge": -0.0898,
+      "edge": -0.0894,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Modellen väntar 2.60 mål mot marknadens 2.62. Avvigat pris 41% → justerat 40%.",
+      "rationale": "Modellen väntar 2.60 mål mot marknadens 2.62. Avvigat pris 43% → justerat 42%.",
       "settleMarket": "PLAYER",
       "settlePick": "scorer",
       "settleLine": null,
@@ -1528,10 +1528,10 @@
       "category": "Spelarspecial",
       "selection": "Breel Embolo över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
-      "odds": 1.29,
-      "modelProb": 0.7246,
+      "odds": 1.28,
+      "modelProb": 0.7303,
       "marketProb": null,
-      "edge": -0.0653,
+      "edge": -0.0652,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -1886,9 +1886,9 @@
      "pHome": 0.506,
      "pDraw": 0.269,
      "pAway": 0.226,
-     "oddsHome": 1.73,
+     "oddsHome": 1.68,
      "oddsDraw": 4.1,
-     "oddsAway": 4.9,
+     "oddsAway": 5.2,
      "lambdaHome": 1.6,
      "lambdaAway": 1.0,
      "mssHome": 69.6,
@@ -2176,6 +2176,26 @@
   {
    "date": "2026-06-12",
    "matches": [
+    {
+     "id": "1027164909",
+     "kickoff": "2026-06-12T19:00:00Z",
+     "stage": "Grupp B",
+     "home": "Kanada",
+     "away": "Bosnien",
+     "homeFlag": "🇨🇦",
+     "awayFlag": "🇧🇦",
+     "channel": "SVT",
+     "pHome": 0.54,
+     "pDraw": 0.261,
+     "pAway": 0.199,
+     "oddsHome": null,
+     "oddsDraw": null,
+     "oddsAway": null,
+     "lambdaHome": 1.67,
+     "lambdaAway": 0.93,
+     "mssHome": 51.5,
+     "mssAway": 39.8
+    },
     {
      "id": "1025862118",
      "kickoff": "2026-06-13T01:00:00Z",
@@ -2625,7 +2645,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-18T11:38:32Z",
+  "generatedAt": "2026-06-18T11:56:39Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3591,8 +3611,8 @@
     "pDraw": 0.278,
     "pAway": 0.2994,
     "folketOne": 45,
-    "folketX": 30,
-    "folketTwo": 25,
+    "folketX": 31,
+    "folketTwo": 24,
     "oddsOne": 2.38,
     "oddsX": 3.6,
     "oddsTwo": 3.1
@@ -3607,8 +3627,8 @@
     "pDraw": 0.2569,
     "pAway": 0.5363,
     "folketOne": 13,
-    "folketX": 33,
-    "folketTwo": 54,
+    "folketX": 32,
+    "folketTwo": 55,
     "oddsOne": 6.4,
     "oddsX": 4.3,
     "oddsTwo": 1.57
@@ -3686,8 +3706,8 @@
     "pHome": 0.5375,
     "pDraw": 0.2618,
     "pAway": 0.2007,
-    "folketOne": 63,
-    "folketX": 27,
+    "folketOne": 62,
+    "folketX": 28,
     "folketTwo": 10,
     "oddsOne": 1.62,
     "oddsX": 3.85,
@@ -3794,6 +3814,29 @@
    "duration": "REGULAR",
    "winner": "home",
    "scorers": null
+  },
+  {
+   "date": "2026-06-12",
+   "home": "Kanada",
+   "away": "Bosnien",
+   "scoreHome": 1,
+   "scoreAway": 1,
+   "htHome": 0,
+   "htAway": 1,
+   "duration": "REGULAR",
+   "winner": "draw",
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Jovo Lukic",
+     "team": "Bosnien"
+    },
+    {
+     "goals": 1,
+     "name": "Cyle Larin",
+     "team": "Kanada"
+    }
+   ]
   },
   {
    "date": "2026-06-13",
