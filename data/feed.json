@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-18T22:33:41Z",
+ "generatedAt": "2026-06-18T22:52:02Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -862,8 +862,8 @@
      "pDraw": 0.143,
      "pAway": 0.826,
      "oddsHome": 6.0,
-     "oddsDraw": 3.65,
-     "oddsAway": 1.73,
+     "oddsDraw": 3.7,
+     "oddsAway": 1.72,
      "lambdaHome": 0.3,
      "lambdaAway": 2.3,
      "mssHome": 48.6,
@@ -1156,9 +1156,9 @@
      "pHome": 0.23,
      "pDraw": 0.27,
      "pAway": 0.5,
-     "oddsHome": 6.4,
+     "oddsHome": 6.5,
      "oddsDraw": 4.3,
-     "oddsAway": 1.57,
+     "oddsAway": 1.58,
      "lambdaHome": 1.01,
      "lambdaAway": 1.59,
      "mssHome": 22.7,
@@ -1750,7 +1750,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-18T22:33:40Z",
+  "generatedAt": "2026-06-18T22:52:01Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2792,15 +2792,15 @@
     "away": "Kanada",
     "homeFlag": "🇨🇭",
     "awayFlag": "🇨🇦",
-    "pHome": 0.4216,
-    "pDraw": 0.2823,
-    "pAway": 0.2961,
+    "pHome": 0.4113,
+    "pDraw": 0.2819,
+    "pAway": 0.3068,
     "folketOne": 44,
     "folketX": 32,
     "folketTwo": 24,
-    "oddsOne": 2.16,
-    "oddsX": 3.4,
-    "oddsTwo": 3.55
+    "oddsOne": null,
+    "oddsX": null,
+    "oddsTwo": null
    },
    {
     "n": 9,
@@ -2808,15 +2808,15 @@
     "away": "Qatar",
     "homeFlag": "🇧🇦",
     "awayFlag": "🇶🇦",
-    "pHome": 0.5364,
-    "pDraw": 0.2546,
-    "pAway": 0.209,
+    "pHome": 0.5433,
+    "pDraw": 0.2512,
+    "pAway": 0.2056,
     "folketOne": 63,
     "folketX": 27,
     "folketTwo": 10,
-    "oddsOne": 1.56,
-    "oddsX": 4.4,
-    "oddsTwo": 6.0
+    "oddsOne": 1.49,
+    "oddsX": 4.6,
+    "oddsTwo": 6.4
    },
    {
     "n": 10,
@@ -2827,9 +2827,9 @@
     "pHome": 0.6954,
     "pDraw": 0.2017,
     "pAway": 0.103,
-    "folketOne": 92,
+    "folketOne": 93,
     "folketX": 6,
-    "folketTwo": 2,
+    "folketTwo": 1,
     "oddsOne": 1.28,
     "oddsX": 6.0,
     "oddsTwo": 11.0
