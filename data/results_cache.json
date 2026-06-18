@@ -248,5 +248,27 @@
    "name": "Teboho Mokoena",
    "team": "Sydafrika"
   }
+ ],
+ "espn:760439": [
+  {
+   "goals": 2,
+   "name": "Johan Manzambi",
+   "team": "Schweiz"
+  },
+  {
+   "goals": 1,
+   "name": "Rubén Vargas",
+   "team": "Schweiz"
+  },
+  {
+   "goals": 1,
+   "name": "Ermin Mahmic",
+   "team": "Bosnien"
+  },
+  {
+   "goals": 1,
+   "name": "Granit Xhaka",
+   "team": "Schweiz"
+  }
  ]
 }
