@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-18T00:21:54Z",
+ "generatedAt": "2026-06-18T00:37:08Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -198,10 +198,10 @@
     "category": "Hörnor",
     "selection": "Under 8.5 hörnor",
     "detail": "Totalt antal hörnor i matchen",
-    "odds": 1.94,
-    "modelProb": 0.5102,
-    "marketProb": 0.4785,
-    "edge": -0.0102,
+    "odds": 1.95,
+    "modelProb": 0.5075,
+    "marketProb": 0.4758,
+    "edge": -0.0103,
     "value": "Neutralt",
     "kelly": 0.0,
     "stakeWeight": 0.0,
@@ -750,10 +750,10 @@
       "category": "Hörnor",
       "selection": "Under 8.5 hörnor",
       "detail": "Totalt antal hörnor i matchen",
-      "odds": 1.94,
-      "modelProb": 0.5102,
-      "marketProb": 0.4785,
-      "edge": -0.0102,
+      "odds": 1.95,
+      "modelProb": 0.5075,
+      "marketProb": 0.4758,
+      "edge": -0.0103,
       "value": "Neutralt",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -881,8 +881,8 @@
      "pHome": 0.694,
      "pDraw": 0.21,
      "pAway": 0.096,
-     "oddsHome": 1.29,
-     "oddsDraw": 6.0,
+     "oddsHome": 1.28,
+     "oddsDraw": 6.25,
      "oddsAway": 13.0,
      "lambdaHome": 1.99,
      "lambdaAway": 0.61,
@@ -1665,7 +1665,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-18T00:21:54Z",
+  "generatedAt": "2026-06-18T00:37:07Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2614,9 +2614,9 @@
     "pHome": 0.8293,
     "pDraw": 0.1324,
     "pAway": 0.0383,
-    "folketOne": 94,
+    "folketOne": 93,
     "folketX": 5,
-    "folketTwo": 1,
+    "folketTwo": 2,
     "oddsOne": 1.1,
     "oddsX": 12.5,
     "oddsTwo": 29.0
@@ -2662,9 +2662,9 @@
     "pHome": 0.7926,
     "pDraw": 0.1572,
     "pAway": 0.0501,
-    "folketOne": 84,
+    "folketOne": 85,
     "folketX": 11,
-    "folketTwo": 5,
+    "folketTwo": 4,
     "oddsOne": 1.27,
     "oddsX": 6.25,
     "oddsTwo": 14.0
@@ -2726,9 +2726,9 @@
     "pHome": 0.5375,
     "pDraw": 0.2618,
     "pAway": 0.2007,
-    "folketOne": 59,
+    "folketOne": 58,
     "folketX": 31,
-    "folketTwo": 10,
+    "folketTwo": 11,
     "oddsOne": 1.62,
     "oddsX": 3.85,
     "oddsTwo": 6.1
@@ -2758,9 +2758,9 @@
     "pHome": 0.0538,
     "pDraw": 0.1444,
     "pAway": 0.8018,
-    "folketOne": 8,
+    "folketOne": 7,
     "folketX": 22,
-    "folketTwo": 70,
+    "folketTwo": 71,
     "oddsOne": 7.0,
     "oddsX": 4.8,
     "oddsTwo": 1.46
@@ -2801,483 +2801,256 @@
  },
  "results": [
   {
-   "date": "2026-06-11",
+   "date": null,
    "home": "Mexiko",
    "away": "Sydafrika",
    "scoreHome": 2,
    "scoreAway": 0,
-   "htHome": 1,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Julián Quiñones",
-     "team": "Mexiko"
-    },
-    {
-     "goals": 1,
-     "name": "Raúl Jiménez",
-     "team": "Mexiko"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-12",
+   "date": null,
    "home": "Sydkorea",
    "away": "Tjeckien",
    "scoreHome": 2,
    "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "home",
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
    "scorers": null
   },
   {
-   "date": "2026-06-12",
+   "date": null,
    "home": "Kanada",
    "away": "Bosnien",
    "scoreHome": 1,
    "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Jovo Lukic",
-     "team": "Bosnien"
-    },
-    {
-     "goals": 1,
-     "name": "Cyle Larin",
-     "team": "Kanada"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-13",
+   "date": null,
    "home": "USA",
    "away": "Paraguay",
    "scoreHome": 4,
    "scoreAway": 1,
-   "htHome": 3,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "home",
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
    "scorers": null
   },
   {
-   "date": "2026-06-13",
+   "date": null,
    "home": "Qatar",
    "away": "Schweiz",
    "scoreHome": 1,
    "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Breel Embolo",
-     "team": "Schweiz"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-13",
+   "date": null,
    "home": "Brasilien",
    "away": "Marocko",
    "scoreHome": 1,
    "scoreAway": 1,
-   "htHome": 1,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Ismael Saibari",
-     "team": "Marocko"
-    },
-    {
-     "goals": 1,
-     "name": "Vinícius Júnior",
-     "team": "Brasilien"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-14",
+   "date": null,
    "home": "Haiti",
    "away": "Skottland",
    "scoreHome": 0,
    "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "away",
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
    "scorers": null
   },
   {
-   "date": "2026-06-14",
+   "date": null,
    "home": "Australien",
    "away": "Turkiet",
    "scoreHome": 2,
    "scoreAway": 0,
-   "htHome": 1,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Nestory Irankunda",
-     "team": "Australien"
-    },
-    {
-     "goals": 1,
-     "name": "Connor Metcalfe",
-     "team": "Australien"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-14",
+   "date": null,
    "home": "Tyskland",
    "away": "Curacao",
    "scoreHome": 7,
    "scoreAway": 1,
-   "htHome": 3,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Felix Nmecha",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 1,
-     "name": "Livano Comenencia",
-     "team": "Curacao"
-    },
-    {
-     "goals": 1,
-     "name": "Nico Schlotterbeck",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 2,
-     "name": "Kai Havertz",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 1,
-     "name": "Jamal Musiala",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 1,
-     "name": "Nathaniel Brown",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 1,
-     "name": "Deniz Undav",
-     "team": "Tyskland"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-14",
+   "date": null,
    "home": "Nederländerna",
    "away": "Japan",
    "scoreHome": 2,
    "scoreAway": 2,
-   "htHome": 0,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Virgil van Dijk",
-     "team": "Nederländerna"
-    },
-    {
-     "goals": 1,
-     "name": "Keito Nakamura",
-     "team": "Japan"
-    },
-    {
-     "goals": 1,
-     "name": "Crysencio Summerville",
-     "team": "Nederländerna"
-    },
-    {
-     "goals": 1,
-     "name": "Daichi Kamada",
-     "team": "Japan"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-14",
+   "date": null,
    "home": "Elfenbenskusten",
    "away": "Ecuador",
    "scoreHome": 1,
    "scoreAway": 0,
-   "htHome": 0,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Amad Diallo",
-     "team": "Elfenbenskusten"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-15",
+   "date": null,
    "home": "Sverige",
    "away": "Tunisien",
    "scoreHome": 5,
    "scoreAway": 1,
-   "htHome": 2,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "home",
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
    "scorers": null
   },
   {
-   "date": "2026-06-15",
+   "date": null,
    "home": "Spanien",
    "away": "Kap Verde",
    "scoreHome": 0,
    "scoreAway": 0,
-   "htHome": 0,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "draw",
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
    "scorers": null
   },
   {
-   "date": "2026-06-15",
+   "date": null,
    "home": "Belgien",
    "away": "Egypten",
    "scoreHome": 1,
    "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Emam Ashour",
-     "team": "Egypten"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-15",
+   "date": null,
    "home": "Saudiarabien",
    "away": "Uruguay",
    "scoreHome": 1,
    "scoreAway": 1,
-   "htHome": 1,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Abdulelah Al-Amri",
-     "team": "Saudiarabien"
-    },
-    {
-     "goals": 1,
-     "name": "Maxi Araújo",
-     "team": "Uruguay"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-16",
+   "date": null,
    "home": "Iran",
    "away": "Nya Zeeland",
    "scoreHome": 2,
    "scoreAway": 2,
-   "htHome": 1,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
    "scorers": null
   },
   {
-   "date": "2026-06-16",
+   "date": null,
    "home": "Frankrike",
    "away": "Senegal",
    "scoreHome": 3,
    "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "home",
-   "scorers": [
-    {
-     "goals": 2,
-     "name": "Kylian Mbappé",
-     "team": "Frankrike"
-    },
-    {
-     "goals": 1,
-     "name": "Bradley Barcola",
-     "team": "Frankrike"
-    },
-    {
-     "goals": 1,
-     "name": "Ibrahim Mbaye",
-     "team": "Senegal"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-16",
+   "date": null,
    "home": "Irak",
    "away": "Norge",
    "scoreHome": 1,
    "scoreAway": 4,
-   "htHome": 1,
-   "htAway": 2,
-   "duration": "REGULAR",
-   "winner": "away",
-   "scorers": [
-    {
-     "goals": 2,
-     "name": "Erling Haaland",
-     "team": "Norge"
-    },
-    {
-     "goals": 1,
-     "name": "Aymen Hussein",
-     "team": "Irak"
-    },
-    {
-     "goals": 1,
-     "name": "Leo Østigard",
-     "team": "Norge"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-17",
+   "date": null,
    "home": "Argentina",
    "away": "Algeriet",
    "scoreHome": 3,
    "scoreAway": 0,
-   "htHome": 1,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "home",
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
    "scorers": null
   },
   {
-   "date": "2026-06-17",
+   "date": null,
    "home": "Österrike",
    "away": "Jordanien",
    "scoreHome": 3,
    "scoreAway": 1,
-   "htHome": 1,
-   "htAway": 0,
-   "duration": "REGULAR",
-   "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Romano Schmid",
-     "team": "Österrike"
-    },
-    {
-     "goals": 1,
-     "name": "Ali Olwan",
-     "team": "Jordanien"
-    },
-    {
-     "goals": 1,
-     "name": "Marko Arnautovic",
-     "team": "Österrike"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   },
   {
-   "date": "2026-06-17",
+   "date": null,
    "home": "Portugal",
    "away": "DR Kongo",
    "scoreHome": 1,
    "scoreAway": 1,
-   "htHome": 1,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "João Neves",
-     "team": "Portugal"
-    },
-    {
-     "goals": 1,
-     "name": "Yoane Wissa",
-     "team": "DR Kongo"
-    }
-   ]
-  },
-  {
-   "date": "2026-06-17",
-   "home": "England",
-   "away": "Kroatien",
-   "scoreHome": 4,
-   "scoreAway": 2,
-   "htHome": 2,
-   "htAway": 2,
-   "duration": "REGULAR",
-   "winner": "home",
-   "scorers": [
-    {
-     "goals": 2,
-     "name": "Harry Kane",
-     "team": "England"
-    },
-    {
-     "goals": 1,
-     "name": "Martin Baturina",
-     "team": "Kroatien"
-    },
-    {
-     "goals": 1,
-     "name": "Petar Musa",
-     "team": "Kroatien"
-    },
-    {
-     "goals": 1,
-     "name": "Jude Bellingham",
-     "team": "England"
-    },
-    {
-     "goals": 1,
-     "name": "Marcus Rashford",
-     "team": "England"
-    }
-   ]
+   "htHome": null,
+   "htAway": null,
+   "duration": null,
+   "winner": null,
+   "scorers": null
   }
  ],
  "progress": {
