@@ -236,5 +236,17 @@
    "name": "Marcus Rashford",
    "team": "England"
   }
+ ],
+ "espn:760438": [
+  {
+   "goals": 1,
+   "name": "Michal Sadílek",
+   "team": "Tjeckien"
+  },
+  {
+   "goals": 1,
+   "name": "Teboho Mokoena",
+   "team": "Sydafrika"
+  }
  ]
 }
