@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-18T20:06:38Z",
+ "generatedAt": "2026-06-18T20:24:58Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1331,9 +1331,9 @@
      "pHome": 0.031,
      "pDraw": 0.143,
      "pAway": 0.826,
-     "oddsHome": 5.5,
+     "oddsHome": 5.6,
      "oddsDraw": 3.55,
-     "oddsAway": 1.77,
+     "oddsAway": 1.76,
      "lambdaHome": 0.3,
      "lambdaAway": 2.3,
      "mssHome": 48.6,
@@ -1418,7 +1418,7 @@
      "pAway": 0.191,
      "oddsHome": 1.54,
      "oddsDraw": 4.7,
-     "oddsAway": 6.4,
+     "oddsAway": 6.1,
      "lambdaHome": 1.69,
      "lambdaAway": 0.91,
      "mssHome": 79.8,
@@ -1566,8 +1566,8 @@
      "pHome": 0.599,
      "pDraw": 0.245,
      "pAway": 0.156,
-     "oddsHome": 1.63,
-     "oddsDraw": 3.9,
+     "oddsHome": 1.61,
+     "oddsDraw": 4.0,
      "oddsAway": 6.5,
      "lambdaHome": 1.79,
      "lambdaAway": 0.81,
@@ -1686,6 +1686,26 @@
   {
    "date": "2026-06-12",
    "matches": [
+    {
+     "id": "1027164909",
+     "kickoff": "2026-06-12T19:00:00Z",
+     "stage": "Grupp B",
+     "home": "Kanada",
+     "away": "Bosnien",
+     "homeFlag": "🇨🇦",
+     "awayFlag": "🇧🇦",
+     "channel": "SVT",
+     "pHome": 0.54,
+     "pDraw": 0.261,
+     "pAway": 0.199,
+     "oddsHome": null,
+     "oddsDraw": null,
+     "oddsAway": null,
+     "lambdaHome": 1.67,
+     "lambdaAway": 0.93,
+     "mssHome": 51.5,
+     "mssAway": 39.8
+    },
     {
      "id": "1025862118",
      "kickoff": "2026-06-13T01:00:00Z",
@@ -2180,7 +2200,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-18T20:06:37Z",
+  "generatedAt": "2026-06-18T20:24:57Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3110,14 +3130,14 @@
     "away": "Österrike",
     "homeFlag": "🇦🇷",
     "awayFlag": "🇦🇹",
-    "pHome": 0.5992,
-    "pDraw": 0.2464,
+    "pHome": 0.6012,
+    "pDraw": 0.2445,
     "pAway": 0.1543,
     "folketOne": 77,
     "folketX": 18,
     "folketTwo": 5,
-    "oddsOne": 1.63,
-    "oddsX": 3.9,
+    "oddsOne": 1.61,
+    "oddsX": 4.0,
     "oddsTwo": 6.5
    },
    {
@@ -3257,9 +3277,9 @@
     "pHome": 0.6954,
     "pDraw": 0.2017,
     "pAway": 0.103,
-    "folketOne": 92,
+    "folketOne": 93,
     "folketX": 6,
-    "folketTwo": 2,
+    "folketTwo": 1,
     "oddsOne": 1.28,
     "oddsX": 6.0,
     "oddsTwo": 11.0
@@ -3273,9 +3293,9 @@
     "pHome": 0.0508,
     "pDraw": 0.1429,
     "pAway": 0.8063,
-    "folketOne": 10,
+    "folketOne": 9,
     "folketX": 23,
-    "folketTwo": 67,
+    "folketTwo": 68,
     "oddsOne": 7.5,
     "oddsX": 4.9,
     "oddsTwo": 1.42
@@ -3306,8 +3326,8 @@
     "pDraw": 0.2448,
     "pAway": 0.5867,
     "folketOne": 10,
-    "folketX": 28,
-    "folketTwo": 62,
+    "folketX": 27,
+    "folketTwo": 63,
     "oddsOne": 6.0,
     "oddsX": 4.2,
     "oddsTwo": 1.58
@@ -3349,6 +3369,29 @@
    "duration": "REGULAR",
    "winner": "home",
    "scorers": null
+  },
+  {
+   "date": "2026-06-12",
+   "home": "Kanada",
+   "away": "Bosnien",
+   "scoreHome": 1,
+   "scoreAway": 1,
+   "htHome": 0,
+   "htAway": 1,
+   "duration": "REGULAR",
+   "winner": "draw",
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Jovo Lukic",
+     "team": "Bosnien"
+    },
+    {
+     "goals": 1,
+     "name": "Cyle Larin",
+     "team": "Kanada"
+    }
+   ]
   },
   {
    "date": "2026-06-13",
