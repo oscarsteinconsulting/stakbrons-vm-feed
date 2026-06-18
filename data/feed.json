@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-18T05:36:41Z",
+ "generatedAt": "2026-06-18T05:54:48Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -2011,9 +2011,9 @@
      "pHome": 0.646,
      "pDraw": 0.229,
      "pAway": 0.125,
-     "oddsHome": 1.49,
-     "oddsDraw": 4.35,
-     "oddsAway": 8.0,
+     "oddsHome": 1.45,
+     "oddsDraw": 4.5,
+     "oddsAway": 8.5,
      "lambdaHome": 1.89,
      "lambdaAway": 0.71,
      "mssHome": 63.5,
@@ -2602,6 +2602,26 @@
      "mssAway": 61.7
     },
     {
+     "id": "1025862284",
+     "kickoff": "2026-06-17T23:00:00Z",
+     "stage": "Grupp L",
+     "home": "Ghana",
+     "away": "Panama",
+     "homeFlag": "🇬🇭",
+     "awayFlag": "🇵🇦",
+     "channel": "TV4",
+     "pHome": 0.265,
+     "pDraw": 0.277,
+     "pAway": 0.458,
+     "oddsHome": null,
+     "oddsDraw": null,
+     "oddsAway": null,
+     "lambdaHome": 1.09,
+     "lambdaAway": 1.51,
+     "mssHome": 40.2,
+     "mssAway": 26.2
+    },
+    {
      "id": "1025862266",
      "kickoff": "2026-06-18T02:00:00Z",
      "stage": "Grupp K",
@@ -2625,7 +2645,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-18T05:36:40Z",
+  "generatedAt": "2026-06-18T05:54:48Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3558,8 +3578,8 @@
     "pHome": 0.6051,
     "pDraw": 0.2424,
     "pAway": 0.1524,
-    "folketOne": 78,
-    "folketX": 16,
+    "folketOne": 79,
+    "folketX": 15,
     "folketTwo": 6,
     "oddsOne": 1.57,
     "oddsX": 4.1,
@@ -3606,8 +3626,8 @@
     "pHome": 0.2078,
     "pDraw": 0.26,
     "pAway": 0.5323,
-    "folketOne": 14,
-    "folketX": 30,
+    "folketOne": 13,
+    "folketX": 31,
     "folketTwo": 56,
     "oddsOne": 6.25,
     "oddsX": 4.1,
@@ -3638,9 +3658,9 @@
     "pHome": 0.1726,
     "pDraw": 0.2522,
     "pAway": 0.5752,
-    "folketOne": 5,
-    "folketX": 14,
-    "folketTwo": 81,
+    "folketOne": 6,
+    "folketX": 15,
+    "folketTwo": 79,
     "oddsOne": 7.5,
     "oddsX": 4.1,
     "oddsTwo": 1.54
@@ -3654,9 +3674,9 @@
     "pHome": 0.6273,
     "pDraw": 0.2343,
     "pAway": 0.1384,
-    "folketOne": 58,
+    "folketOne": 59,
     "folketX": 26,
-    "folketTwo": 16,
+    "folketTwo": 15,
     "oddsOne": 1.53,
     "oddsX": 4.35,
     "oddsTwo": 7.5
@@ -3671,8 +3691,8 @@
     "pDraw": 0.2827,
     "pAway": 0.3041,
     "folketOne": 42,
-    "folketX": 35,
-    "folketTwo": 23,
+    "folketX": 34,
+    "folketTwo": 24,
     "oddsOne": 2.15,
     "oddsX": 3.4,
     "oddsTwo": 3.55
@@ -3686,9 +3706,9 @@
     "pHome": 0.5375,
     "pDraw": 0.2618,
     "pAway": 0.2007,
-    "folketOne": 62,
+    "folketOne": 63,
     "folketX": 28,
-    "folketTwo": 10,
+    "folketTwo": 9,
     "oddsOne": 1.62,
     "oddsX": 3.85,
     "oddsTwo": 6.1
@@ -3719,8 +3739,8 @@
     "pDraw": 0.1444,
     "pAway": 0.8018,
     "folketOne": 7,
-    "folketX": 20,
-    "folketTwo": 73,
+    "folketX": 21,
+    "folketTwo": 72,
     "oddsOne": 7.0,
     "oddsX": 4.8,
     "oddsTwo": 1.46
@@ -4236,6 +4256,24 @@
      "goals": 1,
      "name": "Marcus Rashford",
      "team": "England"
+    }
+   ]
+  },
+  {
+   "date": "2026-06-17",
+   "home": "Ghana",
+   "away": "Panama",
+   "scoreHome": 1,
+   "scoreAway": 0,
+   "htHome": 0,
+   "htAway": 0,
+   "duration": "REGULAR",
+   "winner": "home",
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Caleb Yirenkyi",
+     "team": "Ghana"
     }
    ]
   },
