@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-19T02:51:20Z",
+ "generatedAt": "2026-06-19T03:09:49Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1036,7 +1036,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-19T02:51:19Z",
+  "generatedAt": "2026-06-19T03:09:49Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2142,15 +2142,15 @@
     "away": "Mexiko",
     "homeFlag": "🇨🇿",
     "awayFlag": "🇲🇽",
-    "pHome": 0.1871,
-    "pDraw": 0.2555,
-    "pAway": 0.5573,
+    "pHome": 0.2172,
+    "pDraw": 0.2598,
+    "pAway": 0.523,
     "folketOne": 18,
     "folketX": 32,
     "folketTwo": 50,
-    "oddsOne": 4.6,
-    "oddsX": 3.7,
-    "oddsTwo": 1.81
+    "oddsOne": 3.1,
+    "oddsX": 3.5,
+    "oddsTwo": 2.3
    },
    {
     "n": 13,
@@ -2763,6 +2763,18 @@
      "team": "Kanada"
     }
    ]
+  },
+  {
+   "date": "2026-06-19",
+   "home": "Mexiko",
+   "away": "Sydkorea",
+   "scoreHome": 1,
+   "scoreAway": 0,
+   "htHome": 0,
+   "htAway": 0,
+   "duration": "REGULAR",
+   "winner": "home",
+   "scorers": null
   }
  ],
  "progress": {
