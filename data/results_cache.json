@@ -270,5 +270,22 @@
    "name": "Granit Xhaka",
    "team": "Schweiz"
   }
+ ],
+ "espn:760440": [
+  {
+   "goals": 1,
+   "name": "Cyle Larin",
+   "team": "Kanada"
+  },
+  {
+   "goals": 3,
+   "name": "Jonathan David",
+   "team": "Kanada"
+  },
+  {
+   "goals": 1,
+   "name": "Nathan Saliba",
+   "team": "Kanada"
+  }
  ]
 }
