@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-19T00:23:56Z",
+ "generatedAt": "2026-06-19T00:42:20Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -881,9 +881,9 @@
      "pHome": 0.794,
      "pDraw": 0.161,
      "pAway": 0.045,
-     "oddsHome": 1.1,
-     "oddsDraw": 12.0,
-     "oddsAway": 29.0,
+     "oddsHome": 1.09,
+     "oddsDraw": 13.0,
+     "oddsAway": 30.0,
      "lambdaHome": 2.22,
      "lambdaAway": 0.38,
      "mssHome": 79.5,
@@ -1750,7 +1750,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-19T00:23:56Z",
+  "generatedAt": "2026-06-19T00:42:20Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2683,9 +2683,9 @@
     "pHome": 0.6012,
     "pDraw": 0.2445,
     "pAway": 0.1543,
-    "folketOne": 77,
+    "folketOne": 76,
     "folketX": 18,
-    "folketTwo": 5,
+    "folketTwo": 6,
     "oddsOne": 1.61,
     "oddsX": 4.0,
     "oddsTwo": 6.5
@@ -3462,19 +3462,19 @@
    "winner": "home",
    "scorers": [
     {
+     "goals": 1,
      "name": "Cyle Larin",
-     "team": "Kanada",
-     "goals": 1
+     "team": "Kanada"
     },
     {
+     "goals": 3,
      "name": "Jonathan David",
-     "team": "Kanada",
-     "goals": 3
+     "team": "Kanada"
     },
     {
+     "goals": 1,
      "name": "Nathan Saliba",
-     "team": "Kanada",
-     "goals": 1
+     "team": "Kanada"
     }
    ]
   }
