@@ -301,5 +301,27 @@
    "name": "Ismael Saibari",
    "team": "Marocko"
   }
+ ],
+ "espn:760447": [
+  {
+   "goals": 2,
+   "name": "Brian Brobbey",
+   "team": "Nederländerna"
+  },
+  {
+   "goals": 2,
+   "name": "Cody Gakpo",
+   "team": "Nederländerna"
+  },
+  {
+   "goals": 1,
+   "name": "Anthony Elanga",
+   "team": "Sverige"
+  },
+  {
+   "goals": 1,
+   "name": "Crysencio Summerville",
+   "team": "Nederländerna"
+  }
  ]
 }
