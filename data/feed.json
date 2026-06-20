@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-20T09:08:32Z",
+ "generatedAt": "2026-06-20T09:27:35Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1895,26 +1895,6 @@
    "date": "2026-06-24",
    "matches": [
     {
-     "id": "1027164907",
-     "kickoff": "2026-06-24T19:00:00Z",
-     "stage": "Grupp B",
-     "home": "Bosnien",
-     "away": "Qatar",
-     "homeFlag": "🇧🇦",
-     "awayFlag": "🇶🇦",
-     "channel": "TV4",
-     "pHome": 0.507,
-     "pDraw": 0.268,
-     "pAway": 0.224,
-     "oddsHome": 1.43,
-     "oddsDraw": 4.9,
-     "oddsAway": 7.5,
-     "lambdaHome": 1.61,
-     "lambdaAway": 0.99,
-     "mssHome": 39.8,
-     "mssAway": 21.8
-    },
-    {
      "id": "1025862011",
      "kickoff": "2026-06-24T19:00:00Z",
      "stage": "Grupp B",
@@ -1933,6 +1913,26 @@
      "lambdaAway": 1.2,
      "mssHome": 64.0,
      "mssAway": 51.5
+    },
+    {
+     "id": "1027164907",
+     "kickoff": "2026-06-24T19:00:00Z",
+     "stage": "Grupp B",
+     "home": "Bosnien",
+     "away": "Qatar",
+     "homeFlag": "🇧🇦",
+     "awayFlag": "🇶🇦",
+     "channel": "TV4",
+     "pHome": 0.507,
+     "pDraw": 0.268,
+     "pAway": 0.224,
+     "oddsHome": 1.43,
+     "oddsDraw": 4.9,
+     "oddsAway": 7.5,
+     "lambdaHome": 1.61,
+     "lambdaAway": 0.99,
+     "mssHome": 39.8,
+     "mssAway": 21.8
     },
     {
      "id": "1025862024",
@@ -1975,26 +1975,6 @@
      "mssAway": 17.2
     },
     {
-     "id": "1027164912",
-     "kickoff": "2026-06-25T01:00:00Z",
-     "stage": "Grupp A",
-     "home": "Tjeckien",
-     "away": "Mexiko",
-     "homeFlag": "🇨🇿",
-     "awayFlag": "🇲🇽",
-     "channel": "SVT",
-     "pHome": 0.171,
-     "pDraw": 0.251,
-     "pAway": 0.578,
-     "oddsHome": 3.65,
-     "oddsDraw": 3.55,
-     "oddsAway": 2.05,
-     "lambdaHome": 0.85,
-     "lambdaAway": 1.75,
-     "mssHome": 44.6,
-     "mssAway": 58.8
-    },
-    {
      "id": "1025862008",
      "kickoff": "2026-06-25T01:00:00Z",
      "stage": "Grupp A",
@@ -2013,6 +1993,26 @@
      "lambdaAway": 1.73,
      "mssHome": 30.8,
      "mssAway": 50.7
+    },
+    {
+     "id": "1027164912",
+     "kickoff": "2026-06-25T01:00:00Z",
+     "stage": "Grupp A",
+     "home": "Tjeckien",
+     "away": "Mexiko",
+     "homeFlag": "🇨🇿",
+     "awayFlag": "🇲🇽",
+     "channel": "SVT",
+     "pHome": 0.171,
+     "pDraw": 0.251,
+     "pAway": 0.578,
+     "oddsHome": 3.65,
+     "oddsDraw": 3.55,
+     "oddsAway": 2.05,
+     "lambdaHome": 0.85,
+     "lambdaAway": 1.75,
+     "mssHome": 44.6,
+     "mssAway": 58.8
     }
    ]
   }
@@ -2705,7 +2705,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-20T09:08:32Z",
+  "generatedAt": "2026-06-20T09:27:34Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
