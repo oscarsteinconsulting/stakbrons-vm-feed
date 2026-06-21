@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-21T07:09:56Z",
+ "generatedAt": "2026-06-21T07:29:23Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -88,7 +88,7 @@
     "pDraw": 0.27,
     "pAway": 0.497,
     "oddsHome": 6.75,
-    "oddsDraw": 4.3,
+    "oddsDraw": 4.25,
     "oddsAway": 1.54,
     "lambdaHome": 1.01,
     "lambdaAway": 1.59,
@@ -139,7 +139,7 @@
     "edge": 0.3393,
     "value": "Spelvärt",
     "kelly": 0.04465,
-    "stakeWeight": 0.1751,
+    "stakeWeight": 0.1752,
     "confidence": 4,
     "rationale": "Två utfall täcks: modellen ger oavgjort eller iran 46% mot marknadens 33%.",
     "settleMarket": "DC",
@@ -159,12 +159,12 @@
     "selection": "1 (Nya Zeeland vinner)",
     "detail": "Nya Zeeland vinner",
     "odds": 6.75,
-    "modelProb": 0.1938,
-    "marketProb": 0.1438,
-    "edge": 0.3083,
+    "modelProb": 0.1937,
+    "marketProb": 0.1434,
+    "edge": 0.3072,
     "value": "Chans",
-    "kelly": 0.01341,
-    "stakeWeight": 0.0526,
+    "kelly": 0.01336,
+    "stakeWeight": 0.0524,
     "confidence": 4,
     "rationale": "Modellen ger nya zeeland vinner 21% mot marknadens 14% (MSS 18.9–39.2, målförväntan 1.0–1.6).",
     "settleMarket": "1X2",
@@ -391,12 +391,12 @@
       "selection": "1 (Nya Zeeland vinner)",
       "detail": "Nya Zeeland vinner",
       "odds": 6.75,
-      "modelProb": 0.1938,
-      "marketProb": 0.1438,
-      "edge": 0.3083,
+      "modelProb": 0.1937,
+      "marketProb": 0.1434,
+      "edge": 0.3072,
       "value": "Chans",
-      "kelly": 0.01341,
-      "stakeWeight": 0.0526,
+      "kelly": 0.01336,
+      "stakeWeight": 0.0524,
       "confidence": 4,
       "rationale": "Modellen ger nya zeeland vinner 21% mot marknadens 14% (MSS 18.9–39.2, målförväntan 1.0–1.6).",
       "settleMarket": "1X2",
@@ -478,7 +478,7 @@
       "edge": 0.3393,
       "value": "Spelvärt",
       "kelly": 0.04465,
-      "stakeWeight": 0.1751,
+      "stakeWeight": 0.1752,
       "confidence": 4,
       "rationale": "Två utfall täcks: modellen ger oavgjort eller iran 46% mot marknadens 33%.",
       "settleMarket": "DC",
@@ -1478,10 +1478,10 @@
       "category": "Spelarspecial",
       "selection": "Omar Marmoush över 0.5 skott på mål",
       "detail": "Opta-avgjord spelarmarknad",
-      "odds": 1.42,
-      "modelProb": 0.6712,
+      "odds": 1.38,
+      "modelProb": 0.6908,
       "marketProb": null,
-      "edge": -0.0469,
+      "edge": -0.0467,
       "value": "Undvik",
       "kelly": 0.0,
       "stakeWeight": 0.0,
@@ -2111,7 +2111,7 @@
      "pHome": 0.091,
      "pDraw": 0.206,
      "pAway": 0.703,
-     "oddsHome": 15.0,
+     "oddsHome": 16.0,
      "oddsDraw": 7.0,
      "oddsAway": 1.2,
      "lambdaHome": 0.59,
@@ -2171,8 +2171,8 @@
      "pHome": 0.326,
      "pDraw": 0.283,
      "pAway": 0.391,
-     "oddsHome": 3.1,
-     "oddsDraw": 4.0,
+     "oddsHome": 3.05,
+     "oddsDraw": 4.1,
      "oddsAway": 2.12,
      "lambdaHome": 1.23,
      "lambdaAway": 1.37,
@@ -2960,7 +2960,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-21T07:09:56Z",
+  "generatedAt": "2026-06-21T07:29:23Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3958,8 +3958,8 @@
     "pDraw": 0.1609,
     "pAway": 0.0551,
     "folketOne": 84,
-    "folketX": 12,
-    "folketTwo": 4,
+    "folketX": 13,
+    "folketTwo": 3,
     "oddsOne": 1.2,
     "oddsX": 7.0,
     "oddsTwo": 16.0
@@ -4805,14 +4805,14 @@
    "winner": "home",
    "scorers": [
     {
+     "goals": 1,
      "name": "Franck Kessié",
-     "team": "Elfenbenskusten",
-     "goals": 1
+     "team": "Elfenbenskusten"
     },
     {
+     "goals": 2,
      "name": "Deniz Undav",
-     "team": "Tyskland",
-     "goals": 2
+     "team": "Tyskland"
     }
    ]
   },
@@ -4840,19 +4840,19 @@
    "winner": "away",
    "scorers": [
     {
+     "goals": 1,
      "name": "Daichi Kamada",
-     "team": "Japan",
-     "goals": 1
+     "team": "Japan"
     },
     {
+     "goals": 2,
      "name": "Ayase Ueda",
-     "team": "Japan",
-     "goals": 2
+     "team": "Japan"
     },
     {
+     "goals": 1,
      "name": "Junya Ito",
-     "team": "Japan",
-     "goals": 1
+     "team": "Japan"
     }
    ]
   }
