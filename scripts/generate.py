@@ -38,6 +38,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FEED_PATH = os.path.join(ROOT, "data", "feed.json")
 DAYS_DIR = os.path.join(ROOT, "data", "days")
 FIXTURES_PATH = os.path.join(ROOT, "data", "fixtures.json")
+CLV_PATH = os.path.join(ROOT, "data", "clv_log.json")
 
 MODEL_VERSION = "1.1.0"
 
@@ -698,6 +699,38 @@ def allocate_weights(bets):
         b["stakeWeight"] = round(b["kelly"] / total, 4)
 
 
+def update_clv_log(pool, now):
+    """Framåtriktad CLV-mätning (closing line value). Loggar varje visat spels
+    rekommendationsodds och följer stängningsoddset (sista odds före avspark).
+    Slår vi stängningslinjen (recOdds > closeOdds) är det det mest sample-
+    effektiva beviset på äkta edge — utan att invänta resultat. Lagrar även
+    value/recommendable + settle-fält så skugg-P&L kan räknas på det vi numera
+    INTE rekommenderar (validerar exkluderingarna). En rad per unikt spel-id."""
+    try:
+        log = json.load(open(CLV_PATH)) if os.path.exists(CLV_PATH) else {}
+    except Exception:
+        log = {}
+    stamp = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    for b in pool:
+        ko = parse_kickoff(b.get("kickoff"))
+        e = log.get(b["id"])
+        if e is None:
+            log[b["id"]] = {
+                "match": b["match"], "market": b["settleMarket"],
+                "selection": b["selection"], "settlePick": b["settlePick"],
+                "settleLine": b.get("settleLine"), "settlePlayer": b.get("settlePlayer"),
+                "kickoff": b.get("kickoff"), "value": b["value"],
+                "recommendable": b.get("recommendable", False),
+                "recOdds": b["odds"], "recTime": stamp,
+                "closeOdds": b["odds"], "closeTime": stamp,
+            }
+        elif ko is None or ko > now:          # uppdatera stängning tills avspark
+            e["closeOdds"] = b["odds"]; e["closeTime"] = stamp
+            e["value"] = b["value"]; e["recommendable"] = b.get("recommendable", False)
+    with open(CLV_PATH, "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=1, sort_keys=True)
+
+
 def build_push(date_local, top_bets, day_matches, next_day, played_today=False):
     play = [b for b in top_bets if b["value"] in ("Spelvärt", "Chans")]
     months = ["januari", "februari", "mars", "april", "maj", "juni", "juli",
@@ -828,6 +861,17 @@ def main():
             if len(cat_bets) >= MAX_PER_CATEGORY:
                 break
         categories.append({"key": key, "name": name, "icon": icon, "bets": cat_bets})
+
+    # CLV-logg: följ rekommendations- vs stängningsodds för alla visade spel
+    # (topp 10 + kategorier, deduplicerat) — framåtriktad edge-validering.
+    clv_pool, clv_seen = [], set()
+    for b in top_bets + [x for c in categories for x in c["bets"]]:
+        if b["id"] not in clv_seen:
+            clv_seen.add(b["id"]); clv_pool.append(b)
+    try:
+        update_clv_log(clv_pool, now_utc)
+    except Exception as e:
+        print("  ! CLV-logg failade: %s" % e, file=sys.stderr)
 
     # --- Kommande dagar (modellens 1X2 ur listView-odds, inga detaljspel) ---
     upcoming = []
