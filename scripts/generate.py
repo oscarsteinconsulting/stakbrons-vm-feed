@@ -202,6 +202,7 @@ def make_bet(date_str, m, category_key, category_name, selection, detail, odds,
     rec = is_recommendable(settle[0], odds)
     if settle[0] in UNMODELED_MARKETS:
         label = "Undvik"            # omodellerad: bara marknadspris → ingen äkta edge
+        edge = 0.0                  # nollställ artefakt-edgen (annars visas falsk +%)
     elif not rec and label in ("Spelvärt", "Chans"):
         label = "Neutralt"          # modellerad men longshot/högvarians → ej rek
     kel = kelly(p_used, odds) if rec else 0.0
