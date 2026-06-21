@@ -159,11 +159,52 @@ def slugify(s):
     return "".join(keep).strip("-")[:40] or "x"
 
 
+# Strategidisciplin (2026-06-21, efter halva gruppspelet). Utfallet visar att
+# modellens MÅLFÖRDELNING är välkalibrerad — Dubbelchans/Antal mål/Handikapp/
+# Halvlek gick klart plus — medan rakt 1X2 (−242 kr) och de OMODELLERADE
+# marknaderna (hörnor/kort/målgörare/spelarspecial, bara marknadspris) gick back.
+# Därför rekommenderas (Spelvärt/Chans, stakas, "Dagens mest spelvärda") bara
+# marknader där modellen har bevisad edge. Övriga VISAS för överblick men
+# rekommenderas aldrig:
+#   - CORNERS/CARDS/PLAYER: ingen egen modell → "edge" är brus.
+#   - HTFT/CS: extrem varians (9 resp. många utfall) → opålitlig edge.
+#   - 1X2 över oddstaket: longshot-enskilt-utfall där modellen överskattar
+#     underdog/oavgjort. Den vyn uttrycks säkrare via Dubbelchans.
+# OMODELLERADE: ingen egen modell, bara marknadspris (+ antagen marginal) → en
+# "edge" är ett artefakt av vår marginalgissning, inte signal. Permanent ute,
+# oberoende av sample (n-oberoende prior).
+UNMODELED_MARKETS = {"CORNERS", "CARDS", "PLAYER"}
+# HÖGVARIANS: modell-härledda men med många utfall (9 för HT/FT, 20+ resultat),
+# där longshot-marginalbruset dominerar. Rekommenderas ej.
+HIGHVAR_MARKETS = {"HTFT", "CS"}
+# ENSKILT-UTFALL: 1X2 och halvlek-1X2. Modellen tillverkar falsk edge på
+# underdog/oavgjort i (2.5, 4.0]-bandet (shrink ger full modellvikt ända till
+# odds 4.0). Den vyn uttrycks säkrare via Dubbelchans/Handikapp (samma rutnät,
+# lägre varians). 2.50 är ett medvetet konservativt RUNT tal, ej fittat — i
+# praktiken flaggar modellen ändå sällan ett enskilt-utfall under odds 4.0.
+SINGLE_OUTCOME_MARKETS = {"1X2", "1H_1X2"}
+ONE_X_TWO_MAX_ODDS = 2.50
+
+
+def is_recommendable(settle_market, odds):
+    if settle_market in UNMODELED_MARKETS or settle_market in HIGHVAR_MARKETS:
+        return False
+    if settle_market in SINGLE_OUTCOME_MARKETS and odds > ONE_X_TWO_MAX_ODDS:
+        return False
+    return True
+
+
 def make_bet(date_str, m, category_key, category_name, selection, detail, odds,
              p_model, p_market, rationale, settle, player_market=False):
     p_used = shrink(p_model, p_market, odds) if not player_market else p_model
     edge = p_used * odds - 1.0
     label = value_label(edge, odds)
+    rec = is_recommendable(settle[0], odds)
+    if settle[0] in UNMODELED_MARKETS:
+        label = "Undvik"            # omodellerad: bara marknadspris → ingen äkta edge
+    elif not rec and label in ("Spelvärt", "Chans"):
+        label = "Neutralt"          # modellerad men longshot/högvarians → ej rek
+    kel = kelly(p_used, odds) if rec else 0.0
     return {
         "id": "%s-%s-%s-%s" % (date_str, m["kambiId"], category_key, slugify(selection)),
         "matchId": m["kambiId"],
@@ -177,7 +218,8 @@ def make_bet(date_str, m, category_key, category_name, selection, detail, odds,
         "marketProb": round(p_market, 4) if p_market is not None else None,
         "edge": round(edge, 4),
         "value": label,
-        "kelly": round(kelly(p_used, odds), 5),
+        "recommendable": rec,
+        "kelly": round(kel, 5),
         "stakeWeight": 0.0,
         "confidence": confidence(edge, p_used, player_market),
         "rationale": rationale,
@@ -747,9 +789,12 @@ def main():
         for k, lst in per_cat.items():
             all_bets.extend(lst)
 
-    # --- Topp 10 över alla kategorier (max 3 per match) ---
+    # --- Topp 10 "Dagens mest spelvärda" — BARA rekommenderbara marknader
+    #     (modellens styrkor), max 3 per match. Omodellerade/longshot-spel hamnar
+    #     aldrig i rubriklistan. ---
+    rec_pool = [b for b in all_bets if b.get("recommendable")]
     top_bets, per_match = [], {}
-    for b in sorted(all_bets, key=lambda b: -b["edge"]):
+    for b in sorted(rec_pool, key=lambda b: -b["edge"]):
         if per_match.get(b["matchId"], 0) >= MAX_PER_MATCH_TOP:
             continue
         top_bets.append(b)
@@ -757,10 +802,10 @@ def main():
         if len(top_bets) >= MAX_TOP_BETS:
             break
     # Topp 10-garanti: dagar med få matcher fyller cap-passet inte listan —
-    # fyll på med resterande spel sorterade på edge, utan per-match-tak.
+    # fyll på med resterande rekommenderbara spel på edge, utan per-match-tak.
     if len(top_bets) < MAX_TOP_BETS:
         chosen = set(map(id, top_bets))
-        for b in sorted(all_bets, key=lambda b: -b["edge"]):
+        for b in sorted(rec_pool, key=lambda b: -b["edge"]):
             if id(b) in chosen:
                 continue
             top_bets.append(b)
@@ -871,8 +916,25 @@ def main():
     os.makedirs(DAYS_DIR, exist_ok=True)
     with open(FEED_PATH, "w", encoding="utf-8") as f:
         json.dump(feed, f, ensure_ascii=False, indent=1)
-    with open(os.path.join(DAYS_DIR, "%s.json" % date_str), "w", encoding="utf-8") as f:
-        json.dump(feed, f, ensure_ascii=False, indent=1)
+    # Dagsarkivet ska bevara dagens FULLA spelslate (morgonkörningen). Tidigare
+    # skrevs det över vid varje körning → nattens tomma day.matches (alla matcher
+    # avsparkade) raderade dagens rekommendationer och gjorde arkivet oanvändbart
+    # för historik/backtest. Skriv bara om den nya versionen har minst lika många
+    # matcher som den arkiverade.
+    day_path = os.path.join(DAYS_DIR, "%s.json" % date_str)
+    prev_count = -1
+    if os.path.exists(day_path):
+        try:
+            with open(day_path, encoding="utf-8") as f:
+                prev_count = len(json.load(f).get("day", {}).get("matches", []))
+        except Exception:
+            prev_count = -1
+    if len(day_matches) >= prev_count:
+        with open(day_path, "w", encoding="utf-8") as f:
+            json.dump(feed, f, ensure_ascii=False, indent=1)
+    else:
+        print("  arkiv %s behålls (%d matcher) — denna körning har %d"
+              % (date_str, prev_count, len(day_matches)))
 
     # Fixture-liggare: uppdatera den redan inlästa liggaren med dagens/kommande
     # matcher (för historik/analys) och spara.
