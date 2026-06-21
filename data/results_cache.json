@@ -323,5 +323,34 @@
    "name": "Crysencio Summerville",
    "team": "Nederländerna"
   }
+ ],
+ "espn:760448": [
+  {
+   "goals": 1,
+   "name": "Franck Kessié",
+   "team": "Elfenbenskusten"
+  },
+  {
+   "goals": 2,
+   "name": "Deniz Undav",
+   "team": "Tyskland"
+  }
+ ],
+ "espn:760449": [
+  {
+   "goals": 1,
+   "name": "Daichi Kamada",
+   "team": "Japan"
+  },
+  {
+   "goals": 2,
+   "name": "Ayase Ueda",
+   "team": "Japan"
+  },
+  {
+   "goals": 1,
+   "name": "Junya Ito",
+   "team": "Japan"
+  }
  ]
 }
