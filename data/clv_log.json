@@ -1,7 +1,7 @@
 {
  "2026-06-21-1025862147-antal_mal-belgien-under-1-5-mål": {
   "closeOdds": 2.45,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "TEAM_OU",
   "match": "Belgien – Iran",
@@ -30,8 +30,8 @@
   "value": "Spelvärt"
  },
  "2026-06-21-1025862147-antal_mal-iran-över-0-5-mål": {
-  "closeOdds": 1.77,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 1.78,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "TEAM_OU",
   "match": "Belgien – Iran",
@@ -46,7 +46,7 @@
  },
  "2026-06-21-1025862147-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.02,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "BTTS",
   "match": "Belgien – Iran",
@@ -61,7 +61,7 @@
  },
  "2026-06-21-1025862147-dubbelchans-x2-oavgjort-eller-iran": {
   "closeOdds": 2.9,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "DC",
   "match": "Belgien – Iran",
@@ -76,7 +76,7 @@
  },
  "2026-06-21-1025862147-fulltid-2-iran-vinner": {
   "closeOdds": 8.5,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "1X2",
   "match": "Belgien – Iran",
@@ -91,7 +91,7 @@
  },
  "2026-06-21-1025862147-halvlek-halvtid-2-iran-leder-i-halvtid": {
   "closeOdds": 6.75,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "1H_1X2",
   "match": "Belgien – Iran",
@@ -106,7 +106,7 @@
  },
  "2026-06-21-1025862147-halvlek-under-1-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.45,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "1H_OU",
   "match": "Belgien – Iran",
@@ -120,8 +120,8 @@
   "value": "Neutralt"
  },
  "2026-06-21-1025862147-halvtid_fulltid-halvtid-fulltid-2-2": {
-  "closeOdds": 12.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 12.5,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "HTFT",
   "match": "Belgien – Iran",
@@ -135,8 +135,8 @@
   "value": "Neutralt"
  },
  "2026-06-21-1025862147-handikapp-iran-1-5": {
-  "closeOdds": 1.71,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 1.7,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "AH",
   "match": "Belgien – Iran",
@@ -150,8 +150,8 @@
   "value": "Spelvärt"
  },
  "2026-06-21-1025862147-hornor-över-9-5-hörnor": {
-  "closeOdds": 1.9,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 1.89,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "CORNERS",
   "match": "Belgien – Iran",
@@ -166,7 +166,7 @@
  },
  "2026-06-21-1025862147-korrekt_resultat-resultat-0-2": {
   "closeOdds": 34.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "CS",
   "match": "Belgien – Iran",
@@ -195,8 +195,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862147-korrekt_resultat-resultat-1-2": {
-  "closeOdds": 18.0,
-  "closeTime": "2026-06-21T17:17:57Z",
+  "closeOdds": 19.0,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "CS",
   "match": "Belgien – Iran",
@@ -210,8 +210,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862147-kort-under-3-5-kort": {
-  "closeOdds": 1.64,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 1.63,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "CARDS",
   "match": "Belgien – Iran",
@@ -225,8 +225,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862147-kort-över-3-5-kort": {
-  "closeOdds": 2.1,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 2.12,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "CARDS",
   "match": "Belgien – Iran",
@@ -240,8 +240,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862147-malgorare-brandon-mechele-gör-mål": {
-  "closeOdds": 7.5,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 7.0,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "PLAYER",
   "match": "Belgien – Iran",
@@ -255,8 +255,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862147-malgorare-saeid-ezatolahi-gör-mål": {
-  "closeOdds": 13.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 12.0,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "PLAYER",
   "match": "Belgien – Iran",
@@ -270,8 +270,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862147-spelarspecial-leandro-trossard-gör-2-mål": {
-  "closeOdds": 13.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 12.5,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "PLAYER",
   "match": "Belgien – Iran",
@@ -285,8 +285,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862147-spelarspecial-romelu-lukaku-gör-2-mål": {
-  "closeOdds": 6.75,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 5.5,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T19:00:00Z",
   "market": "PLAYER",
   "match": "Belgien – Iran",
@@ -301,7 +301,7 @@
  },
  "2026-06-21-1025862156-antal_mal-nya-zeeland-över-0-5-mål": {
   "closeOdds": 1.75,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Nya Zeeland – Egypten",
@@ -316,7 +316,7 @@
  },
  "2026-06-21-1025862156-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.1,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "BTTS",
   "match": "Nya Zeeland – Egypten",
@@ -331,7 +331,7 @@
  },
  "2026-06-21-1025862156-dubbelchans-1x-nya-zeeland-eller-oavgjort": {
   "closeOdds": 2.38,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "DC",
   "match": "Nya Zeeland – Egypten",
@@ -346,7 +346,7 @@
  },
  "2026-06-21-1025862156-fulltid-1-nya-zeeland-vinner": {
   "closeOdds": 6.25,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "1X2",
   "match": "Nya Zeeland – Egypten",
@@ -361,7 +361,7 @@
  },
  "2026-06-21-1025862156-halvlek-halvtid-1-nya-zeeland-leder-i-halvtid": {
   "closeOdds": 5.8,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "1H_1X2",
   "match": "Nya Zeeland – Egypten",
@@ -376,7 +376,7 @@
  },
  "2026-06-21-1025862156-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 9.5,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "HTFT",
   "match": "Nya Zeeland – Egypten",
@@ -391,7 +391,7 @@
  },
  "2026-06-21-1025862156-handikapp-nya-zeeland-0-5": {
   "closeOdds": 2.43,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "AH",
   "match": "Nya Zeeland – Egypten",
@@ -406,7 +406,7 @@
  },
  "2026-06-21-1025862156-hornor-över-8-5-hörnor": {
   "closeOdds": 1.84,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "CORNERS",
   "match": "Nya Zeeland – Egypten",
@@ -421,7 +421,7 @@
  },
  "2026-06-21-1025862156-korrekt_resultat-resultat-1-1": {
   "closeOdds": 7.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "CS",
   "match": "Nya Zeeland – Egypten",
@@ -436,7 +436,7 @@
  },
  "2026-06-21-1025862156-korrekt_resultat-resultat-2-1": {
   "closeOdds": 16.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "CS",
   "match": "Nya Zeeland – Egypten",
@@ -450,8 +450,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862156-kort-över-2-5-kort": {
-  "closeOdds": 1.66,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeOdds": 1.65,
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "CARDS",
   "match": "Nya Zeeland – Egypten",
@@ -481,7 +481,7 @@
  },
  "2026-06-21-1025862156-malgorare-ryan-thomas-gör-mål": {
   "closeOdds": 13.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "PLAYER",
   "match": "Nya Zeeland – Egypten",
@@ -496,7 +496,7 @@
  },
  "2026-06-21-1025862156-spelarspecial-mohamed-salah-gör-2-mål": {
   "closeOdds": 9.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "PLAYER",
   "match": "Nya Zeeland – Egypten",
@@ -826,7 +826,7 @@
  },
  "2026-06-21-1025862168-antal_mal-kap-verde-över-0-5-mål": {
   "closeOdds": 2.12,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "TEAM_OU",
   "match": "Uruguay – Kap Verde",
@@ -841,7 +841,7 @@
  },
  "2026-06-21-1025862168-antal_mal-över-2-5-mål": {
   "closeOdds": 2.23,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "OU",
   "match": "Uruguay – Kap Verde",
@@ -856,7 +856,7 @@
  },
  "2026-06-21-1025862168-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.5,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "BTTS",
   "match": "Uruguay – Kap Verde",
@@ -871,7 +871,7 @@
  },
  "2026-06-21-1025862168-dubbelchans-x2-oavgjort-eller-kap-verde": {
   "closeOdds": 2.85,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "DC",
   "match": "Uruguay – Kap Verde",
@@ -886,7 +886,7 @@
  },
  "2026-06-21-1025862168-fulltid-2-kap-verde-vinner": {
   "closeOdds": 9.5,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "1X2",
   "match": "Uruguay – Kap Verde",
@@ -901,7 +901,7 @@
  },
  "2026-06-21-1025862168-halvlek-halvtid-2-kap-verde-leder-i-halvtid": {
   "closeOdds": 8.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "1H_1X2",
   "match": "Uruguay – Kap Verde",
@@ -916,7 +916,7 @@
  },
  "2026-06-21-1025862168-halvlek-över-0-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.44,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "1H_OU",
   "match": "Uruguay – Kap Verde",
@@ -931,7 +931,7 @@
  },
  "2026-06-21-1025862168-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 2.1,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "HTFT",
   "match": "Uruguay – Kap Verde",
@@ -961,7 +961,7 @@
  },
  "2026-06-21-1025862168-handikapp-kap-verde-1-5": {
   "closeOdds": 1.61,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "AH",
   "match": "Uruguay – Kap Verde",
@@ -991,7 +991,7 @@
  },
  "2026-06-21-1025862168-hornor-över-9-5-hörnor": {
   "closeOdds": 1.98,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "CORNERS",
   "match": "Uruguay – Kap Verde",
@@ -1006,7 +1006,7 @@
  },
  "2026-06-21-1025862168-korrekt_resultat-resultat-1-1": {
   "closeOdds": 8.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "CS",
   "match": "Uruguay – Kap Verde",
@@ -1036,7 +1036,7 @@
  },
  "2026-06-21-1025862168-kort-under-3-5-kort": {
   "closeOdds": 1.54,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "CARDS",
   "match": "Uruguay – Kap Verde",
@@ -1066,7 +1066,7 @@
  },
  "2026-06-21-1025862168-kort-över-3-5-kort": {
   "closeOdds": 2.3,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "CARDS",
   "match": "Uruguay – Kap Verde",
@@ -1081,7 +1081,7 @@
  },
  "2026-06-21-1025862168-malgorare-dailon-rocha-livramento-gör-mål": {
   "closeOdds": 6.5,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "PLAYER",
   "match": "Uruguay – Kap Verde",
@@ -1096,7 +1096,7 @@
  },
  "2026-06-21-1025862168-malgorare-hélio-varela-gör-mål": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "PLAYER",
   "match": "Uruguay – Kap Verde",
@@ -1111,7 +1111,7 @@
  },
  "2026-06-21-1025862168-spelarspecial-darwin-núñez-gör-2-mål": {
   "closeOdds": 8.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "PLAYER",
   "match": "Uruguay – Kap Verde",
@@ -1126,7 +1126,7 @@
  },
  "2026-06-21-1025862168-spelarspecial-federico-viñas-gör-2-mål": {
   "closeOdds": 11.0,
-  "closeTime": "2026-06-21T17:37:26Z",
+  "closeTime": "2026-06-21T17:57:14Z",
   "kickoff": "2026-06-21T22:00:00Z",
   "market": "PLAYER",
   "match": "Uruguay – Kap Verde",
