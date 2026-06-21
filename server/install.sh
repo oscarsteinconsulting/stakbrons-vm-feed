@@ -81,16 +81,42 @@ else
 fi
 launchctl enable "gui/$UID_N/$LABEL" 2>/dev/null || true
 
+# 5b. ANTI-SÖMN: permanent caffeinate-jobb (KeepAlive). På Apple Silicon räcker
+#     INTE 'pmset sleep 0' för att hålla en mini vaken när ingen använder den —
+#     den idle-sover ändå nattetid och då fryser feeden. caffeinate håller en
+#     sleep-assertion dygnet runt.
+CAFFE="$HOME/Library/LaunchAgents/com.stakbrons.caffeinate.plist"
+cat > "$CAFFE" <<'CAFFE_EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.stakbrons.caffeinate</string>
+  <key>ProgramArguments</key>
+  <array><string>/usr/bin/caffeinate</string><string>-i</string><string>-m</string><string>-s</string></array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ProcessType</key><string>Background</string>
+</dict>
+</plist>
+CAFFE_EOF
+launchctl bootout "gui/$UID_N/com.stakbrons.caffeinate" 2>/dev/null || true
+launchctl bootstrap "gui/$UID_N" "$CAFFE" 2>/dev/null \
+  && echo "▸ caffeinate-jobb laddat (håller minin vaken dygnet runt)." \
+  || echo "  ⚠ kunde inte ladda caffeinate-jobbet."
+launchctl enable "gui/$UID_N/com.stakbrons.caffeinate" 2>/dev/null || true
+
 # 6. Kör en gång direkt som röktest.
 echo; echo "▸ Testkörning…"
 bash "$RUNNER" && echo "▸ Testkörning klar. Logg: $LOG" || echo "  ⚠ Testkörning gav fel — kolla $LOG"
 
 cat <<TIPS
 
-Klart. Nästa steg (en gång, kräver sudo) för att minin aldrig ska somna:
+Klart. caffeinate-jobbet håller minin vaken. För extra säkerhet (kräver sudo):
+  sudo pmset -a disablesleep 1          # hård avstängning av sömn (Apple Silicon)
   sudo pmset -a sleep 0 disksleep 0 womp 1
 Och slå på automatisk inloggning (Systeminställningar → Användare → Inloggningsval)
-så jobbet kör även efter omstart.
+så både caffeinate- och feed-jobbet kör efter omstart.
 
 Status / loggar:
   launchctl list | grep $LABEL
