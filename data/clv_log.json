@@ -300,8 +300,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862156-antal_mal-egypten-under-1-5-mål": {
-  "closeOdds": 2.0,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Nya Zeeland – Egypten",
@@ -315,8 +315,8 @@
   "value": "Neutralt"
  },
  "2026-06-21-1025862156-antal_mal-nya-zeeland-över-0-5-mål": {
-  "closeOdds": 1.77,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeOdds": 1.75,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Nya Zeeland – Egypten",
@@ -330,8 +330,8 @@
   "value": "Neutralt"
  },
  "2026-06-21-1025862156-antal_mal-över-2-5-mål": {
-  "closeOdds": 2.06,
-  "closeTime": "2026-06-21T20:54:27Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "OU",
   "match": "Nya Zeeland – Egypten",
@@ -345,8 +345,8 @@
   "value": "Neutralt"
  },
  "2026-06-21-1025862156-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 2.1,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeOdds": 2.08,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "BTTS",
   "match": "Nya Zeeland – Egypten",
@@ -360,8 +360,8 @@
   "value": "Neutralt"
  },
  "2026-06-21-1025862156-dubbelchans-1x-nya-zeeland-eller-oavgjort": {
-  "closeOdds": 2.43,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeOdds": 2.45,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "DC",
   "match": "Nya Zeeland – Egypten",
@@ -375,8 +375,8 @@
   "value": "Spelvärt"
  },
  "2026-06-21-1025862156-fulltid-1-nya-zeeland-vinner": {
-  "closeOdds": 6.5,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeOdds": 6.75,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "1X2",
   "match": "Nya Zeeland – Egypten",
@@ -391,7 +391,7 @@
  },
  "2026-06-21-1025862156-halvlek-halvtid-1-nya-zeeland-leder-i-halvtid": {
   "closeOdds": 6.0,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "1H_1X2",
   "match": "Nya Zeeland – Egypten",
@@ -405,8 +405,8 @@
   "value": "Neutralt"
  },
  "2026-06-21-1025862156-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.41,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeOdds": 1.4,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "1H_OU",
   "match": "Nya Zeeland – Egypten",
@@ -421,7 +421,7 @@
  },
  "2026-06-21-1025862156-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "HTFT",
   "match": "Nya Zeeland – Egypten",
@@ -436,7 +436,7 @@
  },
  "2026-06-21-1025862156-handikapp-nya-zeeland-0-5": {
   "closeOdds": 2.5,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "AH",
   "match": "Nya Zeeland – Egypten",
@@ -450,8 +450,8 @@
   "value": "Spelvärt"
  },
  "2026-06-21-1025862156-hornor-över-8-5-hörnor": {
-  "closeOdds": 1.84,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeOdds": 1.82,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "CORNERS",
   "match": "Nya Zeeland – Egypten",
@@ -466,7 +466,7 @@
  },
  "2026-06-21-1025862156-korrekt_resultat-resultat-1-1": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "CS",
   "match": "Nya Zeeland – Egypten",
@@ -496,7 +496,7 @@
  },
  "2026-06-21-1025862156-korrekt_resultat-resultat-2-1": {
   "closeOdds": 16.0,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "CS",
   "match": "Nya Zeeland – Egypten",
@@ -510,8 +510,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862156-kort-under-2-5-kort": {
-  "closeOdds": 1.86,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeOdds": 1.85,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "CARDS",
   "match": "Nya Zeeland – Egypten",
@@ -525,8 +525,8 @@
   "value": "Undvik"
  },
  "2026-06-21-1025862156-kort-över-2-5-kort": {
-  "closeOdds": 1.82,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeOdds": 1.83,
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "CARDS",
   "match": "Nya Zeeland – Egypten",
@@ -556,7 +556,7 @@
  },
  "2026-06-21-1025862156-malgorare-hossam-abdelmaguid-gör-mål": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "PLAYER",
   "match": "Nya Zeeland – Egypten",
@@ -571,7 +571,7 @@
  },
  "2026-06-21-1025862156-malgorare-ryan-thomas-gör-mål": {
   "closeOdds": 13.0,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "PLAYER",
   "match": "Nya Zeeland – Egypten",
@@ -586,7 +586,7 @@
  },
  "2026-06-21-1025862156-spelarspecial-mohamed-salah-gör-2-mål": {
   "closeOdds": 8.5,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "PLAYER",
   "match": "Nya Zeeland – Egypten",
@@ -601,7 +601,7 @@
  },
  "2026-06-21-1025862156-spelarspecial-omar-marmoush-gör-2-mål": {
   "closeOdds": 9.0,
-  "closeTime": "2026-06-21T21:53:49Z",
+  "closeTime": "2026-06-21T22:13:59Z",
   "kickoff": "2026-06-22T01:00:00Z",
   "market": "PLAYER",
   "match": "Nya Zeeland – Egypten",
