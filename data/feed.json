@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-21T19:40:31Z",
+ "generatedAt": "2026-06-21T20:00:08Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1587,8 +1587,8 @@
      "pHome": 0.692,
      "pDraw": 0.211,
      "pAway": 0.097,
-     "oddsHome": 1.19,
-     "oddsDraw": 7.5,
+     "oddsHome": 1.2,
+     "oddsDraw": 7.0,
      "oddsAway": 16.0,
      "lambdaHome": 1.99,
      "lambdaAway": 0.61,
@@ -2581,7 +2581,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-21T19:40:31Z",
+  "generatedAt": "2026-06-21T20:00:07Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3655,14 +3655,14 @@
     "away": "Haiti",
     "homeFlag": "🇲🇦",
     "awayFlag": "🇭🇹",
-    "pHome": 0.7274,
-    "pDraw": 0.1863,
+    "pHome": 0.7248,
+    "pDraw": 0.1889,
     "pAway": 0.0863,
     "folketOne": 93,
     "folketX": 5,
     "folketTwo": 2,
-    "oddsOne": 1.19,
-    "oddsX": 7.5,
+    "oddsOne": 1.2,
+    "oddsX": 7.0,
     "oddsTwo": 16.0
    },
    {
@@ -3674,8 +3674,8 @@
     "pHome": 0.0464,
     "pDraw": 0.1376,
     "pAway": 0.816,
-    "folketOne": 8,
-    "folketX": 21,
+    "folketOne": 7,
+    "folketX": 22,
     "folketTwo": 71,
     "oddsOne": 8.5,
     "oddsX": 5.4,
