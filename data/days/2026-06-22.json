@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-22T05:35:39Z",
+ "generatedAt": "2026-06-22T05:55:39Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -2335,26 +2335,6 @@
    "date": "2026-06-12",
    "matches": [
     {
-     "id": "1027164909",
-     "kickoff": "2026-06-12T19:00:00Z",
-     "stage": "Grupp B",
-     "home": "Kanada",
-     "away": "Bosnien",
-     "homeFlag": "🇨🇦",
-     "awayFlag": "🇧🇦",
-     "channel": "SVT",
-     "pHome": 0.559,
-     "pDraw": 0.256,
-     "pAway": 0.185,
-     "oddsHome": null,
-     "oddsDraw": null,
-     "oddsAway": null,
-     "lambdaHome": 1.71,
-     "lambdaAway": 0.89,
-     "mssHome": 51.5,
-     "mssAway": 39.8
-    },
-    {
      "id": "1025862118",
      "kickoff": "2026-06-13T01:00:00Z",
      "stage": "Grupp D",
@@ -3143,7 +3123,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-22T05:35:38Z",
+  "generatedAt": "2026-06-22T05:55:38Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -4105,14 +4085,14 @@
     "away": "Senegal",
     "homeFlag": "🇳🇴",
     "awayFlag": "🇸🇳",
-    "pHome": 0.4303,
-    "pDraw": 0.2783,
-    "pAway": 0.2913,
+    "pHome": 0.43,
+    "pDraw": 0.2797,
+    "pAway": 0.2903,
     "folketOne": 46,
     "folketX": 31,
     "folketTwo": 23,
-    "oddsOne": 2.25,
-    "oddsX": 3.6,
+    "oddsOne": 2.23,
+    "oddsX": 3.5,
     "oddsTwo": 3.4
    },
    {
@@ -4312,29 +4292,6 @@
    "duration": "REGULAR",
    "winner": "home",
    "scorers": null
-  },
-  {
-   "date": "2026-06-12",
-   "home": "Kanada",
-   "away": "Bosnien",
-   "scoreHome": 1,
-   "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Jovo Lukic",
-     "team": "Bosnien"
-    },
-    {
-     "goals": 1,
-     "name": "Cyle Larin",
-     "team": "Kanada"
-    }
-   ]
   },
   {
    "date": "2026-06-13",
