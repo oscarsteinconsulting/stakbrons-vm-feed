@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-22T11:37:00Z",
+ "generatedAt": "2026-06-22T11:57:06Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1145,16 +1145,16 @@
       "category": "Halvlek",
       "selection": "Halvtid: X (Oavgjort i halvtid)",
       "detail": "Resultat efter första halvlek",
-      "odds": 2.38,
-      "modelProb": 0.4162,
-      "marketProb": 0.3877,
-      "edge": -0.0094,
+      "odds": 2.4,
+      "modelProb": 0.4154,
+      "marketProb": 0.3848,
+      "edge": -0.0032,
       "value": "Neutralt",
       "recommendable": true,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Första halvlek väntas ge 1.14 mål (44% av matchens 2.60): oavgjort i halvtid 42% mot prisade 39%. Rättas manuellt.",
+      "rationale": "Första halvlek väntas ge 1.14 mål (44% av matchens 2.60): oavgjort i halvtid 42% mot prisade 38%. Rättas manuellt.",
       "settleMarket": "1H_1X2",
       "settlePick": "X",
       "settleLine": null,
@@ -2335,26 +2335,6 @@
    "date": "2026-06-12",
    "matches": [
     {
-     "id": "1027164909",
-     "kickoff": "2026-06-12T19:00:00Z",
-     "stage": "Grupp B",
-     "home": "Kanada",
-     "away": "Bosnien",
-     "homeFlag": "🇨🇦",
-     "awayFlag": "🇧🇦",
-     "channel": "SVT",
-     "pHome": 0.559,
-     "pDraw": 0.256,
-     "pAway": 0.185,
-     "oddsHome": null,
-     "oddsDraw": null,
-     "oddsAway": null,
-     "lambdaHome": 1.71,
-     "lambdaAway": 0.89,
-     "mssHome": 51.5,
-     "mssAway": 39.8
-    },
-    {
      "id": "1025862118",
      "kickoff": "2026-06-13T01:00:00Z",
      "stage": "Grupp D",
@@ -3143,7 +3123,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-22T11:36:59Z",
+  "generatedAt": "2026-06-22T11:57:05Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -4312,29 +4292,6 @@
    "duration": "REGULAR",
    "winner": "home",
    "scorers": null
-  },
-  {
-   "date": "2026-06-12",
-   "home": "Kanada",
-   "away": "Bosnien",
-   "scoreHome": 1,
-   "scoreAway": 1,
-   "htHome": 0,
-   "htAway": 1,
-   "duration": "REGULAR",
-   "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Jovo Lukic",
-     "team": "Bosnien"
-    },
-    {
-     "goals": 1,
-     "name": "Cyle Larin",
-     "team": "Kanada"
-    }
-   ]
   },
   {
    "date": "2026-06-13",
