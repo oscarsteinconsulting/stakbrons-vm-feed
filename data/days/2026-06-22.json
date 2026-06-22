@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-22T04:35:37Z",
+ "generatedAt": "2026-06-22T04:55:36Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -1367,8 +1367,8 @@
       "category": "Målgörare",
       "selection": "William Saliba gör mål",
       "detail": "Målgörare när som helst i matchen",
-      "odds": 7.0,
-      "modelProb": 0.1029,
+      "odds": 6.75,
+      "modelProb": 0.1069,
       "marketProb": null,
       "edge": 0.0,
       "value": "Undvik",
@@ -1376,7 +1376,7 @@
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Modellen väntar 2.60 mål mot marknadens 3.84. Avvigat pris 13% → justerat 10%.",
+      "rationale": "Modellen väntar 2.60 mål mot marknadens 3.84. Avvigat pris 13% → justerat 11%.",
       "settleMarket": "PLAYER",
       "settlePick": "scorer",
       "settleLine": null,
@@ -1393,8 +1393,8 @@
       "category": "Målgörare",
       "selection": "Ali Al-Hamadi gör mål",
       "detail": "Målgörare när som helst i matchen",
-      "odds": 9.0,
-      "modelProb": 0.0794,
+      "odds": 8.5,
+      "modelProb": 0.0843,
       "marketProb": null,
       "edge": 0.0,
       "value": "Undvik",
@@ -1402,7 +1402,7 @@
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Modellen väntar 2.60 mål mot marknadens 3.84. Avvigat pris 10% → justerat 8%.",
+      "rationale": "Modellen väntar 2.60 mål mot marknadens 3.84. Avvigat pris 11% → justerat 8%.",
       "settleMarket": "PLAYER",
       "settlePick": "scorer",
       "settleLine": null,
@@ -3143,7 +3143,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-22T04:35:37Z",
+  "generatedAt": "2026-06-22T04:55:36Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
