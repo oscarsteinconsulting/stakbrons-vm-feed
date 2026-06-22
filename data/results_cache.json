@@ -353,6 +353,28 @@
    "team": "Japan"
   }
  ],
+ "espn:760450": [
+  {
+   "goals": 1,
+   "name": "Kevin Pina",
+   "team": "Kap Verde"
+  },
+  {
+   "goals": 1,
+   "name": "Maxi Araújo",
+   "team": "Uruguay"
+  },
+  {
+   "goals": 1,
+   "name": "Agustín Cano",
+   "team": "Uruguay"
+  },
+  {
+   "goals": 1,
+   "name": "Hélio Varela",
+   "team": "Kap Verde"
+  }
+ ],
  "espn:760451": [],
  "espn:760453": [
   {
