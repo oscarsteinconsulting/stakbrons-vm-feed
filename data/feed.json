@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-22T17:17:40Z",
+ "generatedAt": "2026-06-22T17:37:42Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -49,7 +49,7 @@
     "pAway": 0.292,
     "oddsHome": 2.18,
     "oddsDraw": 3.5,
-    "oddsAway": 3.45,
+    "oddsAway": 3.5,
     "lambdaHome": 1.44,
     "lambdaAway": 1.16,
     "mssHome": 69.3,
@@ -407,10 +407,10 @@
       "category": "Fulltid",
       "selection": "2 (Senegal vinner)",
       "detail": "Senegal vinner",
-      "odds": 3.45,
-      "modelProb": 0.2886,
-      "marketProb": 0.2802,
-      "edge": -0.0043,
+      "odds": 3.5,
+      "modelProb": 0.2877,
+      "marketProb": 0.2774,
+      "edge": 0.0071,
       "value": "Neutralt",
       "recommendable": false,
       "kelly": 0.0,
@@ -1893,9 +1893,9 @@
      "pHome": 0.258,
      "pDraw": 0.276,
      "pAway": 0.467,
-     "oddsHome": 3.8,
-     "oddsDraw": 4.0,
-     "oddsAway": 1.91,
+     "oddsHome": 3.9,
+     "oddsDraw": 4.1,
+     "oddsAway": 1.92,
      "lambdaHome": 1.08,
      "lambdaAway": 1.52,
      "mssHome": 60.6,
@@ -2158,6 +2158,26 @@
   {
    "date": "2026-06-12",
    "matches": [
+    {
+     "id": "1027164909",
+     "kickoff": "2026-06-12T19:00:00Z",
+     "stage": "Grupp B",
+     "home": "Kanada",
+     "away": "Bosnien",
+     "homeFlag": "🇨🇦",
+     "awayFlag": "🇧🇦",
+     "channel": "SVT",
+     "pHome": 0.559,
+     "pDraw": 0.256,
+     "pAway": 0.185,
+     "oddsHome": null,
+     "oddsDraw": null,
+     "oddsAway": null,
+     "lambdaHome": 1.71,
+     "lambdaAway": 0.89,
+     "mssHome": 51.5,
+     "mssAway": 39.8
+    },
     {
      "id": "1025862118",
      "kickoff": "2026-06-13T01:00:00Z",
@@ -2972,7 +2992,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-22T17:17:40Z",
+  "generatedAt": "2026-06-22T17:37:42Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3925,6 +3945,29 @@
    "duration": "REGULAR",
    "winner": "home",
    "scorers": null
+  },
+  {
+   "date": "2026-06-12",
+   "home": "Kanada",
+   "away": "Bosnien",
+   "scoreHome": 1,
+   "scoreAway": 1,
+   "htHome": 0,
+   "htAway": 1,
+   "duration": "REGULAR",
+   "winner": "draw",
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Jovo Lukic",
+     "team": "Bosnien"
+    },
+    {
+     "goals": 1,
+     "name": "Cyle Larin",
+     "team": "Kanada"
+    }
+   ]
   },
   {
    "date": "2026-06-13",
