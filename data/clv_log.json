@@ -1350,8 +1350,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025862185-antal_mal-under-2-5-mål": {
-  "closeOdds": 2.0,
-  "closeTime": "2026-06-22T11:52:09Z",
+  "closeOdds": 1.98,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "OU",
   "match": "Norge – Senegal",
@@ -1365,8 +1365,8 @@
   "value": "Neutralt"
  },
  "2026-06-22-1025862185-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 2.18,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 2.2,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "BTTS",
   "match": "Norge – Senegal",
@@ -1396,7 +1396,7 @@
  },
  "2026-06-22-1025862185-dubbelchans-x2-oavgjort-eller-senegal": {
   "closeOdds": 1.68,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "DC",
   "match": "Norge – Senegal",
@@ -1411,7 +1411,7 @@
  },
  "2026-06-22-1025862185-fulltid-2-senegal-vinner": {
   "closeOdds": 3.45,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "1X2",
   "match": "Norge – Senegal",
@@ -1440,8 +1440,8 @@
   "value": "Neutralt"
  },
  "2026-06-22-1025862185-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 2.23,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 2.25,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "1H_1X2",
   "match": "Norge – Senegal",
@@ -1456,7 +1456,7 @@
  },
  "2026-06-22-1025862185-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 5.3,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "HTFT",
   "match": "Norge – Senegal",
@@ -1471,7 +1471,7 @@
  },
  "2026-06-22-1025862185-handikapp-senegal-0-5": {
   "closeOdds": 1.72,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "AH",
   "match": "Norge – Senegal",
@@ -1485,8 +1485,8 @@
   "value": "Neutralt"
  },
  "2026-06-22-1025862185-hornor-över-9-5-hörnor": {
-  "closeOdds": 2.05,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "CORNERS",
   "match": "Norge – Senegal",
@@ -1500,8 +1500,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025862185-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 11.5,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 12.0,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "CS",
   "match": "Norge – Senegal",
@@ -1515,8 +1515,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025862185-kort-över-3-5-kort": {
-  "closeOdds": 2.18,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 2.2,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "CARDS",
   "match": "Norge – Senegal",
@@ -1531,7 +1531,7 @@
  },
  "2026-06-22-1025862185-malgorare-kristoffer-ajer-gör-mål": {
   "closeOdds": 11.5,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T00:00:00Z",
   "market": "PLAYER",
   "match": "Norge – Senegal",
@@ -1559,6 +1559,21 @@
   "settlePlayer": "Erling Haaland",
   "value": "Undvik"
  },
+ "2026-06-22-1025862185-spelarspecial-nicolas-jackson-gör-2-mål": {
+  "closeOdds": 15.0,
+  "closeTime": "2026-06-22T15:52:28Z",
+  "kickoff": "2026-06-23T00:00:00Z",
+  "market": "PLAYER",
+  "match": "Norge – Senegal",
+  "recOdds": 15.0,
+  "recTime": "2026-06-22T15:52:28Z",
+  "recommendable": false,
+  "selection": "Nicolas Jackson gör 2+ mål",
+  "settleLine": null,
+  "settlePick": "twoplus",
+  "settlePlayer": "Nicolas Jackson",
+  "value": "Undvik"
+ },
  "2026-06-22-1025862208-antal_mal-argentina-under-1-5-mål": {
   "closeOdds": 2.2,
   "closeTime": "2026-06-22T15:32:30Z",
@@ -1576,7 +1591,7 @@
  },
  "2026-06-22-1025862208-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.12,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "BTTS",
   "match": "Argentina – Österrike",
@@ -1591,7 +1606,7 @@
  },
  "2026-06-22-1025862208-dubbelchans-x2-oavgjort-eller-österrike": {
   "closeOdds": 2.7,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "DC",
   "match": "Argentina – Österrike",
@@ -1606,7 +1621,7 @@
  },
  "2026-06-22-1025862208-fulltid-2-österrike-vinner": {
   "closeOdds": 8.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "1X2",
   "match": "Argentina – Österrike",
@@ -1636,7 +1651,7 @@
  },
  "2026-06-22-1025862208-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 2.38,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "1H_1X2",
   "match": "Argentina – Österrike",
@@ -1651,7 +1666,7 @@
  },
  "2026-06-22-1025862208-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 6.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "HTFT",
   "match": "Argentina – Österrike",
@@ -1666,7 +1681,7 @@
  },
  "2026-06-22-1025862208-handikapp-österrike-1-5": {
   "closeOdds": 1.61,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "AH",
   "match": "Argentina – Österrike",
@@ -1681,7 +1696,7 @@
  },
  "2026-06-22-1025862208-hornor-över-8-5-hörnor": {
   "closeOdds": 2.05,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "CORNERS",
   "match": "Argentina – Österrike",
@@ -1710,8 +1725,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025862208-korrekt_resultat-resultat-1-1": {
-  "closeOdds": 7.5,
-  "closeTime": "2026-06-22T14:12:25Z",
+  "closeOdds": 8.0,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "CS",
   "match": "Argentina – Österrike",
@@ -1726,7 +1741,7 @@
  },
  "2026-06-22-1025862208-kort-under-3-5-kort": {
   "closeOdds": 1.58,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "CARDS",
   "match": "Argentina – Österrike",
@@ -1741,7 +1756,7 @@
  },
  "2026-06-22-1025862208-kort-över-3-5-kort": {
   "closeOdds": 2.2,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "CARDS",
   "match": "Argentina – Österrike",
@@ -1770,8 +1785,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025862208-malgorare-konrad-laimer-gör-mål": {
-  "closeOdds": 9.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 8.5,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "PLAYER",
   "match": "Argentina – Österrike",
@@ -1782,6 +1797,21 @@
   "settleLine": null,
   "settlePick": "scorer",
   "settlePlayer": "Konrad Laimer",
+  "value": "Undvik"
+ },
+ "2026-06-22-1025862208-malgorare-marcel-sabitzer-gör-mål": {
+  "closeOdds": 5.8,
+  "closeTime": "2026-06-22T15:52:28Z",
+  "kickoff": "2026-06-22T17:00:00Z",
+  "market": "PLAYER",
+  "match": "Argentina – Österrike",
+  "recOdds": 5.8,
+  "recTime": "2026-06-22T15:52:28Z",
+  "recommendable": false,
+  "selection": "Marcel Sabitzer gör mål",
+  "settleLine": null,
+  "settlePick": "scorer",
+  "settlePlayer": "Marcel Sabitzer",
   "value": "Undvik"
  },
  "2026-06-22-1025862208-spelarspecial-julián-álvarez-gör-2-mål": {
@@ -1800,8 +1830,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025862208-spelarspecial-lautaro-martínez-gör-2-mål": {
-  "closeOdds": 9.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 7.5,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T17:00:00Z",
   "market": "PLAYER",
   "match": "Argentina – Österrike",
@@ -1814,9 +1844,24 @@
   "settlePlayer": "Lautaro Martínez",
   "value": "Undvik"
  },
+ "2026-06-22-1025862208-spelarspecial-lionel-messi-gör-2-mål": {
+  "closeOdds": 5.3,
+  "closeTime": "2026-06-22T15:52:28Z",
+  "kickoff": "2026-06-22T17:00:00Z",
+  "market": "PLAYER",
+  "match": "Argentina – Österrike",
+  "recOdds": 5.3,
+  "recTime": "2026-06-22T15:52:28Z",
+  "recommendable": false,
+  "selection": "Lionel Messi gör 2+ mål",
+  "settleLine": null,
+  "settlePick": "twoplus",
+  "settlePlayer": "Lionel Messi",
+  "value": "Undvik"
+ },
  "2026-06-22-1025882121-antal_mal-algeriet-under-1-5-mål": {
-  "closeOdds": 2.1,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 2.12,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "TEAM_OU",
   "match": "Jordanien – Algeriet",
@@ -1831,7 +1876,7 @@
  },
  "2026-06-22-1025882121-antal_mal-jordanien-över-0-5-mål": {
   "closeOdds": 1.68,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "TEAM_OU",
   "match": "Jordanien – Algeriet",
@@ -1846,7 +1891,7 @@
  },
  "2026-06-22-1025882121-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 1.98,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "BTTS",
   "match": "Jordanien – Algeriet",
@@ -1861,7 +1906,7 @@
  },
  "2026-06-22-1025882121-dubbelchans-1x-jordanien-eller-oavgjort": {
   "closeOdds": 2.5,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "DC",
   "match": "Jordanien – Algeriet",
@@ -1875,8 +1920,8 @@
   "value": "Spelvärt"
  },
  "2026-06-22-1025882121-fulltid-1-jordanien-vinner": {
-  "closeOdds": 6.75,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 6.5,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "1X2",
   "match": "Jordanien – Algeriet",
@@ -1891,7 +1936,7 @@
  },
  "2026-06-22-1025882121-halvlek-halvtid-1-jordanien-leder-i-halvtid": {
   "closeOdds": 5.8,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "1H_1X2",
   "match": "Jordanien – Algeriet",
@@ -1906,7 +1951,7 @@
  },
  "2026-06-22-1025882121-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "HTFT",
   "match": "Jordanien – Algeriet",
@@ -1936,7 +1981,7 @@
  },
  "2026-06-22-1025882121-handikapp-jordanien-1-5": {
   "closeOdds": 1.52,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "AH",
   "match": "Jordanien – Algeriet",
@@ -1951,7 +1996,7 @@
  },
  "2026-06-22-1025882121-hornor-över-8-5-hörnor": {
   "closeOdds": 1.85,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CORNERS",
   "match": "Jordanien – Algeriet",
@@ -1981,7 +2026,7 @@
  },
  "2026-06-22-1025882121-korrekt_resultat-resultat-1-1": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CS",
   "match": "Jordanien – Algeriet",
@@ -2025,8 +2070,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1027168306-antal_mal-frankrike-under-3-5-mål": {
-  "closeOdds": 1.68,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 1.7,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "TEAM_OU",
   "match": "Frankrike – Irak",
@@ -2040,8 +2085,8 @@
   "value": "Spelvärt"
  },
  "2026-06-22-1027168306-antal_mal-under-3-5-mål": {
-  "closeOdds": 2.1,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 2.12,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "OU",
   "match": "Frankrike – Irak",
@@ -2055,8 +2100,8 @@
   "value": "Spelvärt"
  },
  "2026-06-22-1027168306-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 1.54,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 1.53,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "BTTS",
   "match": "Frankrike – Irak",
@@ -2085,8 +2130,8 @@
   "value": "Chans"
  },
  "2026-06-22-1027168306-fulltid-x-oavgjort": {
-  "closeOdds": 12.5,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 13.0,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "1X2",
   "match": "Frankrike – Irak",
@@ -2101,7 +2146,7 @@
  },
  "2026-06-22-1027168306-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 4.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "1H_1X2",
   "match": "Frankrike – Irak",
@@ -2115,8 +2160,8 @@
   "value": "Neutralt"
  },
  "2026-06-22-1027168306-halvlek-under-1-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.98,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 2.0,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "1H_OU",
   "match": "Frankrike – Irak",
@@ -2130,8 +2175,8 @@
   "value": "Spelvärt"
  },
  "2026-06-22-1027168306-halvtid_fulltid-halvtid-fulltid-x-x": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 15.0,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "HTFT",
   "match": "Frankrike – Irak",
@@ -2145,8 +2190,8 @@
   "value": "Neutralt"
  },
  "2026-06-22-1027168306-handikapp-irak-2-5": {
-  "closeOdds": 2.16,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 2.18,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "AH",
   "match": "Frankrike – Irak",
@@ -2160,8 +2205,8 @@
   "value": "Spelvärt"
  },
  "2026-06-22-1027168306-hornor-över-9-5-hörnor": {
-  "closeOdds": 1.93,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 1.92,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "CORNERS",
   "match": "Frankrike – Irak",
@@ -2175,8 +2220,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1027168306-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 26.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeOdds": 29.0,
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "CS",
   "match": "Frankrike – Irak",
@@ -2191,7 +2236,7 @@
  },
  "2026-06-22-1027168306-korrekt_resultat-resultat-1-0": {
   "closeOdds": 11.5,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "CS",
   "match": "Frankrike – Irak",
@@ -2206,7 +2251,7 @@
  },
  "2026-06-22-1027168306-kort-under-2-5-kort": {
   "closeOdds": 1.8,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "CARDS",
   "match": "Frankrike – Irak",
@@ -2221,7 +2266,7 @@
  },
  "2026-06-22-1027168306-kort-över-2-5-kort": {
   "closeOdds": 1.87,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "CARDS",
   "match": "Frankrike – Irak",
@@ -2236,7 +2281,7 @@
  },
  "2026-06-22-1027168306-malgorare-ali-al-hamadi-gör-mål": {
   "closeOdds": 8.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Irak",
@@ -2251,7 +2296,7 @@
  },
  "2026-06-22-1027168306-malgorare-william-saliba-gör-mål": {
   "closeOdds": 6.5,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Irak",
@@ -2266,7 +2311,7 @@
  },
  "2026-06-22-1027168306-spelarspecial-kylian-mbappé-gör-2-mål": {
   "closeOdds": 2.85,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Irak",
@@ -2281,7 +2326,7 @@
  },
  "2026-06-22-1027168306-spelarspecial-ousmane-dembélé-gör-2-mål": {
   "closeOdds": 6.0,
-  "closeTime": "2026-06-22T15:32:30Z",
+  "closeTime": "2026-06-22T15:52:28Z",
   "kickoff": "2026-06-22T21:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Irak",
