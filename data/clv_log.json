@@ -2776,7 +2776,7 @@
  },
  "2026-06-23-1025862264-antal_mal-portugal-under-2-5-mål": {
   "closeOdds": 1.98,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "TEAM_OU",
   "match": "Portugal – Uzbekistan",
@@ -2791,7 +2791,7 @@
  },
  "2026-06-23-1025862264-antal_mal-under-3-5-mål": {
   "closeOdds": 1.67,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "OU",
   "match": "Portugal – Uzbekistan",
@@ -2806,7 +2806,7 @@
  },
  "2026-06-23-1025862264-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.45,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "BTTS",
   "match": "Portugal – Uzbekistan",
@@ -2821,7 +2821,7 @@
  },
  "2026-06-23-1025862264-dubbelchans-x2-oavgjort-eller-uzbekistan": {
   "closeOdds": 5.5,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "DC",
   "match": "Portugal – Uzbekistan",
@@ -2836,7 +2836,7 @@
  },
  "2026-06-23-1025862264-fulltid-2-uzbekistan-vinner": {
   "closeOdds": 21.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "1X2",
   "match": "Portugal – Uzbekistan",
@@ -2851,7 +2851,7 @@
  },
  "2026-06-23-1025862264-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 3.15,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "1H_1X2",
   "match": "Portugal – Uzbekistan",
@@ -2866,7 +2866,7 @@
  },
  "2026-06-23-1025862264-halvlek-under-1-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.66,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "1H_OU",
   "match": "Portugal – Uzbekistan",
@@ -2896,7 +2896,7 @@
  },
  "2026-06-23-1025862264-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 10.5,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "HTFT",
   "match": "Portugal – Uzbekistan",
@@ -2911,7 +2911,7 @@
  },
  "2026-06-23-1025862264-handikapp-uzbekistan-2-5": {
   "closeOdds": 1.67,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "AH",
   "match": "Portugal – Uzbekistan",
@@ -2926,7 +2926,7 @@
  },
  "2026-06-23-1025862264-hornor-över-9-5-hörnor": {
   "closeOdds": 1.83,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "CORNERS",
   "match": "Portugal – Uzbekistan",
@@ -2941,7 +2941,7 @@
  },
  "2026-06-23-1025862264-korrekt_resultat-resultat-0-0": {
   "closeOdds": 19.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "CS",
   "match": "Portugal – Uzbekistan",
@@ -2956,7 +2956,7 @@
  },
  "2026-06-23-1025862264-korrekt_resultat-resultat-1-1": {
   "closeOdds": 13.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "CS",
   "match": "Portugal – Uzbekistan",
@@ -2970,8 +2970,8 @@
   "value": "Neutralt"
  },
  "2026-06-23-1025862264-kort-under-2-5-kort": {
-  "closeOdds": 2.06,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeOdds": 2.1,
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "CARDS",
   "match": "Portugal – Uzbekistan",
@@ -3000,8 +3000,8 @@
   "value": "Undvik"
  },
  "2026-06-23-1025862264-kort-över-2-5-kort": {
-  "closeOdds": 1.66,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeOdds": 1.63,
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "CARDS",
   "match": "Portugal – Uzbekistan",
@@ -3031,7 +3031,7 @@
  },
  "2026-06-23-1025862264-malgorare-pedro-neto-gör-mål": {
   "closeOdds": 3.1,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "PLAYER",
   "match": "Portugal – Uzbekistan",
@@ -3046,7 +3046,7 @@
  },
  "2026-06-23-1025862264-malgorare-ruben-dias-gör-mål": {
   "closeOdds": 8.5,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "PLAYER",
   "match": "Portugal – Uzbekistan",
@@ -3061,7 +3061,7 @@
  },
  "2026-06-23-1025862264-spelarspecial-bruno-fernandes-gör-2-mål": {
   "closeOdds": 8.5,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "PLAYER",
   "match": "Portugal – Uzbekistan",
@@ -3076,7 +3076,7 @@
  },
  "2026-06-23-1025862264-spelarspecial-rafael-leão-gör-2-mål": {
   "closeOdds": 11.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T17:00:00Z",
   "market": "PLAYER",
   "match": "Portugal – Uzbekistan",
@@ -3091,7 +3091,7 @@
  },
  "2026-06-23-1025862275-antal_mal-england-under-2-5-mål": {
   "closeOdds": 1.82,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "TEAM_OU",
   "match": "England – Ghana",
@@ -3106,7 +3106,7 @@
  },
  "2026-06-23-1025862275-antal_mal-under-2-5-mål": {
   "closeOdds": 2.43,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "OU",
   "match": "England – Ghana",
@@ -3121,7 +3121,7 @@
  },
  "2026-06-23-1025862275-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 1.54,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "BTTS",
   "match": "England – Ghana",
@@ -3136,7 +3136,7 @@
  },
  "2026-06-23-1025862275-dubbelchans-x2-oavgjort-eller-ghana": {
   "closeOdds": 4.9,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "DC",
   "match": "England – Ghana",
@@ -3151,7 +3151,7 @@
  },
  "2026-06-23-1025862275-fulltid-x-oavgjort": {
   "closeOdds": 8.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "1X2",
   "match": "England – Ghana",
@@ -3166,7 +3166,7 @@
  },
  "2026-06-23-1025862275-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 2.9,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "1H_1X2",
   "match": "England – Ghana",
@@ -3181,7 +3181,7 @@
  },
  "2026-06-23-1025862275-halvlek-under-1-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.57,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "1H_OU",
   "match": "England – Ghana",
@@ -3196,7 +3196,7 @@
  },
  "2026-06-23-1025862275-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 9.5,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "HTFT",
   "match": "England – Ghana",
@@ -3211,7 +3211,7 @@
  },
  "2026-06-23-1025862275-handikapp-ghana-1-5": {
   "closeOdds": 2.45,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "AH",
   "match": "England – Ghana",
@@ -3241,7 +3241,7 @@
  },
  "2026-06-23-1025862275-hornor-över-9-5-hörnor": {
   "closeOdds": 2.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "CORNERS",
   "match": "England – Ghana",
@@ -3256,7 +3256,7 @@
  },
  "2026-06-23-1025862275-korrekt_resultat-resultat-0-0": {
   "closeOdds": 16.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "CS",
   "match": "England – Ghana",
@@ -3271,7 +3271,7 @@
  },
  "2026-06-23-1025862275-korrekt_resultat-resultat-1-0": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "CS",
   "match": "England – Ghana",
@@ -3286,7 +3286,7 @@
  },
  "2026-06-23-1025862275-kort-under-2-5-kort": {
   "closeOdds": 1.9,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "CARDS",
   "match": "England – Ghana",
@@ -3301,7 +3301,7 @@
  },
  "2026-06-23-1025862275-kort-över-2-5-kort": {
   "closeOdds": 1.79,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "CARDS",
   "match": "England – Ghana",
@@ -3316,7 +3316,7 @@
  },
  "2026-06-23-1025862275-malgorare-ernest-nuamah-gör-mål": {
   "closeOdds": 7.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "PLAYER",
   "match": "England – Ghana",
@@ -3331,7 +3331,7 @@
  },
  "2026-06-23-1025862275-malgorare-jude-bellingham-gör-mål": {
   "closeOdds": 3.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "PLAYER",
   "match": "England – Ghana",
@@ -3376,7 +3376,7 @@
  },
  "2026-06-23-1025862275-spelarspecial-eberechi-eze-gör-2-mål": {
   "closeOdds": 15.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "PLAYER",
   "match": "England – Ghana",
@@ -3391,7 +3391,7 @@
  },
  "2026-06-23-1025862275-spelarspecial-harry-kane-gör-2-mål": {
   "closeOdds": 3.1,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T20:00:00Z",
   "market": "PLAYER",
   "match": "England – Ghana",
@@ -3406,7 +3406,7 @@
  },
  "2026-06-23-1025862277-antal_mal-kroatien-under-1-5-mål": {
   "closeOdds": 2.38,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "TEAM_OU",
   "match": "Panama – Kroatien",
@@ -3421,7 +3421,7 @@
  },
  "2026-06-23-1025862277-antal_mal-under-2-5-mål": {
   "closeOdds": 2.16,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "OU",
   "match": "Panama – Kroatien",
@@ -3436,7 +3436,7 @@
  },
  "2026-06-23-1025862277-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 1.97,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "BTTS",
   "match": "Panama – Kroatien",
@@ -3451,7 +3451,7 @@
  },
  "2026-06-23-1025862277-dubbelchans-1x-panama-eller-oavgjort": {
   "closeOdds": 2.65,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "DC",
   "match": "Panama – Kroatien",
@@ -3466,7 +3466,7 @@
  },
  "2026-06-23-1025862277-fulltid-1-panama-vinner": {
   "closeOdds": 7.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "1X2",
   "match": "Panama – Kroatien",
@@ -3481,7 +3481,7 @@
  },
  "2026-06-23-1025862277-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 2.45,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "1H_1X2",
   "match": "Panama – Kroatien",
@@ -3496,7 +3496,7 @@
  },
  "2026-06-23-1025862277-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 6.4,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "HTFT",
   "match": "Panama – Kroatien",
@@ -3511,7 +3511,7 @@
  },
  "2026-06-23-1025862277-handikapp-panama-1-5": {
   "closeOdds": 1.61,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "AH",
   "match": "Panama – Kroatien",
@@ -3526,7 +3526,7 @@
  },
  "2026-06-23-1025862277-hornor-över-9-5-hörnor": {
   "closeOdds": 1.98,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "CORNERS",
   "match": "Panama – Kroatien",
@@ -3541,7 +3541,7 @@
  },
  "2026-06-23-1025862277-korrekt_resultat-resultat-0-0": {
   "closeOdds": 13.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "CS",
   "match": "Panama – Kroatien",
@@ -3571,7 +3571,7 @@
  },
  "2026-06-23-1025862277-kort-över-2-5-kort": {
   "closeOdds": 1.64,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "CARDS",
   "match": "Panama – Kroatien",
@@ -3601,7 +3601,7 @@
  },
  "2026-06-23-1025862277-malgorare-josko-gvardiol-gör-mål": {
   "closeOdds": 6.75,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "PLAYER",
   "match": "Panama – Kroatien",
@@ -3616,7 +3616,7 @@
  },
  "2026-06-23-1025862277-spelarspecial-ivan-perisic-gör-2-mål": {
   "closeOdds": 15.0,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-23T23:00:00Z",
   "market": "PLAYER",
   "match": "Panama – Kroatien",
@@ -3631,7 +3631,7 @@
  },
  "2026-06-23-1027165778-antal_mal-över-2-5-mål": {
   "closeOdds": 2.2,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "OU",
   "match": "Colombia – DR Kongo",
@@ -3646,7 +3646,7 @@
  },
  "2026-06-23-1027165778-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.25,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "BTTS",
   "match": "Colombia – DR Kongo",
@@ -3661,7 +3661,7 @@
  },
  "2026-06-23-1027165778-dubbelchans-12-colombia-eller-dr-kongo-vinner": {
   "closeOdds": 1.25,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "DC",
   "match": "Colombia – DR Kongo",
@@ -3691,7 +3691,7 @@
  },
  "2026-06-23-1027165778-fulltid-1-colombia-vinner": {
   "closeOdds": 1.57,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "1X2",
   "match": "Colombia – DR Kongo",
@@ -3721,7 +3721,7 @@
  },
  "2026-06-23-1027165778-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 2.35,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "HTFT",
   "match": "Colombia – DR Kongo",
@@ -3736,7 +3736,7 @@
  },
  "2026-06-23-1027165778-handikapp-colombia-0-5": {
   "closeOdds": 1.52,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "AH",
   "match": "Colombia – DR Kongo",
@@ -3766,7 +3766,7 @@
  },
  "2026-06-23-1027165778-hornor-över-8-5-hörnor": {
   "closeOdds": 1.75,
-  "closeTime": "2026-06-23T09:27:42Z",
+  "closeTime": "2026-06-23T09:48:17Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "CORNERS",
   "match": "Colombia – DR Kongo",
