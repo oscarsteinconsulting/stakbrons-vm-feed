@@ -406,5 +406,22 @@
    "name": "Ousmane Dembélé",
    "team": "Frankrike"
   }
+ ],
+ "espn:760461": [
+  {
+   "goals": 2,
+   "name": "Cristiano Ronaldo",
+   "team": "Portugal"
+  },
+  {
+   "goals": 1,
+   "name": "Nuno Mendes",
+   "team": "Portugal"
+  },
+  {
+   "goals": 1,
+   "name": "Rafael Leão",
+   "team": "Portugal"
+  }
  ]
 }
