@@ -2086,7 +2086,7 @@
  },
  "2026-06-22-1025882121-antal_mal-algeriet-under-1-5-mål": {
   "closeOdds": 2.15,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "TEAM_OU",
   "match": "Jordanien – Algeriet",
@@ -2101,7 +2101,7 @@
  },
  "2026-06-22-1025882121-antal_mal-jordanien-över-0-5-mål": {
   "closeOdds": 1.7,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "TEAM_OU",
   "match": "Jordanien – Algeriet",
@@ -2116,7 +2116,7 @@
  },
  "2026-06-22-1025882121-antal_mal-under-2-5-mål": {
   "closeOdds": 1.94,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "OU",
   "match": "Jordanien – Algeriet",
@@ -2131,7 +2131,7 @@
  },
  "2026-06-22-1025882121-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.0,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "BTTS",
   "match": "Jordanien – Algeriet",
@@ -2146,7 +2146,7 @@
  },
  "2026-06-22-1025882121-dubbelchans-1x-jordanien-eller-oavgjort": {
   "closeOdds": 2.5,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "DC",
   "match": "Jordanien – Algeriet",
@@ -2161,7 +2161,7 @@
  },
  "2026-06-22-1025882121-fulltid-1-jordanien-vinner": {
   "closeOdds": 6.5,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "1X2",
   "match": "Jordanien – Algeriet",
@@ -2176,7 +2176,7 @@
  },
  "2026-06-22-1025882121-halvlek-halvtid-1-jordanien-leder-i-halvtid": {
   "closeOdds": 6.1,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "1H_1X2",
   "match": "Jordanien – Algeriet",
@@ -2191,7 +2191,7 @@
  },
  "2026-06-22-1025882121-halvlek-under-0-5-mål-i-1-a-halvlek": {
   "closeOdds": 2.95,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "1H_OU",
   "match": "Jordanien – Algeriet",
@@ -2206,7 +2206,7 @@
  },
  "2026-06-22-1025882121-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "HTFT",
   "match": "Jordanien – Algeriet",
@@ -2236,7 +2236,7 @@
  },
  "2026-06-22-1025882121-handikapp-jordanien-1-5": {
   "closeOdds": 1.54,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "AH",
   "match": "Jordanien – Algeriet",
@@ -2251,7 +2251,7 @@
  },
  "2026-06-22-1025882121-hornor-över-8-5-hörnor": {
   "closeOdds": 1.83,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CORNERS",
   "match": "Jordanien – Algeriet",
@@ -2266,7 +2266,7 @@
  },
  "2026-06-22-1025882121-korrekt_resultat-resultat-0-0": {
   "closeOdds": 12.0,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CS",
   "match": "Jordanien – Algeriet",
@@ -2281,7 +2281,7 @@
  },
  "2026-06-22-1025882121-korrekt_resultat-resultat-1-1": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CS",
   "match": "Jordanien – Algeriet",
@@ -2326,7 +2326,7 @@
  },
  "2026-06-22-1025882121-kort-under-2-5-kort": {
   "closeOdds": 2.1,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CARDS",
   "match": "Jordanien – Algeriet",
@@ -2341,7 +2341,7 @@
  },
  "2026-06-22-1025882121-kort-över-2-5-kort": {
   "closeOdds": 1.63,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CARDS",
   "match": "Jordanien – Algeriet",
@@ -2356,7 +2356,7 @@
  },
  "2026-06-22-1025882121-malgorare-musa-al-tamari-gör-mål": {
   "closeOdds": 4.5,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Algeriet",
@@ -2371,7 +2371,7 @@
  },
  "2026-06-22-1025882121-malgorare-nabil-bentaleb-gör-mål": {
   "closeOdds": 8.5,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Algeriet",
@@ -2386,7 +2386,7 @@
  },
  "2026-06-22-1025882121-spelarspecial-anis-hadj-moussa-gör-2-mål": {
   "closeOdds": 8.5,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Algeriet",
@@ -2401,7 +2401,7 @@
  },
  "2026-06-22-1025882121-spelarspecial-mohamed-amoura-gör-2-mål": {
   "closeOdds": 14.0,
-  "closeTime": "2026-06-22T23:55:21Z",
+  "closeTime": "2026-06-23T00:15:29Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Algeriet",
