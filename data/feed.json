@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-23T23:19:35Z",
+ "generatedAt": "2026-06-23T23:40:22Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -837,8 +837,8 @@
      "pHome": 0.406,
      "pDraw": 0.282,
      "pAway": 0.312,
-     "oddsHome": 2.4,
-     "oddsDraw": 3.1,
+     "oddsHome": 2.38,
+     "oddsDraw": 3.05,
      "oddsAway": 3.55,
      "lambdaHome": 1.4,
      "lambdaAway": 1.2,
@@ -857,9 +857,9 @@
      "pHome": 0.018,
      "pDraw": 0.12,
      "pAway": 0.862,
-     "oddsHome": 10.5,
-     "oddsDraw": 5.8,
-     "oddsAway": 1.33,
+     "oddsHome": 9.0,
+     "oddsDraw": 5.3,
+     "oddsAway": 1.38,
      "lambdaHome": 0.2,
      "lambdaAway": 2.4,
      "mssHome": 48.6,
@@ -1212,9 +1212,9 @@
      "pHome": 0.606,
      "pDraw": 0.243,
      "pAway": 0.151,
-     "oddsHome": 1.72,
-     "oddsDraw": 3.4,
-     "oddsAway": 6.0,
+     "oddsHome": 1.79,
+     "oddsDraw": 3.3,
+     "oddsAway": 5.5,
      "lambdaHome": 1.81,
      "lambdaAway": 0.79,
      "mssHome": 61.7,
@@ -2311,7 +2311,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-23T23:19:35Z",
+  "generatedAt": "2026-06-23T23:40:22Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3353,15 +3353,15 @@
     "away": "Ghana",
     "homeFlag": "🇭🇷",
     "awayFlag": "🇬🇭",
-    "pHome": 0.5917,
-    "pDraw": 0.2544,
-    "pAway": 0.1539,
+    "pHome": 0.5849,
+    "pDraw": 0.2569,
+    "pAway": 0.1582,
     "folketOne": 71,
     "folketX": 20,
     "folketTwo": 9,
-    "oddsOne": 1.72,
-    "oddsX": 3.4,
-    "oddsTwo": 6.0
+    "oddsOne": 1.79,
+    "oddsX": 3.3,
+    "oddsTwo": 5.5
    },
    {
     "n": 9,
