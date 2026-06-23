@@ -2085,8 +2085,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025882121-antal_mal-algeriet-under-1-5-mål": {
-  "closeOdds": 2.1,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 2.2,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "TEAM_OU",
   "match": "Jordanien – Algeriet",
@@ -2097,11 +2097,11 @@
   "settleLine": 1.5,
   "settlePick": "away_under",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Spelvärt"
  },
  "2026-06-22-1025882121-antal_mal-jordanien-över-0-5-mål": {
-  "closeOdds": 1.72,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 1.76,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "TEAM_OU",
   "match": "Jordanien – Algeriet",
@@ -2115,8 +2115,8 @@
   "value": "Neutralt"
  },
  "2026-06-22-1025882121-antal_mal-under-2-5-mål": {
-  "closeOdds": 1.86,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 1.89,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "OU",
   "match": "Jordanien – Algeriet",
@@ -2130,8 +2130,8 @@
   "value": "Neutralt"
  },
  "2026-06-22-1025882121-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 2.04,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 2.05,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "BTTS",
   "match": "Jordanien – Algeriet",
@@ -2145,8 +2145,8 @@
   "value": "Neutralt"
  },
  "2026-06-22-1025882121-dubbelchans-1x-jordanien-eller-oavgjort": {
-  "closeOdds": 2.48,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 2.7,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "DC",
   "match": "Jordanien – Algeriet",
@@ -2160,8 +2160,8 @@
   "value": "Spelvärt"
  },
  "2026-06-22-1025882121-fulltid-1-jordanien-vinner": {
-  "closeOdds": 6.75,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 7.5,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "1X2",
   "match": "Jordanien – Algeriet",
@@ -2175,8 +2175,8 @@
   "value": "Neutralt"
  },
  "2026-06-22-1025882121-halvlek-halvtid-1-jordanien-leder-i-halvtid": {
-  "closeOdds": 6.1,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 6.5,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "1H_1X2",
   "match": "Jordanien – Algeriet",
@@ -2191,7 +2191,7 @@
  },
  "2026-06-22-1025882121-halvlek-under-0-5-mål-i-1-a-halvlek": {
   "closeOdds": 2.85,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "1H_OU",
   "match": "Jordanien – Algeriet",
@@ -2205,8 +2205,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025882121-halvtid_fulltid-halvtid-fulltid-1-1": {
-  "closeOdds": 10.0,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 11.0,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "HTFT",
   "match": "Jordanien – Algeriet",
@@ -2235,8 +2235,8 @@
   "value": "Spelvärt"
  },
  "2026-06-22-1025882121-handikapp-jordanien-1-5": {
-  "closeOdds": 1.53,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 1.6,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "AH",
   "match": "Jordanien – Algeriet",
@@ -2247,11 +2247,11 @@
   "settleLine": 1.5,
   "settlePick": "home",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Spelvärt"
  },
  "2026-06-22-1025882121-hornor-över-8-5-hörnor": {
   "closeOdds": 1.82,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CORNERS",
   "match": "Jordanien – Algeriet",
@@ -2280,8 +2280,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025882121-korrekt_resultat-resultat-1-1": {
-  "closeOdds": 7.5,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 8.0,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CS",
   "match": "Jordanien – Algeriet",
@@ -2295,8 +2295,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025882121-korrekt_resultat-resultat-2-0": {
-  "closeOdds": 26.0,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 29.0,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CS",
   "match": "Jordanien – Algeriet",
@@ -2326,7 +2326,7 @@
  },
  "2026-06-22-1025882121-kort-under-2-5-kort": {
   "closeOdds": 2.12,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CARDS",
   "match": "Jordanien – Algeriet",
@@ -2356,7 +2356,7 @@
  },
  "2026-06-22-1025882121-kort-över-2-5-kort": {
   "closeOdds": 1.62,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "CARDS",
   "match": "Jordanien – Algeriet",
@@ -2385,8 +2385,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025882121-malgorare-musa-al-tamari-gör-mål": {
-  "closeOdds": 4.8,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 5.0,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Algeriet",
@@ -2415,8 +2415,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025882121-malgorare-rafik-belghali-gör-mål": {
-  "closeOdds": 10.0,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 9.5,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Algeriet",
@@ -2430,8 +2430,8 @@
   "value": "Undvik"
  },
  "2026-06-22-1025882121-spelarspecial-amine-gouiri-gör-2-mål": {
-  "closeOdds": 9.0,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeOdds": 8.5,
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Algeriet",
@@ -2461,7 +2461,7 @@
  },
  "2026-06-22-1025882121-spelarspecial-ibrahim-maza-gör-2-mål": {
   "closeOdds": 15.0,
-  "closeTime": "2026-06-23T02:37:59Z",
+  "closeTime": "2026-06-23T02:58:17Z",
   "kickoff": "2026-06-23T03:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Algeriet",
