@@ -394,5 +394,17 @@
    "name": "Lionel Messi",
    "team": "Argentina"
   }
+ ],
+ "espn:760457": [
+  {
+   "goals": 2,
+   "name": "Kylian Mbappé",
+   "team": "Frankrike"
+  },
+  {
+   "goals": 1,
+   "name": "Ousmane Dembélé",
+   "team": "Frankrike"
+  }
  ]
 }
