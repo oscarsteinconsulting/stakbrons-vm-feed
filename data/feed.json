@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-24T03:44:10Z",
+ "generatedAt": "2026-06-24T04:04:52Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -543,7 +543,7 @@
      "pDraw": 0.283,
      "pAway": 0.329,
      "oddsHome": 1.87,
-     "oddsDraw": 3.7,
+     "oddsDraw": 3.85,
      "oddsAway": 3.95,
      "lambdaHome": 1.36,
      "lambdaAway": 1.24,
@@ -1621,7 +1621,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-24T03:44:09Z",
+  "generatedAt": "2026-06-24T04:04:51Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2551,15 +2551,15 @@
     "away": "Tyskland",
     "homeFlag": "🇪🇨",
     "awayFlag": "🇩🇪",
-    "pHome": 0.2495,
-    "pDraw": 0.2638,
-    "pAway": 0.4867,
+    "pHome": 0.2538,
+    "pDraw": 0.2655,
+    "pAway": 0.4807,
     "folketOne": 7,
     "folketX": 13,
     "folketTwo": 80,
-    "oddsOne": 4.2,
-    "oddsX": 4.1,
-    "oddsTwo": 1.82
+    "oddsOne": 3.95,
+    "oddsX": 4.0,
+    "oddsTwo": 1.89
    },
    {
     "n": 2,
@@ -2727,14 +2727,14 @@
     "away": "Uzbekistan",
     "homeFlag": "🇨🇩",
     "awayFlag": "🇺🇿",
-    "pHome": 0.4231,
-    "pDraw": 0.2749,
-    "pAway": 0.3019,
+    "pHome": 0.4246,
+    "pDraw": 0.2727,
+    "pAway": 0.3027,
     "folketOne": 72,
     "folketX": 19,
     "folketTwo": 9,
     "oddsOne": 1.87,
-    "oddsX": 3.7,
+    "oddsX": 3.85,
     "oddsTwo": 3.95
    },
    {
