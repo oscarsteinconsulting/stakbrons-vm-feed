@@ -4306,7 +4306,7 @@
  },
  "2026-06-24-1025862008-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.0,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "BTTS",
   "match": "Sydafrika – Sydkorea",
@@ -4321,7 +4321,7 @@
  },
  "2026-06-24-1025862008-dubbelchans-1x-sydafrika-eller-oavgjort": {
   "closeOdds": 2.43,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "DC",
   "match": "Sydafrika – Sydkorea",
@@ -4336,7 +4336,7 @@
  },
  "2026-06-24-1025862008-fulltid-1-sydafrika-vinner": {
   "closeOdds": 6.5,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "1X2",
   "match": "Sydafrika – Sydkorea",
@@ -4366,7 +4366,7 @@
  },
  "2026-06-24-1025862008-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 5.75,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "HTFT",
   "match": "Sydafrika – Sydkorea",
@@ -4381,7 +4381,7 @@
  },
  "2026-06-24-1025862008-handikapp-sydafrika-0-5": {
   "closeOdds": 2.5,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "AH",
   "match": "Sydafrika – Sydkorea",
@@ -4395,8 +4395,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1025862008-hornor-över-7-5-hörnor": {
-  "closeOdds": 1.68,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.67,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CORNERS",
   "match": "Sydafrika – Sydkorea",
@@ -4696,7 +4696,7 @@
  },
  "2026-06-24-1025862024-antal_mal-skottland-under-0-5-mål": {
   "closeOdds": 1.75,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "TEAM_OU",
   "match": "Skottland – Brasilien",
@@ -4711,7 +4711,7 @@
  },
  "2026-06-24-1025862024-antal_mal-under-2-5-mål": {
   "closeOdds": 2.12,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "OU",
   "match": "Skottland – Brasilien",
@@ -4726,7 +4726,7 @@
  },
  "2026-06-24-1025862024-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 1.65,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "BTTS",
   "match": "Skottland – Brasilien",
@@ -4741,7 +4741,7 @@
  },
  "2026-06-24-1025862024-dubbelchans-x2-oavgjort-eller-brasilien": {
   "closeOdds": 1.05,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "DC",
   "match": "Skottland – Brasilien",
@@ -4756,7 +4756,7 @@
  },
  "2026-06-24-1025862024-fulltid-2-brasilien-vinner": {
   "closeOdds": 1.3,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "1X2",
   "match": "Skottland – Brasilien",
@@ -4771,7 +4771,7 @@
  },
  "2026-06-24-1025862024-halvlek-halvtid-2-brasilien-leder-i-halvtid": {
   "closeOdds": 1.76,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "1H_1X2",
   "match": "Skottland – Brasilien",
@@ -4786,7 +4786,7 @@
  },
  "2026-06-24-1025862024-halvlek-under-1-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.46,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "1H_OU",
   "match": "Skottland – Brasilien",
@@ -4801,7 +4801,7 @@
  },
  "2026-06-24-1025862024-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 1.85,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "HTFT",
   "match": "Skottland – Brasilien",
@@ -4816,7 +4816,7 @@
  },
  "2026-06-24-1025862024-handikapp-brasilien-1-5": {
   "closeOdds": 1.86,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "AH",
   "match": "Skottland – Brasilien",
@@ -4830,8 +4830,8 @@
   "value": "Spelvärt"
  },
  "2026-06-24-1025862024-hornor-över-8-5-hörnor": {
-  "closeOdds": 1.76,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.77,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CORNERS",
   "match": "Skottland – Brasilien",
@@ -4846,7 +4846,7 @@
  },
  "2026-06-24-1025862024-korrekt_resultat-resultat-0-2": {
   "closeOdds": 5.6,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CS",
   "match": "Skottland – Brasilien",
@@ -4861,7 +4861,7 @@
  },
  "2026-06-24-1025862024-korrekt_resultat-resultat-0-3": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CS",
   "match": "Skottland – Brasilien",
@@ -4876,7 +4876,7 @@
  },
  "2026-06-24-1025862024-kort-under-2-5-kort": {
   "closeOdds": 2.15,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CARDS",
   "match": "Skottland – Brasilien",
@@ -4891,7 +4891,7 @@
  },
  "2026-06-24-1025862024-kort-över-2-5-kort": {
   "closeOdds": 1.61,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CARDS",
   "match": "Skottland – Brasilien",
@@ -4921,7 +4921,7 @@
  },
  "2026-06-24-1025862024-malgorare-bruno-guimarães-gör-mål": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "PLAYER",
   "match": "Skottland – Brasilien",
@@ -4936,7 +4936,7 @@
  },
  "2026-06-24-1025862024-malgorare-marquinhos-gör-mål": {
   "closeOdds": 9.5,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "PLAYER",
   "match": "Skottland – Brasilien",
@@ -4981,7 +4981,7 @@
  },
  "2026-06-24-1025862024-spelarspecial-rayan-vitor-gör-2-mål": {
   "closeOdds": 13.0,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "PLAYER",
   "match": "Skottland – Brasilien",
@@ -4996,7 +4996,7 @@
  },
  "2026-06-24-1025862024-spelarspecial-vinicius-junior-gör-2-mål": {
   "closeOdds": 4.5,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "PLAYER",
   "match": "Skottland – Brasilien",
@@ -5010,8 +5010,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862033-antal_mal-marocko-under-2-5-mål": {
-  "closeOdds": 1.71,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.55,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "TEAM_OU",
   "match": "Marocko – Haiti",
@@ -5022,11 +5022,11 @@
   "settleLine": 2.5,
   "settlePick": "home_under",
   "settlePlayer": null,
-  "value": "Spelvärt"
+  "value": "Neutralt"
  },
  "2026-06-24-1025862033-antal_mal-under-2-5-mål": {
-  "closeOdds": 2.63,
-  "closeTime": "2026-06-24T06:04:53Z",
+  "closeOdds": 2.18,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "OU",
   "match": "Marocko – Haiti",
@@ -5037,7 +5037,7 @@
   "settleLine": 2.5,
   "settlePick": "under",
   "settlePlayer": null,
-  "value": "Spelvärt"
+  "value": "Neutralt"
  },
  "2026-06-24-1025862033-antal_mal-under-3-5-mål": {
   "closeOdds": 1.5,
@@ -5070,8 +5070,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1025862033-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 1.6,
-  "closeTime": "2026-06-24T13:47:36Z",
+  "closeOdds": 1.7,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "BTTS",
   "match": "Marocko – Haiti",
@@ -5082,11 +5082,11 @@
   "settleLine": null,
   "settlePick": "no",
   "settlePlayer": null,
-  "value": "Undvik"
+  "value": "Neutralt"
  },
  "2026-06-24-1025862033-dubbelchans-x2-oavgjort-eller-haiti": {
-  "closeOdds": 4.4,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 3.6,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "DC",
   "match": "Marocko – Haiti",
@@ -5097,7 +5097,7 @@
   "settleLine": null,
   "settlePick": "X2",
   "settlePlayer": null,
-  "value": "Chans"
+  "value": "Neutralt"
  },
  "2026-06-24-1025862033-fulltid-2-haiti-vinner": {
   "closeOdds": 21.0,
@@ -5115,8 +5115,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1025862033-fulltid-x-oavgjort": {
-  "closeOdds": 7.0,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 6.0,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "1X2",
   "match": "Marocko – Haiti",
@@ -5130,8 +5130,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1025862033-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 2.85,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 2.65,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "1H_1X2",
   "match": "Marocko – Haiti",
@@ -5145,8 +5145,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1025862033-halvlek-under-1-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.54,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.5,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "1H_OU",
   "match": "Marocko – Haiti",
@@ -5175,8 +5175,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1025862033-halvtid_fulltid-halvtid-fulltid-x-x": {
-  "closeOdds": 8.5,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 7.5,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "HTFT",
   "match": "Marocko – Haiti",
@@ -5187,11 +5187,11 @@
   "settleLine": null,
   "settlePick": "X/X",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Undvik"
  },
  "2026-06-24-1025862033-handikapp-haiti-1-5": {
-  "closeOdds": 2.25,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.93,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "AH",
   "match": "Marocko – Haiti",
@@ -5202,7 +5202,7 @@
   "settleLine": -1.5,
   "settlePick": "away",
   "settlePlayer": null,
-  "value": "Spelvärt"
+  "value": "Neutralt"
  },
  "2026-06-24-1025862033-handikapp-haiti-2-5": {
   "closeOdds": 1.58,
@@ -5220,8 +5220,8 @@
   "value": "Spelvärt"
  },
  "2026-06-24-1025862033-hornor-över-8-5-hörnor": {
-  "closeOdds": 1.77,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.75,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CORNERS",
   "match": "Marocko – Haiti",
@@ -5250,8 +5250,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862033-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 15.0,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 14.0,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CS",
   "match": "Marocko – Haiti",
@@ -5280,8 +5280,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862033-korrekt_resultat-resultat-1-0": {
-  "closeOdds": 8.0,
-  "closeTime": "2026-06-24T19:24:10Z",
+  "closeOdds": 6.75,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CS",
   "match": "Marocko – Haiti",
@@ -5310,8 +5310,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862033-kort-under-2-5-kort": {
-  "closeOdds": 1.86,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.8,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CARDS",
   "match": "Marocko – Haiti",
@@ -5325,8 +5325,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862033-kort-över-2-5-kort": {
-  "closeOdds": 1.82,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.88,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "CARDS",
   "match": "Marocko – Haiti",
@@ -5340,8 +5340,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862033-malgorare-achraf-hakimi-gör-mål": {
-  "closeOdds": 4.3,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 4.5,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "PLAYER",
   "match": "Marocko – Haiti",
@@ -5370,8 +5370,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862033-malgorare-ismael-saibari-gör-mål": {
-  "closeOdds": 1.7,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.8,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "PLAYER",
   "match": "Marocko – Haiti",
@@ -5385,8 +5385,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862033-spelarspecial-brahim-díaz-gör-2-mål": {
-  "closeOdds": 8.0,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 9.0,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "PLAYER",
   "match": "Marocko – Haiti",
@@ -5400,8 +5400,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862033-spelarspecial-ismael-saibari-gör-2-mål": {
-  "closeOdds": 4.1,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 4.6,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-24T22:00:00Z",
   "market": "PLAYER",
   "match": "Marocko – Haiti",
@@ -5806,7 +5806,7 @@
  },
  "2026-06-24-1027164912-antal_mal-tjeckien-under-0-5-mål": {
   "closeOdds": 2.55,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Tjeckien – Mexiko",
@@ -5821,7 +5821,7 @@
  },
  "2026-06-24-1027164912-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 1.96,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "BTTS",
   "match": "Tjeckien – Mexiko",
@@ -5836,7 +5836,7 @@
  },
  "2026-06-24-1027164912-dubbelchans-x2-oavgjort-eller-mexiko": {
   "closeOdds": 1.25,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "DC",
   "match": "Tjeckien – Mexiko",
@@ -5850,8 +5850,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1027164912-fulltid-2-mexiko-vinner": {
-  "closeOdds": 1.92,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.9,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "1X2",
   "match": "Tjeckien – Mexiko",
@@ -5866,7 +5866,7 @@
  },
  "2026-06-24-1027164912-halvlek-halvtid-2-mexiko-leder-i-halvtid": {
   "closeOdds": 2.55,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "1H_1X2",
   "match": "Tjeckien – Mexiko",
@@ -5880,8 +5880,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1027164912-halvtid_fulltid-halvtid-fulltid-2-2": {
-  "closeOdds": 3.0,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 2.95,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "HTFT",
   "match": "Tjeckien – Mexiko",
@@ -5895,8 +5895,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1027164912-handikapp-mexiko-0-5": {
-  "closeOdds": 1.86,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeOdds": 1.85,
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "AH",
   "match": "Tjeckien – Mexiko",
@@ -5911,7 +5911,7 @@
  },
  "2026-06-24-1027164912-hornor-över-8-5-hörnor": {
   "closeOdds": 1.78,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CORNERS",
   "match": "Tjeckien – Mexiko",
@@ -5941,7 +5941,7 @@
  },
  "2026-06-24-1027164912-korrekt_resultat-resultat-0-2": {
   "closeOdds": 8.5,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CS",
   "match": "Tjeckien – Mexiko",
@@ -5956,7 +5956,7 @@
  },
  "2026-06-24-1027164912-kort-över-3-5-kort": {
   "closeOdds": 2.25,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CARDS",
   "match": "Tjeckien – Mexiko",
@@ -5971,7 +5971,7 @@
  },
  "2026-06-24-1027164912-malgorare-mateo-chávez-gör-mål": {
   "closeOdds": 12.0,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "PLAYER",
   "match": "Tjeckien – Mexiko",
@@ -5986,7 +5986,7 @@
  },
  "2026-06-24-1027164912-spelarspecial-patrik-schick-gör-2-mål": {
   "closeOdds": 14.0,
-  "closeTime": "2026-06-24T21:29:52Z",
+  "closeTime": "2026-06-24T21:51:01Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "PLAYER",
   "match": "Tjeckien – Mexiko",
