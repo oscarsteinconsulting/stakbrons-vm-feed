@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-24T02:41:54Z",
+ "generatedAt": "2026-06-24T03:02:40Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -437,7 +437,7 @@
      "pHome": 0.34,
      "pDraw": 0.284,
      "pAway": 0.376,
-     "oddsHome": 2.38,
+     "oddsHome": 2.4,
      "oddsDraw": 2.7,
      "oddsAway": 4.1,
      "lambdaHome": 1.26,
@@ -1621,7 +1621,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-24T02:41:54Z",
+  "generatedAt": "2026-06-24T03:02:39Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -2695,13 +2695,13 @@
     "away": "Iran",
     "homeFlag": "🇪🇬",
     "awayFlag": "🇮🇷",
-    "pHome": 0.36,
-    "pDraw": 0.306,
-    "pAway": 0.334,
+    "pHome": 0.3594,
+    "pDraw": 0.3064,
+    "pAway": 0.3342,
     "folketOne": 61,
     "folketX": 26,
     "folketTwo": 13,
-    "oddsOne": 2.38,
+    "oddsOne": 2.4,
     "oddsX": 2.7,
     "oddsTwo": 4.1
    },
