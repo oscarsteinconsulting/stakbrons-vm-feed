@@ -431,5 +431,39 @@
    "name": "Rafael Leão",
    "team": "Portugal"
   }
+ ],
+ "espn:760462": [
+  {
+   "goals": 1,
+   "name": "Kerim Alajbegovic",
+   "team": "Bosnien"
+  },
+  {
+   "goals": 1,
+   "name": "Hassan Al-Haydos",
+   "team": "Qatar"
+  },
+  {
+   "goals": 1,
+   "name": "Ermin Mahmic",
+   "team": "Bosnien"
+  }
+ ],
+ "espn:760463": [
+  {
+   "goals": 1,
+   "name": "Rubén Vargas",
+   "team": "Schweiz"
+  },
+  {
+   "goals": 1,
+   "name": "Johan Manzambi",
+   "team": "Schweiz"
+  },
+  {
+   "goals": 1,
+   "name": "Promise David",
+   "team": "Kanada"
+  }
  ]
 }
