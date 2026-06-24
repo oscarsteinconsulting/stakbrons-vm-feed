@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-24T12:08:05Z",
+ "generatedAt": "2026-06-24T12:29:10Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.1.0",
@@ -2331,8 +2331,8 @@
      "pHome": 0.616,
      "pDraw": 0.239,
      "pAway": 0.145,
-     "oddsHome": 1.79,
-     "oddsDraw": 3.45,
+     "oddsHome": 1.78,
+     "oddsDraw": 3.35,
      "oddsAway": 5.8,
      "lambdaHome": 1.83,
      "lambdaAway": 0.77,
@@ -3450,7 +3450,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-24T12:08:05Z",
+  "generatedAt": "2026-06-24T12:29:10Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -4431,9 +4431,9 @@
     "pHome": 0.2313,
     "pDraw": 0.2526,
     "pAway": 0.5162,
-    "folketOne": 18,
+    "folketOne": 17,
     "folketX": 29,
-    "folketTwo": 53,
+    "folketTwo": 54,
     "oddsOne": 4.7,
     "oddsX": 4.7,
     "oddsTwo": 1.65
@@ -4492,14 +4492,14 @@
     "away": "Ghana",
     "homeFlag": "🇭🇷",
     "awayFlag": "🇬🇭",
-    "pHome": 0.5951,
-    "pDraw": 0.2528,
-    "pAway": 0.1521,
+    "pHome": 0.5941,
+    "pDraw": 0.2543,
+    "pAway": 0.1515,
     "folketOne": 64,
     "folketX": 24,
     "folketTwo": 12,
-    "oddsOne": 1.79,
-    "oddsX": 3.45,
+    "oddsOne": 1.78,
+    "oddsX": 3.35,
     "oddsTwo": 5.8
    },
    {
@@ -4524,15 +4524,15 @@
     "away": "Iran",
     "homeFlag": "🇪🇬",
     "awayFlag": "🇮🇷",
-    "pHome": 0.3577,
-    "pDraw": 0.3082,
-    "pAway": 0.3341,
+    "pHome": 0.3521,
+    "pDraw": 0.3083,
+    "pAway": 0.3397,
     "folketOne": 61,
     "folketX": 26,
     "folketTwo": 13,
-    "oddsOne": 2.43,
+    "oddsOne": 2.55,
     "oddsX": 2.65,
-    "oddsTwo": 4.1
+    "oddsTwo": 3.8
    },
    {
     "n": 11,
