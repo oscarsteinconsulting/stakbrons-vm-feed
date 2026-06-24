@@ -3825,8 +3825,8 @@
   "value": "Undvik"
  },
  "2026-06-23-1027165778-antal_mal-colombia-över-1-5-mål": {
-  "closeOdds": 1.72,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeOdds": 1.7,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "TEAM_OU",
   "match": "Colombia – DR Kongo",
@@ -3840,8 +3840,8 @@
   "value": "Undvik"
  },
  "2026-06-23-1027165778-antal_mal-dr-kongo-över-0-5-mål": {
-  "closeOdds": 1.84,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeOdds": 1.81,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "TEAM_OU",
   "match": "Colombia – DR Kongo",
@@ -3855,8 +3855,8 @@
   "value": "Undvik"
  },
  "2026-06-23-1027165778-antal_mal-över-2-5-mål": {
-  "closeOdds": 2.08,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeOdds": 2.06,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "OU",
   "match": "Colombia – DR Kongo",
@@ -3870,8 +3870,8 @@
   "value": "Neutralt"
  },
  "2026-06-23-1027165778-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 2.18,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeOdds": 2.14,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "BTTS",
   "match": "Colombia – DR Kongo",
@@ -3882,11 +3882,11 @@
   "settleLine": null,
   "settlePick": "yes",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Undvik"
  },
  "2026-06-23-1027165778-dubbelchans-12-colombia-eller-dr-kongo-vinner": {
-  "closeOdds": 1.25,
-  "closeTime": "2026-06-23T11:51:43Z",
+  "closeOdds": 1.24,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "DC",
   "match": "Colombia – DR Kongo",
@@ -3946,7 +3946,7 @@
  },
  "2026-06-23-1027165778-fulltid-2-dr-kongo-vinner": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "1X2",
   "match": "Colombia – DR Kongo",
@@ -3960,8 +3960,8 @@
   "value": "Neutralt"
  },
  "2026-06-23-1027165778-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 2.23,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeOdds": 2.28,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "1H_1X2",
   "match": "Colombia – DR Kongo",
@@ -3975,8 +3975,8 @@
   "value": "Undvik"
  },
  "2026-06-23-1027165778-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.41,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeOdds": 1.4,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "1H_OU",
   "match": "Colombia – DR Kongo",
@@ -3991,7 +3991,7 @@
  },
  "2026-06-23-1027165778-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 2.28,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "HTFT",
   "match": "Colombia – DR Kongo",
@@ -4035,8 +4035,8 @@
   "value": "Undvik"
  },
  "2026-06-23-1027165778-handikapp-dr-kongo-1-5": {
-  "closeOdds": 1.55,
-  "closeTime": "2026-06-23T18:44:25Z",
+  "closeOdds": 1.54,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "AH",
   "match": "Colombia – DR Kongo",
@@ -4050,8 +4050,8 @@
   "value": "Undvik"
  },
  "2026-06-23-1027165778-hornor-över-8-5-hörnor": {
-  "closeOdds": 1.87,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeOdds": 1.84,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "CORNERS",
   "match": "Colombia – DR Kongo",
@@ -4066,7 +4066,7 @@
  },
  "2026-06-23-1027165778-korrekt_resultat-resultat-0-0": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "CS",
   "match": "Colombia – DR Kongo",
@@ -4096,7 +4096,7 @@
  },
  "2026-06-23-1027165778-korrekt_resultat-resultat-2-0": {
   "closeOdds": 6.25,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "CS",
   "match": "Colombia – DR Kongo",
@@ -4111,7 +4111,7 @@
  },
  "2026-06-23-1027165778-kort-under-2-5-kort": {
   "closeOdds": 2.08,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "CARDS",
   "match": "Colombia – DR Kongo",
@@ -4126,7 +4126,7 @@
  },
  "2026-06-23-1027165778-kort-över-2-5-kort": {
   "closeOdds": 1.64,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "CARDS",
   "match": "Colombia – DR Kongo",
@@ -4155,8 +4155,8 @@
   "value": "Undvik"
  },
  "2026-06-23-1027165778-malgorare-cucho-hernández-gör-mål": {
-  "closeOdds": 3.1,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeOdds": 3.0,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "PLAYER",
   "match": "Colombia – DR Kongo",
@@ -4170,8 +4170,8 @@
   "value": "Undvik"
  },
  "2026-06-23-1027165778-malgorare-willer-ditta-gör-mål": {
-  "closeOdds": 12.5,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeOdds": 12.0,
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "PLAYER",
   "match": "Colombia – DR Kongo",
@@ -4186,7 +4186,7 @@
  },
  "2026-06-23-1027165778-spelarspecial-cucho-hernández-gör-2-mål": {
   "closeOdds": 14.0,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "PLAYER",
   "match": "Colombia – DR Kongo",
@@ -4201,7 +4201,7 @@
  },
  "2026-06-23-1027165778-spelarspecial-luis-díaz-gör-2-mål": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-23T23:34:44Z",
+  "closeTime": "2026-06-23T23:55:31Z",
   "kickoff": "2026-06-24T02:00:00Z",
   "market": "PLAYER",
   "match": "Colombia – DR Kongo",
