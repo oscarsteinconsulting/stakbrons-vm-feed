@@ -465,5 +465,44 @@
    "name": "Promise David",
    "team": "Kanada"
   }
+ ],
+ "espn:760464": [
+  {
+   "goals": 1,
+   "name": "Achraf Hakimi",
+   "team": "Marocko"
+  },
+  {
+   "goals": 1,
+   "name": "Wilson Isidor",
+   "team": "Haiti"
+  },
+  {
+   "goals": 1,
+   "name": "Ismael Saibari",
+   "team": "Marocko"
+  },
+  {
+   "goals": 1,
+   "name": "Soufiane Rahimi",
+   "team": "Marocko"
+  },
+  {
+   "goals": 1,
+   "name": "Gessime Yassine",
+   "team": "Marocko"
+  }
+ ],
+ "espn:760465": [
+  {
+   "goals": 2,
+   "name": "Vinícius Júnior",
+   "team": "Brasilien"
+  },
+  {
+   "goals": 1,
+   "name": "Matheus Cunha",
+   "team": "Brasilien"
+  }
  ]
 }

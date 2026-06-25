@@ -4305,8 +4305,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862008-antal_mal-sydafrika-över-0-5-mål": {
-  "closeOdds": 1.71,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 1.73,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Sydafrika – Sydkorea",
@@ -4350,8 +4350,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1025862008-antal_mal-över-2-5-mål": {
-  "closeOdds": 2.04,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 2.23,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "OU",
   "match": "Sydafrika – Sydkorea",
@@ -4365,8 +4365,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1025862008-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 2.04,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 2.12,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "BTTS",
   "match": "Sydafrika – Sydkorea",
@@ -4378,6 +4378,21 @@
   "settlePick": "yes",
   "settlePlayer": null,
   "value": "Neutralt"
+ },
+ "2026-06-24-1025862008-dubbelchans-12-sydafrika-eller-sydkorea-vinner": {
+  "closeOdds": 1.28,
+  "closeTime": "2026-06-25T00:18:42Z",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "market": "DC",
+  "match": "Sydafrika – Sydkorea",
+  "recOdds": 1.28,
+  "recTime": "2026-06-25T00:18:42Z",
+  "recommendable": true,
+  "selection": "12 (Sydafrika eller Sydkorea vinner)",
+  "settleLine": null,
+  "settlePick": "12",
+  "settlePlayer": null,
+  "value": "Undvik"
  },
  "2026-06-24-1025862008-dubbelchans-1x-sydafrika-eller-oavgjort": {
   "closeOdds": 2.38,
@@ -4395,8 +4410,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1025862008-fulltid-1-sydafrika-vinner": {
-  "closeOdds": 6.4,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 6.25,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "1X2",
   "match": "Sydafrika – Sydkorea",
@@ -4408,6 +4423,21 @@
   "settlePick": "1",
   "settlePlayer": null,
   "value": "Neutralt"
+ },
+ "2026-06-24-1025862008-halvlek-halvtid-2-sydkorea-leder-i-halvtid": {
+  "closeOdds": 2.28,
+  "closeTime": "2026-06-25T00:18:42Z",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "market": "1H_1X2",
+  "match": "Sydafrika – Sydkorea",
+  "recOdds": 2.28,
+  "recTime": "2026-06-25T00:18:42Z",
+  "recommendable": true,
+  "selection": "Halvtid: 2 (Sydkorea leder i halvtid)",
+  "settleLine": null,
+  "settlePick": "2",
+  "settlePlayer": null,
+  "value": "Undvik"
  },
  "2026-06-24-1025862008-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 2.25,
@@ -4440,8 +4470,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862008-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.4,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 1.45,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "1H_OU",
   "match": "Sydafrika – Sydkorea",
@@ -4451,6 +4481,21 @@
   "selection": "Över 0.5 mål i 1:a halvlek",
   "settleLine": 0.5,
   "settlePick": "over",
+  "settlePlayer": null,
+  "value": "Neutralt"
+ },
+ "2026-06-24-1025862008-halvtid_fulltid-halvtid-fulltid-2-2": {
+  "closeOdds": 2.55,
+  "closeTime": "2026-06-25T00:18:42Z",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "market": "HTFT",
+  "match": "Sydafrika – Sydkorea",
+  "recOdds": 2.55,
+  "recTime": "2026-06-25T00:18:42Z",
+  "recommendable": false,
+  "selection": "Halvtid/Fulltid 2/2",
+  "settleLine": null,
+  "settlePick": "2/2",
   "settlePlayer": null,
   "value": "Undvik"
  },
@@ -4470,8 +4515,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862008-handikapp-sydafrika-0-5": {
-  "closeOdds": 2.43,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 2.25,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "AH",
   "match": "Sydafrika – Sydkorea",
@@ -4499,6 +4544,21 @@
   "settlePlayer": null,
   "value": "Undvik"
  },
+ "2026-06-24-1025862008-hornor-över-8-5-hörnor": {
+  "closeOdds": 2.05,
+  "closeTime": "2026-06-25T00:18:42Z",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "market": "CORNERS",
+  "match": "Sydafrika – Sydkorea",
+  "recOdds": 2.05,
+  "recTime": "2026-06-25T00:18:42Z",
+  "recommendable": false,
+  "selection": "Över 8.5 hörnor",
+  "settleLine": 8.5,
+  "settlePick": "over",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
  "2026-06-24-1025862008-korrekt_resultat-resultat-0-0": {
   "closeOdds": 10.0,
   "closeTime": "2026-06-24T23:57:38Z",
@@ -4515,8 +4575,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862008-korrekt_resultat-resultat-1-1": {
-  "closeOdds": 7.0,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 6.75,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CS",
   "match": "Sydafrika – Sydkorea",
@@ -4529,9 +4589,24 @@
   "settlePlayer": null,
   "value": "Undvik"
  },
+ "2026-06-24-1025862008-korrekt_resultat-resultat-1-2": {
+  "closeOdds": 8.0,
+  "closeTime": "2026-06-25T00:18:42Z",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "market": "CS",
+  "match": "Sydafrika – Sydkorea",
+  "recOdds": 8.0,
+  "recTime": "2026-06-25T00:18:42Z",
+  "recommendable": false,
+  "selection": "Resultat 1-2",
+  "settleLine": null,
+  "settlePick": "1-2",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
  "2026-06-24-1025862008-kort-under-3-5-kort": {
-  "closeOdds": 1.65,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 1.68,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CARDS",
   "match": "Sydafrika – Sydkorea",
@@ -4545,8 +4620,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862008-kort-över-3-5-kort": {
-  "closeOdds": 2.07,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CARDS",
   "match": "Sydafrika – Sydkorea",
@@ -4561,7 +4636,7 @@
  },
  "2026-06-24-1025862008-malgorare-khuliso-mudau-gör-mål": {
   "closeOdds": 13.0,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "PLAYER",
   "match": "Sydafrika – Sydkorea",
@@ -4575,8 +4650,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1025862008-malgorare-thapelo-maseko-gör-mål": {
-  "closeOdds": 6.5,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 6.0,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "PLAYER",
   "match": "Sydafrika – Sydkorea",
@@ -4589,9 +4664,24 @@
   "settlePlayer": "Thapelo Maseko",
   "value": "Undvik"
  },
+ "2026-06-24-1025862008-spelarspecial-hee-chan-hwang-över-0-5-skott-på-mål": {
+  "closeOdds": 1.82,
+  "closeTime": "2026-06-25T00:18:42Z",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "market": "PLAYER",
+  "match": "Sydafrika – Sydkorea",
+  "recOdds": 1.82,
+  "recTime": "2026-06-25T00:18:42Z",
+  "recommendable": false,
+  "selection": "Hee-Chan Hwang över 0.5 skott på mål",
+  "settleLine": 0.5,
+  "settlePick": "shots",
+  "settlePlayer": "Hee-Chan Hwang",
+  "value": "Undvik"
+ },
  "2026-06-24-1025862008-spelarspecial-oh-hyeon-gyu-gör-2-mål": {
   "closeOdds": 14.0,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "PLAYER",
   "match": "Sydafrika – Sydkorea",
@@ -6030,8 +6120,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1027164912-antal_mal-tjeckien-under-0-5-mål": {
-  "closeOdds": 2.55,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 2.45,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Tjeckien – Mexiko",
@@ -6041,6 +6131,21 @@
   "selection": "Tjeckien under 0.5 mål",
   "settleLine": 0.5,
   "settlePick": "home_under",
+  "settlePlayer": null,
+  "value": "Neutralt"
+ },
+ "2026-06-24-1027164912-antal_mal-under-2-5-mål": {
+  "closeOdds": 1.89,
+  "closeTime": "2026-06-25T00:18:42Z",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "market": "OU",
+  "match": "Tjeckien – Mexiko",
+  "recOdds": 1.89,
+  "recTime": "2026-06-25T00:18:42Z",
+  "recommendable": true,
+  "selection": "Under 2.5 mål",
+  "settleLine": 2.5,
+  "settlePick": "under",
   "settlePlayer": null,
   "value": "Neutralt"
  },
@@ -6061,7 +6166,7 @@
  },
  "2026-06-24-1027164912-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 1.97,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "BTTS",
   "match": "Tjeckien – Mexiko",
@@ -6075,8 +6180,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1027164912-dubbelchans-x2-oavgjort-eller-mexiko": {
-  "closeOdds": 1.24,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 1.22,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "DC",
   "match": "Tjeckien – Mexiko",
@@ -6090,8 +6195,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1027164912-fulltid-2-mexiko-vinner": {
-  "closeOdds": 1.89,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 1.82,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "1X2",
   "match": "Tjeckien – Mexiko",
@@ -6105,8 +6210,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1027164912-halvlek-halvtid-2-mexiko-leder-i-halvtid": {
-  "closeOdds": 2.5,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 2.43,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "1H_1X2",
   "match": "Tjeckien – Mexiko",
@@ -6121,7 +6226,7 @@
  },
  "2026-06-24-1027164912-halvlek-över-0-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.38,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "1H_OU",
   "match": "Tjeckien – Mexiko",
@@ -6135,8 +6240,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1027164912-halvtid_fulltid-halvtid-fulltid-2-2": {
-  "closeOdds": 2.9,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 2.8,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "HTFT",
   "match": "Tjeckien – Mexiko",
@@ -6147,11 +6252,11 @@
   "settleLine": null,
   "settlePick": "2/2",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Undvik"
  },
  "2026-06-24-1027164912-handikapp-mexiko-0-5": {
-  "closeOdds": 1.82,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 1.77,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "AH",
   "match": "Tjeckien – Mexiko",
@@ -6165,8 +6270,8 @@
   "value": "Neutralt"
  },
  "2026-06-24-1027164912-hornor-över-8-5-hörnor": {
-  "closeOdds": 1.94,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 1.8,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CORNERS",
   "match": "Tjeckien – Mexiko",
@@ -6195,8 +6300,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1027164912-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 11.5,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 11.0,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CS",
   "match": "Tjeckien – Mexiko",
@@ -6210,8 +6315,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1027164912-korrekt_resultat-resultat-0-2": {
-  "closeOdds": 8.5,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 8.0,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CS",
   "match": "Tjeckien – Mexiko",
@@ -6240,8 +6345,8 @@
   "value": "Undvik"
  },
  "2026-06-24-1027164912-kort-under-3-5-kort": {
-  "closeOdds": 1.55,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 1.56,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CARDS",
   "match": "Tjeckien – Mexiko",
@@ -6256,7 +6361,7 @@
  },
  "2026-06-24-1027164912-kort-över-3-5-kort": {
   "closeOdds": 2.25,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "CARDS",
   "match": "Tjeckien – Mexiko",
@@ -6284,9 +6389,24 @@
   "settlePlayer": "Erik Lira",
   "value": "Undvik"
  },
+ "2026-06-24-1027164912-malgorare-lukás-cerv-gör-mål": {
+  "closeOdds": 8.5,
+  "closeTime": "2026-06-25T00:18:42Z",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "market": "PLAYER",
+  "match": "Tjeckien – Mexiko",
+  "recOdds": 8.5,
+  "recTime": "2026-06-25T00:18:42Z",
+  "recommendable": false,
+  "selection": "Lukás Cerv gör mål",
+  "settleLine": null,
+  "settlePick": "scorer",
+  "settlePlayer": "Lukás Cerv",
+  "value": "Undvik"
+ },
  "2026-06-24-1027164912-malgorare-mateo-chávez-gör-mål": {
   "closeOdds": 11.0,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "PLAYER",
   "match": "Tjeckien – Mexiko",
@@ -6299,9 +6419,24 @@
   "settlePlayer": "Mateo Chávez",
   "value": "Undvik"
  },
+ "2026-06-24-1027164912-spelarspecial-guillermo-martinez-gör-2-mål": {
+  "closeOdds": 11.0,
+  "closeTime": "2026-06-25T00:18:42Z",
+  "kickoff": "2026-06-25T01:00:00Z",
+  "market": "PLAYER",
+  "match": "Tjeckien – Mexiko",
+  "recOdds": 11.0,
+  "recTime": "2026-06-25T00:18:42Z",
+  "recommendable": false,
+  "selection": "Guillermo Martinez gör 2+ mål",
+  "settleLine": null,
+  "settlePick": "twoplus",
+  "settlePlayer": "Guillermo Martinez",
+  "value": "Undvik"
+ },
  "2026-06-24-1027164912-spelarspecial-julián-quiñones-gör-2-mål": {
-  "closeOdds": 10.0,
-  "closeTime": "2026-06-24T23:57:38Z",
+  "closeOdds": 9.0,
+  "closeTime": "2026-06-25T00:18:42Z",
   "kickoff": "2026-06-25T01:00:00Z",
   "market": "PLAYER",
   "match": "Tjeckien – Mexiko",
