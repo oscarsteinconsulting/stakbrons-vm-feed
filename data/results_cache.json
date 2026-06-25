@@ -504,5 +504,29 @@
    "name": "Matheus Cunha",
    "team": "Brasilien"
   }
+ ],
+ "espn:760468": [
+  {
+   "goals": 1,
+   "name": "Leroy Sané",
+   "team": "Tyskland"
+  },
+  {
+   "goals": 1,
+   "name": "Nilson Angulo",
+   "team": "Ecuador"
+  },
+  {
+   "goals": 1,
+   "name": "Gonzalo Plata",
+   "team": "Ecuador"
+  }
+ ],
+ "espn:760473": [
+  {
+   "goals": 2,
+   "name": "Nicolas Pépé",
+   "team": "Elfenbenskusten"
+  }
  ]
 }
