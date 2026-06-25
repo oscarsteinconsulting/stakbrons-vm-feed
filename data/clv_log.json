@@ -6466,7 +6466,7 @@
  },
  "2026-06-25-1025862125-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.14,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "BTTS",
   "match": "Paraguay – Australien",
@@ -6481,7 +6481,7 @@
  },
  "2026-06-25-1025862125-dubbelchans-12-paraguay-eller-australien-vinner": {
   "closeOdds": 1.63,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "DC",
   "match": "Paraguay – Australien",
@@ -6496,7 +6496,7 @@
  },
  "2026-06-25-1025862125-fulltid-2-australien-vinner": {
   "closeOdds": 4.3,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "1X2",
   "match": "Paraguay – Australien",
@@ -6511,7 +6511,7 @@
  },
  "2026-06-25-1025862125-halvlek-halvtid-2-australien-leder-i-halvtid": {
   "closeOdds": 4.4,
-  "closeTime": "2026-06-25T06:23:15Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "1H_1X2",
   "match": "Paraguay – Australien",
@@ -6541,7 +6541,7 @@
  },
  "2026-06-25-1025862125-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 6.75,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "HTFT",
   "match": "Paraguay – Australien",
@@ -6571,7 +6571,7 @@
  },
  "2026-06-25-1025862125-hornor-över-7-5-hörnor": {
   "closeOdds": 1.84,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CORNERS",
   "match": "Paraguay – Australien",
@@ -6585,8 +6585,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862129-antal_mal-tyskland-under-1-5-mål": {
-  "closeOdds": 2.43,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 2.4,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "TEAM_OU",
   "match": "Ecuador – Tyskland",
@@ -6615,8 +6615,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862129-dubbelchans-1x-ecuador-eller-oavgjort": {
-  "closeOdds": 2.6,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 2.55,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "DC",
   "match": "Ecuador – Tyskland",
@@ -6630,8 +6630,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862129-fulltid-1-ecuador-vinner": {
-  "closeOdds": 6.4,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 5.6,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "1X2",
   "match": "Ecuador – Tyskland",
@@ -6674,9 +6674,24 @@
   "settlePlayer": null,
   "value": "Neutralt"
  },
+ "2026-06-25-1025862129-halvtid_fulltid-halvtid-fulltid-x-x": {
+  "closeOdds": 7.5,
+  "closeTime": "2026-06-25T07:06:30Z",
+  "kickoff": "2026-06-25T20:00:00Z",
+  "market": "HTFT",
+  "match": "Ecuador – Tyskland",
+  "recOdds": 7.5,
+  "recTime": "2026-06-25T07:06:30Z",
+  "recommendable": false,
+  "selection": "Halvtid/Fulltid X/X",
+  "settleLine": null,
+  "settlePick": "X/X",
+  "settlePlayer": null,
+  "value": "Neutralt"
+ },
  "2026-06-25-1025862129-handikapp-ecuador-1-5": {
-  "closeOdds": 1.61,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 1.57,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "AH",
   "match": "Ecuador – Tyskland",
@@ -6690,8 +6705,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862129-hornor-över-9-5-hörnor": {
-  "closeOdds": 1.87,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 1.95,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "CORNERS",
   "match": "Ecuador – Tyskland",
@@ -6705,8 +6720,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862129-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 15.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 16.0,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "CS",
   "match": "Ecuador – Tyskland",
@@ -6716,6 +6731,21 @@
   "selection": "Resultat 0-0",
   "settleLine": null,
   "settlePick": "0-0",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
+ "2026-06-25-1025862129-kort-under-2-5-kort": {
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-25T07:06:30Z",
+  "kickoff": "2026-06-25T20:00:00Z",
+  "market": "CARDS",
+  "match": "Ecuador – Tyskland",
+  "recOdds": 2.02,
+  "recTime": "2026-06-25T07:06:30Z",
+  "recommendable": false,
+  "selection": "Under 2.5 kort",
+  "settleLine": 2.5,
+  "settlePick": "under",
   "settlePlayer": null,
   "value": "Undvik"
  },
@@ -6731,6 +6761,21 @@
   "selection": "Under 3.5 kort",
   "settleLine": 3.5,
   "settlePick": "under",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
+ "2026-06-25-1025862129-kort-över-2-5-kort": {
+  "closeOdds": 1.68,
+  "closeTime": "2026-06-25T07:06:30Z",
+  "kickoff": "2026-06-25T20:00:00Z",
+  "market": "CARDS",
+  "match": "Ecuador – Tyskland",
+  "recOdds": 1.68,
+  "recTime": "2026-06-25T07:06:30Z",
+  "recommendable": false,
+  "selection": "Över 2.5 kort",
+  "settleLine": 2.5,
+  "settlePick": "over",
   "settlePlayer": null,
   "value": "Undvik"
  },
@@ -6750,8 +6795,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862129-malgorare-david-raum-gör-mål": {
-  "closeOdds": 9.5,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 9.0,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "PLAYER",
   "match": "Ecuador – Tyskland",
@@ -6766,7 +6811,7 @@
  },
  "2026-06-25-1025862129-malgorare-pedro-vite-gör-mål": {
   "closeOdds": 7.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "PLAYER",
   "match": "Ecuador – Tyskland",
@@ -6795,8 +6840,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862129-spelarspecial-leroy-sané-gör-2-mål": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 15.0,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "PLAYER",
   "match": "Ecuador – Tyskland",
@@ -6810,8 +6855,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862129-spelarspecial-nick-woltemade-gör-2-mål": {
-  "closeOdds": 8.5,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 9.0,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "PLAYER",
   "match": "Ecuador – Tyskland",
@@ -6840,8 +6885,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862134-antal_mal-elfenbenskusten-under-2-5-mål": {
-  "closeOdds": 2.04,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 1.98,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "TEAM_OU",
   "match": "Curacao – Elfenbenskusten",
@@ -6870,8 +6915,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862134-antal_mal-under-3-5-mål": {
-  "closeOdds": 1.71,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 1.65,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "OU",
   "match": "Curacao – Elfenbenskusten",
@@ -6885,8 +6930,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862134-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 2.38,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 2.5,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "BTTS",
   "match": "Curacao – Elfenbenskusten",
@@ -6900,8 +6945,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1025862134-dubbelchans-1x-curacao-eller-oavgjort": {
-  "closeOdds": 5.75,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 5.6,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "DC",
   "match": "Curacao – Elfenbenskusten",
@@ -6915,8 +6960,8 @@
   "value": "Chans"
  },
  "2026-06-25-1025862134-fulltid-1-curacao-vinner": {
-  "closeOdds": 19.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 20.0,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "1X2",
   "match": "Curacao – Elfenbenskusten",
@@ -6930,8 +6975,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1025862134-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 3.2,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 3.15,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "1H_1X2",
   "match": "Curacao – Elfenbenskusten",
@@ -6945,8 +6990,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1025862134-halvlek-under-1-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.68,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 1.66,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "1H_OU",
   "match": "Curacao – Elfenbenskusten",
@@ -6961,7 +7006,7 @@
  },
  "2026-06-25-1025862134-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 26.0,
-  "closeTime": "2026-06-25T06:23:15Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "HTFT",
   "match": "Curacao – Elfenbenskusten",
@@ -6990,8 +7035,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1025862134-handikapp-curacao-2-5": {
-  "closeOdds": 1.67,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 1.65,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "AH",
   "match": "Curacao – Elfenbenskusten",
@@ -7020,8 +7065,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862134-hornor-över-9-5-hörnor": {
-  "closeOdds": 2.05,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 1.97,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "CORNERS",
   "match": "Curacao – Elfenbenskusten",
@@ -7035,8 +7080,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862134-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 19.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 18.0,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "CS",
   "match": "Curacao – Elfenbenskusten",
@@ -7050,8 +7095,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1025862134-korrekt_resultat-resultat-1-1": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 13.0,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "CS",
   "match": "Curacao – Elfenbenskusten",
@@ -7081,7 +7126,7 @@
  },
  "2026-06-25-1025862134-kort-under-3-5-kort": {
   "closeOdds": 1.54,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "CARDS",
   "match": "Curacao – Elfenbenskusten",
@@ -7095,8 +7140,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862134-kort-över-3-5-kort": {
-  "closeOdds": 2.28,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 2.3,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "CARDS",
   "match": "Curacao – Elfenbenskusten",
@@ -7110,8 +7155,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862134-malgorare-christ-inao-oulaï-gör-mål": {
-  "closeOdds": 4.8,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 4.7,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "PLAYER",
   "match": "Curacao – Elfenbenskusten",
@@ -7126,7 +7171,7 @@
  },
  "2026-06-25-1025862134-malgorare-sontje-hansen-gör-mål": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "PLAYER",
   "match": "Curacao – Elfenbenskusten",
@@ -7141,7 +7186,7 @@
  },
  "2026-06-25-1025862134-spelarspecial-oumar-diakite-gör-2-mål": {
   "closeOdds": 7.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "PLAYER",
   "match": "Curacao – Elfenbenskusten",
@@ -7155,8 +7200,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862134-spelarspecial-simon-adingra-gör-2-mål": {
-  "closeOdds": 12.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 11.5,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T20:00:00Z",
   "market": "PLAYER",
   "match": "Curacao – Elfenbenskusten",
@@ -7171,7 +7216,7 @@
  },
  "2026-06-25-1025862144-antal_mal-nederländerna-under-3-5-mål": {
   "closeOdds": 1.55,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "TEAM_OU",
   "match": "Tunisien – Nederländerna",
@@ -7186,7 +7231,7 @@
  },
  "2026-06-25-1025862144-antal_mal-under-3-5-mål": {
   "closeOdds": 1.88,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "OU",
   "match": "Tunisien – Nederländerna",
@@ -7201,7 +7246,7 @@
  },
  "2026-06-25-1025862144-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.7,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "BTTS",
   "match": "Tunisien – Nederländerna",
@@ -7231,7 +7276,7 @@
  },
  "2026-06-25-1025862144-fulltid-x-oavgjort": {
   "closeOdds": 13.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "1X2",
   "match": "Tunisien – Nederländerna",
@@ -7246,7 +7291,7 @@
  },
  "2026-06-25-1025862144-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 3.85,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "1H_1X2",
   "match": "Tunisien – Nederländerna",
@@ -7261,7 +7306,7 @@
  },
  "2026-06-25-1025862144-halvlek-under-1-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.86,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "1H_OU",
   "match": "Tunisien – Nederländerna",
@@ -7276,7 +7321,7 @@
  },
  "2026-06-25-1025862144-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 13.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "HTFT",
   "match": "Tunisien – Nederländerna",
@@ -7291,7 +7336,7 @@
  },
  "2026-06-25-1025862144-handikapp-tunisien-2-5": {
   "closeOdds": 1.98,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "AH",
   "match": "Tunisien – Nederländerna",
@@ -7306,7 +7351,7 @@
  },
  "2026-06-25-1025862144-hornor-över-9-5-hörnor": {
   "closeOdds": 1.83,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "CORNERS",
   "match": "Tunisien – Nederländerna",
@@ -7321,7 +7366,7 @@
  },
  "2026-06-25-1025862144-korrekt_resultat-resultat-0-0": {
   "closeOdds": 23.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "CS",
   "match": "Tunisien – Nederländerna",
@@ -7336,7 +7381,7 @@
  },
  "2026-06-25-1025862144-korrekt_resultat-resultat-1-1": {
   "closeOdds": 17.0,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "CS",
   "match": "Tunisien – Nederländerna",
@@ -7351,7 +7396,7 @@
  },
  "2026-06-25-1025862144-kort-över-2-5-kort": {
   "closeOdds": 1.82,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "CARDS",
   "match": "Tunisien – Nederländerna",
@@ -7366,7 +7411,7 @@
  },
  "2026-06-25-1025862144-malgorare-wout-weghorst-gör-mål": {
   "closeOdds": 2.15,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "PLAYER",
   "match": "Tunisien – Nederländerna",
@@ -7381,7 +7426,7 @@
  },
  "2026-06-25-1025862144-spelarspecial-cody-gakpo-gör-2-mål": {
   "closeOdds": 3.2,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "PLAYER",
   "match": "Tunisien – Nederländerna",
@@ -7396,7 +7441,7 @@
  },
  "2026-06-25-1027164903-antal_mal-usa-under-1-5-mål": {
   "closeOdds": 2.02,
-  "closeTime": "2026-06-25T06:23:15Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "TEAM_OU",
   "match": "Turkiet – USA",
@@ -7411,7 +7456,7 @@
  },
  "2026-06-25-1027164903-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 2.28,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "BTTS",
   "match": "Turkiet – USA",
@@ -7426,7 +7471,7 @@
  },
  "2026-06-25-1027164903-dubbelchans-1x-turkiet-eller-oavgjort": {
   "closeOdds": 1.98,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "DC",
   "match": "Turkiet – USA",
@@ -7441,7 +7486,7 @@
  },
  "2026-06-25-1027164903-fulltid-1-turkiet-vinner": {
   "closeOdds": 4.1,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "1X2",
   "match": "Turkiet – USA",
@@ -7456,7 +7501,7 @@
  },
  "2026-06-25-1027164903-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 6.4,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "HTFT",
   "match": "Turkiet – USA",
@@ -7471,7 +7516,7 @@
  },
  "2026-06-25-1027164903-handikapp-turkiet-0-5": {
   "closeOdds": 2.02,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "AH",
   "match": "Turkiet – USA",
@@ -7500,8 +7545,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1027164908-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 2.33,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 2.16,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "BTTS",
   "match": "Japan – Sverige",
@@ -7515,8 +7560,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1027164908-dubbelchans-x2-oavgjort-eller-sverige": {
-  "closeOdds": 1.9,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 2.0,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "DC",
   "match": "Japan – Sverige",
@@ -7529,9 +7574,24 @@
   "settlePlayer": null,
   "value": "Neutralt"
  },
+ "2026-06-25-1027164908-handikapp-sverige-0-5": {
+  "closeOdds": 2.05,
+  "closeTime": "2026-06-25T07:06:30Z",
+  "kickoff": "2026-06-25T23:00:00Z",
+  "market": "AH",
+  "match": "Japan – Sverige",
+  "recOdds": 2.05,
+  "recTime": "2026-06-25T07:06:30Z",
+  "recommendable": true,
+  "selection": "Sverige +0.5",
+  "settleLine": -0.5,
+  "settlePick": "away",
+  "settlePlayer": null,
+  "value": "Neutralt"
+ },
  "2026-06-25-1027164908-hornor-över-9-5-hörnor": {
-  "closeOdds": 1.9,
-  "closeTime": "2026-06-25T06:44:46Z",
+  "closeOdds": 1.96,
+  "closeTime": "2026-06-25T07:06:30Z",
   "kickoff": "2026-06-25T23:00:00Z",
   "market": "CORNERS",
   "match": "Japan – Sverige",
