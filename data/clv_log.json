@@ -6465,8 +6465,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862125-antal_mal-australien-över-0-5-mål": {
-  "closeOdds": 1.65,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.76,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "TEAM_OU",
   "match": "Paraguay – Australien",
@@ -6480,8 +6480,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862125-antal_mal-över-1-5-mål": {
-  "closeOdds": 1.65,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.76,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "OU",
   "match": "Paraguay – Australien",
@@ -6495,8 +6495,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862125-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 2.23,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 2.43,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "BTTS",
   "match": "Paraguay – Australien",
@@ -6510,8 +6510,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862125-dubbelchans-12-paraguay-eller-australien-vinner": {
-  "closeOdds": 1.61,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.62,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "DC",
   "match": "Paraguay – Australien",
@@ -6525,8 +6525,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1025862125-fulltid-2-australien-vinner": {
-  "closeOdds": 4.4,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 4.5,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "1X2",
   "match": "Paraguay – Australien",
@@ -6540,8 +6540,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1025862125-halvlek-halvtid-2-australien-leder-i-halvtid": {
-  "closeOdds": 4.6,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 4.8,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "1H_1X2",
   "match": "Paraguay – Australien",
@@ -6555,8 +6555,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1025862125-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.68,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.77,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "1H_OU",
   "match": "Paraguay – Australien",
@@ -6567,11 +6567,11 @@
   "settleLine": 0.5,
   "settlePick": "over",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Spelvärt"
  },
  "2026-06-25-1025862125-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 7.0,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "HTFT",
   "match": "Paraguay – Australien",
@@ -6585,8 +6585,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1025862125-handikapp-paraguay-0-5": {
-  "closeOdds": 2.55,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 2.5,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "AH",
   "match": "Paraguay – Australien",
@@ -6600,8 +6600,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1025862125-hornor-över-7-5-hörnor": {
-  "closeOdds": 1.86,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.93,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CORNERS",
   "match": "Paraguay – Australien",
@@ -6616,7 +6616,7 @@
  },
  "2026-06-25-1025862125-korrekt_resultat-resultat-0-2": {
   "closeOdds": 17.0,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CS",
   "match": "Paraguay – Australien",
@@ -6630,8 +6630,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862125-korrekt_resultat-resultat-1-2": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 15.0,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CS",
   "match": "Paraguay – Australien",
@@ -6645,8 +6645,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862125-kort-under-2-5-kort": {
-  "closeOdds": 2.02,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 2.07,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CARDS",
   "match": "Paraguay – Australien",
@@ -6660,8 +6660,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862125-kort-över-2-5-kort": {
-  "closeOdds": 1.68,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.66,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CARDS",
   "match": "Paraguay – Australien",
@@ -6691,7 +6691,7 @@
  },
  "2026-06-25-1025862125-malgorare-diego-gómez-gör-mål": {
   "closeOdds": 7.0,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "PLAYER",
   "match": "Paraguay – Australien",
@@ -6705,8 +6705,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862125-malgorare-matias-galarza-fonda-gör-mål": {
-  "closeOdds": 5.5,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 6.0,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "PLAYER",
   "match": "Paraguay – Australien",
@@ -6735,8 +6735,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862125-spelarspecial-jordan-bos-över-0-5-skott-på-mål": {
-  "closeOdds": 3.3,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 3.5,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "PLAYER",
   "match": "Paraguay – Australien",
@@ -6750,8 +6750,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1025862125-spelarspecial-juan-josé-cáceres-över-0-5-skott-på-mål": {
-  "closeOdds": 6.5,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 6.25,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "PLAYER",
   "match": "Paraguay – Australien",
@@ -7875,8 +7875,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1027164903-antal_mal-under-2-5-mål": {
-  "closeOdds": 2.43,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 2.32,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "OU",
   "match": "Turkiet – USA",
@@ -7890,8 +7890,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1027164903-antal_mal-usa-under-1-5-mål": {
-  "closeOdds": 2.1,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.97,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "TEAM_OU",
   "match": "Turkiet – USA",
@@ -7905,8 +7905,8 @@
   "value": "Spelvärt"
  },
  "2026-06-25-1027164903-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 2.48,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 2.4,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "BTTS",
   "match": "Turkiet – USA",
@@ -7917,11 +7917,11 @@
   "settleLine": null,
   "settlePick": "no",
   "settlePlayer": null,
-  "value": "Spelvärt"
+  "value": "Neutralt"
  },
  "2026-06-25-1027164903-dubbelchans-1x-turkiet-eller-oavgjort": {
-  "closeOdds": 1.93,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.83,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "DC",
   "match": "Turkiet – USA",
@@ -7932,7 +7932,7 @@
   "settleLine": null,
   "settlePick": "1X",
   "settlePlayer": null,
-  "value": "Spelvärt"
+  "value": "Neutralt"
  },
  "2026-06-25-1027164903-fulltid-1-turkiet-vinner": {
   "closeOdds": 3.75,
@@ -7949,9 +7949,24 @@
   "settlePlayer": null,
   "value": "Neutralt"
  },
+ "2026-06-25-1027164903-fulltid-x-oavgjort": {
+  "closeOdds": 4.1,
+  "closeTime": "2026-06-26T01:13:48Z",
+  "kickoff": "2026-06-26T02:00:00Z",
+  "market": "1X2",
+  "match": "Turkiet – USA",
+  "recOdds": 4.1,
+  "recTime": "2026-06-26T01:13:48Z",
+  "recommendable": false,
+  "selection": "X (Oavgjort)",
+  "settleLine": null,
+  "settlePick": "X",
+  "settlePlayer": null,
+  "value": "Neutralt"
+ },
  "2026-06-25-1027164903-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 2.43,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 2.4,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "1H_1X2",
   "match": "Turkiet – USA",
@@ -7965,8 +7980,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1027164903-halvlek-under-1-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.55,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.52,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "1H_OU",
   "match": "Turkiet – USA",
@@ -7995,8 +8010,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1027164903-halvtid_fulltid-halvtid-fulltid-x-x": {
-  "closeOdds": 6.5,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 6.4,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "HTFT",
   "match": "Turkiet – USA",
@@ -8010,8 +8025,8 @@
   "value": "Neutralt"
  },
  "2026-06-25-1027164903-handikapp-turkiet-0-5": {
-  "closeOdds": 1.97,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.86,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "AH",
   "match": "Turkiet – USA",
@@ -8022,11 +8037,11 @@
   "settleLine": 0.5,
   "settlePick": "home",
   "settlePlayer": null,
-  "value": "Spelvärt"
+  "value": "Neutralt"
  },
  "2026-06-25-1027164903-hornor-över-9-5-hörnor": {
-  "closeOdds": 1.77,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.88,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CORNERS",
   "match": "Turkiet – USA",
@@ -8040,8 +8055,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1027164903-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 16.0,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 15.0,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CS",
   "match": "Turkiet – USA",
@@ -8056,7 +8071,7 @@
  },
  "2026-06-25-1027164903-korrekt_resultat-resultat-1-1": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CS",
   "match": "Turkiet – USA",
@@ -8071,7 +8086,7 @@
  },
  "2026-06-25-1027164903-kort-under-2-5-kort": {
   "closeOdds": 1.8,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CARDS",
   "match": "Turkiet – USA",
@@ -8085,8 +8100,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1027164903-kort-över-2-5-kort": {
-  "closeOdds": 1.89,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 1.87,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "CARDS",
   "match": "Turkiet – USA",
@@ -8101,7 +8116,7 @@
  },
  "2026-06-25-1027164903-malgorare-mark-mckenzie-gör-mål": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "PLAYER",
   "match": "Turkiet – USA",
@@ -8130,8 +8145,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1027164903-malgorare-orkun-kokcu-gör-mål": {
-  "closeOdds": 5.5,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 5.8,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "PLAYER",
   "match": "Turkiet – USA",
@@ -8145,8 +8160,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1027164903-spelarspecial-abdülkerim-bardakci-över-0-5-skott-på-må": {
-  "closeOdds": 5.5,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 5.75,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "PLAYER",
   "match": "Turkiet – USA",
@@ -8190,8 +8205,8 @@
   "value": "Undvik"
  },
  "2026-06-25-1027164903-spelarspecial-ricardo-pepi-gör-2-mål": {
-  "closeOdds": 7.5,
-  "closeTime": "2026-06-26T00:51:47Z",
+  "closeOdds": 8.0,
+  "closeTime": "2026-06-26T01:13:48Z",
   "kickoff": "2026-06-26T02:00:00Z",
   "market": "PLAYER",
   "match": "Turkiet – USA",
