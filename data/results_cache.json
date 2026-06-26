@@ -557,5 +557,22 @@
    "name": "Nicolas Pépé",
    "team": "Elfenbenskusten"
   }
+ ],
+ "espn:760475": [
+  {
+   "goals": 3,
+   "name": "Ousmane Dembélé",
+   "team": "Frankrike"
+  },
+  {
+   "goals": 1,
+   "name": "Thelo Aasgaard",
+   "team": "Norge"
+  },
+  {
+   "goals": 1,
+   "name": "Désiré Doué",
+   "team": "Frankrike"
+  }
  ]
 }
