@@ -596,5 +596,17 @@
    "name": "Désiré Doué",
    "team": "Frankrike"
   }
+ ],
+ "espn:760485": [
+  {
+   "goals": 1,
+   "name": "Jude Bellingham",
+   "team": "England"
+  },
+  {
+   "goals": 1,
+   "name": "Harry Kane",
+   "team": "England"
+  }
  ]
 }
