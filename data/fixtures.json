@@ -466,5 +466,17 @@
   "home": "Argentina",
   "kickoff": "2026-07-03T22:00:00Z",
   "stage": "Sextondelsfinal"
+ },
+ "1028163543": {
+  "away": "Paraguay",
+  "home": "Tyskland",
+  "kickoff": "2026-06-29T20:30:00Z",
+  "stage": "Sextondelsfinal"
+ },
+ "1028163544": {
+  "away": "Sverige",
+  "home": "Frankrike",
+  "kickoff": "2026-06-30T21:00:00Z",
+  "stage": "Sextondelsfinal"
  }
 }
