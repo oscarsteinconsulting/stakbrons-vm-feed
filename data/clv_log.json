@@ -10890,8 +10890,8 @@
   "value": "Undvik"
  },
  "2026-06-27-1025862198-antal_mal-argentina-under-2-5-mål": {
-  "closeOdds": 2.05,
-  "closeTime": "2026-06-27T19:35:32Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "TEAM_OU",
   "match": "Jordanien – Argentina",
@@ -10921,7 +10921,7 @@
  },
  "2026-06-27-1025862198-antal_mal-under-3-5-mål": {
   "closeOdds": 1.65,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "OU",
   "match": "Jordanien – Argentina",
@@ -10935,8 +10935,8 @@
   "value": "Spelvärt"
  },
  "2026-06-27-1025862198-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 1.47,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeOdds": 1.48,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "BTTS",
   "match": "Jordanien – Argentina",
@@ -10950,8 +10950,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862198-dubbelchans-1x-jordanien-eller-oavgjort": {
-  "closeOdds": 6.5,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeOdds": 6.4,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "DC",
   "match": "Jordanien – Argentina",
@@ -10966,7 +10966,7 @@
  },
  "2026-06-27-1025862198-fulltid-x-oavgjort": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1X2",
   "match": "Jordanien – Argentina",
@@ -10981,7 +10981,7 @@
  },
  "2026-06-27-1025862198-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 3.15,
-  "closeTime": "2026-06-27T16:30:27Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1H_1X2",
   "match": "Jordanien – Argentina",
@@ -10994,9 +10994,24 @@
   "settlePlayer": null,
   "value": "Neutralt"
  },
+ "2026-06-27-1025862198-halvlek-under-1-5-mål-i-1-a-halvlek": {
+  "closeOdds": 1.63,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "1H_OU",
+  "match": "Jordanien – Argentina",
+  "recOdds": 1.63,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": true,
+  "selection": "Under 1.5 mål i 1:a halvlek",
+  "settleLine": 1.5,
+  "settlePick": "under",
+  "settlePlayer": null,
+  "value": "Neutralt"
+ },
  "2026-06-27-1025862198-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 11.5,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "HTFT",
   "match": "Jordanien – Argentina",
@@ -11010,8 +11025,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862198-handikapp-jordanien-2-5": {
-  "closeOdds": 1.71,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeOdds": 1.7,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "AH",
   "match": "Jordanien – Argentina",
@@ -11024,9 +11039,24 @@
   "settlePlayer": null,
   "value": "Neutralt"
  },
+ "2026-06-27-1025862198-hornor-över-8-5-hörnor": {
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "CORNERS",
+  "match": "Jordanien – Argentina",
+  "recOdds": 2.02,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Över 8.5 hörnor",
+  "settleLine": 8.5,
+  "settlePick": "over",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
  "2026-06-27-1025862198-korrekt_resultat-resultat-0-0": {
   "closeOdds": 19.0,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CS",
   "match": "Jordanien – Argentina",
@@ -11040,8 +11070,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862198-korrekt_resultat-resultat-0-1": {
-  "closeOdds": 7.5,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeOdds": 8.0,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CS",
   "match": "Jordanien – Argentina",
@@ -11054,9 +11084,24 @@
   "settlePlayer": null,
   "value": "Neutralt"
  },
+ "2026-06-27-1025862253-antal_mal-österrike-över-0-5-mål": {
+  "closeOdds": 1.56,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "TEAM_OU",
+  "match": "Algeriet – Österrike",
+  "recOdds": 1.56,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": true,
+  "selection": "Österrike över 0.5 mål",
+  "settleLine": 0.5,
+  "settlePick": "away_over",
+  "settlePlayer": null,
+  "value": "Spelvärt"
+ },
  "2026-06-27-1025862253-antal_mal-över-1-5-mål": {
   "closeOdds": 1.71,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "OU",
   "match": "Algeriet – Österrike",
@@ -11071,7 +11116,7 @@
  },
  "2026-06-27-1025862253-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.23,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "BTTS",
   "match": "Algeriet – Österrike",
@@ -11086,7 +11131,7 @@
  },
  "2026-06-27-1025862253-dubbelchans-12-algeriet-eller-österrike-vinner": {
   "closeOdds": 1.77,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "DC",
   "match": "Algeriet – Österrike",
@@ -11116,7 +11161,7 @@
  },
  "2026-06-27-1025862253-fulltid-2-österrike-vinner": {
   "closeOdds": 3.65,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1X2",
   "match": "Algeriet – Österrike",
@@ -11131,7 +11176,7 @@
  },
  "2026-06-27-1025862253-halvlek-halvtid-2-österrike-leder-i-halvtid": {
   "closeOdds": 4.1,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1H_1X2",
   "match": "Algeriet – Österrike",
@@ -11146,7 +11191,7 @@
  },
  "2026-06-27-1025862253-halvlek-över-0-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.79,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1H_OU",
   "match": "Algeriet – Österrike",
@@ -11161,7 +11206,7 @@
  },
  "2026-06-27-1025862253-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 6.0,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "HTFT",
   "match": "Algeriet – Österrike",
@@ -11171,6 +11216,21 @@
   "selection": "Halvtid/Fulltid 2/2",
   "settleLine": null,
   "settlePick": "2/2",
+  "settlePlayer": null,
+  "value": "Neutralt"
+ },
+ "2026-06-27-1025862253-handikapp-algeriet-0-5": {
+  "closeOdds": 3.4,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "AH",
+  "match": "Algeriet – Österrike",
+  "recOdds": 3.4,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": true,
+  "selection": "Algeriet -0.5",
+  "settleLine": -0.5,
+  "settlePick": "home",
   "settlePlayer": null,
   "value": "Neutralt"
  },
@@ -11206,7 +11266,7 @@
  },
  "2026-06-27-1025862253-hornor-över-7-5-hörnor": {
   "closeOdds": 1.97,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CORNERS",
   "match": "Algeriet – Österrike",
@@ -11234,9 +11294,24 @@
   "settlePlayer": null,
   "value": "Undvik"
  },
+ "2026-06-27-1025862253-korrekt_resultat-resultat-1-2": {
+  "closeOdds": 14.0,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "CS",
+  "match": "Algeriet – Österrike",
+  "recOdds": 14.0,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Resultat 1-2",
+  "settleLine": null,
+  "settlePick": "1-2",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
  "2026-06-27-1025862253-korrekt_resultat-resultat-1-3": {
   "closeOdds": 31.0,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CS",
   "match": "Algeriet – Österrike",
@@ -11249,9 +11324,69 @@
   "settlePlayer": null,
   "value": "Neutralt"
  },
+ "2026-06-27-1025862253-kort-över-2-5-kort": {
+  "closeOdds": 2.0,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "CARDS",
+  "match": "Algeriet – Österrike",
+  "recOdds": 2.0,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Över 2.5 kort",
+  "settleLine": 2.5,
+  "settlePick": "over",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
+ "2026-06-27-1025862253-malgorare-patrick-wimmer-gör-mål": {
+  "closeOdds": 8.0,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "PLAYER",
+  "match": "Algeriet – Österrike",
+  "recOdds": 8.0,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Patrick Wimmer gör mål",
+  "settleLine": null,
+  "settlePick": "scorer",
+  "settlePlayer": "Patrick Wimmer",
+  "value": "Undvik"
+ },
+ "2026-06-27-1025862253-spelarspecial-rayan-aït-nouri-över-0-5-skott-på-mål": {
+  "closeOdds": 5.2,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "PLAYER",
+  "match": "Algeriet – Österrike",
+  "recOdds": 5.2,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Rayan Aït Nouri över 0.5 skott på mål",
+  "settleLine": 0.5,
+  "settlePick": "shots",
+  "settlePlayer": "Rayan Aït Nouri",
+  "value": "Undvik"
+ },
+ "2026-06-27-1025862265-antal_mal-under-2-5-mål": {
+  "closeOdds": 2.17,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "OU",
+  "match": "Colombia – Portugal",
+  "recOdds": 2.17,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": true,
+  "selection": "Under 2.5 mål",
+  "settleLine": 2.5,
+  "settlePick": "under",
+  "settlePlayer": null,
+  "value": "Neutralt"
+ },
  "2026-06-27-1025862265-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 2.33,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "BTTS",
   "match": "Colombia – Portugal",
@@ -11266,7 +11401,7 @@
  },
  "2026-06-27-1025862265-dubbelchans-1x-colombia-eller-oavgjort": {
   "closeOdds": 1.76,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "DC",
   "match": "Colombia – Portugal",
@@ -11281,7 +11416,7 @@
  },
  "2026-06-27-1025862265-fulltid-1-colombia-vinner": {
   "closeOdds": 3.45,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "1X2",
   "match": "Colombia – Portugal",
@@ -11310,8 +11445,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862265-halvtid_fulltid-halvtid-fulltid-1-1": {
-  "closeOdds": 5.6,
-  "closeTime": "2026-06-27T16:53:32Z",
+  "closeOdds": 5.4,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "HTFT",
   "match": "Colombia – Portugal",
@@ -11322,11 +11457,11 @@
   "settleLine": null,
   "settlePick": "1/1",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Undvik"
  },
  "2026-06-27-1025862265-handikapp-colombia-0-5": {
   "closeOdds": 1.8,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "AH",
   "match": "Colombia – Portugal",
@@ -11341,7 +11476,7 @@
  },
  "2026-06-27-1025862265-hornor-över-8-5-hörnor": {
   "closeOdds": 1.68,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "CORNERS",
   "match": "Colombia – Portugal",
@@ -11369,9 +11504,24 @@
   "settlePlayer": null,
   "value": "Undvik"
  },
+ "2026-06-27-1025862265-kort-under-2-5-kort": {
+  "closeOdds": 2.23,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "CARDS",
+  "match": "Colombia – Portugal",
+  "recOdds": 2.23,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Under 2.5 kort",
+  "settleLine": 2.5,
+  "settlePick": "under",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
  "2026-06-27-1025862265-kort-över-2-5-kort": {
   "closeOdds": 1.57,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "CARDS",
   "match": "Colombia – Portugal",
@@ -11399,9 +11549,24 @@
   "settlePlayer": null,
   "value": "Undvik"
  },
+ "2026-06-27-1025862265-malgorare-jhon-córdoba-gör-mål": {
+  "closeOdds": 4.0,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "PLAYER",
+  "match": "Colombia – Portugal",
+  "recOdds": 4.0,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Jhon Córdoba gör mål",
+  "settleLine": null,
+  "settlePick": "scorer",
+  "settlePlayer": "Jhon Córdoba",
+  "value": "Undvik"
+ },
  "2026-06-27-1025862265-malgorare-luis-javier-suárez-gör-mål": {
   "closeOdds": 3.6,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "PLAYER",
   "match": "Colombia – Portugal",
@@ -11414,9 +11579,24 @@
   "settlePlayer": "Luis Javier Suárez",
   "value": "Undvik"
  },
+ "2026-06-27-1025862265-spelarspecial-cristiano-ronaldo-gör-2-mål": {
+  "closeOdds": 6.5,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "PLAYER",
+  "match": "Colombia – Portugal",
+  "recOdds": 6.5,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Cristiano Ronaldo gör 2+ mål",
+  "settleLine": null,
+  "settlePick": "twoplus",
+  "settlePlayer": "Cristiano Ronaldo",
+  "value": "Undvik"
+ },
  "2026-06-27-1025862265-spelarspecial-gonçalo-ramos-gör-2-mål": {
   "closeOdds": 10.5,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "PLAYER",
   "match": "Colombia – Portugal",
@@ -12045,8 +12225,8 @@
   "value": "Spelvärt"
  },
  "2026-06-27-1027165772-antal_mal-uzbekistan-över-0-5-mål": {
-  "closeOdds": 1.74,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeOdds": 1.75,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "TEAM_OU",
   "match": "DR Kongo – Uzbekistan",
@@ -12061,7 +12241,7 @@
  },
  "2026-06-27-1027165772-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.2,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "BTTS",
   "match": "DR Kongo – Uzbekistan",
@@ -12075,8 +12255,8 @@
   "value": "Spelvärt"
  },
  "2026-06-27-1027165772-dubbelchans-x2-oavgjort-eller-uzbekistan": {
-  "closeOdds": 2.17,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeOdds": 2.18,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "DC",
   "match": "DR Kongo – Uzbekistan",
@@ -12090,8 +12270,8 @@
   "value": "Spelvärt"
  },
  "2026-06-27-1027165772-fulltid-2-uzbekistan-vinner": {
-  "closeOdds": 5.4,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeOdds": 5.5,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "1X2",
   "match": "DR Kongo – Uzbekistan",
@@ -12105,8 +12285,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1027165772-halvlek-halvtid-2-uzbekistan-leder-i-halvtid": {
-  "closeOdds": 5.6,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeOdds": 5.75,
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "1H_1X2",
   "match": "DR Kongo – Uzbekistan",
@@ -12121,7 +12301,7 @@
  },
  "2026-06-27-1027165772-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 8.5,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "HTFT",
   "match": "DR Kongo – Uzbekistan",
@@ -12136,7 +12316,7 @@
  },
  "2026-06-27-1027165772-handikapp-uzbekistan-0-5": {
   "closeOdds": 2.23,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "AH",
   "match": "DR Kongo – Uzbekistan",
@@ -12151,7 +12331,7 @@
  },
  "2026-06-27-1027165772-hornor-över-8-5-hörnor": {
   "closeOdds": 1.95,
-  "closeTime": "2026-06-27T20:44:54Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "CORNERS",
   "match": "DR Kongo – Uzbekistan",
@@ -12166,7 +12346,7 @@
  },
  "2026-06-27-1027165772-korrekt_resultat-resultat-0-2": {
   "closeOdds": 21.0,
-  "closeTime": "2026-06-27T13:03:27Z",
+  "closeTime": "2026-06-27T21:08:00Z",
   "kickoff": "2026-06-27T23:30:00Z",
   "market": "CS",
   "match": "DR Kongo – Uzbekistan",
@@ -12177,6 +12357,96 @@
   "settleLine": null,
   "settlePick": "0-2",
   "settlePlayer": null,
+  "value": "Undvik"
+ },
+ "2026-06-27-1027165772-kort-under-3-5-kort": {
+  "closeOdds": 1.57,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "CARDS",
+  "match": "DR Kongo – Uzbekistan",
+  "recOdds": 1.57,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Under 3.5 kort",
+  "settleLine": 3.5,
+  "settlePick": "under",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
+ "2026-06-27-1027165772-kort-över-3-5-kort": {
+  "closeOdds": 2.23,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "CARDS",
+  "match": "DR Kongo – Uzbekistan",
+  "recOdds": 2.23,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Över 3.5 kort",
+  "settleLine": 3.5,
+  "settlePick": "over",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
+ "2026-06-27-1027165772-malgorare-aaron-wan-bissaka-gör-mål": {
+  "closeOdds": 9.0,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "PLAYER",
+  "match": "DR Kongo – Uzbekistan",
+  "recOdds": 9.0,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Aaron Wan-Bissaka gör mål",
+  "settleLine": null,
+  "settlePick": "scorer",
+  "settlePlayer": "Aaron Wan-Bissaka",
+  "value": "Undvik"
+ },
+ "2026-06-27-1027165772-malgorare-axel-tuanzebe-gör-mål": {
+  "closeOdds": 11.0,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "PLAYER",
+  "match": "DR Kongo – Uzbekistan",
+  "recOdds": 11.0,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Axel Tuanzebe gör mål",
+  "settleLine": null,
+  "settlePick": "scorer",
+  "settlePlayer": "Axel Tuanzebe",
+  "value": "Undvik"
+ },
+ "2026-06-27-1027165772-spelarspecial-cédric-bakambu-gör-2-mål": {
+  "closeOdds": 11.5,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "PLAYER",
+  "match": "DR Kongo – Uzbekistan",
+  "recOdds": 11.5,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Cédric Bakambu gör 2+ mål",
+  "settleLine": null,
+  "settlePick": "twoplus",
+  "settlePlayer": "Cédric Bakambu",
+  "value": "Undvik"
+ },
+ "2026-06-27-1027165772-spelarspecial-yoane-wissa-gör-2-mål": {
+  "closeOdds": 11.5,
+  "closeTime": "2026-06-27T21:08:00Z",
+  "kickoff": "2026-06-27T23:30:00Z",
+  "market": "PLAYER",
+  "match": "DR Kongo – Uzbekistan",
+  "recOdds": 11.5,
+  "recTime": "2026-06-27T21:08:00Z",
+  "recommendable": false,
+  "selection": "Yoane Wissa gör 2+ mål",
+  "settleLine": null,
+  "settlePick": "twoplus",
+  "settlePlayer": "Yoane Wissa",
   "value": "Undvik"
  }
 }
