@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-28T19:41:38Z",
+ "generatedAt": "2026-06-28T20:05:27Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -117,9 +117,9 @@
      "pHome": 0.473,
      "pDraw": 0.28,
      "pAway": 0.247,
-     "oddsHome": 1.7,
-     "oddsDraw": 3.95,
-     "oddsAway": 5.6,
+     "oddsHome": 1.74,
+     "oddsDraw": 3.85,
+     "oddsAway": 5.4,
      "lambdaHome": 1.49,
      "lambdaAway": 1.01,
      "mssHome": 79.5,
@@ -299,9 +299,9 @@
      "pHome": 0.452,
      "pDraw": 0.284,
      "pAway": 0.265,
-     "oddsHome": 2.2,
-     "oddsDraw": 3.15,
-     "oddsAway": 3.8,
+     "oddsHome": 2.28,
+     "oddsDraw": 3.1,
+     "oddsAway": 3.6,
      "lambdaHome": 1.45,
      "lambdaAway": 1.05,
      "mssHome": 69.6,
@@ -395,9 +395,9 @@
      "pHome": 0.206,
      "pDraw": 0.27,
      "pAway": 0.523,
-     "oddsHome": 4.0,
+     "oddsHome": 3.95,
      "oddsDraw": 3.5,
-     "oddsAway": 2.06,
+     "oddsAway": 2.08,
      "lambdaHome": 0.91,
      "lambdaAway": 1.59,
      "mssHome": 54.8,
@@ -2777,7 +2777,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-28T19:41:37Z",
+  "generatedAt": "2026-06-28T20:05:27Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3477,15 +3477,15 @@
     "away": "Sverige",
     "homeFlag": "🇫🇷",
     "awayFlag": "🇸🇪",
-    "pHome": 0.7112,
-    "pDraw": 0.1914,
-    "pAway": 0.0974,
+    "pHome": 0.7132,
+    "pDraw": 0.1903,
+    "pAway": 0.0965,
     "folketOne": 76,
     "folketX": 15,
     "folketTwo": 9,
-    "oddsOne": 1.26,
-    "oddsX": 6.25,
-    "oddsTwo": 12.5
+    "oddsOne": 1.25,
+    "oddsX": 6.4,
+    "oddsTwo": 13.0
    },
    {
     "n": 5,
@@ -3608,9 +3608,9 @@
     "pHome": 0.3608,
     "pDraw": 0.2915,
     "pAway": 0.3477,
-    "folketOne": 20,
+    "folketOne": 19,
     "folketX": 33,
-    "folketTwo": 47,
+    "folketTwo": 48,
     "oddsOne": 3.4,
     "oddsX": 2.88,
     "oddsTwo": 2.48
