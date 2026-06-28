@@ -490,5 +490,17 @@
   "home": "Mexiko",
   "kickoff": "2026-07-01T01:00:00Z",
   "stage": "Sextondelsfinal"
+ },
+ "1028174858": {
+  "away": "Ghana",
+  "home": "Colombia",
+  "kickoff": "2026-07-04T01:30:00Z",
+  "stage": "Åttondelsfinal"
+ },
+ "1028174886": {
+  "away": "Kroatien",
+  "home": "Portugal",
+  "kickoff": "2026-07-02T23:00:00Z",
+  "stage": "Sextondelsfinal"
  }
 }
