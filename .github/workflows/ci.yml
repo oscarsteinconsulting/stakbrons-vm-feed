@@ -25,10 +25,19 @@ jobs:
       - name: VM-tipset-kupong — självtest
         run: python3 scripts/vmtipset.py --selftest
 
+      - name: Turneringssim + bracket-träd — självtest
+        run: python3 scripts/tournament.py
+
+      - name: Målgörarmodell — självtest
+        run: python3 scripts/scorer_model.py
+
+      - name: Slutspelsöversyn (omgångsdetektering) — självtest
+        run: python3 scripts/round_review.py --selftest
+
       - name: Alla moduler importerar
         run: |
           cd scripts
-          python3 -c "import generate, tournament, wc_model, wc_data, kambi_wc, results_wc, vmtipset, send_push; print('IMPORT OK')"
+          python3 -c "import generate, tournament, wc_model, wc_data, kambi_wc, results_wc, vmtipset, scorer_model, calibration_harness, round_review, send_push; print('IMPORT OK')"
 
       - name: Syntaxkoll (kompilerar alla skript)
         run: python3 -m compileall -q scripts

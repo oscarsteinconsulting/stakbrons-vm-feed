@@ -1,0 +1,58 @@
+name: Slutspelsöversyn (per omgång)
+
+# Kör en DETERMINISTISK översyn efter varje färdigspelad slutspelsomgång,
+# oberoende av att appen/Mac minin är igång och synligt i Actions-fliken.
+# round_review.py upptäcker när R32/R16/kvart/semi/final precis blivit klar och
+# skriver då en rapport till data/reviews/<omgång>.md (idempotent — en gång per
+# omgång) + en sammanfattning i körningens Summary. Den gör INGA modelländringar
+# (det kräver omdöme/Claude) — rapporten är underlag + larm för den djupa cykeln.
+#
+# GitHub-cron är best-effort (kan droppas nattetid); kör vid behov manuellt via
+# "Run workflow". Läser bara committad feed/clv-data — ingen token krävs.
+
+on:
+  schedule:
+    - cron: '30 8 * * *'      # ~10:30 svensk tid, efter nattens resultat
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vm-round-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Slutspelsöversyn — rapportera om en omgång precis blivit klar
+        run: |
+          set -uo pipefail
+          git config user.name  "Stakbrons VM Bot (översyn)"
+          git config user.email "vm-bot@stakbrons.local"
+          git fetch -q origin main && git reset -q --hard origin/main
+
+          python3 scripts/round_review.py || { echo "::error::round_review failade"; exit 1; }
+
+          git add data/reviews 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Ingen ny omgångsrapport — håller."
+            exit 0
+          fi
+          ROUND=$(git diff --staged --name-only | sed -n 's#data/reviews/\(.*\)\.md#\1#p' | head -1)
+          git commit -q -m "översyn: slutspelsrapport ${ROUND:-ny omgång}"
+          # Rebasa in minins samtidiga data/feed.json-pushar (annan fil → ingen
+          # konflikt), pusha sedan rapporten. Best-effort med tre försök.
+          for a in 1 2 3; do
+            git pull -q --rebase --autostash origin main 2>/dev/null || true
+            git push -q && { echo "push OK ($a)"; exit 0; }
+            echo "::warning::push avvisad, försöker igen ($a/3)"
+          done
+          echo "::error::push misslyckades"; exit 1
