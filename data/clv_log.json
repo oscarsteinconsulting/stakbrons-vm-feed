@@ -10890,8 +10890,8 @@
   "value": "Undvik"
  },
  "2026-06-27-1025862198-antal_mal-argentina-under-2-5-mål": {
-  "closeOdds": 2.0,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "TEAM_OU",
   "match": "Jordanien – Argentina",
@@ -10920,8 +10920,8 @@
   "value": "Spelvärt"
  },
  "2026-06-27-1025862198-antal_mal-under-3-5-mål": {
-  "closeOdds": 1.64,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.65,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "OU",
   "match": "Jordanien – Argentina",
@@ -10935,8 +10935,8 @@
   "value": "Spelvärt"
  },
  "2026-06-27-1025862198-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 1.48,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.49,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "BTTS",
   "match": "Jordanien – Argentina",
@@ -10947,11 +10947,11 @@
   "settleLine": null,
   "settlePick": "no",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Spelvärt"
  },
  "2026-06-27-1025862198-dubbelchans-1x-jordanien-eller-oavgjort": {
   "closeOdds": 6.25,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "DC",
   "match": "Jordanien – Argentina",
@@ -10966,7 +10966,7 @@
  },
  "2026-06-27-1025862198-fulltid-x-oavgjort": {
   "closeOdds": 9.5,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1X2",
   "match": "Jordanien – Argentina",
@@ -10981,7 +10981,7 @@
  },
  "2026-06-27-1025862198-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 3.15,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1H_1X2",
   "match": "Jordanien – Argentina",
@@ -10996,7 +10996,7 @@
  },
  "2026-06-27-1025862198-halvlek-under-1-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.64,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1H_OU",
   "match": "Jordanien – Argentina",
@@ -11010,8 +11010,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862198-halvtid_fulltid-halvtid-fulltid-x-x": {
-  "closeOdds": 11.5,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 11.0,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "HTFT",
   "match": "Jordanien – Argentina",
@@ -11025,8 +11025,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862198-handikapp-jordanien-2-5": {
-  "closeOdds": 1.7,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.71,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "AH",
   "match": "Jordanien – Argentina",
@@ -11040,8 +11040,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862198-hornor-över-8-5-hörnor": {
-  "closeOdds": 1.77,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.92,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CORNERS",
   "match": "Jordanien – Argentina",
@@ -11056,7 +11056,7 @@
  },
  "2026-06-27-1025862198-korrekt_resultat-resultat-0-0": {
   "closeOdds": 19.0,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CS",
   "match": "Jordanien – Argentina",
@@ -11070,8 +11070,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862198-korrekt_resultat-resultat-0-1": {
-  "closeOdds": 7.5,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 8.0,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CS",
   "match": "Jordanien – Argentina",
@@ -11086,7 +11086,7 @@
  },
  "2026-06-27-1025862198-kort-under-2-5-kort": {
   "closeOdds": 1.71,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CARDS",
   "match": "Jordanien – Argentina",
@@ -11101,7 +11101,7 @@
  },
  "2026-06-27-1025862198-kort-över-2-5-kort": {
   "closeOdds": 1.98,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CARDS",
   "match": "Jordanien – Argentina",
@@ -11112,6 +11112,21 @@
   "settleLine": 2.5,
   "settlePick": "over",
   "settlePlayer": null,
+  "value": "Undvik"
+ },
+ "2026-06-27-1025862198-malgorare-lautaro-martínez-gör-mål": {
+  "closeOdds": 1.87,
+  "closeTime": "2026-06-28T00:36:26Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "PLAYER",
+  "match": "Jordanien – Argentina",
+  "recOdds": 1.87,
+  "recTime": "2026-06-28T00:36:26Z",
+  "recommendable": false,
+  "selection": "Lautaro Martínez gör mål",
+  "settleLine": null,
+  "settlePick": "scorer",
+  "settlePlayer": "Lautaro Martínez",
   "value": "Undvik"
  },
  "2026-06-27-1025862198-malgorare-nahuel-molina-gör-mål": {
@@ -11131,7 +11146,7 @@
  },
  "2026-06-27-1025862198-malgorare-noor-al-rawabdeh-gör-mål": {
   "closeOdds": 11.0,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Argentina",
@@ -11160,8 +11175,8 @@
   "value": "Undvik"
  },
  "2026-06-27-1025862198-spelarspecial-julián-álvarez-gör-2-mål": {
-  "closeOdds": 4.9,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 5.2,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "PLAYER",
   "match": "Jordanien – Argentina",
@@ -11174,9 +11189,24 @@
   "settlePlayer": "Julián Álvarez",
   "value": "Undvik"
  },
+ "2026-06-27-1025862198-spelarspecial-lautaro-martínez-gör-2-mål": {
+  "closeOdds": 5.0,
+  "closeTime": "2026-06-28T00:36:26Z",
+  "kickoff": "2026-06-28T02:00:00Z",
+  "market": "PLAYER",
+  "match": "Jordanien – Argentina",
+  "recOdds": 5.0,
+  "recTime": "2026-06-28T00:36:26Z",
+  "recommendable": false,
+  "selection": "Lautaro Martínez gör 2+ mål",
+  "settleLine": null,
+  "settlePick": "twoplus",
+  "settlePlayer": "Lautaro Martínez",
+  "value": "Undvik"
+ },
  "2026-06-27-1025862253-antal_mal-österrike-över-0-5-mål": {
-  "closeOdds": 1.55,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.54,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "TEAM_OU",
   "match": "Algeriet – Österrike",
@@ -11190,8 +11220,8 @@
   "value": "Spelvärt"
  },
  "2026-06-27-1025862253-antal_mal-över-1-5-mål": {
-  "closeOdds": 1.71,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.7,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "OU",
   "match": "Algeriet – Österrike",
@@ -11206,7 +11236,7 @@
  },
  "2026-06-27-1025862253-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.23,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "BTTS",
   "match": "Algeriet – Österrike",
@@ -11221,7 +11251,7 @@
  },
  "2026-06-27-1025862253-dubbelchans-12-algeriet-eller-österrike-vinner": {
   "closeOdds": 1.77,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "DC",
   "match": "Algeriet – Österrike",
@@ -11251,7 +11281,7 @@
  },
  "2026-06-27-1025862253-fulltid-2-österrike-vinner": {
   "closeOdds": 3.6,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1X2",
   "match": "Algeriet – Österrike",
@@ -11266,7 +11296,7 @@
  },
  "2026-06-27-1025862253-halvlek-halvtid-2-österrike-leder-i-halvtid": {
   "closeOdds": 4.1,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1H_1X2",
   "match": "Algeriet – Österrike",
@@ -11280,8 +11310,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862253-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.79,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.78,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "1H_OU",
   "match": "Algeriet – Österrike",
@@ -11296,7 +11326,7 @@
  },
  "2026-06-27-1025862253-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 5.8,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "HTFT",
   "match": "Algeriet – Österrike",
@@ -11326,7 +11356,7 @@
  },
  "2026-06-27-1025862253-handikapp-österrike-0-5": {
   "closeOdds": 3.4,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "AH",
   "match": "Algeriet – Österrike",
@@ -11355,8 +11385,8 @@
   "value": "Undvik"
  },
  "2026-06-27-1025862253-hornor-över-7-5-hörnor": {
-  "closeOdds": 1.97,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.95,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CORNERS",
   "match": "Algeriet – Österrike",
@@ -11385,8 +11415,8 @@
   "value": "Undvik"
  },
  "2026-06-27-1025862253-korrekt_resultat-resultat-1-2": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 13.0,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CS",
   "match": "Algeriet – Österrike",
@@ -11401,7 +11431,7 @@
  },
  "2026-06-27-1025862253-korrekt_resultat-resultat-1-3": {
   "closeOdds": 31.0,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CS",
   "match": "Algeriet – Österrike",
@@ -11415,8 +11445,8 @@
   "value": "Neutralt"
  },
  "2026-06-27-1025862253-kort-under-2-5-kort": {
-  "closeOdds": 1.85,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.84,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CARDS",
   "match": "Algeriet – Österrike",
@@ -11430,8 +11460,8 @@
   "value": "Undvik"
  },
  "2026-06-27-1025862253-kort-över-2-5-kort": {
-  "closeOdds": 1.83,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeOdds": 1.84,
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "CARDS",
   "match": "Algeriet – Österrike",
@@ -11446,7 +11476,7 @@
  },
  "2026-06-27-1025862253-malgorare-patrick-wimmer-gör-mål": {
   "closeOdds": 8.0,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "PLAYER",
   "match": "Algeriet – Österrike",
@@ -11461,7 +11491,7 @@
  },
  "2026-06-27-1025862253-malgorare-sasa-kalajdzic-gör-mål": {
   "closeOdds": 5.0,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "PLAYER",
   "match": "Algeriet – Österrike",
@@ -11476,7 +11506,7 @@
  },
  "2026-06-27-1025862253-spelarspecial-rayan-aït-nouri-över-0-5-skott-på-mål": {
   "closeOdds": 5.2,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "PLAYER",
   "match": "Algeriet – Österrike",
@@ -11491,7 +11521,7 @@
  },
  "2026-06-27-1025862253-spelarspecial-stefan-posch-över-0-5-skott-på-mål": {
   "closeOdds": 4.3,
-  "closeTime": "2026-06-28T00:13:10Z",
+  "closeTime": "2026-06-28T00:36:26Z",
   "kickoff": "2026-06-28T02:00:00Z",
   "market": "PLAYER",
   "match": "Algeriet – Österrike",
