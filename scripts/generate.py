@@ -28,9 +28,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from wc_data import FLAG_OF, stage_for
 from wc_model import (MatchModel, build_ratings, devig, shrink,
-                      implied_lambda_total, MU_TOTAL, MSS_BLEND, SHRINK_MODEL)
+                      implied_lambda_total, MU_TOTAL, KO_MU_TOTAL, MSS_BLEND,
+                      KO_MSS_BLEND, ELO_PER_GOAL, SHRINK_MODEL)
 import kambi_wc
 import results_wc
+import scorer_model
 import tv_channels
 
 STOCKHOLM = ZoneInfo("Europe/Stockholm")
@@ -40,7 +42,7 @@ DAYS_DIR = os.path.join(ROOT, "data", "days")
 FIXTURES_PATH = os.path.join(ROOT, "data", "fixtures.json")
 CLV_PATH = os.path.join(ROOT, "data", "clv_log.json")
 
-MODEL_VERSION = "1.1.0"
+MODEL_VERSION = "1.2.0"   # slutspelsomkalibrering: fas-μ, dispersion, KO-dynamik
 
 # Värdemärkning (efter krympning mot marknaden)
 EDGE_PLAY = 0.08      # Spelvärt/Chans-tröskel
@@ -176,14 +178,17 @@ def slugify(s):
 # oberoende av sample (n-oberoende prior).
 UNMODELED_MARKETS = {"CORNERS", "CARDS", "PLAYER"}
 # HÖGVARIANS: modell-härledda men med många utfall (9 för HT/FT, 20+ resultat),
-# där longshot-marginalbruset dominerar. Rekommenderas ej.
-HIGHVAR_MARKETS = {"HTFT", "CS"}
-# ENSKILT-UTFALL: 1X2 och halvlek-1X2. Modellen tillverkar falsk edge på
+# där longshot-marginalbruset dominerar. Rekommenderas ej. Halvlek-1X2 (1H_1X2)
+# flyttades hit efter slutspelsöversynen: det är ett enskilt-utfall på lågt λ
+# (en halvlek) med hög varians, och CLV-loggen visade det bland de sämsta
+# marknaderna — säkrare uttryckt via halvleks-Över/Under ur samma rutnät.
+HIGHVAR_MARKETS = {"HTFT", "CS", "1H_1X2"}
+# ENSKILT-UTFALL: fulltids-1X2. Modellen tillverkar falsk edge på
 # underdog/oavgjort i (2.5, 4.0]-bandet (shrink ger full modellvikt ända till
 # odds 4.0). Den vyn uttrycks säkrare via Dubbelchans/Handikapp (samma rutnät,
 # lägre varians). 2.50 är ett medvetet konservativt RUNT tal, ej fittat — i
 # praktiken flaggar modellen ändå sällan ett enskilt-utfall under odds 4.0.
-SINGLE_OUTCOME_MARKETS = {"1X2", "1H_1X2"}
+SINGLE_OUTCOME_MARKETS = {"1X2"}
 ONE_X_TWO_MAX_ODDS = 2.50
 
 
@@ -193,6 +198,22 @@ def is_recommendable(settle_market, odds):
     if settle_market in SINGLE_OUTCOME_MARKETS and odds > ONE_X_TWO_MAX_ODDS:
         return False
     return True
+
+
+def is_knockout_stage(stage):
+    """True för slutspelsfaser (Sextondelsfinal och framåt), False för grupp."""
+    return bool(stage) and stage != "Gruppspel" and not stage.startswith("Grupp")
+
+
+def build_match_model(m, ratings_group, ratings_ko):
+    """MatchModel för en match med rätt fas-μ och rätt rating-set.
+
+    Slutspel använder den lägre KO_MU_TOTAL och ratingset med lägre MSS-blend
+    (mer vikt på färsk live-form); gruppspel använder default-μ och 0.30-blend."""
+    stage = stage_for(m["home"], m["away"], m["kickoff"])
+    if is_knockout_stage(stage):
+        return MatchModel(m["home"], m["away"], ratings_ko, mu_total=KO_MU_TOTAL)
+    return MatchModel(m["home"], m["away"], ratings_group, mu_total=MU_TOTAL)
 
 
 def make_bet(date_str, m, category_key, category_name, selection, detail, odds,
@@ -548,9 +569,10 @@ def bets_for_match(date_str, m, model, markets):
 
 def match_info(m, model, mss_map):
     ph, pd, pa = model.p_1x2()
-    return {
+    stage = stage_for(m["home"], m["away"], m["kickoff"])
+    info = {
         "id": m["kambiId"], "kickoff": m["kickoff"],
-        "stage": stage_for(m["home"], m["away"], m["kickoff"]),
+        "stage": stage,
         "home": m["home"], "away": m["away"],
         "homeFlag": FLAG_OF.get(m["home"], ""), "awayFlag": FLAG_OF.get(m["away"], ""),
         "channel": tv_channels.channel_for(m["home"], m["away"]),
@@ -559,6 +581,28 @@ def match_info(m, model, mss_map):
         "lambdaHome": round(model.lam_h, 2), "lambdaAway": round(model.lam_a, 2),
         "mssHome": mss_map.get(m["home"]), "mssAway": mss_map.get(m["away"]),
     }
+    # Slutspel: additiva fält (gamla klienter ignorerar dem). pAdvance = "vem går
+    # vidare" via 90 min → förlängning → straffar; 90-min-1X2 ovan är oförändrat.
+    if is_knockout_stage(stage):
+        p_adv = model.p_progress()
+        info["knockout"] = True
+        info["pAdvanceHome"] = round(p_adv, 3)
+        info["pAdvanceAway"] = round(1.0 - p_adv, 3)
+    return info
+
+
+def attach_scorer_analysis(match_infos, by_team, totals):
+    """Lägg additiv 'scorerAnalysis' (topp-N anytime-skyttar, REN analys) på
+    slutspelsmatcher. Använder matchkortets λ och facitens målgörartabell.
+    Gör inget för gruppmatcher eller när lagen saknar måldata."""
+    for info in match_infos:
+        if not info.get("knockout"):
+            continue
+        rows = scorer_model.match_scorer_analysis(
+            info["home"], info["away"], info["lambdaHome"], info["lambdaAway"],
+            by_team, totals)
+        if rows:
+            info["scorerAnalysis"] = rows
 
 
 def load_fixtures():
@@ -633,7 +677,7 @@ def normalize_results_orientation(results, fixtures, matches):
     return results
 
 
-def build_past(fixtures, results, ratings, mss_map, today_local, now, exclude=None):
+def build_past(fixtures, results, ratings, ratings_ko, mss_map, today_local, now, exclude=None):
     """Spelade (och dagens pågående) matcher t.o.m. idag, grupperade per dag,
     äldst först. Samma kortform som match_info så appen renderar identiska
     matchkort; odds = null (Kambi har släppt avsparkade matcher) och slut-
@@ -680,7 +724,7 @@ def build_past(fixtures, results, ratings, mss_map, today_local, now, exclude=No
             if not (md == today_local and kdt and kdt < now):
                 continue
         m = {"kambiId": kid, "kickoff": ko, "home": fx["home"], "away": fx["away"]}
-        model = MatchModel(fx["home"], fx["away"], ratings)
+        model = build_match_model(m, ratings, ratings_ko)
         by_day.setdefault(md, []).append(match_info(m, model, mss_map))
     out = []
     for d in sorted(by_day):
@@ -784,7 +828,12 @@ def build_headline(date_local, day_matches, top_bets, played_today=False):
 def main():
     print("Stakbrons VM-feed — generering startar", now_utc_iso())
     ratings, mss_map, elo_source = build_ratings()
-    print("  lagstyrkor: %d lag, Elo-källa=%s" % (len(ratings), elo_source))
+    # Slutspels-ratingset: lägre MSS-blend (mer vikt på färsk live-form, den
+    # frusna 11-juni-priorn är nu äldre). Källhämtningen cachas i wc_model så
+    # detta inte gör ett extra nätanrop.
+    ratings_ko, _, _ = build_ratings(blend=KO_MSS_BLEND)
+    print("  lagstyrkor: %d lag, Elo-källa=%s (grupp-blend %.2f / KO-blend %.2f)"
+          % (len(ratings), elo_source, MSS_BLEND, KO_MSS_BLEND))
 
     matches = kambi_wc.fetch_match_list()
     print("  Kambi: %d kommande matcher" % len(matches))
@@ -809,7 +858,7 @@ def main():
     for m in todays:
         m["mssHome"] = mss_map.get(m["home"])
         m["mssAway"] = mss_map.get(m["away"])
-        model = MatchModel(m["home"], m["away"], ratings)
+        model = build_match_model(m, ratings, ratings_ko)
         day_matches.append(match_info(m, model, mss_map))
         try:
             mk = kambi_wc.fetch_match_markets(m["kambiId"], m["home"], m["away"])
@@ -878,13 +927,20 @@ def main():
     for d in future_days[:4]:
         rows = []
         for m in sorted(by_day[d], key=lambda m: m["kickoff"]):
-            model = MatchModel(m["home"], m["away"], ratings)
+            model = build_match_model(m, ratings, ratings_ko)
             rows.append(match_info(m, model, mss_map))
         upcoming.append({"date": d.isoformat(), "matches": rows})
 
     # Resultat + avancemang: progress är alltid en komplett dict (tomma
     # listor innan slutspelet) så appen kan avkoda den ovillkorligt.
     results, progress = results_wc.fetch_results()
+
+    # Målgörartabell ur facit (alla matchers scorers) → ren skytteanalys per
+    # slutspelsmatch. Additivt 'scorerAnalysis'-fält, rekommenderas aldrig.
+    scorer_by_team, scorer_totals = scorer_model.team_goal_table(results)
+    attach_scorer_analysis(day_matches, scorer_by_team, scorer_totals)
+    for u in upcoming:
+        attach_scorer_analysis(u["matches"], scorer_by_team, scorer_totals)
 
     # Resultaten orienteras till Kambis lagordning (källorna kan lista lagen
     # omvänt) så historik, matchStatus och auto-rättning hittar matchen och
@@ -896,7 +952,7 @@ def main():
     # så Matcher-vyn kan visa hela turneringen bakåt markerad som FT. Dagens
     # ännu ospelade matcher (redan i `day`) exkluderas för att undvika dubblett.
     day_keys = {frozenset((mi["home"], mi["away"])) for mi in day_matches}
-    past = build_past(fixtures, results, ratings, mss_map, today_local,
+    past = build_past(fixtures, results, ratings, ratings_ko, mss_map, today_local,
                       now_utc, exclude=day_keys)
 
     # --- Turneringssektionen (scripts/tournament.py — Monte Carlo-simulering,
@@ -905,7 +961,8 @@ def main():
     tour = None
     try:
         import tournament
-        tour = tournament.build_tournament_section(ratings, mss_map, date_str)
+        tour = tournament.build_tournament_section(ratings, ratings_ko, mss_map,
+                                                   date_str, progress=progress)
     except Exception as e:
         print("  ! turneringssektionen failade: %s" % e, file=sys.stderr)
         tour = None
@@ -936,7 +993,11 @@ def main():
             "version": MODEL_VERSION,
             "eloSource": elo_source,
             "muTotal": MU_TOTAL,
+            "muGroup": MU_TOTAL,
+            "muKnockout": KO_MU_TOTAL,
+            "eloPerGoal": ELO_PER_GOAL,
             "mssBlend": MSS_BLEND,
+            "mssBlendKnockout": KO_MSS_BLEND,
             "shrink": SHRINK_MODEL,
         },
         "day": {

@@ -32,7 +32,7 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from wc_data import TEAMS, FLAG_OF, short_of
-from wc_model import MatchModel
+from wc_model import MatchModel, MU_TOTAL, KO_MU_TOTAL
 
 KAMBI_BASE = "https://eu.offering-api.kambicdn.com/offering/v2018/svenskaspel"
 KAMBI_QUERY = "channel_id=1&client_id=200&lang=sv_SE&market=SE"
@@ -160,12 +160,16 @@ def devig_outright(odds_by_team, n_places):
 # DEL 2 — Monte Carlo-simulering av hela turneringen
 # ---------------------------------------------------------------------------
 
-def _pair_dist(t1, t2, ratings, cache):
+def _pair_dist(t1, t2, ratings, mu, cache):
     """Kumulativ målfördelning för paret (t1, t2), cachad kanoniskt.
 
-    Returnerar (cum, scores, p1_pen, swapped):
+    `ratings`/`mu` är fas-medvetna: gruppspel anropas med grupp-ratings +
+    MU_TOTAL, slutspel med KO-ratings + KO_MU_TOTAL (separata cachar).
+    Returnerar (cum, scores, p_adv_drawn, swapped):
       cum/scores — kumulativ fördelning över 11×11-rutnätet,
-      p1_pen — P(kanoniska lag 1 vinner | inte oavgjort), straffproxyn.
+      p_adv_drawn — P(kanoniska lag a går vidare | oavgjort efter 90 min),
+        ur SAMMA förlängning+straff-modell som feedkortets pAdvance
+        (MatchModel.p_advance_if_drawn) → outright och matchkort konsistenta.
     Rutnätet är symmetriskt under lagbyte (transponat), så bara den
     lexikografiskt lägre ordningen byggs och cachas.
     """
@@ -173,28 +177,22 @@ def _pair_dist(t1, t2, ratings, cache):
     a, b = (t2, t1) if swapped else (t1, t2)
     d = cache.get((a, b))
     if d is None:
-        grid = MatchModel(a, b, ratings).grid
+        model = MatchModel(a, b, ratings, mu_total=mu)
         cum, scores = [], []
         acc = 0.0
-        p1 = p2 = 0.0
-        for h, row in enumerate(grid):
+        for h, row in enumerate(model.grid):
             for aw, p in enumerate(row):
                 acc += p
                 cum.append(acc)
                 scores.append((h, aw))
-                if h > aw:
-                    p1 += p
-                elif aw > h:
-                    p2 += p
-        p1_pen = p1 / (p1 + p2) if (p1 + p2) > 0 else 0.5
-        d = (cum, scores, p1_pen)
+        d = (cum, scores, model.p_advance_if_drawn())
         cache[(a, b)] = d
     return d[0], d[1], d[2], swapped
 
 
-def _sample_score(t1, t2, ratings, cache, rng):
+def _sample_score(t1, t2, ratings, mu, cache, rng):
     """Sampla ett resultat (mål t1, mål t2) ur matchens rutnät."""
-    cum, scores, _pen, swapped = _pair_dist(t1, t2, ratings, cache)
+    cum, scores, _adv, swapped = _pair_dist(t1, t2, ratings, mu, cache)
     i = bisect.bisect_left(cum, rng.random())
     if i >= len(scores):
         i = len(scores) - 1
@@ -202,22 +200,23 @@ def _sample_score(t1, t2, ratings, cache, rng):
     return (g2, g1) if swapped else (g1, g2)
 
 
-def _ko_winner(t1, t2, ratings, cache, rng):
-    """KO-match: vid oavgjort avgörs 'straffläggningen' med en slant viktad
-    P(t1-vinst)/(P(t1-vinst)+P(t2-vinst)) ur samma rutnät."""
-    cum, scores, p1_pen, swapped = _pair_dist(t1, t2, ratings, cache)
+def _ko_winner(t1, t2, ratings, mu, cache, rng):
+    """KO-match: 90 min ur rutnätet; vid oavgjort avgör förlängning + straffar
+    via p_advance_if_drawn (samma KO-modell som feedkortets pAdvance)."""
+    cum, scores, p_adv_drawn, swapped = _pair_dist(t1, t2, ratings, mu, cache)
     i = bisect.bisect_left(cum, rng.random())
     if i >= len(scores):
         i = len(scores) - 1
     g1, g2 = scores[i]
+    p_adv = p_adv_drawn  # P(kanoniska a går vidare | oavgjort)
     if swapped:
-        g1, g2 = g2, g1
-        p1_pen = 1.0 - p1_pen
+        g1, g2 = g2, g1            # orientera målen till t1, t2
+        p_adv = 1.0 - p_adv        # ...och avancemanget (a var t2)
     if g1 > g2:
         return t1
     if g2 > g1:
         return t2
-    return t1 if rng.random() < p1_pen else t2
+    return t1 if rng.random() < p_adv else t2
 
 
 def _draw_r32(rng, winners, runners, thirds):
@@ -276,14 +275,17 @@ def _draw_r32(rng, winners, runners, thirds):
     return pairs
 
 
-def simulate_tournament(ratings, sims, rng):
-    """Kör hela turneringen `sims` gånger.
+def simulate_tournament(ratings, ratings_ko, sims, rng):
+    """Kör hela turneringen `sims` gånger, fas-medvetet.
 
-    Returnerar {lag: (pTop16, pTop8, pTop4, pTop2, pWin)} där pTop16 är
-    sannolikheten att vinna sin sextondelsfinal (= nå åttondelsfinal) osv.
+    Gruppspelet samplas med grupp-ratings + MU_TOTAL; slutspelet (R32 och
+    framåt) med KO-ratings + KO_MU_TOTAL och samma förlängning/straff-modell
+    som feedkortens pAdvance. Returnerar {lag: (pTop16, pTop8, pTop4, pTop2,
+    pWin)} där pTop16 = sannolikheten att vinna sin sextondelsfinal osv.
     """
     counts = {s: [0, 0, 0, 0, 0] for s in ALL_SHORTS}
-    cache = {}  # (lag1, lag2) → kumulativ målfördelning, byggd en gång per par
+    cache_g = {}   # grupp-par (grupp-ratings + MU_TOTAL)
+    cache_ko = {}  # slutspels-par (KO-ratings + KO_MU_TOTAL)
 
     for _sim in range(sims):
         winners, runners, third_cands = [], [], []
@@ -294,7 +296,7 @@ def simulate_tournament(ratings, sims, rng):
             gf = {t: 0 for t in teams}
             ga = {t: 0 for t in teams}
             for a, b in itertools.combinations(teams, 2):
-                sa, sb = _sample_score(a, b, ratings, cache, rng)
+                sa, sb = _sample_score(a, b, ratings, MU_TOTAL, cache_g, rng)
                 gf[a] += sa
                 ga[a] += sb
                 gf[b] += sb
@@ -320,14 +322,16 @@ def simulate_tournament(ratings, sims, rng):
 
         # --- Sextondelsfinal (R32): strukturerad slumpdragning ---
         pairs = _draw_r32(rng, winners, runners, thirds)
-        alive = [_ko_winner(a, b, ratings, cache, rng) for a, b in pairs]
+        alive = [_ko_winner(a, b, ratings_ko, KO_MU_TOTAL, cache_ko, rng)
+                 for a, b in pairs]
         for t in alive:
             counts[t][0] += 1  # vann sin R32-match → topp 16
 
         # --- KO-rundor: vinnarna paras i bracket-ordning till final ---
         stage = 1
         while len(alive) > 1:
-            nxt = [_ko_winner(alive[i], alive[i + 1], ratings, cache, rng)
+            nxt = [_ko_winner(alive[i], alive[i + 1], ratings_ko, KO_MU_TOTAL,
+                              cache_ko, rng)
                    for i in range(0, len(alive), 2)]
             for t in nxt:
                 counts[t][stage] += 1
@@ -414,16 +418,24 @@ def _make_outright_bet(date_str, team, market_key, market_name, odds,
     }
 
 
-def _build_section(probs, odds_map, mss_map, sims, date_str):
-    """Sätt ihop turneringssektionen ur simsannolikheter + Kambi-odds."""
+def _build_section(probs, odds_map, mss_map, sims, date_str, progress=None):
+    """Sätt ihop turneringssektionen ur simsannolikheter + Kambi-odds.
+
+    `progress` (från results_wc.build_progress) fakta-förankrar prissättningen:
+    lag vars marknadsutfall redan är AVGJORT — kvalificerade ELLER eliminerade —
+    prissätts inte (simbruset på en avgjord fråga ska inte visas som värde). Det
+    gör att utslagna lag inte längre får outright-edge när slutspelet rullar."""
+    progress = progress or {}
     markets_out = []
     all_bets = []
     for key, name, icon, n_places, prob_idx in MARKETS:
         odds_by_team = odds_map.get(key) or {}
         mkt_probs = devig_outright(odds_by_team, n_places)
+        fact = progress.get(key) or {}
+        decided = set(fact.get("qualified") or []) | set(fact.get("eliminated") or [])
         bets = []
         for team, odds in odds_by_team.items():
-            if odds > MAX_ODDS or team not in probs:
+            if odds > MAX_ODDS or team not in probs or team in decided:
                 continue
             p_sim = probs[team][prob_idx]
             p_mkt = mkt_probs.get(team)
@@ -462,11 +474,13 @@ def _build_section(probs, odds_map, mss_map, sims, date_str):
     }
 
 
-def build_tournament_section(ratings, mss_map, date_str):
+def build_tournament_section(ratings, ratings_ko, mss_map, date_str, progress=None):
     """Hela kedjan: Kambi-outrights + Monte Carlo → sektion för feeden.
 
-    Returnerar None om oddsen inte gick att hämta (nätfel) — feeden ska
-    kunna genereras utan turneringsdelen.
+    `ratings`/`ratings_ko` är grupp- resp. slutspels-ratingset (olika MSS-blend);
+    simuleringen är fas-medveten. `progress` (results_wc.build_progress) fakta-
+    förankrar prissättningen så avgjorda utfall inte prissätts. Returnerar None
+    om oddsen inte gick att hämta (nätfel) — feeden ska kunna genereras ändå.
     """
     try:
         odds_map = fetch_outright_odds()
@@ -480,8 +494,8 @@ def build_tournament_section(ratings, mss_map, date_str):
     sims = max(1, int(os.environ.get("VM_SIMS", "4000")))
     # Deterministisk seed per datum → samma dagsrapport vid omkörning
     rng = random.Random(int(date_str.replace("-", "")))
-    probs = simulate_tournament(ratings, sims, rng)
-    return _build_section(probs, odds_map, mss_map, sims, date_str)
+    probs = simulate_tournament(ratings, ratings_ko, sims, rng)
+    return _build_section(probs, odds_map, mss_map, sims, date_str, progress)
 
 
 # ---------------------------------------------------------------------------
@@ -502,7 +516,8 @@ def _selftest():
     ratings = {s: 1450.0 + 14.0 * i for i, s in enumerate(ALL_SHORTS)}
     rng = random.Random(20260611)
     sims = 400
-    probs = simulate_tournament(ratings, sims, rng)
+    # Fas-medveten sim: testa med samma syntetiska ratings för grupp + KO.
+    probs = simulate_tournament(ratings, ratings, sims, rng)
 
     s_win = sum(p[4] for p in probs.values())
     s_t16 = sum(p[0] for p in probs.values())

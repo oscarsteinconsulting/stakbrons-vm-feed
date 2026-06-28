@@ -6,17 +6,20 @@ Lagstyrka:
   • Live-Elo från eloratings.net (uppdateras efter varje matchdag — det är
     så "nya analyser varje morgon" får in turneringens faktiska resultat).
   • Fryst MSS (mss.json från vm2026-facit-repot, frysningen 11 juni) som
-    prior: MSS mappas till Elo-skalan och blandas 30/70 med live-Elo.
+    prior: MSS mappas till Elo-skalan och blandas med live-Elo — 30 % i
+    gruppspel, 20 % i slutspel (då gruppformen redan bärs av live-Elo).
   • Värdnationerna (USA/Mexiko/Kanada) får +60 Elo — de spelar alla sina
     matcher på hemmaplan (Källor & Metod: eloratings traditionellt +100
     för äkta hemmaplan; VM-publik är mer blandad → försiktigare nudge).
 
 Matchsannolikheter:
-  Elo-diff → förväntad målskillnad, total-mål-baslinje 2.6 (VM-snitt),
-  Poisson-rutnät 0–10 mål med Dixon-Coles-justering (ρ=−0.08) som ger
-  1X2, Över/Under valfri linje och Båda lagen gör mål — konsekvent ur
-  samma rutnät. Modellen krymps 70/30 mot avvigade marknadspriser innan
-  edge räknas (ödmjukhet: marknaden bär information modellen saknar).
+  Elo-diff → förväntad målskillnad, total-mål-baslinje 2.75 i gruppspel och
+  2.50 i slutspel (slutspel scorar lägre i ordinarie tid). Poisson-rutnät
+  0–10 mål med Dixon-Coles-justering (ρ=−0.08) som ger 1X2, Över/Under
+  valfri linje och Båda lagen gör mål — konsekvent ur samma rutnät. Modellen
+  krymps 70/30 mot avvigade marknadspriser innan edge räknas (ödmjukhet:
+  marknaden bär information modellen saknar). Slutspelsmatcher får dessutom
+  ett avancemang (p_progress): 90 min → förlängning → straffar.
 """
 import csv
 import io
@@ -31,12 +34,37 @@ ELO_NOW_URL = "https://www.eloratings.net/World.tsv"
 ELO_MIN, ELO_MAX = 1000.0, 2400.0
 MSS_FROZEN_URL = "https://raw.githubusercontent.com/oscarsteinconsulting/vm2026-facit/main/mss.json"
 
-MU_TOTAL = 2.6          # förväntade mål totalt i en jämn VM-match
-ELO_PER_GOAL = 270.0    # Elo-diff som motsvarar 1.0 i förväntad målskillnad
+# Mål-baslinjer. Gruppspelet 2026 gav 2.99 mål/match; modellens gamla 2.60
+# underskattade systematiskt (~+15 %). MU_TOTAL höjs till 2.75 via en empirisk-
+# Bayes-blandning av turneringsbeviset (2.99, n=72) med en historisk VM-grupp-
+# prior (~2.6, n_prior≈40): (2.62·40 + 2.986·72)/112 ≈ 2.86, nedtonad till 2.75
+# för att INTE overfit:a ett enda VM. Slutspelet scorar historiskt LÄGRE i
+# ordinarie tid (tightare fält när svaga lag är ute; publicerade KO-snitt är
+# dessutom förlängnings-inflaterade) → en egen, lägre KO-baslinje 2.50.
+MU_TOTAL = 2.75         # förväntade totalmål, gruppspel/default
+KO_MU_TOTAL = 2.50      # förväntade totalmål, slutspel (90 min) — medvetet < grupp
+# Styrke→mål-känslighet. Kalibreringen visade UNDER-dispersion (starka lag gjorde
+# fler mål än väntat, svaga släppte in fler) och favorit-underskattning. En lägre
+# ELO_PER_GOAL vidgar λ-spridningen per Elo-enhet. Flytten 270→250 (~7 %) är
+# medvetet måttlig: den naiva gruppspelssignalen (~190) är uppblåst av blowouts
+# mot svaga lag som inte återkommer i det tightare slutspelet.
+ELO_PER_GOAL = 250.0    # Elo-diff som motsvarar 1.0 i förväntad målskillnad
 HOST_ELO_BONUS = 60.0
-MSS_BLEND = 0.30        # andel fryst MSS i den effektiva ratingen
+MSS_BLEND = 0.30        # andel fryst MSS i den effektiva ratingen (gruppspel)
+# Slutspel: den frysta MSS-priorn (11 juni) är nu äldre och gruppspelets info
+# bärs redan av live-Elo → lägre MSS-vikt i slutspelet (mer vikt på färsk form).
+KO_MSS_BLEND = 0.20
 DC_RHO = -0.08          # Dixon-Coles lågmålskorrelation
 SHRINK_MODEL = 0.70     # p_used = 0.70·modell + 0.30·avvigad marknad
+
+# Slutspelsdynamik (förlängning + straffar) — används bara av p_progress() och
+# turneringssimuleringen, ALDRIG av 90-min-marknaderna (1X2/OU/BTTS/…).
+ET_DURATION_SHARE = 30.0 / 90.0   # förlängning = 1/3 av ordinarie speltid
+ET_TEMPO = 0.85                   # lägre tempo/mer slutet spel i förlängningen
+PEN_BASE = 0.50                   # straffläggning ≈ slantsingling
+PEN_TILT = 0.10                   # MAX favorit-tilt i straffar (hårt clampad)
+PEN_TILT_ELO = 600.0             # Elo-diff för fullt tilt-utslag
+
 MAX_GOALS = 10
 MAX_GOALS_HALF = 7      # räcker gott för en halvlek — och håller HT/FT snabb
 
@@ -90,22 +118,34 @@ def fetch_frozen_mss():
     return out
 
 
-def build_ratings():
-    """Effektiv rating per lag = 0.70·live-Elo + 0.30·(MSS mappad till Elo-skalan).
+_FETCH_CACHE = {}   # memoiserar live-Elo + fryst MSS så flera blend-anrop per
+                    # körning (grupp + slutspel) inte hämtar om nätet i onödan.
 
-    Returnerar (ratings, mss_map, elo_source) där elo_source är "live" eller
-    "frozen" beroende på om eloratings.net gick att nå.
+
+def _fetch_sources():
+    if "live" not in _FETCH_CACHE:
+        try:
+            _FETCH_CACHE["live"] = fetch_live_elo()
+        except Exception as e:
+            print("  ! live-Elo failade: %s" % e, file=sys.stderr)
+            _FETCH_CACHE["live"] = {}
+        try:
+            _FETCH_CACHE["mss"] = fetch_frozen_mss()
+        except Exception as e:
+            print("  ! fryst MSS failade: %s" % e, file=sys.stderr)
+            _FETCH_CACHE["mss"] = {}
+    return _FETCH_CACHE["live"], _FETCH_CACHE["mss"]
+
+
+def build_ratings(blend=MSS_BLEND):
+    """Effektiv rating per lag = (1−blend)·live-Elo + blend·(MSS→Elo-skalan).
+
+    `blend` är andelen fryst MSS (default MSS_BLEND=0.30 för gruppspel; slutspel
+    använder KO_MSS_BLEND=0.20 för mer vikt på färsk live-form). Källhämtningen
+    cachas så grupp- och slutspels-ratingset kan byggas utan dubbla nätanrop.
+    Returnerar (ratings, mss_map, elo_source) där elo_source är "live"/"frozen".
     """
-    try:
-        live = fetch_live_elo()
-    except Exception as e:
-        print("  ! live-Elo failade: %s" % e, file=sys.stderr)
-        live = {}
-    try:
-        mss = fetch_frozen_mss()
-    except Exception as e:
-        print("  ! fryst MSS failade: %s" % e, file=sys.stderr)
-        mss = {}
+    live, mss = _fetch_sources()
 
     shorts = [t[1] for t in TEAMS]
     elo_source = "live" if len(live) >= 40 else "frozen"
@@ -127,7 +167,7 @@ def build_ratings():
             ratings[s] = base[s]
         else:
             elo_from_mss = lo + (m / 100.0) * span
-            ratings[s] = (1.0 - MSS_BLEND) * base[s] + MSS_BLEND * elo_from_mss
+            ratings[s] = (1.0 - blend) * base[s] + blend * elo_from_mss
     mss_map = {s: (mss.get(s) or {}).get("mss") for s in shorts}
     return ratings, mss_map, elo_source
 
@@ -156,15 +196,18 @@ def score_grid(lam_h, lam_a, max_goals=MAX_GOALS):
 class MatchModel:
     """Sannolikheter för en match, härledda ur ett gemensamt målrutnät."""
 
-    def __init__(self, home, away, ratings):
+    def __init__(self, home, away, ratings, mu_total=MU_TOTAL):
         d = ratings[home] - ratings[away]
         if home in HOSTS:
             d += HOST_ELO_BONUS
         if away in HOSTS:
             d -= HOST_ELO_BONUS
+        self._elo_diff = d        # host-justerad Elo-diff (för straff-tilten)
         delta = max(-2.2, min(2.2, d / ELO_PER_GOAL))
-        self.lam_h = max(0.15, MU_TOTAL / 2.0 + delta / 2.0)
-        self.lam_a = max(0.15, MU_TOTAL / 2.0 - delta / 2.0)
+        # mu_total väljs av anroparen: MU_TOTAL för gruppspel, KO_MU_TOTAL för
+        # slutspel (generate.py/tournament.py sätter det per match via fas).
+        self.lam_h = max(0.15, mu_total / 2.0 + delta / 2.0)
+        self.lam_a = max(0.15, mu_total / 2.0 - delta / 2.0)
         self.grid = score_grid(self.lam_h, self.lam_a)
         self._half_grids = {}
 
@@ -186,6 +229,29 @@ class MatchModel:
         """(p1X, p12, pX2) — direkt ur 1X2-sannolikheterna."""
         ph, pd, pa = self.p_1x2()
         return ph + pd, ph + pa, pd + pa
+
+    def p_advance_if_drawn(self):
+        """P(hemmalaget går vidare | oavgjort efter 90 min): förlängning (λ
+        skalad ~30/90 med lägre tempo) → vid fortsatt lika straffar (≈50/50 med
+        svag, hårt clampad favorit-tilt). Delas av p_progress OCH turneringssimen
+        så feedkortets pAdvance och outright-priserna bygger på SAMMA KO-modell."""
+        lh = self.lam_h * ET_DURATION_SHARE * ET_TEMPO
+        la = self.lam_a * ET_DURATION_SHARE * ET_TEMPO
+        g = score_grid(lh, la, MAX_GOALS_HALF)       # förlängningsrutnät (litet λ)
+        n = len(g)
+        eh = sum(g[h][a] for h in range(n) for a in range(n) if h > a)
+        ed = sum(g[h][h] for h in range(n))          # fortf. lika → straffar
+        tilt = max(-1.0, min(1.0, self._elo_diff / PEN_TILT_ELO))
+        pen = max(0.30, min(0.70, PEN_BASE + PEN_TILT * tilt))
+        return eh + ed * pen
+
+    def p_progress(self):
+        """P(hemmalaget går vidare) i en slutspelsmatch: vinst på 90 min, eller
+        oavgjort 90 → vidare via förlängning/straffar. Påverkar INTE 90-min-
+        marknaderna. Symmetrisk: hemmalagets + bortalagets avancemang = 1.
+        """
+        ph, pd, pa = self.p_1x2()                    # 90 min
+        return ph + pd * self.p_advance_if_drawn()
 
     def p_handicap(self, line):
         """P(hemmalaget täcker handikappet) för en HALVLINJE (t.ex. −1.5,
