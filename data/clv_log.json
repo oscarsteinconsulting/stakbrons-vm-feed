@@ -12810,8 +12810,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-antal_mal-kanada-över-1-5-mål": {
-  "closeOdds": 1.89,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 1.98,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "TEAM_OU",
   "match": "Sydafrika – Kanada",
@@ -12840,8 +12840,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-antal_mal-sydafrika-över-0-5-mål": {
-  "closeOdds": 1.76,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 1.74,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "TEAM_OU",
   "match": "Sydafrika – Kanada",
@@ -12855,8 +12855,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-antal_mal-över-2-5-mål": {
-  "closeOdds": 2.23,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 2.32,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "OU",
   "match": "Sydafrika – Kanada",
@@ -12870,8 +12870,8 @@
   "value": "Neutralt"
  },
  "2026-06-28-1028138816-avancemang-kanada-går-vidare": {
-  "closeOdds": 1.29,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 1.33,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "ADVANCE",
   "match": "Sydafrika – Kanada",
@@ -12885,8 +12885,8 @@
   "value": "Neutralt"
  },
  "2026-06-28-1028138816-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 2.12,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 2.16,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "BTTS",
   "match": "Sydafrika – Kanada",
@@ -12897,7 +12897,7 @@
   "settleLine": null,
   "settlePick": "yes",
   "settlePlayer": null,
-  "value": "Undvik"
+  "value": "Neutralt"
  },
  "2026-06-28-1028138816-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 1.74,
@@ -12915,8 +12915,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-dubbelchans-12-sydafrika-eller-kanada-vinner": {
-  "closeOdds": 1.29,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 1.3,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "DC",
   "match": "Sydafrika – Kanada",
@@ -12927,7 +12927,7 @@
   "settleLine": null,
   "settlePick": "12",
   "settlePlayer": null,
-  "value": "Undvik"
+  "value": "Neutralt"
  },
  "2026-06-28-1028138816-dubbelchans-x2-oavgjort-eller-kanada": {
   "closeOdds": 1.13,
@@ -12960,8 +12960,8 @@
   "value": "Neutralt"
  },
  "2026-06-28-1028138816-fulltid-2-kanada-vinner": {
-  "closeOdds": 1.68,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 1.73,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "1X2",
   "match": "Sydafrika – Kanada",
@@ -12975,8 +12975,8 @@
   "value": "Neutralt"
  },
  "2026-06-28-1028138816-halvlek-halvtid-2-kanada-leder-i-halvtid": {
-  "closeOdds": 2.38,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 2.45,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "1H_1X2",
   "match": "Sydafrika – Kanada",
@@ -13005,8 +13005,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.47,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 1.48,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "1H_OU",
   "match": "Sydafrika – Kanada",
@@ -13017,11 +13017,11 @@
   "settleLine": 0.5,
   "settlePick": "over",
   "settlePlayer": null,
-  "value": "Undvik"
+  "value": "Neutralt"
  },
  "2026-06-28-1028138816-halvtid_fulltid-halvtid-fulltid-2-2": {
-  "closeOdds": 2.65,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 2.75,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "HTFT",
   "match": "Sydafrika – Kanada",
@@ -13035,8 +13035,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-handikapp-kanada-0-5": {
-  "closeOdds": 1.64,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 1.68,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "AH",
   "match": "Sydafrika – Kanada",
@@ -13061,6 +13061,21 @@
   "selection": "Sydafrika +0.5",
   "settleLine": 0.5,
   "settlePick": "home",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
+ "2026-06-28-1028138816-hornor-över-8-5-hörnor": {
+  "closeOdds": 1.71,
+  "closeTime": "2026-06-28T16:47:04Z",
+  "kickoff": "2026-06-28T19:00:00Z",
+  "market": "CORNERS",
+  "match": "Sydafrika – Kanada",
+  "recOdds": 1.71,
+  "recTime": "2026-06-28T16:47:04Z",
+  "recommendable": false,
+  "selection": "Över 8.5 hörnor",
+  "settleLine": 8.5,
+  "settlePick": "over",
   "settlePlayer": null,
   "value": "Undvik"
  },
@@ -13110,8 +13125,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-korrekt_resultat-resultat-0-2": {
-  "closeOdds": 6.75,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 7.0,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "CS",
   "match": "Sydafrika – Kanada",
@@ -13125,8 +13140,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-korrekt_resultat-resultat-0-3": {
-  "closeOdds": 11.5,
-  "closeTime": "2026-06-28T15:59:34Z",
+  "closeOdds": 12.0,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "CS",
   "match": "Sydafrika – Kanada",
@@ -13185,8 +13200,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-kort-under-3-5-kort": {
-  "closeOdds": 1.86,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 1.88,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "CARDS",
   "match": "Sydafrika – Kanada",
@@ -13200,8 +13215,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-kort-över-3-5-kort": {
-  "closeOdds": 1.82,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 1.8,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "CARDS",
   "match": "Sydafrika – Kanada",
@@ -13215,8 +13230,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-malgorare-jayden-adams-gör-mål": {
-  "closeOdds": 11.0,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 11.5,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "PLAYER",
   "match": "Sydafrika – Kanada",
@@ -13230,8 +13245,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-malgorare-liam-millar-gör-mål": {
-  "closeOdds": 5.5,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 5.6,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "PLAYER",
   "match": "Sydafrika – Kanada",
@@ -13260,8 +13275,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-spelarspecial-jonathan-david-gör-2-mål": {
-  "closeOdds": 10.0,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 11.0,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "PLAYER",
   "match": "Sydafrika – Kanada",
@@ -13275,8 +13290,8 @@
   "value": "Undvik"
  },
  "2026-06-28-1028138816-spelarspecial-promise-david-gör-2-mål": {
-  "closeOdds": 11.5,
-  "closeTime": "2026-06-28T16:23:19Z",
+  "closeOdds": 12.0,
+  "closeTime": "2026-06-28T16:47:04Z",
   "kickoff": "2026-06-28T19:00:00Z",
   "market": "PLAYER",
   "match": "Sydafrika – Kanada",
