@@ -643,5 +643,3510 @@
    "name": "Harry Kane",
    "team": "England"
   }
- ]
+ ],
+ "roster:Algeriet": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Luca Zidane",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Oussama Benbot",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Melvin Mastil",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Aïssa Mandi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ramy Bensebaini",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Rayan Aït-Nouri",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Mohamed Amine Tougai",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Zineddine Belaïd",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Samir Chergui",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jaouen Hadjam",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Rafik Belghali",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Achraf Abada",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nabil Bentaleb",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Houssem Aouar",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Hicham Boudaoui",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ramiz Zerrouki",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Farès Chaïbi",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Yassine Titraoui",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ibrahim Maza",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Riyad Mahrez",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Amine Gouiri",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Mohamed Amoura",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Adil Boulbina",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Anis Hadj Moussa",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Nadhir Benbouali",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Farès Ghedjemis",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Belgien": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Thibaut Courtois",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Senne Lammens",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Mike Penders",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Thomas Meunier",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Brandon Mechele",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Timothy Castagne",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Maxim De Cuyper",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Arthur Theate",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Koni De Winter",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Zeno Debast",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nathan Ngoy",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Joaquin Seys",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Kevin De Bruyne",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Axel Witsel",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Youri Tielemans",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Hans Vanaken",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Nicolas Raskin",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Amadou Onana",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Romelu Lukaku",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Leandro Trossard",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Dodi Lukébakio",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Alexis Saelemaekers",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jérémy Doku",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Charles De Ketelaere",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Diego Moreira",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Matias Fernandez-Pardo",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Bosnien": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Nikola Vasilj",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Martin Zlomislic",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Mladen Jurkas",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Sead Kolasinac",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nikola Katic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Dennis Hadzikadunic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nihad Mujakic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Stjepan Radeljic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Amar Dedic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Tarik Muharemovic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nidal Celik",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ivan Sunjic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Amir Hadziahmetovic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Dzenis Burnic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Armin Gigovic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ivan Basic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Amar Memic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Benjamin Tahirovic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ermin Mahmic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Edin Dzeko",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Haris Tabakovic",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ermedin Demirovic",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jovo Lukic",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Samed Bazdar",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Esmir Bajraktarevic",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Kerim Alajbegovic",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Brasilien": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Ederson",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Alisson Becker",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Weverton",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Alex Sandro",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Léo Pereira",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Marquinhos",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Danilo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Douglas Santos",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Gabriel Magalhães",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Bremer",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Roger Ibañez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Casemiro",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Fabinho",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Bruno Guimarães",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Lucas Paquetá",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Éderson",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Danilo Santos",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Neymar",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Raphinha ",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Vinícius Júnior",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Matheus Cunha",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Gabriel Martinelli",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Igor Thiago",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Luiz Henrique",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Endrick",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Rayan",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:DR Kongo": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Lionel Mpasi",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Timothy Fayulu",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Matthieu Epolo",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Arthur Masuaku",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Chancel Mbemba",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Joris Kayembe",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Axel Tuanzebe",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Aaron Wan-Bissaka",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Dylan Batubinsika",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Gédéon Kalulu",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Steve Kapuadi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Gaël Kakuta",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Aaron Tshibola",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Théo Bongonda",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Charles Pickel",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Samuel Moutoussamy",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Edo Kayembe",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Noah Sadiki",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ngal'ayel Mukau",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Cédric Bakambu",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Yoane Wissa",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Simon Banza",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Meschack Elia",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Nathanaël Mbuku",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Fiston Mayele",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Brian Cipenga",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Ecuador": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Gonzalo Valle",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Hernán Galíndez",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Moisés Ramírez",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Pervis Estupiñán",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Félix Torres",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ángelo Preciado",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jackson Porozo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Willian Pacho",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Piero Hincapié",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Yaimar Medina",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Joel Ordóñez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Alan Franco",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Jordy Alcívar",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Moisés Caicedo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Pedro Vite",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Denil Castillo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Kendry Páez",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Enner Valencia",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jordy Caicedo",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "John Yeboah",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Gonzalo Plata",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Kevin Rodríguez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Anthony Valencia",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Nilson Angulo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Alan Minda",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jeremy Arévalo",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Elfenbenskusten": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Alban Lafont",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Yahia Fofana",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Mohamed Koné",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Evan Ndicka",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Christopher Operi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ghislain Konan",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Odilon Kossounou",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Wilfried Singo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Emmanuel Agbadou",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ousmane Diomande",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Guela Doué",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Seko Fofana",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Jean Michaël Seri",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Franck Kessié",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ibrahim Sangaré",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Parfait Guiagon",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Christ Inao Oulaï",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Nicolas Pépé",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Evann Guessand",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Amad Diallo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ange-Yoan Bonny",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Elye Wahi",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Simon Adingra",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Oumar Diakité",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Bazoumana Touré",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Yan Diomande",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:England": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Jordan Pickford",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Dean Henderson",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "James Trafford",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "John Stones",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Reece James",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Dan Burn",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Trevoh Chalobah",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ezri Konsa",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Marc Guéhi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Djed Spence",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jarell Quansah",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nico O'Reilly",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jordan Henderson",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Declan Rice",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Elliot Anderson",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Eberechi Eze",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Morgan Rogers",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jude Bellingham",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Kobbie Mainoo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Harry Kane",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ivan Toney",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ollie Watkins",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Marcus Rashford",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Anthony Gordon",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Bukayo Saka",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Noni Madueke",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Frankrike": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Brice Samba",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Mike Maignan",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Robin Risser",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Lucas Digne",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Lucas Hernández",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Dayot Upamecano",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jules Koundé",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Theo Hernández",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ibrahima Konaté",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Maxence Lacroix",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "William Saliba",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Malo Gusto",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "N'Golo Kanté",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Adrien Rabiot",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Aurélien Tchouaméni",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Manu Koné",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Michael Olise",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Rayan Cherki",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Maghnes Akliouche",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Warren Zaïre-Emery",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Marcus Thuram",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ousmane Dembélé",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Kylian Mbappé",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jean-Philippe Mateta",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Bradley Barcola",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Désiré Doué",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Japan": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Keisuke Osako",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Zion Suzuki",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Tomoki Hayakawa",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Hiroki Ito",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Yuto Nagatomo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Shogo Taniguchi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Takehiro Tomiyasu",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Kou Itakura",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ayumu Seko",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Yukinari Sugawara",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Tsuyoshi Watanabe",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Junnosuke Suzuki",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Wataru Endo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Daichi Kamada",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ritsu Doan",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ao Tanaka",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Yuito Suzuki",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Kaishu Sano",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Junya Ito",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Koki Ogawa",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Takefusa Kubo",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Keito Nakamura",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ayase Ueda",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Daizen Maeda",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Keisuke Goto",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Kento Shiogai",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Kanada": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Maxime Crépeau",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Dayne St. Clair",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Owen Goodman",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Richie Laryea",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Alphonso Davies",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Joel Waterman",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Derek Cornelius",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Alfie Jones",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Alistair Johnston",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Moïse Bombito",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Luc de Fougerolles",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jonathan Osorio",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Stephen Eustáquio",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Mathieu Choinière",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Nathan Saliba",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ismaël Koné",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ali Ahmed",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Niko Sigur",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Cyle Larin",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Liam Millar",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jonathan David",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jayden Nelson",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Tajon Buchanan",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jacob Shaffelburg",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Tani Oluwaseyi",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Promise David",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Kroatien": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Dominik Livakovic",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Dominik Kotarski",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Ivor Pandur",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Duje Caleta-Car",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Martin Erlic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Marin Pongracic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Josip Stanisic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Josko Gvardiol",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Josip Sutalo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Luka Vuskovic",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Luka Modric",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Mateo Kovacic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Mario Pasalic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Nikola Vlasic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Nikola Moro",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Kristijan Jakic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Luka Sucic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Martin Baturina",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Toni Fruk",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Petar Sucic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ivan Perisic",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Andrej Kramaric",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ante Budimir",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Petar Musa",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Igor Matanovic",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Marco Pasalic",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Marocko": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Yassine Bounou",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Ahmed Reda Tagnaouti",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Munir El Kajoui",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Issa Diop",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Noussair Mazraoui",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Achraf Hakimi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nayef Aguerd",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Anass Salah-Eddine",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Chadi Riad",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Zakaria El Ouahdi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Redouane Halhal",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Youssef Belammari",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Sofyan Amrabat",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Brahim Díaz",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Azzedine Ounahi",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ismael Saibari",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Neil El Aynaoui",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Bilal El Khannouss",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ayyoub Bouaddi",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Samir El Mourabet",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ayoub El Kaabi",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Soufiane Rahimi",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Abde Ezzalzouli",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Chemsdine Talbi",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Gessime Yassine",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ayoube Amaimouni",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Mexiko": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Guillermo Ochoa",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Carlos Acevedo",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Raúl Rangel",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Jesús Gallardo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jorge Sánchez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "César Montes",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Johan Vásquez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Israel Reyes",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Mateo Chávez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Luis Chávez",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Orbelín Pineda",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Edson Álvarez",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Luis Romo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "César Huerta",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Érik Lira",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Álvaro Fidalgo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Brian Gutiérrez",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Obed Vargas",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Gilberto Mora",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Raúl Jiménez",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Guillermo Martínez",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Roberto Alvarado",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Alexis Vega",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Julián Quiñones",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Santiago Gimenez",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Armando González",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Nederländerna": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Mark Flekken",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Bart Verbruggen",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Robin Roefs",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Virgil van Dijk",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nathan Aké",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Denzel Dumfries",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Lutsharel Geertruida",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jan Paul van Hecke",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Micky van de Ven",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jorrel Hato",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Marten de Roon",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Frenkie de Jong",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Guus Til",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Teun Koopmeiners",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Tijjani Reijnders",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ryan Gravenberch",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Mats Wieffer",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Quinten Timber",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Memphis Depay",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Wout Weghorst",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Justin Kluivert",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Cody Gakpo",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Noa Lang",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Donyell Malen",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Brian Brobbey",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Crysencio Summerville",
+    "pos": "M"
+   }
+  ]
+ },
+ "roster:Norge": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Ørjan Nyland",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Egil Selvik",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Sander Tangvik",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Marcus Holmgren Pedersen",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Kristoffer Ajer",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Julian Ryerson",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Fredrik André Bjørkan",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Torbjørn Heggem",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Leo Østigard",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Henrik Falchener",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "David Møller Wolfe",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Sondre Langas",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Morten Thorsby",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Martin Ødegaard",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Patrick Berg",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Fredrik Aursnes",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Sander Berge",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Jens Petter Hauge",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Kristian Thorstvedt",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Oscar Bobb",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Thelo Aasgaard",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Antonio Nusa",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Alexander Sørloth",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jørgen Strand Larsen",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Erling Haaland",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Andreas Schjelderup",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Paraguay": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Gatito Fernández",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Gastón Olveira",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Orlando Gil",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Juan Jose Cáceres",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Gustavo Gómez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Gustavo Velázquez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Júnior Alonso",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Fabián Balbuena",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Omar Alderete",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "José Canale",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Alexandro Maidana",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Julio Enciso",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Alejandro Romero Gamarra",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Diego Gómez",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Andrés Cubas",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Braian Ojeda",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Maurício",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Matías Galarza",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Damián Bobadilla",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Miguel Almirón",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Gustavo Caballero",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Antonio Sanabria",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Gabriel Ávalos",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Alex Arce",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Isidro Pitta",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ramón Sosa",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Portugal": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Rui Silva",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "José Sá",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Diogo Costa",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "João Cancelo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nélson Semedo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Rúben Dias",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Diogo Dalot",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nuno Mendes",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Gonçalo Inácio",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Tomás Araújo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Renato Veiga",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Bruno Fernandes",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Samú Costa",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Bernardo Silva",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Rúben Neves",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Vitinha ",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Matheus Nunes",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "João Neves",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Cristiano Ronaldo",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Gonçalo Guedes",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Pedro Neto",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Rafael Leão",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Francisco Trincão",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "João Félix",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Gonçalo Ramos",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Francisco Conceição",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Schweiz": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Yvon Mvogo",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Gregor Kobel",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Marvin Keller",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Ricardo Rodríguez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Silvan Widmer",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nico Elvedi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Manuel Akanji",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Eray Cömert",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Miro Muheim",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Aurèle Amenda",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Luca Jaquez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Granit Xhaka",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Remo Freuler",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Djibril Sow",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Denis Zakaria",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Christian Fassnacht",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Michel Aebischer",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Rubén Vargas",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Ardon Jashari",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Fabian Rieder",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Johan Manzambi",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Breel Embolo",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Cedric Itten",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Noah Okafor",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Dan Ndoye",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Zeki Amdouni",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Senegal": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Mory Diaw",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Édouard Mendy",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Yehvann Diouf",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Kalidou Koulibaly",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Moussa Niakhaté",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Abdoulaye Seck",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ismail Jakobs",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Antoine Mendy",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Mamadou Sarr",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "El Hadji Malick Diouf",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Lamine Camara",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Idrissa Gueye",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Krépin Diatta",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Pape Gueye",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Pathé Ciss",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Pape Matar Sarr",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Habib Diarra",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Bara Sapoko Ndiaye",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Sadio Mané",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ismaïla Sarr",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Cherif Ndiaye",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Iliman Ndiaye",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Nicolas Jackson",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Bamba Dieng",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Assane Diao",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ibrahim Mbaye",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Spanien": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "David Raya",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Unai Simón",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Joan García",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Eric García",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Aymeric Laporte",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Alejandro Grimaldo",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Marc Cucurella",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Pedro Porro",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Marc Pubill",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Pau Cubarsí",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Marcos Llorente",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Mikel Merino",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Fabián Ruiz",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Dani Olmo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Rodri",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Pedri ",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Martín Zubimendi",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Yéremy Pino",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Álex Baena",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Gavi ",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Borja Iglesias",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Mikel Oyarzabal",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ferran Torres",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Nico Williams",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Lamine Yamal",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Víctor Muñoz",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Sverige": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Kristoffer Nordfeldt",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Viktor Johansson",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Jacob Widell Zetterström",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Carl Starfelt",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Eric Smith",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Victor Lindelöf",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Gabriel Gudmundsson",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Hjalmar Ekdal",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Daniel Svensson",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Isak Hien",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Gustaf Lagerbielke",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ken Sema",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Mattias Svanberg",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Jesper Karlström",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Yasin Ayari",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Herman Johansson",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Taha Ali",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Besfort Zeneli",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Lucas Bergvall",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Elliot Stroud",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Alexander Isak",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Gustaf Nilsson",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Viktor Gyökeres",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Benjamin Nygren",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Anthony Elanga",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Alexander Bernhardsson",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Sydafrika": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Ricardo Goss",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Ronwen Williams",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Sipho Chaine",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Aubrey Modiba",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nkosinathi Sibisi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Khuliso Mudau",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Bradley Cross",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Olwethu Makhanya",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Ime Okon",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Thabang Matuludi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Samukele Kabini",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Khulumani Ndamane",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Mbekezeli Mbokazi",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Themba Zwane",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Sphephelo Sithole",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Teboho Mokoena",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Thalente Mbatha",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Jayden Adams",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Kamogelo Sebelebele",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Lyle Foster",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Oswin Appollis",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Iqraam Rayners",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Evidence Makgopa",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Tshepang Moremi",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Thapelo Maseko",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Relebohile Mofokeng",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Tyskland": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Manuel Neuer",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Oliver Baumann",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Alexander Nübel",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Nathaniel Brown",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Antonio Rüdiger",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Jonathan Tah",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Waldemar Anton",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "David Raum",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Nico Schlotterbeck",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Malick Thiaw",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Pascal Gross",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Leon Goretzka",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Joshua Kimmich",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Nadiem Amiri",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Felix Nmecha",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Angelo Stiller",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Florian Wirtz",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Jamal Musiala",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Aleksandar Pavlovic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Assan Ouédraogo",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Leroy Sané",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Kai Havertz",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Deniz Undav",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Maximilian Beier",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Jamie Leweling",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Nick Woltemade",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:USA": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Matt Freese",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Chris Brady",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Matt Turner",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Mark McKenzie",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Tim Ream",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Antonee Robinson",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Auston Trusty",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Alex Freeman",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Miles Robinson",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Sergiño Dest",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Joe Scally",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Chris Richards",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Cristian Roldan",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Tyler Adams",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Christian Pulisic",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Weston McKennie",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Brenden Aaronson",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Giovanni Reyna",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Sebastian Berhalter",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Malik Tillman",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Max Arfsten",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Alejandro Zendejas",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Haji Wright",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Timothy Weah",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Folarin Balogun",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Ricardo Pepi",
+    "pos": "F"
+   }
+  ]
+ },
+ "roster:Österrike": {
+  "date": "2026-06-28",
+  "players": [
+   {
+    "apps": null,
+    "name": "Alexander Schlager",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Patrick Pentz",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "Florian Wiegele",
+    "pos": "G"
+   },
+   {
+    "apps": null,
+    "name": "David Alaba",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Philipp Lienhart",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Marco Friedl",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Stefan Posch",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Phillipp Mwene",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Kevin Danso",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Michael Svoboda",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "David Affengruber",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Alexander Prass",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Konrad Laimer",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Marcel Sabitzer",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Alessandro Schöpf",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Florian Grillitsch",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Romano Schmid",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Xaver Schlager",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Carney Chukwuemeka",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Patrick Wimmer",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Nicolas Seiwald",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Paul Wanner",
+    "pos": "M"
+   },
+   {
+    "apps": null,
+    "name": "Marko Arnautovic",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Michael Gregoritsch",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Sasa Kalajdzic",
+    "pos": "F"
+   }
+  ]
+ }
 }

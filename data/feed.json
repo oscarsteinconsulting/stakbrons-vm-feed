@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-28T12:24:53Z",
+ "generatedAt": "2026-06-28T12:58:08Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -48,7 +48,10 @@
       "groupGoals": 3,
       "lambda": 0.444,
       "pAnytime": 0.358,
-      "p2plus": 0.074
+      "p2plus": 0.074,
+      "position": "F",
+      "apps": null,
+      "goalless": false
      },
      {
       "player": "Cyle Larin",
@@ -56,15 +59,10 @@
       "groupGoals": 2,
       "lambda": 0.311,
       "pAnytime": 0.267,
-      "p2plus": 0.039
-     },
-     {
-      "player": "Nathan Saliba",
-      "team": "Kanada",
-      "groupGoals": 1,
-      "lambda": 0.177,
-      "pAnytime": 0.163,
-      "p2plus": 0.014
+      "p2plus": 0.039,
+      "position": "F",
+      "apps": null,
+      "goalless": false
      },
      {
       "player": "Promise David",
@@ -72,7 +70,43 @@
       "groupGoals": 1,
       "lambda": 0.177,
       "pAnytime": 0.163,
-      "p2plus": 0.014
+      "p2plus": 0.014,
+      "position": "F",
+      "apps": null,
+      "goalless": false
+     },
+     {
+      "player": "Nathan Saliba",
+      "team": "Kanada",
+      "groupGoals": 1,
+      "lambda": 0.15,
+      "pAnytime": 0.14,
+      "p2plus": 0.01,
+      "position": "M",
+      "apps": null,
+      "goalless": false
+     },
+     {
+      "player": "Teboho Mokoena",
+      "team": "Sydafrika",
+      "groupGoals": 1,
+      "lambda": 0.124,
+      "pAnytime": 0.117,
+      "p2plus": 0.007,
+      "position": "M",
+      "apps": null,
+      "goalless": false
+     },
+     {
+      "player": "Liam Millar",
+      "team": "Kanada",
+      "groupGoals": 0,
+      "lambda": 0.044,
+      "pAnytime": 0.043,
+      "p2plus": 0.001,
+      "position": "F",
+      "apps": null,
+      "goalless": true
      }
     ]
    }
@@ -131,32 +165,6 @@
     "settlePlayer": null
    },
    {
-    "id": "2026-06-28-1028138816-btts-båda-lagen-gör-mål-nej",
-    "matchId": "1028138816",
-    "match": "Sydafrika – Kanada",
-    "homeFlag": "🇿🇦",
-    "awayFlag": "🇨🇦",
-    "kickoff": "2026-06-28T19:00:00Z",
-    "categoryKey": "btts",
-    "category": "Båda lagen gör mål",
-    "selection": "Båda lagen gör mål: Nej",
-    "detail": "Minst ett mål av vardera lag",
-    "odds": 1.78,
-    "modelProb": 0.5452,
-    "marketProb": 0.534,
-    "edge": -0.0296,
-    "value": "Neutralt",
-    "recommendable": true,
-    "kelly": 0.0,
-    "stakeWeight": 0.0,
-    "confidence": 2,
-    "rationale": "Målförväntan 0.8–1.7 ger BTTS-nej 55% mot prisade 53%.",
-    "settleMarket": "BTTS",
-    "settlePick": "no",
-    "settleLine": null,
-    "settlePlayer": null
-   },
-   {
     "id": "2026-06-28-1028138816-avancemang-kanada-går-vidare",
     "matchId": "1028138816",
     "match": "Sydafrika – Kanada",
@@ -183,6 +191,32 @@
     "settlePlayer": null
    },
    {
+    "id": "2026-06-28-1028138816-btts-båda-lagen-gör-mål-nej",
+    "matchId": "1028138816",
+    "match": "Sydafrika – Kanada",
+    "homeFlag": "🇿🇦",
+    "awayFlag": "🇨🇦",
+    "kickoff": "2026-06-28T19:00:00Z",
+    "categoryKey": "btts",
+    "category": "Båda lagen gör mål",
+    "selection": "Båda lagen gör mål: Nej",
+    "detail": "Minst ett mål av vardera lag",
+    "odds": 1.77,
+    "modelProb": 0.5456,
+    "marketProb": 0.5354,
+    "edge": -0.0343,
+    "value": "Neutralt",
+    "recommendable": true,
+    "kelly": 0.0,
+    "stakeWeight": 0.0,
+    "confidence": 2,
+    "rationale": "Målförväntan 0.8–1.7 ger BTTS-nej 55% mot prisade 54%.",
+    "settleMarket": "BTTS",
+    "settlePick": "no",
+    "settleLine": null,
+    "settlePlayer": null
+   },
+   {
     "id": "2026-06-28-1028138816-handikapp-kanada-0-5",
     "matchId": "1028138816",
     "match": "Sydafrika – Kanada",
@@ -193,10 +227,10 @@
     "category": "Handikapp",
     "selection": "Kanada -0.5",
     "detail": "Asiatiskt handikapp, halvlinje",
-    "odds": 1.64,
-    "modelProb": 0.5901,
-    "marketProb": 0.5784,
-    "edge": -0.0323,
+    "odds": 1.63,
+    "modelProb": 0.5915,
+    "marketProb": 0.5831,
+    "edge": -0.0359,
     "value": "Neutralt",
     "recommendable": true,
     "kelly": 0.0,
@@ -220,9 +254,9 @@
     "selection": "12 (Sydafrika eller Kanada vinner)",
     "detail": "Dubbelchans hela matchen",
     "odds": 1.28,
-    "modelProb": 0.7454,
-    "marketProb": 0.7368,
-    "edge": -0.0459,
+    "modelProb": 0.746,
+    "marketProb": 0.7389,
+    "edge": -0.0451,
     "value": "Undvik",
     "recommendable": true,
     "kelly": 0.0,
@@ -397,9 +431,9 @@
       "selection": "12 (Sydafrika eller Kanada vinner)",
       "detail": "Dubbelchans hela matchen",
       "odds": 1.28,
-      "modelProb": 0.7454,
-      "marketProb": 0.7368,
-      "edge": -0.0459,
+      "modelProb": 0.746,
+      "marketProb": 0.7389,
+      "edge": -0.0451,
       "value": "Undvik",
       "recommendable": true,
       "kelly": 0.0,
@@ -429,10 +463,10 @@
       "category": "Handikapp",
       "selection": "Kanada -0.5",
       "detail": "Asiatiskt handikapp, halvlinje",
-      "odds": 1.64,
-      "modelProb": 0.5901,
-      "marketProb": 0.5784,
-      "edge": -0.0323,
+      "odds": 1.63,
+      "modelProb": 0.5915,
+      "marketProb": 0.5831,
+      "edge": -0.0359,
       "value": "Neutralt",
       "recommendable": true,
       "kelly": 0.0,
@@ -521,16 +555,16 @@
       "category": "Båda lagen gör mål",
       "selection": "Båda lagen gör mål: Nej",
       "detail": "Minst ett mål av vardera lag",
-      "odds": 1.78,
-      "modelProb": 0.5452,
-      "marketProb": 0.534,
-      "edge": -0.0296,
+      "odds": 1.77,
+      "modelProb": 0.5456,
+      "marketProb": 0.5354,
+      "edge": -0.0343,
       "value": "Neutralt",
       "recommendable": true,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Målförväntan 0.8–1.7 ger BTTS-nej 55% mot prisade 53%.",
+      "rationale": "Målförväntan 0.8–1.7 ger BTTS-nej 55% mot prisade 54%.",
       "settleMarket": "BTTS",
       "settlePick": "no",
       "settleLine": null,
@@ -555,15 +589,15 @@
       "selection": "Resultat 0-2",
       "detail": "Slutresultat efter full tid",
       "odds": 7.0,
-      "modelProb": 0.1139,
-      "marketProb": 0.1027,
-      "edge": -0.2026,
+      "modelProb": 0.1138,
+      "marketProb": 0.1024,
+      "edge": -0.2036,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Rutnätet ger 0-2 11.4% mot marknadens 10.3% (hela resultatmarknaden avvigad gemensamt).",
+      "rationale": "Rutnätet ger 0-2 11.4% mot marknadens 10.2% (hela resultatmarknaden avvigad gemensamt).",
       "settleMarket": "CS",
       "settlePick": "0-2",
       "settleLine": null,
@@ -581,15 +615,15 @@
       "selection": "Resultat 0-1",
       "detail": "Slutresultat efter full tid",
       "odds": 6.0,
-      "modelProb": 0.128,
-      "marketProb": 0.1199,
-      "edge": -0.2321,
+      "modelProb": 0.1278,
+      "marketProb": 0.1195,
+      "edge": -0.233,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Rutnätet ger 0-1 12.8% mot marknadens 12.0% (hela resultatmarknaden avvigad gemensamt).",
+      "rationale": "Rutnätet ger 0-1 12.8% mot marknadens 11.9% (hela resultatmarknaden avvigad gemensamt).",
       "settleMarket": "CS",
       "settlePick": "0-1",
       "settleLine": null,
@@ -640,9 +674,9 @@
       "selection": "Halvtid: 2 (Kanada leder i halvtid)",
       "detail": "Resultat efter första halvlek",
       "odds": 2.28,
-      "modelProb": 0.4138,
-      "marketProb": 0.404,
-      "edge": -0.0565,
+      "modelProb": 0.414,
+      "marketProb": 0.4048,
+      "edge": -0.056,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
@@ -705,8 +739,8 @@
       "category": "Målgörare",
       "selection": "Liam Millar gör mål",
       "detail": "Målgörare när som helst i matchen",
-      "odds": 5.5,
-      "modelProb": 0.1671,
+      "odds": 5.4,
+      "modelProb": 0.1703,
       "marketProb": null,
       "edge": 0.0,
       "value": "Undvik",
@@ -714,7 +748,7 @@
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Modellen väntar 2.50 mål mot marknadens 2.46. Avvigat pris 16% → justerat 17%.",
+      "rationale": "Modellen väntar 2.50 mål mot marknadens 2.46. Avvigat pris 17% → justerat 17%.",
       "settleMarket": "PLAYER",
       "settlePick": "scorer",
       "settleLine": null,
@@ -824,8 +858,8 @@
       "selection": "Över 9.5 hörnor",
       "detail": "Totalt antal hörnor i matchen",
       "odds": 1.78,
-      "modelProb": 0.5305,
-      "marketProb": 0.5215,
+      "modelProb": 0.5317,
+      "marketProb": 0.5228,
       "edge": 0.0,
       "value": "Undvik",
       "recommendable": false,
@@ -934,7 +968,10 @@
        "groupGoals": 3,
        "lambda": 0.497,
        "pAnytime": 0.391,
-       "p2plus": 0.089
+       "p2plus": 0.089,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Matheus Cunha",
@@ -942,15 +979,10 @@
        "groupGoals": 1,
        "lambda": 0.199,
        "pAnytime": 0.18,
-       "p2plus": 0.017
-      },
-      {
-       "player": "Daichi Kamada",
-       "team": "Japan",
-       "groupGoals": 2,
-       "lambda": 0.181,
-       "pAnytime": 0.166,
-       "p2plus": 0.015
+       "p2plus": 0.017,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Ayase Ueda",
@@ -958,7 +990,21 @@
        "groupGoals": 2,
        "lambda": 0.181,
        "pAnytime": 0.166,
-       "p2plus": 0.015
+       "p2plus": 0.015,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Daichi Kamada",
+       "team": "Japan",
+       "groupGoals": 2,
+       "lambda": 0.166,
+       "pAnytime": 0.153,
+       "p2plus": 0.012,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Keito Nakamura",
@@ -966,7 +1012,10 @@
        "groupGoals": 1,
        "lambda": 0.104,
        "pAnytime": 0.098,
-       "p2plus": 0.005
+       "p2plus": 0.005,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Junya Ito",
@@ -974,7 +1023,10 @@
        "groupGoals": 1,
        "lambda": 0.104,
        "pAnytime": 0.098,
-       "p2plus": 0.005
+       "p2plus": 0.005,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       }
      ]
     },
@@ -990,8 +1042,8 @@
      "pHome": 0.507,
      "pDraw": 0.274,
      "pAway": 0.219,
-     "oddsHome": 1.35,
-     "oddsDraw": 5.3,
+     "oddsHome": 1.32,
+     "oddsDraw": 5.4,
      "oddsAway": 11.0,
      "lambdaHome": 1.56,
      "lambdaAway": 0.94,
@@ -1007,7 +1059,10 @@
        "groupGoals": 3,
        "lambda": 0.325,
        "pAnytime": 0.277,
-       "p2plus": 0.043
+       "p2plus": 0.043,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Kai Havertz",
@@ -1015,39 +1070,54 @@
        "groupGoals": 2,
        "lambda": 0.228,
        "pAnytime": 0.203,
-       "p2plus": 0.022
+       "p2plus": 0.022,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Leroy Sané",
+       "team": "Tyskland",
+       "groupGoals": 1,
+       "lambda": 0.13,
+       "pAnytime": 0.122,
+       "p2plus": 0.008,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Felix Nmecha",
        "team": "Tyskland",
        "groupGoals": 1,
-       "lambda": 0.13,
-       "pAnytime": 0.122,
-       "p2plus": 0.008
-      },
-      {
-       "player": "Nico Schlotterbeck",
-       "team": "Tyskland",
-       "groupGoals": 1,
-       "lambda": 0.13,
-       "pAnytime": 0.122,
-       "p2plus": 0.008
+       "lambda": 0.11,
+       "pAnytime": 0.104,
+       "p2plus": 0.006,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Jamal Musiala",
        "team": "Tyskland",
        "groupGoals": 1,
-       "lambda": 0.13,
-       "pAnytime": 0.122,
-       "p2plus": 0.008
+       "lambda": 0.11,
+       "pAnytime": 0.104,
+       "p2plus": 0.006,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
-       "player": "Nathaniel Brown",
+       "player": "Nico Schlotterbeck",
        "team": "Tyskland",
        "groupGoals": 1,
-       "lambda": 0.13,
-       "pAnytime": 0.122,
-       "p2plus": 0.008
+       "lambda": 0.101,
+       "pAnytime": 0.096,
+       "p2plus": 0.005,
+       "position": "D",
+       "apps": null,
+       "goalless": false
       }
      ]
     },
@@ -1080,23 +1150,21 @@
        "groupGoals": 3,
        "lambda": 0.322,
        "pAnytime": 0.275,
-       "p2plus": 0.042
+       "p2plus": 0.042,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Ismael Saibari",
        "team": "Marocko",
        "groupGoals": 3,
-       "lambda": 0.292,
-       "pAnytime": 0.253,
-       "p2plus": 0.035
-      },
-      {
-       "player": "Crysencio Summerville",
-       "team": "Nederländerna",
-       "groupGoals": 2,
-       "lambda": 0.226,
-       "pAnytime": 0.202,
-       "p2plus": 0.022
+       "lambda": 0.274,
+       "pAnytime": 0.24,
+       "p2plus": 0.031,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Cody Gakpo",
@@ -1104,23 +1172,43 @@
        "groupGoals": 2,
        "lambda": 0.226,
        "pAnytime": 0.202,
-       "p2plus": 0.022
+       "p2plus": 0.022,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
-       "player": "Virgil van Dijk",
+       "player": "Crysencio Summerville",
        "team": "Nederländerna",
-       "groupGoals": 1,
-       "lambda": 0.129,
-       "pAnytime": 0.121,
-       "p2plus": 0.008
+       "groupGoals": 2,
+       "lambda": 0.206,
+       "pAnytime": 0.186,
+       "p2plus": 0.019,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
-       "player": "Jan Paul van Hecke",
-       "team": "Nederländerna",
+       "player": "Soufiane Rahimi",
+       "team": "Marocko",
        "groupGoals": 1,
-       "lambda": 0.129,
-       "pAnytime": 0.121,
-       "p2plus": 0.008
+       "lambda": 0.117,
+       "pAnytime": 0.11,
+       "p2plus": 0.006,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Gessime Yassine",
+       "team": "Marocko",
+       "groupGoals": 1,
+       "lambda": 0.117,
+       "pAnytime": 0.11,
+       "p2plus": 0.006,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       }
      ]
     }
@@ -1158,7 +1246,10 @@
        "groupGoals": 2,
        "lambda": 0.371,
        "pAnytime": 0.31,
-       "p2plus": 0.054
+       "p2plus": 0.054,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Nicolas Pépé",
@@ -1166,39 +1257,54 @@
        "groupGoals": 2,
        "lambda": 0.212,
        "pAnytime": 0.191,
-       "p2plus": 0.02
-      },
-      {
-       "player": "Leo Østigard",
-       "team": "Norge",
-       "groupGoals": 1,
-       "lambda": 0.212,
-       "pAnytime": 0.191,
-       "p2plus": 0.02
+       "p2plus": 0.02,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Thelo Aasgaard",
        "team": "Norge",
        "groupGoals": 1,
-       "lambda": 0.212,
-       "pAnytime": 0.191,
-       "p2plus": 0.02
+       "lambda": 0.18,
+       "pAnytime": 0.165,
+       "p2plus": 0.014,
+       "position": "M",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Leo Østigard",
+       "team": "Norge",
+       "groupGoals": 1,
+       "lambda": 0.164,
+       "pAnytime": 0.151,
+       "p2plus": 0.012,
+       "position": "D",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Amad Diallo",
        "team": "Elfenbenskusten",
        "groupGoals": 1,
-       "lambda": 0.121,
-       "pAnytime": 0.114,
-       "p2plus": 0.007
+       "lambda": 0.103,
+       "pAnytime": 0.098,
+       "p2plus": 0.005,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Franck Kessié",
        "team": "Elfenbenskusten",
        "groupGoals": 1,
-       "lambda": 0.121,
-       "pAnytime": 0.114,
-       "p2plus": 0.007
+       "lambda": 0.103,
+       "pAnytime": 0.098,
+       "p2plus": 0.005,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       }
      ]
     },
@@ -1214,9 +1320,9 @@
      "pHome": 0.707,
      "pDraw": 0.208,
      "pAway": 0.085,
-     "oddsHome": 1.28,
-     "oddsDraw": 6.1,
-     "oddsAway": 11.5,
+     "oddsHome": 1.25,
+     "oddsDraw": 6.75,
+     "oddsAway": 14.0,
      "lambdaHome": 1.96,
      "lambdaAway": 0.54,
      "mssHome": 83.9,
@@ -1231,7 +1337,10 @@
        "groupGoals": 4,
        "lambda": 0.531,
        "pAnytime": 0.412,
-       "p2plus": 0.1
+       "p2plus": 0.1,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Ousmane Dembélé",
@@ -1239,7 +1348,10 @@
        "groupGoals": 4,
        "lambda": 0.531,
        "pAnytime": 0.412,
-       "p2plus": 0.1
+       "p2plus": 0.1,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Bradley Barcola",
@@ -1247,7 +1359,10 @@
        "groupGoals": 1,
        "lambda": 0.163,
        "pAnytime": 0.151,
-       "p2plus": 0.012
+       "p2plus": 0.012,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Désiré Doué",
@@ -1255,7 +1370,10 @@
        "groupGoals": 1,
        "lambda": 0.163,
        "pAnytime": 0.151,
-       "p2plus": 0.012
+       "p2plus": 0.012,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Anthony Elanga",
@@ -1263,7 +1381,21 @@
        "groupGoals": 2,
        "lambda": 0.158,
        "pAnytime": 0.146,
-       "p2plus": 0.011
+       "p2plus": 0.011,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Marcus Thuram",
+       "team": "Frankrike",
+       "groupGoals": 0,
+       "lambda": 0.041,
+       "pAnytime": 0.04,
+       "p2plus": 0.001,
+       "position": "F",
+       "apps": null,
+       "goalless": true
       }
      ]
     },
@@ -1296,7 +1428,10 @@
        "groupGoals": 1,
        "lambda": 0.23,
        "pAnytime": 0.205,
-       "p2plus": 0.023
+       "p2plus": 0.023,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Raúl Jiménez",
@@ -1304,15 +1439,10 @@
        "groupGoals": 1,
        "lambda": 0.23,
        "pAnytime": 0.205,
-       "p2plus": 0.023
-      },
-      {
-       "player": "Nilson Angulo",
-       "team": "Ecuador",
-       "groupGoals": 1,
-       "lambda": 0.187,
-       "pAnytime": 0.17,
-       "p2plus": 0.015
+       "p2plus": 0.023,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Gonzalo Plata",
@@ -1320,7 +1450,43 @@
        "groupGoals": 1,
        "lambda": 0.187,
        "pAnytime": 0.17,
-       "p2plus": 0.015
+       "p2plus": 0.015,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Nilson Angulo",
+       "team": "Ecuador",
+       "groupGoals": 1,
+       "lambda": 0.158,
+       "pAnytime": 0.146,
+       "p2plus": 0.011,
+       "position": "M",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Guillermo Martínez",
+       "team": "Mexiko",
+       "groupGoals": 0,
+       "lambda": 0.057,
+       "pAnytime": 0.056,
+       "p2plus": 0.002,
+       "position": "F",
+       "apps": null,
+       "goalless": true
+      },
+      {
+       "player": "Roberto Alvarado",
+       "team": "Mexiko",
+       "groupGoals": 0,
+       "lambda": 0.057,
+       "pAnytime": 0.056,
+       "p2plus": 0.002,
+       "position": "F",
+       "apps": null,
+       "goalless": true
       }
      ]
     }
@@ -1358,15 +1524,21 @@
        "groupGoals": 3,
        "lambda": 0.542,
        "pAnytime": 0.418,
-       "p2plus": 0.103
+       "p2plus": 0.103,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Jude Bellingham",
        "team": "England",
        "groupGoals": 2,
-       "lambda": 0.379,
-       "pAnytime": 0.316,
-       "p2plus": 0.056
+       "lambda": 0.346,
+       "pAnytime": 0.293,
+       "p2plus": 0.048,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Marcus Rashford",
@@ -1374,7 +1546,10 @@
        "groupGoals": 1,
        "lambda": 0.217,
        "pAnytime": 0.195,
-       "p2plus": 0.02
+       "p2plus": 0.02,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Yoane Wissa",
@@ -1382,7 +1557,10 @@
        "groupGoals": 3,
        "lambda": 0.183,
        "pAnytime": 0.168,
-       "p2plus": 0.015
+       "p2plus": 0.015,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Fiston Mayele",
@@ -1390,7 +1568,21 @@
        "groupGoals": 1,
        "lambda": 0.073,
        "pAnytime": 0.071,
-       "p2plus": 0.003
+       "p2plus": 0.003,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Morgan Rogers",
+       "team": "England",
+       "groupGoals": 0,
+       "lambda": 0.054,
+       "pAnytime": 0.053,
+       "p2plus": 0.001,
+       "position": "F",
+       "apps": null,
+       "goalless": true
       }
      ]
     },
@@ -1407,8 +1599,8 @@
      "pDraw": 0.29,
      "pAway": 0.338,
      "oddsHome": 2.12,
-     "oddsDraw": 3.25,
-     "oddsAway": 3.95,
+     "oddsDraw": 3.3,
+     "oddsAway": 4.0,
      "lambdaHome": 1.29,
      "lambdaAway": 1.21,
      "mssHome": 56.6,
@@ -1421,9 +1613,12 @@
        "player": "Pape Gueye",
        "team": "Senegal",
        "groupGoals": 2,
-       "lambda": 0.235,
-       "pAnytime": 0.21,
-       "p2plus": 0.024
+       "lambda": 0.215,
+       "pAnytime": 0.193,
+       "p2plus": 0.02,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Ibrahim Mbaye",
@@ -1431,15 +1626,10 @@
        "groupGoals": 1,
        "lambda": 0.134,
        "pAnytime": 0.126,
-       "p2plus": 0.008
-      },
-      {
-       "player": "Habib Diarra",
-       "team": "Senegal",
-       "groupGoals": 1,
-       "lambda": 0.134,
-       "pAnytime": 0.126,
-       "p2plus": 0.008
+       "p2plus": 0.008,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Ismaïla Sarr",
@@ -1447,15 +1637,43 @@
        "groupGoals": 1,
        "lambda": 0.134,
        "pAnytime": 0.126,
-       "p2plus": 0.008
+       "p2plus": 0.008,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Habib Diarra",
+       "team": "Senegal",
+       "groupGoals": 1,
+       "lambda": 0.114,
+       "pAnytime": 0.108,
+       "p2plus": 0.006,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Iliman Ndiaye",
        "team": "Senegal",
        "groupGoals": 1,
-       "lambda": 0.134,
-       "pAnytime": 0.126,
-       "p2plus": 0.008
+       "lambda": 0.114,
+       "pAnytime": 0.108,
+       "p2plus": 0.006,
+       "position": "M",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Romelu Lukaku",
+       "team": "Belgien",
+       "groupGoals": 0,
+       "lambda": 0.072,
+       "pAnytime": 0.069,
+       "p2plus": 0.002,
+       "position": "F",
+       "apps": null,
+       "goalless": true
       }
      ]
     },
@@ -1483,12 +1701,26 @@
      "pAdvanceAway": 0.263,
      "scorerAnalysis": [
       {
+       "player": "Alex Freeman",
+       "team": "USA",
+       "groupGoals": 1,
+       "lambda": 0.25,
+       "pAnytime": 0.221,
+       "p2plus": 0.027,
+       "position": "D",
+       "apps": null,
+       "goalless": false
+      },
+      {
        "player": "Ermin Mahmic",
        "team": "Bosnien",
        "groupGoals": 2,
-       "lambda": 0.187,
-       "pAnytime": 0.17,
-       "p2plus": 0.015
+       "lambda": 0.17,
+       "pAnytime": 0.157,
+       "p2plus": 0.013,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Jovo Lukic",
@@ -1496,7 +1728,10 @@
        "groupGoals": 1,
        "lambda": 0.107,
        "pAnytime": 0.101,
-       "p2plus": 0.005
+       "p2plus": 0.005,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Kerim Alajbegovic",
@@ -1504,7 +1739,32 @@
        "groupGoals": 1,
        "lambda": 0.107,
        "pAnytime": 0.101,
-       "p2plus": 0.005
+       "p2plus": 0.005,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Alejandro Zendejas",
+       "team": "USA",
+       "groupGoals": 0,
+       "lambda": 0.081,
+       "pAnytime": 0.078,
+       "p2plus": 0.003,
+       "position": "F",
+       "apps": null,
+       "goalless": true
+      },
+      {
+       "player": "Haji Wright",
+       "team": "USA",
+       "groupGoals": 0,
+       "lambda": 0.081,
+       "pAnytime": 0.078,
+       "p2plus": 0.003,
+       "position": "F",
+       "apps": null,
+       "goalless": true
       }
      ]
     }
@@ -1542,7 +1802,10 @@
        "groupGoals": 2,
        "lambda": 0.482,
        "pAnytime": 0.383,
-       "p2plus": 0.085
+       "p2plus": 0.085,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Lamine Yamal",
@@ -1550,15 +1813,10 @@
        "groupGoals": 1,
        "lambda": 0.276,
        "pAnytime": 0.241,
-       "p2plus": 0.032
-      },
-      {
-       "player": "Romano Schmid",
-       "team": "Österrike",
-       "groupGoals": 1,
-       "lambda": 0.107,
-       "pAnytime": 0.101,
-       "p2plus": 0.005
+       "p2plus": 0.032,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Marko Arnautovic",
@@ -1566,7 +1824,43 @@
        "groupGoals": 1,
        "lambda": 0.107,
        "pAnytime": 0.101,
-       "p2plus": 0.005
+       "p2plus": 0.005,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Romano Schmid",
+       "team": "Österrike",
+       "groupGoals": 1,
+       "lambda": 0.09,
+       "pAnytime": 0.086,
+       "p2plus": 0.004,
+       "position": "M",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Borja Iglesias",
+       "team": "Spanien",
+       "groupGoals": 0,
+       "lambda": 0.069,
+       "pAnytime": 0.067,
+       "p2plus": 0.002,
+       "position": "F",
+       "apps": null,
+       "goalless": true
+      },
+      {
+       "player": "Ferran Torres",
+       "team": "Spanien",
+       "groupGoals": 0,
+       "lambda": 0.069,
+       "pAnytime": 0.067,
+       "p2plus": 0.002,
+       "position": "F",
+       "apps": null,
+       "goalless": true
       }
      ]
     },
@@ -1599,23 +1893,10 @@
        "groupGoals": 2,
        "lambda": 0.305,
        "pAnytime": 0.263,
-       "p2plus": 0.038
-      },
-      {
-       "player": "João Neves",
-       "team": "Portugal",
-       "groupGoals": 1,
-       "lambda": 0.175,
-       "pAnytime": 0.16,
-       "p2plus": 0.014
-      },
-      {
-       "player": "Nuno Mendes",
-       "team": "Portugal",
-       "groupGoals": 1,
-       "lambda": 0.175,
-       "pAnytime": 0.16,
-       "p2plus": 0.014
+       "p2plus": 0.038,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Rafael Leão",
@@ -1623,15 +1904,32 @@
        "groupGoals": 1,
        "lambda": 0.175,
        "pAnytime": 0.16,
-       "p2plus": 0.014
+       "p2plus": 0.014,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
-       "player": "Martin Baturina",
-       "team": "Kroatien",
+       "player": "João Neves",
+       "team": "Portugal",
        "groupGoals": 1,
-       "lambda": 0.128,
-       "pAnytime": 0.121,
-       "p2plus": 0.008
+       "lambda": 0.148,
+       "pAnytime": 0.138,
+       "p2plus": 0.01,
+       "position": "M",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Nuno Mendes",
+       "team": "Portugal",
+       "groupGoals": 1,
+       "lambda": 0.135,
+       "pAnytime": 0.126,
+       "p2plus": 0.008,
+       "position": "D",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Petar Musa",
@@ -1639,7 +1937,21 @@
        "groupGoals": 1,
        "lambda": 0.128,
        "pAnytime": 0.121,
-       "p2plus": 0.008
+       "p2plus": 0.008,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Ante Budimir",
+       "team": "Kroatien",
+       "groupGoals": 1,
+       "lambda": 0.128,
+       "pAnytime": 0.121,
+       "p2plus": 0.008,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       }
      ]
     },
@@ -1670,17 +1982,23 @@
        "player": "Johan Manzambi",
        "team": "Schweiz",
        "groupGoals": 3,
-       "lambda": 0.387,
-       "pAnytime": 0.321,
-       "p2plus": 0.058
+       "lambda": 0.364,
+       "pAnytime": 0.305,
+       "p2plus": 0.052,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Rubén Vargas",
        "team": "Schweiz",
        "groupGoals": 2,
-       "lambda": 0.271,
-       "pAnytime": 0.237,
-       "p2plus": 0.031
+       "lambda": 0.247,
+       "pAnytime": 0.219,
+       "p2plus": 0.026,
+       "position": "M",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Breel Embolo",
@@ -1688,15 +2006,43 @@
        "groupGoals": 1,
        "lambda": 0.155,
        "pAnytime": 0.143,
-       "p2plus": 0.011
+       "p2plus": 0.011,
+       "position": "F",
+       "apps": null,
+       "goalless": false
       },
       {
        "player": "Granit Xhaka",
        "team": "Schweiz",
        "groupGoals": 1,
-       "lambda": 0.155,
-       "pAnytime": 0.143,
-       "p2plus": 0.011
+       "lambda": 0.131,
+       "pAnytime": 0.123,
+       "p2plus": 0.008,
+       "position": "M",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Riyad Mahrez",
+       "team": "Algeriet",
+       "groupGoals": 0,
+       "lambda": 0.055,
+       "pAnytime": 0.054,
+       "p2plus": 0.001,
+       "position": "F",
+       "apps": null,
+       "goalless": true
+      },
+      {
+       "player": "Amine Gouiri",
+       "team": "Algeriet",
+       "groupGoals": 0,
+       "lambda": 0.055,
+       "pAnytime": 0.054,
+       "p2plus": 0.001,
+       "position": "F",
+       "apps": null,
+       "goalless": true
       }
      ]
     }
@@ -3237,7 +3583,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-28T12:24:53Z",
+  "generatedAt": "2026-06-28T12:58:08Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -4202,14 +4548,14 @@
     "away": "Paraguay",
     "homeFlag": "🇩🇪",
     "awayFlag": "🇵🇾",
-    "pHome": 0.5913,
-    "pDraw": 0.2339,
-    "pAway": 0.1748,
+    "pHome": 0.5933,
+    "pDraw": 0.2322,
+    "pAway": 0.1745,
     "folketOne": 85,
     "folketX": 12,
     "folketTwo": 3,
-    "oddsOne": 1.35,
-    "oddsX": 5.3,
+    "oddsOne": 1.32,
+    "oddsX": 5.4,
     "oddsTwo": 11.0
    },
    {
@@ -4250,15 +4596,15 @@
     "away": "Sverige",
     "homeFlag": "🇫🇷",
     "awayFlag": "🇸🇪",
-    "pHome": 0.7079,
-    "pDraw": 0.1926,
-    "pAway": 0.0995,
+    "pHome": 0.71,
+    "pDraw": 0.1915,
+    "pAway": 0.0985,
     "folketOne": 76,
     "folketX": 15,
     "folketTwo": 9,
-    "oddsOne": 1.28,
-    "oddsX": 6.1,
-    "oddsTwo": 11.5
+    "oddsOne": 1.27,
+    "oddsX": 6.25,
+    "oddsTwo": 12.0
    },
    {
     "n": 5,
@@ -4298,15 +4644,15 @@
     "away": "Senegal",
     "homeFlag": "🇧🇪",
     "awayFlag": "🇸🇳",
-    "pHome": 0.3945,
-    "pDraw": 0.2817,
-    "pAway": 0.3237,
-    "folketOne": 43,
-    "folketX": 33,
+    "pHome": 0.3939,
+    "pDraw": 0.2826,
+    "pAway": 0.3235,
+    "folketOne": 44,
+    "folketX": 32,
     "folketTwo": 24,
-    "oddsOne": 2.12,
+    "oddsOne": 2.15,
     "oddsX": 3.25,
-    "oddsTwo": 3.95
+    "oddsTwo": 4.0
    },
    {
     "n": 8,
@@ -4334,8 +4680,8 @@
     "pDraw": 0.2069,
     "pAway": 0.1095,
     "folketOne": 87,
-    "folketX": 11,
-    "folketTwo": 2,
+    "folketX": 10,
+    "folketTwo": 3,
     "oddsOne": 1.29,
     "oddsX": 5.5,
     "oddsTwo": 14.0
@@ -4382,8 +4728,8 @@
     "pDraw": 0.2895,
     "pAway": 0.3495,
     "folketOne": 20,
-    "folketX": 33,
-    "folketTwo": 47,
+    "folketX": 32,
+    "folketTwo": 48,
     "oddsOne": 3.4,
     "oddsX": 2.95,
     "oddsTwo": 2.45
