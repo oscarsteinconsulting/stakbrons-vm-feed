@@ -25,6 +25,7 @@ turneringsmarknaderna (topp16/topp8/topp4/topp2/vinnare) — se build_progress()
 
 Självtest utan nät: python3 scripts/results_wc.py --selftest
 """
+import datetime
 import json
 import os
 import sys
@@ -50,6 +51,8 @@ DETAIL_SLEEP_S = 6.5
 # dem. Reservkälla: failar den, lämnas scorers=null (appen rättar manuellt).
 ESPN_SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=%s"
 ESPN_SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=%s"
+ESPN_TEAMS_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams"
+ESPN_ROSTER_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/%s/roster"
 ESPN_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) Safari/605.1.15"
 ESPN_SLEEP_S = 1.0
 
@@ -286,6 +289,118 @@ def fill_scorers_from_espn(rows, cache):
                 r["scorers"] = entry
                 filled += 1
     return filled
+
+
+def _espn_team_ids():
+    """{kortnamn: espnId} ur ESPN:s teams-lista. Failsafe → {}."""
+    out = {}
+    try:
+        data = _fetch(ESPN_TEAMS_URL, headers={"User-Agent": ESPN_UA})
+        for sport in data.get("sports") or []:
+            for lg in sport.get("leagues") or []:
+                for t in lg.get("teams") or []:
+                    team = t.get("team") or {}
+                    short = short_of(team.get("displayName") or team.get("name") or "")
+                    if short and team.get("id"):
+                        out.setdefault(short, str(team["id"]))
+    except Exception as e:
+        print("  ! ESPN teams-lista failade: %s" % e, file=sys.stderr)
+    return out
+
+
+def _roster_apps(athlete):
+    """Bästa-gissning på antal framträdanden ur athlete.statistics. None om okänt."""
+    try:
+        stats = athlete.get("statistics") or []
+        if isinstance(stats, dict):
+            stats = [stats]
+        for blk in stats:
+            for s in (blk.get("stats") or []):
+                nm = (s.get("name") or s.get("abbreviation") or "").lower()
+                if nm in ("appearances", "gamesplayed", "gp", "matchesplayed"):
+                    v = s.get("value")
+                    if isinstance(v, (int, float)):
+                        return int(v)
+    except Exception:
+        pass
+    return None
+
+
+def _parse_roster(payload):
+    """ESPN roster-payload → [{name,pos,apps,injured}] (bara G/D/M/F-spelare,
+    skadade exkluderade). Helt failsafe — okänd struktur ger tom lista."""
+    players = []
+    for grp in payload.get("athletes") or []:
+        gpos = ((grp.get("position") or {}).get("abbreviation") or "").upper()[:1]
+        items = grp.get("items")
+        if not isinstance(items, list):           # ibland är 'athletes' platt
+            items = [grp]
+        for a in items:
+            try:
+                name = a.get("displayName") or a.get("fullName") or a.get("name")
+                if not name:
+                    continue
+                pos = gpos
+                if pos not in ("G", "D", "M", "F"):
+                    ab = ((a.get("position") or {}).get("abbreviation") or "").upper()
+                    pos = ab[:1] if ab[:1] in ("G", "D", "M", "F") else None
+                if pos is None:
+                    continue                       # ingen positionsbucket → hoppa (graceful)
+                if a.get("injuries"):
+                    continue                       # skadad → utelämnas ur skytteanalysen
+                players.append({"name": name, "pos": pos, "apps": _roster_apps(a)})
+            except Exception:
+                continue
+    return players
+
+
+def fetch_espn_squads(team_shorts, cache=None, max_age_days=3):
+    """{kortnamn: [{name,pos,apps,injured}]} för efterfrågade lag via ESPN roster.
+    Cachas i results_cache.json ('roster:<short>', färskhet i dagar). Helt
+    failsafe: fel per lag hoppar bara över laget; totalfel → {}. Skadade och
+    spelare utan positionsbucket utelämnas. Analys-only (målgörarvisning)."""
+    own_cache = cache is None
+    if own_cache:
+        cache = _load_cache()
+    out = {}
+    try:
+        ids = None
+        today = datetime.date.today()
+        for short in sorted(set(team_shorts or [])):
+            ck = "roster:" + short
+            ent = cache.get(ck)
+            if isinstance(ent, dict) and ent.get("date"):
+                try:
+                    age = (today - datetime.date.fromisoformat(ent["date"])).days
+                except (ValueError, TypeError):
+                    age = 999
+                if age <= max_age_days:
+                    out[short] = ent.get("players") or []
+                    continue
+            if ids is None:
+                ids = _espn_team_ids()
+            eid = ids.get(short)
+            if not eid:
+                continue
+            try:
+                time.sleep(ESPN_SLEEP_S)
+                payload = _fetch(ESPN_ROSTER_URL % eid, headers={"User-Agent": ESPN_UA})
+                players = _parse_roster(payload)
+                cache[ck] = {"date": today.isoformat(), "players": players}
+                out[short] = players
+            except Exception as e:
+                print("  ! ESPN roster %s failade: %s" % (short, e), file=sys.stderr)
+                continue
+    except Exception as e:
+        print("  ! ESPN squads failade: %s" % e, file=sys.stderr)
+        out = {}
+    finally:
+        if own_cache:
+            try:
+                _save_cache(cache)
+            except Exception:
+                pass
+    return out
 
 
 def _score90(score, entry):

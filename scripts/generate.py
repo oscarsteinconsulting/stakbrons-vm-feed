@@ -621,18 +621,19 @@ def match_info(m, model, mss_map):
     return info
 
 
-def attach_scorer_analysis(match_infos, by_team, totals):
+def attach_scorer_analysis(match_infos, by_team, totals, squad_info=None, role_factors=None):
     """Lägg additiv 'scorerAnalysis' (topp-N anytime-skyttar, REN analys) på
-    slutspelsmatcher. Använder matchkortets λ och facitens målgörartabell.
+    slutspelsmatcher. Använder matchkortets λ och facitens målgörartabell, samt
+    (om tillgängligt) trupp/position för rollviktning + mållösa kandidater.
     Gör inget för gruppmatcher eller när lagen saknar måldata."""
-    for info in match_infos:
-        if not info.get("knockout"):
+    for mi in match_infos:
+        if not mi.get("knockout"):
             continue
         rows = scorer_model.match_scorer_analysis(
-            info["home"], info["away"], info["lambdaHome"], info["lambdaAway"],
-            by_team, totals)
+            mi["home"], mi["away"], mi["lambdaHome"], mi["lambdaAway"],
+            by_team, totals, info=squad_info, role_factors=role_factors)
         if rows:
-            info["scorerAnalysis"] = rows
+            mi["scorerAnalysis"] = rows
 
 
 def load_fixtures():
@@ -968,10 +969,28 @@ def main():
 
     # Målgörartabell ur facit (alla matchers scorers) → ren skytteanalys per
     # slutspelsmatch. Additivt 'scorerAnalysis'-fält, rekommenderas aldrig.
-    scorer_by_team, scorer_totals = scorer_model.team_goal_table(results)
-    attach_scorer_analysis(day_matches, scorer_by_team, scorer_totals)
+    # Berika med ESPN-trupp (position/roll + mållösa kandidater) för de KO-lag
+    # som faktiskt visas — helt failsafe: vid fel blir analysen scorers-only.
+    ko_shorts = set()
+    for mi in day_matches:
+        if mi.get("knockout"):
+            ko_shorts.update((mi["home"], mi["away"]))
     for u in upcoming:
-        attach_scorer_analysis(u["matches"], scorer_by_team, scorer_totals)
+        for mi in u["matches"]:
+            if mi.get("knockout"):
+                ko_shorts.update((mi["home"], mi["away"]))
+    squads = {}
+    if ko_shorts:
+        try:
+            squads = results_wc.fetch_espn_squads(sorted(ko_shorts))
+        except Exception as e:
+            print("  ! ESPN-trupper failade: %s" % e, file=sys.stderr)
+            squads = {}
+    role_factors = scorer_model.derive_role_factors(results, squads)
+    scorer_by_team, scorer_totals, scorer_info = scorer_model.enriched_team_table(results, squads)
+    attach_scorer_analysis(day_matches, scorer_by_team, scorer_totals, scorer_info, role_factors)
+    for u in upcoming:
+        attach_scorer_analysis(u["matches"], scorer_by_team, scorer_totals, scorer_info, role_factors)
 
     # Resultaten orienteras till Kambis lagordning (källorna kan lista lagen
     # omvänt) så historik, matchStatus och auto-rättning hittar matchen och

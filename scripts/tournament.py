@@ -109,6 +109,36 @@ for _g, _short, _elo, _flag in TEAMS:
 GROUP_ITEMS = sorted(GROUPS.items())
 ALL_SHORTS = [t[1] for t in TEAMS]
 
+# --- FIFAs FASTA slutspelsträd för VM 2026 (draglösningsoberoende topologi) ---
+# Match-numren 73–88 (R32), 89–96 (R16), 97–100 (kvart), 101–102 (semi), 104
+# (final) är publicerade i förväg och ändras ALDRIG. Varje R32-match har två
+# slots, kodade 'W<grupp>' (gruppvinnare), 'R<grupp>' (tvåa) eller 'T' (en av de
+# 8 bästa treorna). Källa: officiella VM2026-spelschemat (verifierat mot tre
+# oberoende källor + Kambis live-lottning). Detta är STRUKTUR, inte en fittad
+# parameter — det rättar bracket-GEOMETRIN i outright-simen (R32-vinnare paras
+# enligt det riktiga trädet i stället för adjacent).
+R32_SLOTS = {
+    73: ("RA", "RB"), 74: ("WE", "T"),  75: ("WF", "RC"), 76: ("WC", "RF"),
+    77: ("WI", "T"),  78: ("RE", "RI"), 79: ("WA", "T"),  80: ("WL", "T"),
+    81: ("WD", "T"),  82: ("WG", "T"),  83: ("RK", "RL"), 84: ("WH", "RJ"),
+    85: ("WB", "T"),  86: ("WJ", "RH"), 87: ("WK", "T"),  88: ("RD", "RG"),
+}
+# R16 (matcherna 89–96): vilka R32-match-vinnare som möts. ORDNINGEN är vald så
+# att adjacent-parning av R16-vinnarlistan ger rätt bracket HELA vägen kvart →
+# semi → final (FIFAs semifinaler KORSAR: SF101 = vinnare[QF97] vs vinnare[QF99],
+# SF102 = vinnare[QF98] vs vinnare[QF100]). Därför läggs match 93/94 (QF99) direkt
+# efter 89/90 (QF97), inte i ren match-nummer-ordning. Halva A = de 4 första R16-
+# matcherna, halva B = de 4 sista (möts först i finalen). Verifierat mot
+# officiella matchnr 89–102 (Wikipedia 2026 FIFA WC knockout stage).
+R16_TREE = [(74, 77), (73, 75), (83, 84), (81, 82),
+            (76, 78), (79, 80), (86, 88), (85, 87)]
+# Ankar-slot → R32-matchnummer (T hoppas; varje par har minst ett W/R-ankare).
+ANCHOR2NUM = {}
+for _num, _slots in R32_SLOTS.items():
+    for _s in _slots:
+        if _s != "T":
+            ANCHOR2NUM[_s] = _num
+
 
 # ---------------------------------------------------------------------------
 # DEL 1 — Kambi-odds (Slutplacering)
@@ -377,7 +407,56 @@ def standings_seeds_from_results(results):
         return None
 
 
-def simulate_tournament(ratings, ratings_ko, sims, rng, real_r32=None, seeds=None):
+def slot_map_from_seeds(seeds):
+    """{lag: 'W<grupp>'/'R<grupp>'/'T'} ur seeds=(winners, runners, thirds).
+    Failsafe: returnerar {} vid fel."""
+    try:
+        winners, runners, thirds = seeds
+        sl = {}
+        for t, g in winners:
+            sl[t] = "W" + g
+        for t, g in runners:
+            sl[t] = "R" + g
+        for t, _g in thirds:
+            sl[t] = "T"
+        return sl
+    except Exception:
+        return {}
+
+
+def bracket_tree_from_pairs(pairs, slot_of):
+    """Bind de 16 R32-paren till FIFAs fasta matchnummer via lagens slots och
+    returnera (r32_pos2idx, r16_idx_pairs) — eller None om slot-upplösningen är
+    ofullständig/tvetydig (anroparen faller då tillbaka på adjacent-parning).
+
+      r32_pos2idx[k]   = index i `pairs` för R32-match (73+k), k=0..15
+      r16_idx_pairs[j] = (posA, posB) in i match-nummer-ordningen för R16-match j
+    """
+    try:
+        num2idx = {}
+        for idx, (ta, tb) in enumerate(pairs):
+            nums = set()
+            for t in (ta, tb):
+                s = slot_of.get(t)
+                if s and s in ANCHOR2NUM:
+                    nums.add(ANCHOR2NUM[s])
+            if len(nums) != 1:
+                return None                 # saknat/tvetydigt ankare
+            num = nums.pop()
+            if num in num2idx:
+                return None                 # dubbelt matchnummer
+            num2idx[num] = idx
+        if set(num2idx) != set(range(73, 89)):
+            return None                     # täckningsglapp
+        r32_pos2idx = [num2idx[73 + k] for k in range(16)]
+        r16_idx_pairs = [(na - 73, nb - 73) for na, nb in R16_TREE]
+        return (r32_pos2idx, r16_idx_pairs)
+    except Exception:
+        return None
+
+
+def simulate_tournament(ratings, ratings_ko, sims, rng, real_r32=None, seeds=None,
+                        bracket=None):
     """Kör hela turneringen `sims` gånger, fas-medvetet.
 
     Bracketkälla (i fallande exakthet): `real_r32` (16 faktiska R32-par) →
@@ -430,22 +509,40 @@ def simulate_tournament(ratings, ratings_ko, sims, rng, real_r32=None, seeds=Non
             thirds = [(row[4], row[5]) for row in third_cands[:8]]
             pairs = _draw_r32(rng, winners, runners, thirds)
 
-        # --- Sextondelsfinal (R32) → vinnarna ---
+        # --- Sextondelsfinal (R32) → vinnarna (i pairs-ordning) ---
         alive = [_ko_winner(a, b, ratings_ko, KO_MU_TOTAL, cache_ko, rng)
                  for a, b in pairs]
         for t in alive:
             counts[t][0] += 1  # vann sin R32-match → topp 16
 
-        # --- KO-rundor: vinnarna paras i bracket-ordning till final ---
-        stage = 1
-        while len(alive) > 1:
-            nxt = [_ko_winner(alive[i], alive[i + 1], ratings_ko, KO_MU_TOTAL,
-                              cache_ko, rng)
-                   for i in range(0, len(alive), 2)]
-            for t in nxt:
-                counts[t][stage] += 1
-            alive = nxt
-            stage += 1
+        if bracket is not None:
+            # FIFAs FASTA träd: para R32-vinnare enligt verkliga R16-paren, sedan
+            # adjacent på den bracket-ordnade vinnarlistan (kvart/semi/final).
+            r32_pos2idx, r16_idx_pairs = bracket
+            w32 = [alive[i] for i in r32_pos2idx]        # match-nummer-ordning 73..88
+            cur = [_ko_winner(w32[a], w32[b], ratings_ko, KO_MU_TOTAL, cache_ko, rng)
+                   for a, b in r16_idx_pairs]
+            for t in cur:
+                counts[t][1] += 1                        # nådde topp 8
+            stage = 2
+            while len(cur) > 1:
+                cur = [_ko_winner(cur[i], cur[i + 1], ratings_ko, KO_MU_TOTAL,
+                                  cache_ko, rng)
+                       for i in range(0, len(cur), 2)]
+                for t in cur:
+                    counts[t][stage] += 1
+                stage += 1
+        else:
+            # FALLBACK: vinnarna paras adjacent (oförändrat ursprungsbeteende).
+            stage = 1
+            while len(alive) > 1:
+                nxt = [_ko_winner(alive[i], alive[i + 1], ratings_ko, KO_MU_TOTAL,
+                                  cache_ko, rng)
+                       for i in range(0, len(alive), 2)]
+                for t in nxt:
+                    counts[t][stage] += 1
+                alive = nxt
+                stage += 1
 
     inv = 1.0 / float(sims)
     return {t: tuple(c * inv for c in cnt) for t, cnt in counts.items()}
@@ -612,14 +709,24 @@ def build_tournament_section(ratings, ratings_ko, mss_map, date_str, progress=No
     # gruppseeds ur facit → re-simulerad slumpdragning.
     real_r32 = derive_real_r32(match_list or [], results or [], progress)
     seeds = standings_seeds_from_results(results or []) if real_r32 is None else None
+    # FIFAs fasta bracket-träd aktiveras BARA när de verkliga R32-paren är kända
+    # (real_r32) — då slot-etiketterna ur facit-gruppställningen entydigt binder
+    # paren till matchnumren. I seeds-/fallback-spåren dras R32 om per sim, så ett
+    # fast träd ger ingen exakthetsvinst där. Säker fallback: bracket=None.
+    bracket = None
     if real_r32 is not None:
-        print("  R32: 16 verkliga par ur Kambi live")
+        slot_of = slot_map_from_seeds(standings_seeds_from_results(results or []))
+        if slot_of:
+            bracket = bracket_tree_from_pairs(real_r32, slot_of)
+    if real_r32 is not None:
+        print("  R32: 16 verkliga par ur Kambi live | R16+: %s"
+              % ("FIFA-fast bracket-träd" if bracket else "adjacent-fallback"))
     elif seeds is not None:
         print("  R32: deltagare ur facit-gruppställning (strukturerad dragning)")
     else:
         print("  R32: ingen pålitlig källa — re-simulerad slumpdragning (fallback)")
     probs = simulate_tournament(ratings, ratings_ko, sims, rng,
-                                real_r32=real_r32, seeds=seeds)
+                                real_r32=real_r32, seeds=seeds, bracket=bracket)
     return _build_section(probs, odds_map, mss_map, sims, date_str, progress)
 
 
@@ -730,7 +837,65 @@ def _selftest():
     assert all(probs_seeded[t][0] == 0.0 for t in ALL_SHORTS if t not in in_r32), \
         "lag utanför verkliga R32 ska aldrig nå topp16"
 
-    print("  OK: sum(pWin)=%.3f, sum(pTop16)=%.2f, %d marknader, %d topBets"
+    # --- FIFA-fast bracket-träd ---
+    slot_of = slot_map_from_seeds(seeds)
+    assert len(slot_of) == 32, "slot_of måste täcka 32 lag"
+    # Bygg syntetiska R32-par enligt FIFAs slot-struktur (W/R entydiga, de 8
+    # treorna fyller de 8 T-slotsen i tur) så trädet kan lösas.
+    team_by_slot = {s: t for t, s in slot_of.items() if s != "T"}
+    thirds_list = [t for t, _g in th]
+    ti = 0
+    syn_pairs = []
+    for num in range(73, 89):
+        sa, sb = R32_SLOTS[num]
+        pa = thirds_list[ti] if sa == "T" else team_by_slot[sa]
+        if sa == "T":
+            ti += 1
+        pb = thirds_list[ti] if sb == "T" else team_by_slot[sb]
+        if sb == "T":
+            ti += 1
+        syn_pairs.append((pa, pb))
+    in_syn = set(t for p in syn_pairs for t in p)
+    assert len(in_syn) == 32, "syntetiska R32-par måste täcka 32 unika lag"
+    tree = bracket_tree_from_pairs(syn_pairs, slot_of)
+    assert tree is not None, "bracket_tree_from_pairs ska lösa de FIFA-strukturerade paren"
+    r32_pos2idx, r16_idx_pairs = tree
+    assert sorted(r32_pos2idx) == list(range(16)), "r32_pos2idx ska permutera 0..15"
+    assert len(r16_idx_pairs) == 8
+    # Trädet ska SKILJA sig från adjacent-parning (annars testas inget):
+    adjacent = [(2 * i, 2 * i + 1) for i in range(8)]
+    assert r16_idx_pairs != adjacent, "trädet ska ej vara identiskt med adjacent"
+    # SEMIFINAL-TOPOLOGI: adjacent-parning av R16-vinnarlistan (kvart→semi→final)
+    # måste ge FIFAs KORSANDE semifinaler. Halva A = R16-match-position 0–3, halva
+    # B = 4–7; lag i A får aldrig möta lag i B före finalen. Verifierat mot
+    # officiella matchnr 89–102 — vakt mot felaktig omordning av R16_TREE.
+    assert set(R16_TREE[0:4]) == {(74, 77), (73, 75), (83, 84), (81, 82)}, R16_TREE
+    assert set(R16_TREE[4:8]) == {(76, 78), (79, 80), (86, 88), (85, 87)}, R16_TREE
+    # Deterministisk semantisk kontroll: med "starkaste laget vinner alltid" får
+    # de två finalisterna komma från var sin halva (aldrig samma).
+    rank = {s: i for i, s in enumerate(ALL_SHORTS)}
+    w32_pos = [max(p, key=lambda t: rank[t]) for p in [syn_pairs[i] for i in r32_pos2idx]]
+    r16w = [max(w32_pos[a], w32_pos[b], key=lambda t: rank[t]) for a, b in r16_idx_pairs]
+    half_a = {max(r16w[0], r16w[1], key=lambda t: rank[t]),
+              max(r16w[2], r16w[3], key=lambda t: rank[t])}
+    half_b = {max(r16w[4], r16w[5], key=lambda t: rank[t]),
+              max(r16w[6], r16w[7], key=lambda t: rank[t])}
+    finalist_a = max(half_a, key=lambda t: rank[t])
+    finalist_b = max(half_b, key=lambda t: rank[t])
+    assert finalist_a != finalist_b, "finalisterna måste komma från olika halvor"
+    # Seedad sim med träd: samma invarianter + lag utanför R32 = 0.
+    probs_tree = simulate_tournament(ratings, ratings, 300, random.Random(2),
+                                     real_r32=syn_pairs, bracket=tree)
+    assert abs(sum(p[4] for p in probs_tree.values()) - 1.0) <= 0.03
+    assert abs(sum(p[0] for p in probs_tree.values()) - 16.0) <= 0.6
+    for t, p in probs_tree.items():
+        assert p[0] >= p[1] >= p[2] >= p[3] >= p[4], (t, p)
+    assert all(probs_tree[t][0] == 0.0 for t in ALL_SHORTS if t not in in_syn)
+    # Ofullständig/tvetydig slot_of → None (fallback-grenen).
+    assert bracket_tree_from_pairs(syn_pairs, {}) is None
+    assert bracket_tree_from_pairs(syn_pairs, {thirds_list[0]: "WA"}) is None
+
+    print("  OK: sum(pWin)=%.3f, sum(pTop16)=%.2f, %d marknader, %d topBets, bracket-träd OK"
           % (s_win, s_t16, len(sect["markets"]), len(sect["topBets"])))
 
 
