@@ -75,6 +75,7 @@ def player_margin(base, odds):
 # Speglar Svenska Spels VM-meny, i menyns ordning.
 CATEGORIES = [
     ("fulltid", "Fulltid", "⚽"),
+    ("avancemang", "Går vidare", "➡️"),
     ("dubbelchans", "Dubbelchans", "🛡"),
     ("handikapp", "Handikapp", "⚖️"),
     ("antal_mal", "Antal mål", "🥅"),
@@ -190,12 +191,19 @@ HIGHVAR_MARKETS = {"HTFT", "CS", "1H_1X2"}
 # praktiken flaggar modellen ändå sällan ett enskilt-utfall under odds 4.0.
 SINGLE_OUTCOME_MARKETS = {"1X2"}
 ONE_X_TWO_MAX_ODDS = 2.50
+# Går vidare (ADVANCE) är en modellerad 2-vägsmarknad (som DC/AH) → normalt
+# rekommenderbar, men ett longshot-tak hindrar att ett tungt underdog-avancemang
+# (där modellfelet förstoras i svansen) stakas. 2-vägs-avancemang prissätts
+# sällan över ~5–6; 6.0 är ett medvetet konservativt RUNT tak, ej fittat.
+ADVANCE_MAX_ODDS = 6.0
 
 
 def is_recommendable(settle_market, odds):
     if settle_market in UNMODELED_MARKETS or settle_market in HIGHVAR_MARKETS:
         return False
     if settle_market in SINGLE_OUTCOME_MARKETS and odds > ONE_X_TWO_MAX_ODDS:
+        return False
+    if settle_market == "ADVANCE" and odds > ADVANCE_MAX_ODDS:
         return False
     return True
 
@@ -297,6 +305,28 @@ def bets_for_match(date_str, m, model, markets):
                                   "%s (%s)" % (sel, name), "Dubbelchans hela matchen",
                                   om_, pm_, pmk, rat, ("DC", sel, None, None)))
         out["dubbelchans"].append(max(cands, key=lambda b: b["edge"]))
+
+    # --- Går vidare (ADVANCE): bara slutspel, driven av p_progress ---
+    #     (90 min → förlängning → straffar). Marknaden "Lag som går vidare"
+    #     finns bara för KO-matcher hos Kambi; dubbel KO-spärr via stage.
+    adv = markets.get("advance") or {}
+    oah, oaa = adv.get("home"), adv.get("away")
+    if oah and oaa and is_knockout_stage(stage_for(m["home"], m["away"], m["kickoff"])):
+        mkt = devig([oah, oaa])
+        if mkt:
+            p_h = model.p_progress()            # P(hemmalaget går vidare)
+            cands = []
+            for pm_, om_, pmk, pick, team in (
+                    (p_h, oah, mkt[0], "home", m["home"]),
+                    (1.0 - p_h, oaa, mkt[1], "away", m["away"])):
+                rat = ("Avancemangsmodell (90 min → förlängning → straffar): %s "
+                       "går vidare i %.0f%% mot marknadens %.0f%%." % (
+                           team, shrink(pm_, pmk, om_) * 100, pmk * 100))
+                cands.append(make_bet(
+                    date_str, m, "avancemang", "Går vidare",
+                    "%s går vidare" % team, "Vidare till nästa omgång (inkl. straffar)",
+                    om_, pm_, pmk, rat, ("ADVANCE", pick, None, None)))
+            out["avancemang"].append(max(cands, key=lambda b: b["edge"]))
 
     # --- Handikapp (asiatisk halvlinje): parvis avvigning, bästa sidan ---
     hk = markets.get("handikapp") or {}
@@ -867,7 +897,8 @@ def main():
             mk = {"fulltid": {"1": m.get("odds1"), "X": m.get("oddsX"), "2": m.get("odds2")},
                   "antal_mal": {"line": m.get("ouLine"), "over": m.get("oddsOver"),
                                 "under": m.get("oddsUnder")},
-                  "btts": {}, "malgorare": [], "tvaplus": [], "skott": []}
+                  "btts": {}, "malgorare": [], "tvaplus": [], "skott": [],
+                  "advance": {}}
         per_cat = bets_for_match(date_str, m, model, mk)
         for k, lst in per_cat.items():
             all_bets.extend(lst)
@@ -962,7 +993,8 @@ def main():
     try:
         import tournament
         tour = tournament.build_tournament_section(ratings, ratings_ko, mss_map,
-                                                   date_str, progress=progress)
+                                                   date_str, progress=progress,
+                                                   match_list=matches, results=results)
     except Exception as e:
         print("  ! turneringssektionen failade: %s" % e, file=sys.stderr)
         tour = None

@@ -31,7 +31,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from wc_data import TEAMS, FLAG_OF, short_of
+from wc_data import TEAMS, FLAG_OF, short_of, GROUP_OF
 from wc_model import MatchModel, MU_TOTAL, KO_MU_TOTAL
 
 KAMBI_BASE = "https://eu.offering-api.kambicdn.com/offering/v2018/svenskaspel"
@@ -55,6 +55,33 @@ MAX_PER_MARKET = 5
 
 MIN_P_USED = 0.02     # picks under 2 % använd sannolikhet hoppas över
 MAX_ODDS = 100.0      # extrema longshots prissätts för osäkert
+
+# --- Outright-disciplin (konsistent med generate.py:s is_recommendable) ---
+# Turneringssim bär större modellfel än matchmodellen (bracket-approximation +
+# 100+ matchers staplad osäkerhet). En outright REKOMMENDERAS (Spelvärt/Chans,
+# stakas, hamnar i "Dagens mest spelvärda") bara om alla tre villkoren håller:
+#   * använd sannolikhet ≥ 10 % — under det är simbruset för stort vs signalen;
+#   * odds ≤ 15.0 — samma longshot-tak som matchspelens; över det dominerar
+#     longshot-marginalen och "edge" är artefakt;
+#   * edge i [0.05, 0.40] — undre gränsen sållar marginalspel, den övre KAPAR
+#     absurda longshot-edges (t.ex. "Ecuador topp 4 +46 %") som bara uppstår när
+#     ett tunt sannolikhetsestimat möter ett högt pris.
+# Runda, medvetet konservativa tal — inte fittade mot ett enskilt utfall.
+OUTRIGHT_MIN_P = 0.10
+OUTRIGHT_MAX_ODDS = 15.0
+OUTRIGHT_EDGE_MIN = 0.05
+OUTRIGHT_EDGE_MAX = 0.40
+
+
+def is_recommendable_outright(p_used, odds, edge):
+    """Outright-motsvarighet till generate.py:is_recommendable: rekommenderbar
+    bara vid tillräcklig sannolikhetsmassa, under longshot-taket och med edge i
+    rimligt spann (kapar absurda longshot-edges)."""
+    if p_used < OUTRIGHT_MIN_P:
+        return False
+    if odds > OUTRIGHT_MAX_ODDS:
+        return False
+    return OUTRIGHT_EDGE_MIN <= edge <= OUTRIGHT_EDGE_MAX
 
 # (nyckel, namn, ikon, antal platser, index i räknararrayen)
 # Räknararrayen per lag är [top16, top8, top4, top2, win].
@@ -275,8 +302,87 @@ def _draw_r32(rng, winners, runners, thirds):
     return pairs
 
 
-def simulate_tournament(ratings, ratings_ko, sims, rng):
+def derive_real_r32(match_list, results, progress):
+    """Härled de 16 VERKLIGA R32-paren när de är kända. Returnerar [(lagA, lagB),
+    ...] med 16 par / 32 unika lag, eller None om data ej räcker (anroparen
+    faller då tillbaka på standings-seeds eller re-simulerad slumpdragning).
+
+    PRIMÄR: Kambis live-matchlista (redan hämtad i generate.main). En match är KO
+    när lagen ej delar grupp. R32 = kors-gruppmatcher vars lag ej redan vunnit
+    sin R32 (ej i progress.topp16.qualified), deduplicerat på lagpar, sorterat på
+    kickoff, 16 första. Robust mot stage_for-datumglapp (kors-grupptest, ej datum)
+    OCH mot stale fixtures.json (används inte alls här)."""
+    qual16 = set((((progress or {}).get("topp16")) or {}).get("qualified") or [])
+    try:
+        seen, pairs = set(), []
+        for m in sorted(match_list or [], key=lambda x: x.get("kickoff") or ""):
+            h, a = m.get("home"), m.get("away")
+            gh, ga = GROUP_OF.get(h), GROUP_OF.get(a)
+            if not h or not a or h == a:
+                continue
+            if gh and gh == ga:
+                continue                      # gruppmatch, ej KO
+            if h in qual16 or a in qual16:
+                continue                      # senare runda (laget klart R32)
+            key = frozenset((h, a))
+            if key in seen:
+                continue
+            seen.add(key)
+            pairs.append((h, a))
+        flat = [t for p in pairs for t in p]
+        if len(pairs) == 16 and len(set(flat)) == 32:
+            return pairs
+    except Exception as e:
+        print("  ! R32-härledning (Kambi) failade: %s" % e, file=sys.stderr)
+    return None
+
+
+def standings_seeds_from_results(results):
+    """Fallback: gruppettor/tvåor/bästa-treor ur facit (results) med FIFA-
+    tiebreakers (poäng, målskillnad, gjorda mål). Returnerar (winners, runners,
+    thirds) som listor av (lag, grupp) — formen _draw_r32 förväntar — eller None
+    om någon grupp är ofullständig (lag med <3 spelade gruppmatcher)."""
+    try:
+        gp = {g: {t: {"pts": 0, "gf": 0, "ga": 0, "n": 0} for t in teams}
+              for g, teams in GROUP_ITEMS}
+        for r in results or []:
+            h, a = r.get("home"), r.get("away")
+            gh = GROUP_OF.get(h)
+            if not gh or gh != GROUP_OF.get(a):
+                continue
+            sh, sa = r.get("scoreHome"), r.get("scoreAway")
+            if not isinstance(sh, int) or not isinstance(sa, int):
+                continue
+            d = gp[gh]
+            d[h]["gf"] += sh; d[h]["ga"] += sa; d[h]["n"] += 1
+            d[a]["gf"] += sa; d[a]["ga"] += sh; d[a]["n"] += 1
+            if sh > sa: d[h]["pts"] += 3
+            elif sa > sh: d[a]["pts"] += 3
+            else: d[h]["pts"] += 1; d[a]["pts"] += 1
+        winners, runners, thirds_pool = [], [], []
+        for g, teams in GROUP_ITEMS:
+            if any(gp[g][t]["n"] < 3 for t in teams):
+                return None  # gruppspelet ej färdigt → ej pålitligt
+            order = sorted(teams, key=lambda t: (gp[g][t]["pts"],
+                           gp[g][t]["gf"] - gp[g][t]["ga"], gp[g][t]["gf"]),
+                           reverse=True)
+            winners.append((order[0], g)); runners.append((order[1], g))
+            s = gp[g][order[2]]
+            thirds_pool.append((s["pts"], s["gf"] - s["ga"], s["gf"], order[2], g))
+        thirds_pool.sort(reverse=True)
+        thirds = [(row[3], row[4]) for row in thirds_pool[:8]]
+        return winners, runners, thirds
+    except Exception as e:
+        print("  ! R32-härledning (standings) failade: %s" % e, file=sys.stderr)
+        return None
+
+
+def simulate_tournament(ratings, ratings_ko, sims, rng, real_r32=None, seeds=None):
     """Kör hela turneringen `sims` gånger, fas-medvetet.
+
+    Bracketkälla (i fallande exakthet): `real_r32` (16 faktiska R32-par) →
+    `seeds` (faktiska gruppseeds, strukturerad dragning) → re-simulerat gruppspel
+    + slumpdragning (fallback). Oavsett källa samplas KO-utfallen per sim.
 
     Gruppspelet samplas med grupp-ratings + MU_TOTAL; slutspelet (R32 och
     framåt) med KO-ratings + KO_MU_TOTAL och samma förlängning/straff-modell
@@ -288,40 +394,43 @@ def simulate_tournament(ratings, ratings_ko, sims, rng):
     cache_ko = {}  # slutspels-par (KO-ratings + KO_MU_TOTAL)
 
     for _sim in range(sims):
-        winners, runners, third_cands = [], [], []
+        if real_r32 is not None:
+            pairs = real_r32                  # FAKTISKA R32-par (Kambi live)
+        elif seeds is not None:
+            w, r, t = seeds                   # FAKTISKA seeds (facit-standings)
+            pairs = _draw_r32(rng, w, r, t)   # verkliga deltagare, strukturerad geometri
+        else:
+            # FALLBACK: re-simulera gruppspelet + slumpdragen R32 (oförändrat)
+            winners, runners, third_cands = [], [], []
+            for gname, teams in GROUP_ITEMS:
+                pts = {t: 0 for t in teams}
+                gf = {t: 0 for t in teams}
+                ga = {t: 0 for t in teams}
+                for a, b in itertools.combinations(teams, 2):
+                    sa, sb = _sample_score(a, b, ratings, MU_TOTAL, cache_g, rng)
+                    gf[a] += sa
+                    ga[a] += sb
+                    gf[b] += sb
+                    ga[b] += sa
+                    if sa > sb:
+                        pts[a] += 3
+                    elif sb > sa:
+                        pts[b] += 3
+                    else:
+                        pts[a] += 1
+                        pts[b] += 1
+                order = sorted(teams,
+                               key=lambda t: (pts[t], gf[t] - ga[t], gf[t], rng.random()),
+                               reverse=True)
+                winners.append((order[0], gname))
+                runners.append((order[1], gname))
+                t3 = order[2]
+                third_cands.append((pts[t3], gf[t3] - ga[t3], gf[t3], rng.random(), t3, gname))
+            third_cands.sort(reverse=True)
+            thirds = [(row[4], row[5]) for row in third_cands[:8]]
+            pairs = _draw_r32(rng, winners, runners, thirds)
 
-        # --- Gruppspel: 6 matcher per grupp, tabell på poäng/MS/GM/slump ---
-        for gname, teams in GROUP_ITEMS:
-            pts = {t: 0 for t in teams}
-            gf = {t: 0 for t in teams}
-            ga = {t: 0 for t in teams}
-            for a, b in itertools.combinations(teams, 2):
-                sa, sb = _sample_score(a, b, ratings, MU_TOTAL, cache_g, rng)
-                gf[a] += sa
-                ga[a] += sb
-                gf[b] += sb
-                ga[b] += sa
-                if sa > sb:
-                    pts[a] += 3
-                elif sb > sa:
-                    pts[b] += 3
-                else:
-                    pts[a] += 1
-                    pts[b] += 1
-            order = sorted(teams,
-                           key=lambda t: (pts[t], gf[t] - ga[t], gf[t], rng.random()),
-                           reverse=True)
-            winners.append((order[0], gname))
-            runners.append((order[1], gname))
-            t3 = order[2]
-            third_cands.append((pts[t3], gf[t3] - ga[t3], gf[t3], rng.random(), t3, gname))
-
-        # --- De 8 bästa treorna (poäng, målskillnad, gjorda mål, slump) ---
-        third_cands.sort(reverse=True)
-        thirds = [(row[4], row[5]) for row in third_cands[:8]]
-
-        # --- Sextondelsfinal (R32): strukturerad slumpdragning ---
-        pairs = _draw_r32(rng, winners, runners, thirds)
+        # --- Sextondelsfinal (R32) → vinnarna ---
         alive = [_ko_winner(a, b, ratings_ko, KO_MU_TOTAL, cache_ko, rng)
                  for a, b in pairs]
         for t in alive:
@@ -388,6 +497,7 @@ def _make_outright_bet(date_str, team, market_key, market_name, odds,
     w = max(0.35, 0.55 - 0.004 * odds)
     p_used = min(0.999, w * p_sim + (1.0 - w) * p_mkt)
     edge = p_used * odds - 1.0
+    rec = is_recommendable_outright(p_used, odds, edge)
     if market_key == "vinnare":
         selection = "%s vinner VM" % team
     else:
@@ -408,10 +518,11 @@ def _make_outright_bet(date_str, team, market_key, market_name, odds,
         "modelProb": round(p_used, 4),
         "marketProb": round(p_mkt, 4),
         "edge": round(edge, 4),
-        "value": value_label(edge, odds),
-        "kelly": round(kelly(p_used, odds), 5),
+        "value": value_label(edge, odds) if rec else "Neutralt",
+        "recommendable": rec,
+        "kelly": round(kelly(p_used, odds), 5) if rec else 0.0,
         "stakeWeight": 0.0,
-        "confidence": 3 if edge >= 0.12 else 2,
+        "confidence": (3 if edge >= 0.12 else 2) if rec else 0,
         "rationale": rationale,
         "settleMarket": "OUTRIGHT", "settlePick": market_key,
         "settleLine": None, "settlePlayer": team,
@@ -451,9 +562,11 @@ def _build_section(probs, odds_map, mss_map, sims, date_str, progress=None):
                             "bets": bets[:MAX_PER_MARKET]})
         all_bets.extend(bets)
 
-    # Topp 10 över alla fem marknaderna, max 2 per lag
+    # Topp 10 över alla fem marknaderna, max 2 per lag — BARA rekommenderbara
+    # (samma disciplin som matchspelens rec_pool: longshot/absurd-edge-outrights
+    # hamnar aldrig i "Dagens mest spelvärda").
     top_bets, per_team = [], {}
-    for b in sorted(all_bets, key=lambda b: -b["edge"]):
+    for b in sorted((x for x in all_bets if x["recommendable"]), key=lambda b: -b["edge"]):
         team = b["settlePlayer"]
         if per_team.get(team, 0) >= MAX_PER_TEAM_TOP:
             continue
@@ -474,7 +587,8 @@ def _build_section(probs, odds_map, mss_map, sims, date_str, progress=None):
     }
 
 
-def build_tournament_section(ratings, ratings_ko, mss_map, date_str, progress=None):
+def build_tournament_section(ratings, ratings_ko, mss_map, date_str, progress=None,
+                             match_list=None, results=None):
     """Hela kedjan: Kambi-outrights + Monte Carlo → sektion för feeden.
 
     `ratings`/`ratings_ko` är grupp- resp. slutspels-ratingset (olika MSS-blend);
@@ -494,7 +608,18 @@ def build_tournament_section(ratings, ratings_ko, mss_map, date_str, progress=No
     sims = max(1, int(os.environ.get("VM_SIMS", "4000")))
     # Deterministisk seed per datum → samma dagsrapport vid omkörning
     rng = random.Random(int(date_str.replace("-", "")))
-    probs = simulate_tournament(ratings, ratings_ko, sims, rng)
+    # Bracketkälla (fallande exakthet): verkliga R32-par ur Kambi live →
+    # gruppseeds ur facit → re-simulerad slumpdragning.
+    real_r32 = derive_real_r32(match_list or [], results or [], progress)
+    seeds = standings_seeds_from_results(results or []) if real_r32 is None else None
+    if real_r32 is not None:
+        print("  R32: 16 verkliga par ur Kambi live")
+    elif seeds is not None:
+        print("  R32: deltagare ur facit-gruppställning (strukturerad dragning)")
+    else:
+        print("  R32: ingen pålitlig källa — re-simulerad slumpdragning (fallback)")
+    probs = simulate_tournament(ratings, ratings_ko, sims, rng,
+                                real_r32=real_r32, seeds=seeds)
     return _build_section(probs, odds_map, mss_map, sims, date_str, progress)
 
 
@@ -504,8 +629,8 @@ def build_tournament_section(ratings, ratings_ko, mss_map, date_str, progress=No
 
 BET_KEYS = ["id", "matchId", "match", "homeFlag", "awayFlag", "kickoff",
             "categoryKey", "category", "selection", "detail", "odds",
-            "modelProb", "marketProb", "edge", "value", "kelly",
-            "stakeWeight", "confidence", "rationale",
+            "modelProb", "marketProb", "edge", "value", "recommendable",
+            "kelly", "stakeWeight", "confidence", "rationale",
             "settleMarket", "settlePick", "settleLine", "settlePlayer"]
 
 
@@ -527,13 +652,16 @@ def _selftest():
         # Monotont: nå R16 ≥ nå kvart ≥ nå semi ≥ nå final ≥ vinna
         assert p[0] >= p[1] >= p[2] >= p[3] >= p[4], "%s: %s" % (t, p)
 
-    # Syntetiska odds ur simsannolikheterna med ~8 % marginal
+    # Syntetiska odds ur simsannolikheterna. Faktor 1.12/fair ger ett kontrollerat
+    # +12 %-edge på varje utfall (devig normaliserar bort uniform skalning), så
+    # disciplin-grenarna testas på riktigt: favoriter (p≥10 %, odds≤15) blir
+    # rekommenderbara, longshots (låg p / hög odds) faller utanför.
     odds_map = {}
     for key, _name, _icon, n_places, idx in MARKETS:
         teams = {}
         for t, p in probs.items():
             fair = max(p[idx], 0.003)
-            teams[t] = max(1.01, min(750.0, 1.0 / (fair * 1.08)))
+            teams[t] = max(1.01, min(750.0, 1.12 / fair))
         odds_map[key] = teams
     sect = _build_section(probs, odds_map, {s: 50.0 for s in ALL_SHORTS},
                           sims, "2026-06-11")
@@ -551,6 +679,57 @@ def _selftest():
         assert -1.0 <= b["edge"] <= 4.0, "orimlig edge: %s" % b["edge"]
         assert b["modelProb"] >= MIN_P_USED and b["odds"] <= MAX_ODDS
         assert b["settleMarket"] == "OUTRIGHT" and b["matchId"] == MATCH_ID
+
+    # --- Outright-disciplin: rek. outrights uppfyller alla tre villkoren;
+    #     icke-rek har nollställda vikter. topBets innehåller BARA rek. ---
+    all_section_bets = sect["topBets"] + [b for mk in sect["markets"] for b in mk["bets"]]
+    for b in all_section_bets:
+        if b["recommendable"]:
+            assert b["modelProb"] >= OUTRIGHT_MIN_P, b
+            assert b["odds"] <= OUTRIGHT_MAX_ODDS, b
+            assert OUTRIGHT_EDGE_MIN <= b["edge"] <= OUTRIGHT_EDGE_MAX, b
+            assert b["value"] in ("Spelvärt", "Chans"), b
+        else:
+            assert b["value"] == "Neutralt", b
+            assert b["kelly"] == 0.0 and b["confidence"] == 0 and b["stakeWeight"] == 0.0, b
+    assert all(b["recommendable"] for b in sect["topBets"]), "topBets måste vara rek."
+    assert any(b["recommendable"] for b in all_section_bets), "inga rek. outrights i selftest"
+
+    # --- Bracket-härledning: real_r32 (Kambi) + standings (facit) ---
+    shorts = [t[1] for t in TEAMS]
+    ml = []
+    for blk in range(0, 48, 8):           # (A vs B), (C vs D), … aldrig samma grupp
+        for i in range(4):
+            ml.append({"home": shorts[blk + i], "away": shorts[blk + 4 + i],
+                       "kickoff": "2026-07-01T12:00:00Z"})
+    ml = ml[:16]
+    r32 = derive_real_r32(ml, [], {"topp16": {"qualified": [], "eliminated": []}})
+    assert r32 is not None and len(r32) == 16, r32
+    flat = [t for p in r32 for t in p]
+    assert len(set(flat)) == 32, "R32 måste ha 32 unika lag"
+    for a, b in r32:
+        assert GROUP_OF[a] != GROUP_OF[b], "R32-par får ej dela grupp"
+    assert derive_real_r32(ml[:10], [], {}) is None  # otillräckligt → None
+    res = []
+    for g, teams in GROUP_ITEMS:
+        for i, j in itertools.combinations(range(4), 2):
+            res.append({"home": teams[i], "away": teams[j], "scoreHome": 2, "scoreAway": 0})
+    seeds = standings_seeds_from_results(res)
+    assert seeds is not None
+    w, rn, th = seeds
+    assert len(w) == 12 and len(rn) == 12 and len(th) == 8
+    s_flat = [x[0] for x in w] + [x[0] for x in rn] + [x[0] for x in th]
+    assert len(set(s_flat)) == 32, "seeds måste ge 32 unika lag"
+    assert standings_seeds_from_results(res[:5]) is None  # ofullständigt → None
+    probs_seeded = simulate_tournament(ratings, ratings, 300, random.Random(1), real_r32=r32)
+    assert abs(sum(p[4] for p in probs_seeded.values()) - 1.0) <= 0.03
+    assert abs(sum(p[0] for p in probs_seeded.values()) - 16.0) <= 0.6
+    for t, p in probs_seeded.items():
+        assert p[0] >= p[1] >= p[2] >= p[3] >= p[4]
+    in_r32 = set(flat)
+    assert all(probs_seeded[t][0] == 0.0 for t in ALL_SHORTS if t not in in_r32), \
+        "lag utanför verkliga R32 ska aldrig nå topp16"
+
     print("  OK: sum(pWin)=%.3f, sum(pTop16)=%.2f, %d marknader, %d topBets"
           % (s_win, s_t16, len(sect["markets"]), len(sect["topBets"])))
 

@@ -22,9 +22,10 @@ def norm(s):
     return "".join(c for c in unicodedata.normalize("NFD", (s or "").lower())
                    if unicodedata.category(c) != "Mn").strip()
 
-def settle(e, h, a, hh, ha, scorers):
+def settle(e, h, a, hh, ha, scorers, winner=None):
     m, pick, line, pl = e["market"], e["settlePick"], e.get("settleLine"), e.get("settlePlayer")
     if m == "1X2": return ("1" if h>a else "2" if h<a else "X") == pick
+    if m == "ADVANCE" and winner in ("home", "away"): return winner == pick
     if m == "OU" and line is not None: t=h+a; return t>line if pick=="over" else t<line
     if m == "BTTS": b=h>=1 and a>=1; return b if pick=="yes" else not b
     if m == "DC": return {"1X":h>=a,"X2":a>=h,"12":h!=a}.get(pick)
@@ -49,8 +50,11 @@ def result_for(match):
     except ValueError: return None
     r = results.get(frozenset((home, away)))
     if not r: return None
-    if r["home"] == home: return (r["scoreHome"],r["scoreAway"],r.get("htHome"),r.get("htAway"),r.get("scorers") or [])
-    return (r["scoreAway"],r["scoreHome"],r.get("htAway"),r.get("htHome"),r.get("scorers") or [])
+    if r["home"] == home:
+        return (r["scoreHome"],r["scoreAway"],r.get("htHome"),r.get("htAway"),r.get("scorers") or [],r.get("winner"))
+    w = r.get("winner")
+    w = "away" if w == "home" else ("home" if w == "away" else w)   # spegelvänd orientering
+    return (r["scoreAway"],r["scoreHome"],r.get("htAway"),r.get("htHome"),r.get("scorers") or [],w)
 
 clv = defaultdict(list); pnl = defaultdict(lambda: [0,0,0.0])  # seg -> [n,wins,profit]
 for e in log.values():

@@ -167,6 +167,7 @@ def fetch_match_markets(kambi_id, home=None, away=None):
         "hornor_lag":       {"home": {...}, "away": {...}},
         "kort":             {"line": 3.5, "over": o, "under": o},
         "kort_lag":         {"home": {...}, "away": {...}},
+        "advance":          {"home": o, "away": o},                 # KO: Lag som går vidare (2-vägs)
       }
     """
     url = "%s/betoffer/event/%s.json?%s" % (KAMBI_BASE, kambi_id, KAMBI_QUERY)
@@ -175,7 +176,8 @@ def fetch_match_markets(kambi_id, home=None, away=None):
            "lagmal": {}, "btts": {}, "korrekt_resultat": {}, "halvtid_1x2": {},
            "antal_mal_1h": {}, "halvtid_fulltid": {},
            "malgorare": [], "tvaplus": [], "skott": [],
-           "hornor": {}, "hornor_lag": {}, "kort": {}, "kort_lag": {}}
+           "hornor": {}, "hornor_lag": {}, "kort": {}, "kort_lag": {},
+           "advance": {}}
     ah_cands = []      # Asian handicap-halvlinjer: (line, hemmaodds, bortaodds)
     ou1h_cands = []    # Antal mål 1:a halvlek utan MAIN_LINE-tag
     hornor_cands = []  # Antal hörnor (alla linjer)
@@ -287,6 +289,21 @@ def fetch_match_markets(kambi_id, home=None, away=None):
                     res["btts"]["yes"] = _odds(o.get("odds"))
                 elif o.get("label") == "Nej":
                     res["btts"]["no"] = _odds(o.get("odds"))
+
+        elif label == "Lag som går vidare":
+            # KO-marknad: 2-vägs, outcomes är lagnamn (participant) → mappas
+            # via short_of/_team_side. Finns bara för slutspelsmatcher hos
+            # Kambi. Devigas i generate.py mot modellens p_progress().
+            row = {}
+            for o in open_outcomes:
+                side = _team_side(o.get("participant") or o.get("label") or "",
+                                  home, away)
+                if side == "home":
+                    row["home"] = _odds(o.get("odds"))
+                elif side == "away":
+                    row["away"] = _odds(o.get("odds"))
+            if row.get("home") and row.get("away"):
+                res["advance"] = row
 
         elif label == "Gör mål":
             for o in open_outcomes:
