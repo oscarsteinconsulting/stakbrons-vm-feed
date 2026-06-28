@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-28T20:05:27Z",
+ "generatedAt": "2026-06-28T20:29:19Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -117,7 +117,7 @@
      "pHome": 0.473,
      "pDraw": 0.28,
      "pAway": 0.247,
-     "oddsHome": 1.74,
+     "oddsHome": 1.71,
      "oddsDraw": 3.85,
      "oddsAway": 5.4,
      "lambdaHome": 1.49,
@@ -486,9 +486,9 @@
      "pHome": 0.707,
      "pDraw": 0.208,
      "pAway": 0.085,
-     "oddsHome": 1.26,
-     "oddsDraw": 6.25,
-     "oddsAway": 12.5,
+     "oddsHome": 1.25,
+     "oddsDraw": 6.4,
+     "oddsAway": 13.0,
      "lambdaHome": 1.96,
      "lambdaAway": 0.54,
      "mssHome": 83.9,
@@ -673,8 +673,8 @@
      "pHome": 0.702,
      "pDraw": 0.21,
      "pAway": 0.087,
-     "oddsHome": 1.28,
-     "oddsDraw": 5.8,
+     "oddsHome": 1.25,
+     "oddsDraw": 6.0,
      "oddsAway": 15.0,
      "lambdaHome": 1.95,
      "lambdaAway": 0.55,
@@ -2777,7 +2777,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-28T20:05:27Z",
+  "generatedAt": "2026-06-28T20:29:18Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3480,9 +3480,9 @@
     "pHome": 0.7132,
     "pDraw": 0.1903,
     "pAway": 0.0965,
-    "folketOne": 76,
+    "folketOne": 77,
     "folketX": 15,
-    "folketTwo": 9,
+    "folketTwo": 8,
     "oddsOne": 1.25,
     "oddsX": 6.4,
     "oddsTwo": 13.0
@@ -3509,14 +3509,14 @@
     "away": "DR Kongo",
     "homeFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     "awayFlag": "🇨🇩",
-    "pHome": 0.7236,
-    "pDraw": 0.1902,
-    "pAway": 0.0862,
+    "pHome": 0.7261,
+    "pDraw": 0.1879,
+    "pAway": 0.0859,
     "folketOne": 85,
     "folketX": 12,
     "folketTwo": 3,
-    "oddsOne": 1.28,
-    "oddsX": 5.8,
+    "oddsOne": 1.25,
+    "oddsX": 6.0,
     "oddsTwo": 15.0
    },
    {
@@ -3544,9 +3544,9 @@
     "pHome": 0.6221,
     "pDraw": 0.2248,
     "pAway": 0.1531,
-    "folketOne": 75,
+    "folketOne": 74,
     "folketX": 18,
-    "folketTwo": 7,
+    "folketTwo": 8,
     "oddsOne": 1.36,
     "oddsX": 5.4,
     "oddsTwo": 10.0
