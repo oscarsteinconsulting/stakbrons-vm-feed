@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-29T00:06:53Z",
+ "generatedAt": "2026-06-29T00:30:43Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -299,9 +299,9 @@
      "pHome": 0.452,
      "pDraw": 0.284,
      "pAway": 0.265,
-     "oddsHome": 2.3,
+     "oddsHome": 2.32,
      "oddsDraw": 3.1,
-     "oddsAway": 3.65,
+     "oddsAway": 3.7,
      "lambdaHome": 1.45,
      "lambdaAway": 1.05,
      "mssHome": 69.6,
@@ -2777,7 +2777,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-29T00:06:53Z",
+  "generatedAt": "2026-06-29T00:30:42Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -3758,15 +3758,15 @@
     "away": "Marocko",
     "homeFlag": "🇳🇱",
     "awayFlag": "🇲🇦",
-    "pHome": 0.4438,
-    "pDraw": 0.2821,
-    "pAway": 0.274,
+    "pHome": 0.4437,
+    "pDraw": 0.2828,
+    "pAway": 0.2735,
     "folketOne": 46,
     "folketX": 33,
     "folketTwo": 21,
-    "oddsOne": 2.3,
+    "oddsOne": 2.32,
     "oddsX": 3.1,
-    "oddsTwo": 3.65
+    "oddsTwo": 3.7
    },
    {
     "n": 3,
@@ -3822,15 +3822,15 @@
     "away": "DR Kongo",
     "homeFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     "awayFlag": "🇨🇩",
-    "pHome": 0.721,
-    "pDraw": 0.1901,
-    "pAway": 0.0889,
+    "pHome": 0.7247,
+    "pDraw": 0.188,
+    "pAway": 0.0873,
     "folketOne": 85,
     "folketX": 12,
     "folketTwo": 3,
-    "oddsOne": 1.28,
-    "oddsX": 5.75,
-    "oddsTwo": 13.0
+    "oddsOne": 1.26,
+    "oddsX": 6.0,
+    "oddsTwo": 14.0
    },
    {
     "n": 7,
@@ -3854,15 +3854,15 @@
     "away": "Bosnien",
     "homeFlag": "🇺🇸",
     "awayFlag": "🇧🇦",
-    "pHome": 0.6221,
-    "pDraw": 0.2248,
-    "pAway": 0.1531,
+    "pHome": 0.6268,
+    "pDraw": 0.2228,
+    "pAway": 0.1504,
     "folketOne": 74,
     "folketX": 18,
     "folketTwo": 8,
-    "oddsOne": 1.36,
-    "oddsX": 5.4,
-    "oddsTwo": 10.0
+    "oddsOne": 1.33,
+    "oddsX": 5.6,
+    "oddsTwo": 11.0
    },
    {
     "n": 9,
