@@ -668,6 +668,18 @@
    "team": "Brasilien"
   }
  ],
+ "espn:760489": [
+  {
+   "goals": 1,
+   "name": "Julio Enciso",
+   "team": "Paraguay"
+  },
+  {
+   "goals": 1,
+   "name": "Kai Havertz",
+   "team": "Tyskland"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-06-28",
   "players": [
