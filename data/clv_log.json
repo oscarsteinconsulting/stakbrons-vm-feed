@@ -13771,7 +13771,7 @@
  },
  "2026-06-29-1028151439-antal_mal-marocko-under-0-5-mål": {
   "closeOdds": 2.8,
-  "closeTime": "2026-06-29T17:06:08Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Nederländerna – Marocko",
@@ -13785,8 +13785,8 @@
   "value": "Neutralt"
  },
  "2026-06-29-1028151439-antal_mal-nederländerna-över-1-5-mål": {
-  "closeOdds": 2.35,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeOdds": 2.33,
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Nederländerna – Marocko",
@@ -13816,7 +13816,7 @@
  },
  "2026-06-29-1028151439-antal_mal-över-2-5-mål": {
   "closeOdds": 2.17,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "OU",
   "match": "Nederländerna – Marocko",
@@ -13831,7 +13831,7 @@
  },
  "2026-06-29-1028151439-avancemang-nederländerna-går-vidare": {
   "closeOdds": 1.68,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "ADVANCE",
   "match": "Nederländerna – Marocko",
@@ -13861,7 +13861,7 @@
  },
  "2026-06-29-1028151439-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 2.0,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "BTTS",
   "match": "Nederländerna – Marocko",
@@ -13876,7 +13876,7 @@
  },
  "2026-06-29-1028151439-dubbelchans-12-nederländerna-eller-marocko-vinner": {
   "closeOdds": 1.38,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "DC",
   "match": "Nederländerna – Marocko",
@@ -13891,7 +13891,7 @@
  },
  "2026-06-29-1028151439-fulltid-1-nederländerna-vinner": {
   "closeOdds": 2.43,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "1X2",
   "match": "Nederländerna – Marocko",
@@ -13906,7 +13906,7 @@
  },
  "2026-06-29-1028151439-halvlek-halvtid-1-nederländerna-leder-i-halvtid": {
   "closeOdds": 2.95,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "1H_1X2",
   "match": "Nederländerna – Marocko",
@@ -13935,8 +13935,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.43,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeOdds": 1.44,
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "1H_OU",
   "match": "Nederländerna – Marocko",
@@ -13950,8 +13950,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-halvtid_fulltid-halvtid-fulltid-1-1": {
-  "closeOdds": 3.75,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeOdds": 3.8,
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "HTFT",
   "match": "Nederländerna – Marocko",
@@ -13966,7 +13966,7 @@
  },
  "2026-06-29-1028151439-handikapp-nederländerna-0-5": {
   "closeOdds": 2.33,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "AH",
   "match": "Nederländerna – Marocko",
@@ -13980,8 +13980,8 @@
   "value": "Neutralt"
  },
  "2026-06-29-1028151439-hornor-över-8-5-hörnor": {
-  "closeOdds": 1.84,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeOdds": 1.82,
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CORNERS",
   "match": "Nederländerna – Marocko",
@@ -14026,7 +14026,7 @@
  },
  "2026-06-29-1028151439-korrekt_resultat-resultat-1-0": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CS",
   "match": "Nederländerna – Marocko",
@@ -14041,7 +14041,7 @@
  },
  "2026-06-29-1028151439-korrekt_resultat-resultat-2-0": {
   "closeOdds": 10.5,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CS",
   "match": "Nederländerna – Marocko",
@@ -14070,8 +14070,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-kort-under-3-5-kort": {
-  "closeOdds": 1.67,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeOdds": 1.68,
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CARDS",
   "match": "Nederländerna – Marocko",
@@ -14085,8 +14085,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-kort-över-3-5-kort": {
-  "closeOdds": 2.05,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CARDS",
   "match": "Nederländerna – Marocko",
@@ -14101,7 +14101,7 @@
  },
  "2026-06-29-1028151439-malgorare-azzedine-ounahi-gör-mål": {
   "closeOdds": 6.4,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "PLAYER",
   "match": "Nederländerna – Marocko",
@@ -14115,8 +14115,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-malgorare-tijjani-reijnders-gör-mål": {
-  "closeOdds": 5.3,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeOdds": 5.5,
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "PLAYER",
   "match": "Nederländerna – Marocko",
@@ -14131,7 +14131,7 @@
  },
  "2026-06-29-1028151439-spelarspecial-azzedine-ounahi-över-0-5-skott-på-mål": {
   "closeOdds": 2.75,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "PLAYER",
   "match": "Nederländerna – Marocko",
@@ -14145,8 +14145,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-spelarspecial-brian-brobbey-gör-2-mål": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-06-29T20:17:58Z",
+  "closeOdds": 15.0,
+  "closeTime": "2026-06-29T20:42:05Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "PLAYER",
   "match": "Nederländerna – Marocko",
