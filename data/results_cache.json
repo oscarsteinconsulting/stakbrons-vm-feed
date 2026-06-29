@@ -651,6 +651,23 @@
    "team": "Kanada"
   }
  ],
+ "espn:760487": [
+  {
+   "goals": 1,
+   "name": "Kaishu Sano",
+   "team": "Japan"
+  },
+  {
+   "goals": 1,
+   "name": "Casemiro",
+   "team": "Brasilien"
+  },
+  {
+   "goals": 1,
+   "name": "Gabriel Martinelli",
+   "team": "Brasilien"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-06-28",
   "players": [
