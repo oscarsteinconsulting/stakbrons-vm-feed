@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-29T14:03:24Z",
+ "generatedAt": "2026-06-29T14:27:19Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -2451,9 +2451,9 @@
      "pHome": 0.579,
      "pDraw": 0.256,
      "pAway": 0.165,
-     "oddsHome": 1.38,
-     "oddsDraw": 5.2,
-     "oddsAway": 9.5,
+     "oddsHome": 1.36,
+     "oddsDraw": 5.4,
+     "oddsAway": 10.0,
      "lambdaHome": 1.7,
      "lambdaAway": 0.8,
      "mssHome": 58.3,
@@ -2547,8 +2547,8 @@
      "pHome": 0.66,
      "pDraw": 0.228,
      "pAway": 0.112,
-     "oddsHome": 1.28,
-     "oddsDraw": 6.0,
+     "oddsHome": 1.3,
+     "oddsDraw": 5.6,
      "oddsAway": 13.0,
      "lambdaHome": 1.86,
      "lambdaAway": 0.64,
@@ -4651,7 +4651,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-29T14:03:24Z",
+  "generatedAt": "2026-06-29T14:27:19Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -5636,8 +5636,8 @@
     "pDraw": 0.2807,
     "pAway": 0.2753,
     "folketOne": 45,
-    "folketX": 33,
-    "folketTwo": 22,
+    "folketX": 34,
+    "folketTwo": 21,
     "oddsOne": 2.3,
     "oddsX": 3.15,
     "oddsTwo": 3.6
@@ -5728,15 +5728,15 @@
     "away": "Bosnien",
     "homeFlag": "🇺🇸",
     "awayFlag": "🇧🇦",
-    "pHome": 0.6187,
-    "pDraw": 0.2268,
-    "pAway": 0.1546,
+    "pHome": 0.6221,
+    "pDraw": 0.2248,
+    "pAway": 0.1531,
     "folketOne": 75,
     "folketX": 18,
     "folketTwo": 7,
-    "oddsOne": 1.38,
-    "oddsX": 5.2,
-    "oddsTwo": 9.5
+    "oddsOne": 1.36,
+    "oddsX": 5.4,
+    "oddsTwo": 10.0
    },
    {
     "n": 9,
@@ -5744,14 +5744,14 @@
     "away": "Österrike",
     "homeFlag": "🇪🇸",
     "awayFlag": "🇦🇹",
-    "pHome": 0.6862,
-    "pDraw": 0.2026,
+    "pHome": 0.6827,
+    "pDraw": 0.2061,
     "pAway": 0.1112,
     "folketOne": 86,
     "folketX": 11,
     "folketTwo": 3,
-    "oddsOne": 1.28,
-    "oddsX": 6.0,
+    "oddsOne": 1.3,
+    "oddsX": 5.6,
     "oddsTwo": 13.0
    },
    {
