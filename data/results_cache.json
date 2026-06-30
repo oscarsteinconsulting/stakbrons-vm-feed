@@ -697,6 +697,18 @@
    "team": "Norge"
   }
  ],
+ "espn:760492": [
+  {
+   "goals": 2,
+   "name": "Kylian Mbappé",
+   "team": "Frankrike"
+  },
+  {
+   "goals": 1,
+   "name": "Bradley Barcola",
+   "team": "Frankrike"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-06-28",
   "players": [
