@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-06-30T12:58:10Z",
+ "generatedAt": "2026-06-30T13:22:24Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -1271,16 +1271,16 @@
       "category": "Halvlek",
       "selection": "Halvtid: X (Oavgjort i halvtid)",
       "detail": "Resultat efter första halvlek",
-      "odds": 2.9,
-      "modelProb": 0.3863,
-      "marketProb": 0.3183,
-      "edge": 0.1202,
+      "odds": 2.95,
+      "modelProb": 0.3852,
+      "marketProb": 0.3146,
+      "edge": 0.1363,
       "value": "Neutralt",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 4,
-      "rationale": "Första halvlek väntas ge 1.10 mål (44% av matchens 2.50): oavgjort i halvtid 39% mot prisade 32%. Rättas manuellt.",
+      "rationale": "Första halvlek väntas ge 1.10 mål (44% av matchens 2.50): oavgjort i halvtid 39% mot prisade 31%. Rättas manuellt.",
       "settleMarket": "1H_1X2",
       "settlePick": "X",
       "settleLine": null,
@@ -1410,8 +1410,8 @@
       "detail": "Resultat vid halvtid / vid fulltid",
       "odds": 8.5,
       "modelProb": 0.1176,
-      "marketProb": 0.0931,
-      "edge": -0.0003,
+      "marketProb": 0.093,
+      "edge": -0.0006,
       "value": "Neutralt",
       "recommendable": false,
       "kelly": 0.0,
@@ -4517,7 +4517,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-06-30T12:58:09Z",
+  "generatedAt": "2026-06-30T13:22:24Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
