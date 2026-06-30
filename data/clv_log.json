@@ -13771,7 +13771,7 @@
  },
  "2026-06-29-1028151439-antal_mal-marocko-under-0-5-mål": {
   "closeOdds": 2.8,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Nederländerna – Marocko",
@@ -13785,8 +13785,8 @@
   "value": "Neutralt"
  },
  "2026-06-29-1028151439-antal_mal-nederländerna-över-1-5-mål": {
-  "closeOdds": 2.3,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeOdds": 2.28,
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Nederländerna – Marocko",
@@ -13797,7 +13797,7 @@
   "settleLine": 1.5,
   "settlePick": "home_over",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Undvik"
  },
  "2026-06-29-1028151439-antal_mal-under-2-5-mål": {
   "closeOdds": 1.76,
@@ -13815,8 +13815,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-antal_mal-över-2-5-mål": {
-  "closeOdds": 2.17,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeOdds": 2.12,
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "OU",
   "match": "Nederländerna – Marocko",
@@ -13830,8 +13830,8 @@
   "value": "Neutralt"
  },
  "2026-06-29-1028151439-avancemang-nederländerna-går-vidare": {
-  "closeOdds": 1.68,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeOdds": 1.67,
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "ADVANCE",
   "match": "Nederländerna – Marocko",
@@ -13860,8 +13860,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 1.98,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "BTTS",
   "match": "Nederländerna – Marocko",
@@ -13876,7 +13876,7 @@
  },
  "2026-06-29-1028151439-dubbelchans-12-nederländerna-eller-marocko-vinner": {
   "closeOdds": 1.37,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "DC",
   "match": "Nederländerna – Marocko",
@@ -13890,8 +13890,8 @@
   "value": "Neutralt"
  },
  "2026-06-29-1028151439-fulltid-1-nederländerna-vinner": {
-  "closeOdds": 2.38,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeOdds": 2.4,
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "1X2",
   "match": "Nederländerna – Marocko",
@@ -13906,7 +13906,7 @@
  },
  "2026-06-29-1028151439-halvlek-halvtid-1-nederländerna-leder-i-halvtid": {
   "closeOdds": 2.9,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "1H_1X2",
   "match": "Nederländerna – Marocko",
@@ -13936,7 +13936,7 @@
  },
  "2026-06-29-1028151439-halvlek-över-0-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.43,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "1H_OU",
   "match": "Nederländerna – Marocko",
@@ -13951,7 +13951,7 @@
  },
  "2026-06-29-1028151439-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 3.7,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "HTFT",
   "match": "Nederländerna – Marocko",
@@ -13966,7 +13966,7 @@
  },
  "2026-06-29-1028151439-handikapp-nederländerna-0-5": {
   "closeOdds": 2.3,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "AH",
   "match": "Nederländerna – Marocko",
@@ -13996,7 +13996,7 @@
  },
  "2026-06-29-1028151439-hornor-över-9-5-hörnor": {
   "closeOdds": 2.08,
-  "closeTime": "2026-06-29T19:53:55Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CORNERS",
   "match": "Nederländerna – Marocko",
@@ -14026,7 +14026,7 @@
  },
  "2026-06-29-1028151439-korrekt_resultat-resultat-1-0": {
   "closeOdds": 7.5,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CS",
   "match": "Nederländerna – Marocko",
@@ -14041,7 +14041,7 @@
  },
  "2026-06-29-1028151439-korrekt_resultat-resultat-2-0": {
   "closeOdds": 10.0,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CS",
   "match": "Nederländerna – Marocko",
@@ -14070,8 +14070,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-kort-under-3-5-kort": {
-  "closeOdds": 1.8,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeOdds": 1.79,
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CARDS",
   "match": "Nederländerna – Marocko",
@@ -14085,8 +14085,8 @@
   "value": "Undvik"
  },
  "2026-06-29-1028151439-kort-över-3-5-kort": {
-  "closeOdds": 1.88,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeOdds": 1.89,
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "CARDS",
   "match": "Nederländerna – Marocko",
@@ -14101,7 +14101,7 @@
  },
  "2026-06-29-1028151439-malgorare-azzedine-ounahi-gör-mål": {
   "closeOdds": 6.0,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "PLAYER",
   "match": "Nederländerna – Marocko",
@@ -14116,7 +14116,7 @@
  },
  "2026-06-29-1028151439-malgorare-cody-gakpo-gör-mål": {
   "closeOdds": 3.1,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "PLAYER",
   "match": "Nederländerna – Marocko",
@@ -14176,7 +14176,7 @@
  },
  "2026-06-29-1028151439-spelarspecial-cody-gakpo-gör-2-mål": {
   "closeOdds": 14.0,
-  "closeTime": "2026-06-30T00:18:44Z",
+  "closeTime": "2026-06-30T00:42:47Z",
   "kickoff": "2026-06-30T01:00:00Z",
   "market": "PLAYER",
   "match": "Nederländerna – Marocko",
@@ -14187,6 +14187,21 @@
   "settleLine": null,
   "settlePick": "twoplus",
   "settlePlayer": "Cody Gakpo",
+  "value": "Undvik"
+ },
+ "2026-06-29-1028151439-spelarspecial-ismael-saibari-gör-2-mål": {
+  "closeOdds": 15.0,
+  "closeTime": "2026-06-30T00:42:47Z",
+  "kickoff": "2026-06-30T01:00:00Z",
+  "market": "PLAYER",
+  "match": "Nederländerna – Marocko",
+  "recOdds": 15.0,
+  "recTime": "2026-06-30T00:42:47Z",
+  "recommendable": false,
+  "selection": "Ismael Saibari gör 2+ mål",
+  "settleLine": null,
+  "settlePick": "twoplus",
+  "settlePlayer": "Ismael Saibari",
   "value": "Undvik"
  },
  "2026-06-29-1028163543-antal_mal-paraguay-över-0-5-mål": {
