@@ -680,6 +680,23 @@
    "team": "Tyskland"
   }
  ],
+ "espn:760490": [
+  {
+   "goals": 1,
+   "name": "Antonio Nusa",
+   "team": "Norge"
+  },
+  {
+   "goals": 1,
+   "name": "Amad Diallo",
+   "team": "Elfenbenskusten"
+  },
+  {
+   "goals": 1,
+   "name": "Erling Haaland",
+   "team": "Norge"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-06-28",
   "players": [
