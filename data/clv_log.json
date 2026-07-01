@@ -15735,8 +15735,8 @@
   "value": "Undvik"
  },
  "2026-07-01-1028151416-antal_mal-under-2-5-mål": {
-  "closeOdds": 2.12,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 2.14,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "OU",
   "match": "USA – Bosnien",
@@ -15765,8 +15765,8 @@
   "value": "Spelvärt"
  },
  "2026-07-01-1028151416-antal_mal-usa-under-2-5-mål": {
-  "closeOdds": 1.48,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 1.49,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "TEAM_OU",
   "match": "USA – Bosnien",
@@ -15780,8 +15780,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028151416-avancemang-bosnien-går-vidare": {
-  "closeOdds": 4.9,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 5.1,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "ADVANCE",
   "match": "USA – Bosnien",
@@ -15810,8 +15810,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028151416-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 1.8,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 1.79,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "BTTS",
   "match": "USA – Bosnien",
@@ -15825,8 +15825,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028151416-dubbelchans-x2-oavgjort-eller-bosnien": {
-  "closeOdds": 2.95,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 3.0,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "DC",
   "match": "USA – Bosnien",
@@ -15841,7 +15841,7 @@
  },
  "2026-07-01-1028151416-fulltid-2-bosnien-vinner": {
   "closeOdds": 8.5,
-  "closeTime": "2026-07-01T12:35:43Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "1X2",
   "match": "USA – Bosnien",
@@ -15871,7 +15871,7 @@
  },
  "2026-07-01-1028151416-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 2.5,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "1H_1X2",
   "match": "USA – Bosnien",
@@ -15886,7 +15886,7 @@
  },
  "2026-07-01-1028151416-halvlek-under-1-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.48,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "1H_OU",
   "match": "USA – Bosnien",
@@ -15901,7 +15901,7 @@
  },
  "2026-07-01-1028151416-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 7.0,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "HTFT",
   "match": "USA – Bosnien",
@@ -15915,8 +15915,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028151416-handikapp-bosnien-1-5": {
-  "closeOdds": 1.74,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 1.76,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "AH",
   "match": "USA – Bosnien",
@@ -15931,7 +15931,7 @@
  },
  "2026-07-01-1028151416-hornor-över-9-5-hörnor": {
   "closeOdds": 1.95,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "CORNERS",
   "match": "USA – Bosnien",
@@ -15945,8 +15945,8 @@
   "value": "Undvik"
  },
  "2026-07-01-1028151416-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 12.5,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 13.0,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "CS",
   "match": "USA – Bosnien",
@@ -15961,7 +15961,7 @@
  },
  "2026-07-01-1028151416-korrekt_resultat-resultat-1-1": {
   "closeOdds": 8.5,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "CS",
   "match": "USA – Bosnien",
@@ -15976,7 +15976,7 @@
  },
  "2026-07-01-1028151416-kort-över-3-5-kort": {
   "closeOdds": 2.23,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "CARDS",
   "match": "USA – Bosnien",
@@ -15991,7 +15991,7 @@
  },
  "2026-07-01-1028151416-malgorare-edin-dzeko-gör-mål": {
   "closeOdds": 4.5,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "PLAYER",
   "match": "USA – Bosnien",
@@ -16006,7 +16006,7 @@
  },
  "2026-07-01-1028151416-spelarspecial-folarin-balogun-gör-2-mål": {
   "closeOdds": 5.8,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-02T00:00:00Z",
   "market": "PLAYER",
   "match": "USA – Bosnien",
@@ -16020,8 +16020,8 @@
   "value": "Undvik"
  },
  "2026-07-01-1028174897-antal_mal-dr-kongo-över-0-5-mål": {
-  "closeOdds": 2.48,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 2.55,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "TEAM_OU",
   "match": "England – DR Kongo",
@@ -16065,8 +16065,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028174897-avancemang-dr-kongo-går-vidare": {
-  "closeOdds": 6.75,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 7.0,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "ADVANCE",
   "match": "England – DR Kongo",
@@ -16080,8 +16080,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028174897-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 2.88,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 2.95,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "BTTS",
   "match": "England – DR Kongo",
@@ -16095,8 +16095,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028174897-dubbelchans-x2-oavgjort-eller-dr-kongo": {
-  "closeOdds": 3.5,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 3.55,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "DC",
   "match": "England – DR Kongo",
@@ -16110,8 +16110,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028174897-fulltid-2-dr-kongo-vinner": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 15.0,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "1X2",
   "match": "England – DR Kongo",
@@ -16125,8 +16125,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028174897-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 2.38,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 2.4,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "1H_1X2",
   "match": "England – DR Kongo",
@@ -16156,7 +16156,7 @@
  },
  "2026-07-01-1028174897-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 6.1,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "HTFT",
   "match": "England – DR Kongo",
@@ -16170,8 +16170,8 @@
   "value": "Undvik"
  },
  "2026-07-01-1028174897-handikapp-dr-kongo-1-5": {
-  "closeOdds": 1.85,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 1.88,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "AH",
   "match": "England – DR Kongo",
@@ -16185,8 +16185,8 @@
   "value": "Neutralt"
  },
  "2026-07-01-1028174897-hornor-över-9-5-hörnor": {
-  "closeOdds": 1.9,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 1.87,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "CORNERS",
   "match": "England – DR Kongo",
@@ -16231,7 +16231,7 @@
  },
  "2026-07-01-1028174897-korrekt_resultat-resultat-1-1": {
   "closeOdds": 9.5,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "CS",
   "match": "England – DR Kongo",
@@ -16244,9 +16244,24 @@
   "settlePlayer": null,
   "value": "Undvik"
  },
+ "2026-07-01-1028174897-korrekt_resultat-resultat-2-1": {
+  "closeOdds": 10.0,
+  "closeTime": "2026-07-01T13:24:52Z",
+  "kickoff": "2026-07-01T16:00:00Z",
+  "market": "CS",
+  "match": "England – DR Kongo",
+  "recOdds": 10.0,
+  "recTime": "2026-07-01T13:24:52Z",
+  "recommendable": false,
+  "selection": "Resultat 2-1",
+  "settleLine": null,
+  "settlePick": "2-1",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
  "2026-07-01-1028174897-kort-under-2-5-kort": {
-  "closeOdds": 1.95,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 1.77,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "CARDS",
   "match": "England – DR Kongo",
@@ -16275,8 +16290,8 @@
   "value": "Undvik"
  },
  "2026-07-01-1028174897-kort-över-2-5-kort": {
-  "closeOdds": 1.74,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 1.91,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "CARDS",
   "match": "England – DR Kongo",
@@ -16306,7 +16321,7 @@
  },
  "2026-07-01-1028174897-malgorare-djed-spence-gör-mål": {
   "closeOdds": 10.0,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "PLAYER",
   "match": "England – DR Kongo",
@@ -16320,8 +16335,8 @@
   "value": "Undvik"
  },
  "2026-07-01-1028174897-malgorare-marc-guéhi-gör-mål": {
-  "closeOdds": 9.5,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 10.0,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "PLAYER",
   "match": "England – DR Kongo",
@@ -16336,7 +16351,7 @@
  },
  "2026-07-01-1028174897-spelarspecial-harry-kane-gör-2-mål": {
   "closeOdds": 4.6,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "PLAYER",
   "match": "England – DR Kongo",
@@ -16365,8 +16380,8 @@
   "value": "Undvik"
  },
  "2026-07-01-1028174897-spelarspecial-yoane-wissa-över-0-5-skott-på-mål": {
-  "closeOdds": 2.2,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeOdds": 2.12,
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T16:00:00Z",
   "market": "PLAYER",
   "match": "England – DR Kongo",
@@ -16381,7 +16396,7 @@
  },
  "2026-07-01-1028174914-antal_mal-belgien-under-1-5-mål": {
   "closeOdds": 1.71,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "TEAM_OU",
   "match": "Belgien – Senegal",
@@ -16396,7 +16411,7 @@
  },
  "2026-07-01-1028174914-antal_mal-under-2-5-mål": {
   "closeOdds": 1.86,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "OU",
   "match": "Belgien – Senegal",
@@ -16411,7 +16426,7 @@
  },
  "2026-07-01-1028174914-avancemang-senegal-går-vidare": {
   "closeOdds": 2.4,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "ADVANCE",
   "match": "Belgien – Senegal",
@@ -16426,7 +16441,7 @@
  },
  "2026-07-01-1028174914-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 2.12,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "BTTS",
   "match": "Belgien – Senegal",
@@ -16441,7 +16456,7 @@
  },
  "2026-07-01-1028174914-dubbelchans-x2-oavgjort-eller-senegal": {
   "closeOdds": 1.7,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "DC",
   "match": "Belgien – Senegal",
@@ -16456,7 +16471,7 @@
  },
  "2026-07-01-1028174914-fulltid-2-senegal-vinner": {
   "closeOdds": 3.85,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "1X2",
   "match": "Belgien – Senegal",
@@ -16471,7 +16486,7 @@
  },
  "2026-07-01-1028174914-halvlek-halvtid-2-senegal-leder-i-halvtid": {
   "closeOdds": 3.95,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "1H_1X2",
   "match": "Belgien – Senegal",
@@ -16486,7 +16501,7 @@
  },
  "2026-07-01-1028174914-halvlek-under-0-5-mål-i-1-a-halvlek": {
   "closeOdds": 2.85,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "1H_OU",
   "match": "Belgien – Senegal",
@@ -16501,7 +16516,7 @@
  },
  "2026-07-01-1028174914-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 5.8,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "HTFT",
   "match": "Belgien – Senegal",
@@ -16516,7 +16531,7 @@
  },
  "2026-07-01-1028174914-handikapp-senegal-0-5": {
   "closeOdds": 1.74,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "AH",
   "match": "Belgien – Senegal",
@@ -16546,7 +16561,7 @@
  },
  "2026-07-01-1028174914-hornor-över-9-5-hörnor": {
   "closeOdds": 1.9,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "CORNERS",
   "match": "Belgien – Senegal",
@@ -16576,7 +16591,7 @@
  },
  "2026-07-01-1028174914-korrekt_resultat-resultat-0-2": {
   "closeOdds": 16.0,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "CS",
   "match": "Belgien – Senegal",
@@ -16591,7 +16606,7 @@
  },
  "2026-07-01-1028174914-kort-under-3-5-kort": {
   "closeOdds": 1.56,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "CARDS",
   "match": "Belgien – Senegal",
@@ -16606,7 +16621,7 @@
  },
  "2026-07-01-1028174914-kort-över-3-5-kort": {
   "closeOdds": 2.23,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "CARDS",
   "match": "Belgien – Senegal",
@@ -16621,7 +16636,7 @@
  },
  "2026-07-01-1028174914-malgorare-ismaïla-sarr-gör-mål": {
   "closeOdds": 3.6,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "PLAYER",
   "match": "Belgien – Senegal",
@@ -16636,7 +16651,7 @@
  },
  "2026-07-01-1028174914-malgorare-kevin-de-bruyne-gör-mål": {
   "closeOdds": 4.0,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "PLAYER",
   "match": "Belgien – Senegal",
@@ -16651,7 +16666,7 @@
  },
  "2026-07-01-1028174914-spelarspecial-lamine-camara-över-0-5-skott-på-mål": {
   "closeOdds": 3.7,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "PLAYER",
   "match": "Belgien – Senegal",
@@ -16666,7 +16681,7 @@
  },
  "2026-07-01-1028174914-spelarspecial-romelu-lukaku-gör-2-mål": {
   "closeOdds": 11.0,
-  "closeTime": "2026-07-01T13:00:18Z",
+  "closeTime": "2026-07-01T13:24:52Z",
   "kickoff": "2026-07-01T20:00:00Z",
   "market": "PLAYER",
   "match": "Belgien – Senegal",
