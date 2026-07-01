@@ -709,6 +709,18 @@
    "team": "Frankrike"
   }
  ],
+ "espn:760495": [
+  {
+   "goals": 1,
+   "name": "Brian Cipenga",
+   "team": "DR Kongo"
+  },
+  {
+   "goals": 2,
+   "name": "Harry Kane",
+   "team": "England"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-06-28",
   "players": [
