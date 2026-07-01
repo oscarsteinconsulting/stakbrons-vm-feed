@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-01T23:15:43Z",
+ "generatedAt": "2026-07-01T23:40:24Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -3602,7 +3602,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-01T23:15:43Z",
+  "generatedAt": "2026-07-01T23:40:24Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
