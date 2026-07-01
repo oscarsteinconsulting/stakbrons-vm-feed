@@ -15390,8 +15390,8 @@
   "value": "Undvik"
  },
  "2026-06-30-1028172806-antal_mal-ecuador-över-0-5-mål": {
-  "closeOdds": 1.67,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 1.71,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Mexiko – Ecuador",
@@ -15402,11 +15402,11 @@
   "settleLine": 0.5,
   "settlePick": "away_over",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Spelvärt"
  },
  "2026-06-30-1028172806-antal_mal-mexiko-över-0-5-mål": {
-  "closeOdds": 1.38,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 1.4,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "TEAM_OU",
   "match": "Mexiko – Ecuador",
@@ -15435,8 +15435,8 @@
   "value": "Neutralt"
  },
  "2026-06-30-1028172806-antal_mal-över-1-5-mål": {
-  "closeOdds": 1.64,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 1.68,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "OU",
   "match": "Mexiko – Ecuador",
@@ -15450,8 +15450,8 @@
   "value": "Spelvärt"
  },
  "2026-06-30-1028172806-avancemang-ecuador-går-vidare": {
-  "closeOdds": 2.35,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 2.33,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "ADVANCE",
   "match": "Mexiko – Ecuador",
@@ -15465,8 +15465,8 @@
   "value": "Neutralt"
  },
  "2026-06-30-1028172806-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 2.35,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 2.43,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "BTTS",
   "match": "Mexiko – Ecuador",
@@ -15480,8 +15480,8 @@
   "value": "Spelvärt"
  },
  "2026-06-30-1028172806-dubbelchans-12-mexiko-eller-ecuador-vinner": {
-  "closeOdds": 1.45,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 1.44,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "DC",
   "match": "Mexiko – Ecuador",
@@ -15495,8 +15495,8 @@
   "value": "Neutralt"
  },
  "2026-06-30-1028172806-fulltid-2-ecuador-vinner": {
-  "closeOdds": 4.1,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 4.0,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "1X2",
   "match": "Mexiko – Ecuador",
@@ -15510,8 +15510,8 @@
   "value": "Neutralt"
  },
  "2026-06-30-1028172806-halvlek-halvtid-2-ecuador-leder-i-halvtid": {
-  "closeOdds": 4.6,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 4.7,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "1H_1X2",
   "match": "Mexiko – Ecuador",
@@ -15525,8 +15525,8 @@
   "value": "Neutralt"
  },
  "2026-06-30-1028172806-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.66,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 1.68,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "1H_OU",
   "match": "Mexiko – Ecuador",
@@ -15541,7 +15541,7 @@
  },
  "2026-06-30-1028172806-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 6.5,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "HTFT",
   "match": "Mexiko – Ecuador",
@@ -15555,8 +15555,8 @@
   "value": "Neutralt"
  },
  "2026-06-30-1028172806-handikapp-ecuador-0-5": {
-  "closeOdds": 1.67,
-  "closeTime": "2026-07-01T00:21:07Z",
+  "closeOdds": 1.64,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "AH",
   "match": "Mexiko – Ecuador",
@@ -15567,7 +15567,7 @@
   "settleLine": -0.5,
   "settlePick": "away",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Undvik"
  },
  "2026-06-30-1028172806-handikapp-mexiko-0-5": {
   "closeOdds": 2.28,
@@ -15585,8 +15585,8 @@
   "value": "Undvik"
  },
  "2026-06-30-1028172806-hornor-över-7-5-hörnor": {
-  "closeOdds": 1.82,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 1.86,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "CORNERS",
   "match": "Mexiko – Ecuador",
@@ -15601,7 +15601,7 @@
  },
  "2026-06-30-1028172806-korrekt_resultat-resultat-1-2": {
   "closeOdds": 14.0,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "CS",
   "match": "Mexiko – Ecuador",
@@ -15630,8 +15630,8 @@
   "value": "Undvik"
  },
  "2026-06-30-1028172806-korrekt_resultat-resultat-2-1": {
-  "closeOdds": 10.0,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 10.5,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "CS",
   "match": "Mexiko – Ecuador",
@@ -15645,8 +15645,8 @@
   "value": "Undvik"
  },
  "2026-06-30-1028172806-malgorare-gonzalo-plata-gör-mål": {
-  "closeOdds": 5.8,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 6.0,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "PLAYER",
   "match": "Mexiko – Ecuador",
@@ -15660,8 +15660,8 @@
   "value": "Undvik"
  },
  "2026-06-30-1028172806-malgorare-jesús-gallardo-gör-mål": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 15.0,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "PLAYER",
   "match": "Mexiko – Ecuador",
@@ -15675,8 +15675,8 @@
   "value": "Undvik"
  },
  "2026-06-30-1028172806-spelarspecial-erik-lira-över-0-5-skott-på-mål": {
-  "closeOdds": 4.0,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 4.1,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "PLAYER",
   "match": "Mexiko – Ecuador",
@@ -15690,8 +15690,8 @@
   "value": "Undvik"
  },
  "2026-06-30-1028172806-spelarspecial-john-yeboah-över-0-5-skott-på-mål": {
-  "closeOdds": 2.38,
-  "closeTime": "2026-07-01T00:45:30Z",
+  "closeOdds": 2.45,
+  "closeTime": "2026-07-01T01:09:53Z",
   "kickoff": "2026-07-01T01:00:00Z",
   "market": "PLAYER",
   "match": "Mexiko – Ecuador",
