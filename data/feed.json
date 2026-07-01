@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-01T11:31:25Z",
+ "generatedAt": "2026-07-01T11:56:03Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -1462,8 +1462,8 @@
       "detail": "Resultat vid halvtid / vid fulltid",
       "odds": 6.25,
       "modelProb": 0.1384,
-      "marketProb": 0.1282,
-      "edge": -0.1348,
+      "marketProb": 0.128,
+      "edge": -0.1352,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
@@ -1767,16 +1767,16 @@
       "category": "Hörnor",
       "selection": "Över 9.5 hörnor",
       "detail": "Totalt antal hörnor i matchen",
-      "odds": 1.81,
-      "modelProb": 0.5187,
-      "marketProb": 0.5134,
+      "odds": 1.9,
+      "modelProb": 0.4959,
+      "marketProb": 0.4906,
       "edge": 0.0,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.00 från målförväntan: över 9.5 hörnor 52% mot prisade 51%. Rättas manuellt.",
+      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.00 från målförväntan: över 9.5 hörnor 50% mot prisade 49%. Rättas manuellt.",
       "settleMarket": "CORNERS",
       "settlePick": "over",
       "settleLine": 9.5,
@@ -4526,7 +4526,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-01T11:31:25Z",
+  "generatedAt": "2026-07-01T11:56:03Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
