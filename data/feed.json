@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-02T03:23:05Z",
+ "generatedAt": "2026-07-02T03:47:53Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -395,8 +395,8 @@
      "pHome": 0.396,
      "pDraw": 0.289,
      "pAway": 0.315,
-     "oddsHome": 3.45,
-     "oddsDraw": 2.88,
+     "oddsHome": 3.5,
+     "oddsDraw": 2.9,
      "oddsAway": 2.55,
      "lambdaHome": 1.34,
      "lambdaAway": 1.16,
@@ -951,9 +951,9 @@
      "pHome": 0.291,
      "pDraw": 0.287,
      "pAway": 0.422,
-     "oddsHome": 3.4,
+     "oddsHome": 3.25,
      "oddsDraw": 3.1,
-     "oddsAway": 2.48,
+     "oddsAway": 2.5,
      "lambdaHome": 1.11,
      "lambdaAway": 1.39,
      "mssHome": 58.8,
@@ -2817,7 +2817,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-02T03:23:04Z",
+  "generatedAt": "2026-07-02T03:47:53Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -5349,6 +5349,39 @@
    ]
   },
   {
+   "date": "2026-07-01",
+   "home": "Belgien",
+   "away": "Senegal",
+   "scoreHome": 3,
+   "scoreAway": 2,
+   "htHome": 0,
+   "htAway": 1,
+   "duration": "REGULAR",
+   "winner": "home",
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Habib Diarra",
+     "team": "Senegal"
+    },
+    {
+     "goals": 1,
+     "name": "Ismaïla Sarr",
+     "team": "Senegal"
+    },
+    {
+     "goals": 1,
+     "name": "Romelu Lukaku",
+     "team": "Belgien"
+    },
+    {
+     "goals": 2,
+     "name": "Youri Tielemans",
+     "team": "Belgien"
+    }
+   ]
+  },
+  {
    "date": "2026-07-02",
    "home": "USA",
    "away": "Bosnien",
@@ -5365,6 +5398,7 @@
   "topp16": {
    "qualified": [
     "Argentina",
+    "Belgien",
     "Brasilien",
     "England",
     "Frankrike",
@@ -5383,6 +5417,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
@@ -5398,6 +5433,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
@@ -5413,6 +5449,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
@@ -5428,6 +5465,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
@@ -5443,6 +5481,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
