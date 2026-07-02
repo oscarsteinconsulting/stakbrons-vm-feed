@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-02T02:33:25Z",
+ "generatedAt": "2026-07-02T02:58:14Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -2817,7 +2817,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-02T02:33:25Z",
+  "generatedAt": "2026-07-02T02:58:13Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -5349,6 +5349,39 @@
    ]
   },
   {
+   "date": "2026-07-01",
+   "home": "Belgien",
+   "away": "Senegal",
+   "scoreHome": 3,
+   "scoreAway": 2,
+   "htHome": 0,
+   "htAway": 1,
+   "duration": "REGULAR",
+   "winner": "home",
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Habib Diarra",
+     "team": "Senegal"
+    },
+    {
+     "goals": 1,
+     "name": "Ismaïla Sarr",
+     "team": "Senegal"
+    },
+    {
+     "goals": 1,
+     "name": "Romelu Lukaku",
+     "team": "Belgien"
+    },
+    {
+     "goals": 2,
+     "name": "Youri Tielemans",
+     "team": "Belgien"
+    }
+   ]
+  },
+  {
    "date": "2026-07-02",
    "home": "USA",
    "away": "Bosnien",
@@ -5365,6 +5398,7 @@
   "topp16": {
    "qualified": [
     "Argentina",
+    "Belgien",
     "Brasilien",
     "England",
     "Frankrike",
@@ -5383,6 +5417,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
@@ -5398,6 +5433,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
@@ -5413,6 +5449,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
@@ -5428,6 +5465,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
@@ -5443,6 +5481,7 @@
     "Japan",
     "Jordanien",
     "Nederländerna",
+    "Senegal",
     "Sverige",
     "Sydafrika",
     "Tyskland"
