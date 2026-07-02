@@ -16950,8 +16950,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028174886-antal_mal-portugal-under-1-5-mål": {
-  "closeOdds": 2.08,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 2.1,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "TEAM_OU",
   "match": "Portugal – Kroatien",
@@ -16965,8 +16965,8 @@
   "value": "Spelvärt"
  },
  "2026-07-02-1028174886-antal_mal-under-2-5-mål": {
-  "closeOdds": 2.08,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 2.1,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "OU",
   "match": "Portugal – Kroatien",
@@ -16977,11 +16977,11 @@
   "settleLine": 2.5,
   "settlePick": "under",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Spelvärt"
  },
  "2026-07-02-1028174886-avancemang-kroatien-går-vidare": {
   "closeOdds": 3.15,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "ADVANCE",
   "match": "Portugal – Kroatien",
@@ -16995,8 +16995,8 @@
   "value": "Spelvärt"
  },
  "2026-07-02-1028174886-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 2.14,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 2.15,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "BTTS",
   "match": "Portugal – Kroatien",
@@ -17011,7 +17011,7 @@
  },
  "2026-07-02-1028174886-dubbelchans-x2-oavgjort-eller-kroatien": {
   "closeOdds": 2.08,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "DC",
   "match": "Portugal – Kroatien",
@@ -17026,7 +17026,7 @@
  },
  "2026-07-02-1028174886-fulltid-2-kroatien-vinner": {
   "closeOdds": 5.3,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "1X2",
   "match": "Portugal – Kroatien",
@@ -17056,7 +17056,7 @@
  },
  "2026-07-02-1028174886-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 2.33,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "1H_1X2",
   "match": "Portugal – Kroatien",
@@ -17086,7 +17086,7 @@
  },
  "2026-07-02-1028174886-halvlek-under-1-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.46,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "1H_OU",
   "match": "Portugal – Kroatien",
@@ -17101,7 +17101,7 @@
  },
  "2026-07-02-1028174886-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 7.5,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "HTFT",
   "match": "Portugal – Kroatien",
@@ -17115,8 +17115,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028174886-handikapp-kroatien-0-5": {
-  "closeOdds": 2.14,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 2.15,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "AH",
   "match": "Portugal – Kroatien",
@@ -17145,8 +17145,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028174886-hornor-över-9-5-hörnor": {
-  "closeOdds": 2.05,
-  "closeTime": "2026-07-02T07:22:07Z",
+  "closeOdds": 2.08,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "CORNERS",
   "match": "Portugal – Kroatien",
@@ -17161,7 +17161,7 @@
  },
  "2026-07-02-1028174886-korrekt_resultat-resultat-0-0": {
   "closeOdds": 12.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "CS",
   "match": "Portugal – Kroatien",
@@ -17176,7 +17176,7 @@
  },
  "2026-07-02-1028174886-korrekt_resultat-resultat-0-1": {
   "closeOdds": 13.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "CS",
   "match": "Portugal – Kroatien",
@@ -17190,8 +17190,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028174886-kort-under-2-5-kort": {
-  "closeOdds": 1.74,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 1.73,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "CARDS",
   "match": "Portugal – Kroatien",
@@ -17221,7 +17221,7 @@
  },
  "2026-07-02-1028174886-kort-över-2-5-kort": {
   "closeOdds": 1.95,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "CARDS",
   "match": "Portugal – Kroatien",
@@ -17251,7 +17251,7 @@
  },
  "2026-07-02-1028174886-malgorare-cristiano-ronaldo-gör-mål": {
   "closeOdds": 2.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "PLAYER",
   "match": "Portugal – Kroatien",
@@ -17266,7 +17266,7 @@
  },
  "2026-07-02-1028174886-malgorare-vitinha-gör-mål": {
   "closeOdds": 7.5,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "PLAYER",
   "match": "Portugal – Kroatien",
@@ -17281,7 +17281,7 @@
  },
  "2026-07-02-1028174886-spelarspecial-bruno-fernandes-gör-2-mål": {
   "closeOdds": 15.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "PLAYER",
   "match": "Portugal – Kroatien",
@@ -17296,7 +17296,7 @@
  },
  "2026-07-02-1028174886-spelarspecial-cristiano-ronaldo-gör-2-mål": {
   "closeOdds": 5.5,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T23:00:00Z",
   "market": "PLAYER",
   "match": "Portugal – Kroatien",
@@ -17326,7 +17326,7 @@
  },
  "2026-07-02-1028175697-antal_mal-över-2-5-mål": {
   "closeOdds": 2.2,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "OU",
   "match": "Schweiz – Algeriet",
@@ -17355,8 +17355,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-avancemang-schweiz-går-vidare": {
-  "closeOdds": 1.49,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 1.48,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "ADVANCE",
   "match": "Schweiz – Algeriet",
@@ -17371,7 +17371,7 @@
  },
  "2026-07-02-1028175697-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 1.94,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "BTTS",
   "match": "Schweiz – Algeriet",
@@ -17401,7 +17401,7 @@
  },
  "2026-07-02-1028175697-dubbelchans-12-schweiz-eller-algeriet-vinner": {
   "closeOdds": 1.33,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "DC",
   "match": "Schweiz – Algeriet",
@@ -17430,8 +17430,8 @@
   "value": "Neutralt"
  },
  "2026-07-02-1028175697-fulltid-2-algeriet-vinner": {
-  "closeOdds": 4.25,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 4.3,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "1X2",
   "match": "Schweiz – Algeriet",
@@ -17446,7 +17446,7 @@
  },
  "2026-07-02-1028175697-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 2.12,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "1H_1X2",
   "match": "Schweiz – Algeriet",
@@ -17460,8 +17460,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-halvtid_fulltid-halvtid-fulltid-1-1": {
-  "closeOdds": 3.05,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 3.0,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "HTFT",
   "match": "Schweiz – Algeriet",
@@ -17491,7 +17491,7 @@
  },
  "2026-07-02-1028175697-handikapp-algeriet-0-5": {
   "closeOdds": 1.85,
-  "closeTime": "2026-07-02T13:11:21Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "AH",
   "match": "Schweiz – Algeriet",
@@ -17521,7 +17521,7 @@
  },
  "2026-07-02-1028175697-hornor-över-8-5-hörnor": {
   "closeOdds": 1.68,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "CORNERS",
   "match": "Schweiz – Algeriet",
@@ -17566,7 +17566,7 @@
  },
  "2026-07-02-1028175697-korrekt_resultat-resultat-1-1": {
   "closeOdds": 6.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "CS",
   "match": "Schweiz – Algeriet",
@@ -17596,7 +17596,7 @@
  },
  "2026-07-02-1028175697-kort-över-3-5-kort": {
   "closeOdds": 2.23,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "CARDS",
   "match": "Schweiz – Algeriet",
@@ -17611,7 +17611,7 @@
  },
  "2026-07-02-1028175697-malgorare-ricardo-rodríguez-gör-mål": {
   "closeOdds": 9.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "PLAYER",
   "match": "Schweiz – Algeriet",
@@ -17625,8 +17625,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-spelarspecial-breel-embolo-gör-2-mål": {
-  "closeOdds": 9.5,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 9.0,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "PLAYER",
   "match": "Schweiz – Algeriet",
@@ -17641,7 +17641,7 @@
  },
  "2026-07-02-1028175698-antal_mal-spanien-under-2-5-mål": {
   "closeOdds": 1.58,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "TEAM_OU",
   "match": "Spanien – Österrike",
@@ -17656,7 +17656,7 @@
  },
  "2026-07-02-1028175698-antal_mal-under-2-5-mål": {
   "closeOdds": 2.23,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "OU",
   "match": "Spanien – Österrike",
@@ -17671,7 +17671,7 @@
  },
  "2026-07-02-1028175698-avancemang-österrike-går-vidare": {
   "closeOdds": 6.1,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "ADVANCE",
   "match": "Spanien – Österrike",
@@ -17686,7 +17686,7 @@
  },
  "2026-07-02-1028175698-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 1.71,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "BTTS",
   "match": "Spanien – Österrike",
@@ -17701,7 +17701,7 @@
  },
  "2026-07-02-1028175698-dubbelchans-x2-oavgjort-eller-österrike": {
   "closeOdds": 3.5,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "DC",
   "match": "Spanien – Österrike",
@@ -17716,7 +17716,7 @@
  },
  "2026-07-02-1028175698-fulltid-x-oavgjort": {
   "closeOdds": 5.6,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "1X2",
   "match": "Spanien – Österrike",
@@ -17731,7 +17731,7 @@
  },
  "2026-07-02-1028175698-halvlek-halvtid-x-oavgjort-i-halvtid": {
   "closeOdds": 2.63,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "1H_1X2",
   "match": "Spanien – Österrike",
@@ -17746,7 +17746,7 @@
  },
  "2026-07-02-1028175698-halvlek-under-1-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.5,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "1H_OU",
   "match": "Spanien – Österrike",
@@ -17761,7 +17761,7 @@
  },
  "2026-07-02-1028175698-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 7.5,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "HTFT",
   "match": "Spanien – Österrike",
@@ -17776,7 +17776,7 @@
  },
  "2026-07-02-1028175698-handikapp-österrike-1-5": {
   "closeOdds": 1.96,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "AH",
   "match": "Spanien – Österrike",
@@ -17790,8 +17790,8 @@
   "value": "Spelvärt"
  },
  "2026-07-02-1028175698-hornor-över-8-5-hörnor": {
-  "closeOdds": 1.71,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 1.72,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "CORNERS",
   "match": "Spanien – Österrike",
@@ -17820,8 +17820,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175698-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 13.0,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "CS",
   "match": "Spanien – Österrike",
@@ -17836,7 +17836,7 @@
  },
  "2026-07-02-1028175698-korrekt_resultat-resultat-1-0": {
   "closeOdds": 7.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "CS",
   "match": "Spanien – Österrike",
@@ -17850,8 +17850,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175698-kort-under-2-5-kort": {
-  "closeOdds": 1.67,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 1.66,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "CARDS",
   "match": "Spanien – Österrike",
@@ -17865,8 +17865,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175698-kort-över-2-5-kort": {
-  "closeOdds": 2.04,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 2.05,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "CARDS",
   "match": "Spanien – Österrike",
@@ -17880,8 +17880,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175698-malgorare-david-alaba-gör-mål": {
-  "closeOdds": 9.5,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeOdds": 10.0,
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "PLAYER",
   "match": "Spanien – Österrike",
@@ -17896,7 +17896,7 @@
  },
  "2026-07-02-1028175698-malgorare-stefan-posch-gör-mål": {
   "closeOdds": 13.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "PLAYER",
   "match": "Spanien – Österrike",
@@ -17926,7 +17926,7 @@
  },
  "2026-07-02-1028175698-spelarspecial-mikel-oyarzabal-gör-2-mål": {
   "closeOdds": 5.2,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "PLAYER",
   "match": "Spanien – Österrike",
@@ -17941,7 +17941,7 @@
  },
  "2026-07-02-1028175698-spelarspecial-álex-baena-gör-2-mål": {
   "closeOdds": 14.0,
-  "closeTime": "2026-07-02T14:50:48Z",
+  "closeTime": "2026-07-02T15:15:38Z",
   "kickoff": "2026-07-02T19:00:00Z",
   "market": "PLAYER",
   "match": "Spanien – Österrike",
