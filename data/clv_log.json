@@ -17325,8 +17325,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-antal_mal-algeriet-över-0-5-mål": {
-  "closeOdds": 1.55,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeOdds": 1.52,
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "TEAM_OU",
   "match": "Schweiz – Algeriet",
@@ -17340,8 +17340,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-antal_mal-schweiz-under-1-5-mål": {
-  "closeOdds": 1.7,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeOdds": 1.71,
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "TEAM_OU",
   "match": "Schweiz – Algeriet",
@@ -17370,8 +17370,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-antal_mal-över-2-5-mål": {
-  "closeOdds": 2.18,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeOdds": 2.15,
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "OU",
   "match": "Schweiz – Algeriet",
@@ -17386,7 +17386,7 @@
  },
  "2026-07-02-1028175697-avancemang-algeriet-går-vidare": {
   "closeOdds": 2.75,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "ADVANCE",
   "match": "Schweiz – Algeriet",
@@ -17431,7 +17431,7 @@
  },
  "2026-07-02-1028175697-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 1.92,
-  "closeTime": "2026-07-02T13:11:21Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "BTTS",
   "match": "Schweiz – Algeriet",
@@ -17446,7 +17446,7 @@
  },
  "2026-07-02-1028175697-dubbelchans-12-schweiz-eller-algeriet-vinner": {
   "closeOdds": 1.35,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "DC",
   "match": "Schweiz – Algeriet",
@@ -17491,7 +17491,7 @@
  },
  "2026-07-02-1028175697-fulltid-2-algeriet-vinner": {
   "closeOdds": 4.75,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "1X2",
   "match": "Schweiz – Algeriet",
@@ -17505,8 +17505,8 @@
   "value": "Neutralt"
  },
  "2026-07-02-1028175697-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 2.12,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeOdds": 2.1,
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "1H_1X2",
   "match": "Schweiz – Algeriet",
@@ -17520,8 +17520,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.42,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeOdds": 1.44,
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "1H_OU",
   "match": "Schweiz – Algeriet",
@@ -17551,7 +17551,7 @@
  },
  "2026-07-02-1028175697-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 7.0,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "HTFT",
   "match": "Schweiz – Algeriet",
@@ -17565,8 +17565,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-handikapp-algeriet-0-5": {
-  "closeOdds": 1.89,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeOdds": 1.88,
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "AH",
   "match": "Schweiz – Algeriet",
@@ -17610,8 +17610,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-hornor-över-9-5-hörnor": {
-  "closeOdds": 1.9,
-  "closeTime": "2026-07-03T01:35:39Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "CORNERS",
   "match": "Schweiz – Algeriet",
@@ -17626,7 +17626,7 @@
  },
  "2026-07-02-1028175697-korrekt_resultat-resultat-0-0": {
   "closeOdds": 8.5,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "CS",
   "match": "Schweiz – Algeriet",
@@ -17636,6 +17636,21 @@
   "selection": "Resultat 0-0",
   "settleLine": null,
   "settlePick": "0-0",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
+ "2026-07-02-1028175697-korrekt_resultat-resultat-1-0": {
+  "closeOdds": 6.75,
+  "closeTime": "2026-07-03T02:25:41Z",
+  "kickoff": "2026-07-03T03:00:00Z",
+  "market": "CS",
+  "match": "Schweiz – Algeriet",
+  "recOdds": 6.75,
+  "recTime": "2026-07-03T02:25:41Z",
+  "recommendable": false,
+  "selection": "Resultat 1-0",
+  "settleLine": null,
+  "settlePick": "1-0",
   "settlePlayer": null,
   "value": "Undvik"
  },
@@ -17685,8 +17700,8 @@
   "value": "Undvik"
  },
  "2026-07-02-1028175697-kort-under-2-5-kort": {
-  "closeOdds": 1.95,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeOdds": 1.94,
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "CARDS",
   "match": "Schweiz – Algeriet",
@@ -17716,7 +17731,7 @@
  },
  "2026-07-02-1028175697-kort-över-2-5-kort": {
   "closeOdds": 1.74,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "CARDS",
   "match": "Schweiz – Algeriet",
@@ -17761,7 +17776,7 @@
  },
  "2026-07-02-1028175697-malgorare-ramiz-zerrouki-gör-mål": {
   "closeOdds": 14.0,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "PLAYER",
   "match": "Schweiz – Algeriet",
@@ -17776,7 +17791,7 @@
  },
  "2026-07-02-1028175697-malgorare-ricardo-rodríguez-gör-mål": {
   "closeOdds": 9.0,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "PLAYER",
   "match": "Schweiz – Algeriet",
@@ -17791,7 +17806,7 @@
  },
  "2026-07-02-1028175697-spelarspecial-breel-embolo-gör-2-mål": {
   "closeOdds": 9.0,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "PLAYER",
   "match": "Schweiz – Algeriet",
@@ -17806,7 +17821,7 @@
  },
  "2026-07-02-1028175697-spelarspecial-remo-freuler-över-0-5-skott-på-mål": {
   "closeOdds": 3.2,
-  "closeTime": "2026-07-03T02:00:40Z",
+  "closeTime": "2026-07-03T02:25:41Z",
   "kickoff": "2026-07-03T03:00:00Z",
   "market": "PLAYER",
   "match": "Schweiz – Algeriet",
