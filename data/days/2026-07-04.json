@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-04T07:16:20Z",
+ "generatedAt": "2026-07-04T07:41:50Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -795,13 +795,13 @@
       "category": "Antal mål",
       "selection": "Marocko under 1.5 mål",
       "detail": "Antal mål för laget",
-      "odds": 1.73,
-      "modelProb": 0.5831,
-      "marketProb": 0.5362,
-      "edge": 0.0088,
+      "odds": 1.72,
+      "modelProb": 0.5836,
+      "marketProb": 0.5376,
+      "edge": 0.0037,
       "value": "Neutralt",
       "recommendable": true,
-      "kelly": 0.00302,
+      "kelly": 0.0013,
       "stakeWeight": 0.0,
       "confidence": 2,
       "rationale": "Marocko väntas göra 1.37 mål: under 1.5 ger 58% mot prisade 54%.",
@@ -4041,7 +4041,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-04T07:16:20Z",
+  "generatedAt": "2026-07-04T07:41:50Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
