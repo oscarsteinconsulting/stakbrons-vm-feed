@@ -779,6 +779,28 @@
    "team": "Egypten"
   }
  ],
+ "espn:760500": [
+  {
+   "goals": 1,
+   "name": "Lionel Messi",
+   "team": "Argentina"
+  },
+  {
+   "goals": 1,
+   "name": "Deroy Duarte",
+   "team": "Kap Verde"
+  },
+  {
+   "goals": 1,
+   "name": "Lisandro Martínez",
+   "team": "Argentina"
+  },
+  {
+   "goals": 1,
+   "name": "Sidny Lopes Cabral",
+   "team": "Kap Verde"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [
