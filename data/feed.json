@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-04T02:10:57Z",
+ "generatedAt": "2026-07-04T02:36:17Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -117,9 +117,9 @@
      "pHome": 0.3,
      "pDraw": 0.288,
      "pAway": 0.412,
-     "oddsHome": 5.0,
-     "oddsDraw": 3.4,
-     "oddsAway": 1.88,
+     "oddsHome": 5.1,
+     "oddsDraw": 3.45,
+     "oddsAway": 1.85,
      "lambdaHome": 1.13,
      "lambdaAway": 1.37,
      "mssHome": 51.5,
@@ -2692,7 +2692,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-04T02:10:56Z",
+  "generatedAt": "2026-07-04T02:36:17Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
