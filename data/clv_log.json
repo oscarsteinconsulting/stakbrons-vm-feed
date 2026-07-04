@@ -19560,8 +19560,8 @@
   "value": "Undvik"
  },
  "2026-07-04-1028210884-antal_mal-frankrike-under-2-5-mål": {
-  "closeOdds": 1.77,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 1.72,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "TEAM_OU",
   "match": "Paraguay – Frankrike",
@@ -19575,8 +19575,8 @@
   "value": "Spelvärt"
  },
  "2026-07-04-1028210884-antal_mal-paraguay-över-0-5-mål": {
-  "closeOdds": 2.25,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 2.28,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "TEAM_OU",
   "match": "Paraguay – Frankrike",
@@ -19590,8 +19590,8 @@
   "value": "Neutralt"
  },
  "2026-07-04-1028210884-antal_mal-under-2-5-mål": {
-  "closeOdds": 2.35,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 2.28,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "OU",
   "match": "Paraguay – Frankrike",
@@ -19606,7 +19606,7 @@
  },
  "2026-07-04-1028210884-avancemang-paraguay-går-vidare": {
   "closeOdds": 8.5,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "ADVANCE",
   "match": "Paraguay – Frankrike",
@@ -19621,7 +19621,7 @@
  },
  "2026-07-04-1028210884-btts-båda-lagen-gör-mål-ja": {
   "closeOdds": 2.5,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "BTTS",
   "match": "Paraguay – Frankrike",
@@ -19635,8 +19635,8 @@
   "value": "Neutralt"
  },
  "2026-07-04-1028210884-dubbelchans-1x-paraguay-eller-oavgjort": {
-  "closeOdds": 5.0,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 4.7,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "DC",
   "match": "Paraguay – Frankrike",
@@ -19651,7 +19651,7 @@
  },
  "2026-07-04-1028210884-fulltid-1-paraguay-vinner": {
   "closeOdds": 19.0,
-  "closeTime": "2026-07-04T14:44:15Z",
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "1X2",
   "match": "Paraguay – Frankrike",
@@ -19680,8 +19680,8 @@
   "value": "Neutralt"
  },
  "2026-07-04-1028210884-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 2.85,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 2.75,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "1H_1X2",
   "match": "Paraguay – Frankrike",
@@ -19695,8 +19695,8 @@
   "value": "Neutralt"
  },
  "2026-07-04-1028210884-halvlek-under-1-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.54,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 1.5,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "1H_OU",
   "match": "Paraguay – Frankrike",
@@ -19710,8 +19710,8 @@
   "value": "Neutralt"
  },
  "2026-07-04-1028210884-halvtid_fulltid-halvtid-fulltid-x-x": {
-  "closeOdds": 9.5,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 8.5,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "HTFT",
   "match": "Paraguay – Frankrike",
@@ -19725,8 +19725,8 @@
   "value": "Neutralt"
  },
  "2026-07-04-1028210884-handikapp-paraguay-1-5": {
-  "closeOdds": 2.4,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 2.3,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "AH",
   "match": "Paraguay – Frankrike",
@@ -19755,8 +19755,8 @@
   "value": "Spelvärt"
  },
  "2026-07-04-1028210884-hornor-över-9-5-hörnor": {
-  "closeOdds": 1.83,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 1.88,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "CORNERS",
   "match": "Paraguay – Frankrike",
@@ -19770,8 +19770,8 @@
   "value": "Undvik"
  },
  "2026-07-04-1028210884-korrekt_resultat-resultat-0-0": {
-  "closeOdds": 16.0,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 14.0,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "CS",
   "match": "Paraguay – Frankrike",
@@ -19782,11 +19782,11 @@
   "settleLine": null,
   "settlePick": "0-0",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Undvik"
  },
  "2026-07-04-1028210884-korrekt_resultat-resultat-0-1": {
-  "closeOdds": 6.75,
-  "closeTime": "2026-07-04T10:29:42Z",
+  "closeOdds": 6.5,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "CS",
   "match": "Paraguay – Frankrike",
@@ -19815,8 +19815,8 @@
   "value": "Undvik"
  },
  "2026-07-04-1028210884-kort-under-2-5-kort": {
-  "closeOdds": 1.9,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 1.89,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "CARDS",
   "match": "Paraguay – Frankrike",
@@ -19830,8 +19830,8 @@
   "value": "Undvik"
  },
  "2026-07-04-1028210884-kort-över-2-5-kort": {
-  "closeOdds": 1.77,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 1.78,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "CARDS",
   "match": "Paraguay – Frankrike",
@@ -19846,7 +19846,7 @@
  },
  "2026-07-04-1028210884-malgorare-julio-enciso-gör-mål": {
   "closeOdds": 7.0,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "PLAYER",
   "match": "Paraguay – Frankrike",
@@ -19861,7 +19861,7 @@
  },
  "2026-07-04-1028210884-malgorare-miguel-almirón-gör-mål": {
   "closeOdds": 8.5,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "PLAYER",
   "match": "Paraguay – Frankrike",
@@ -19875,8 +19875,8 @@
   "value": "Undvik"
  },
  "2026-07-04-1028210884-spelarspecial-désiré-doué-gör-2-mål": {
-  "closeOdds": 13.0,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeOdds": 14.0,
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "PLAYER",
   "match": "Paraguay – Frankrike",
@@ -19891,7 +19891,7 @@
  },
  "2026-07-04-1028210884-spelarspecial-michael-olise-gör-2-mål": {
   "closeOdds": 10.0,
-  "closeTime": "2026-07-04T19:24:32Z",
+  "closeTime": "2026-07-04T19:50:14Z",
   "kickoff": "2026-07-04T21:00:00Z",
   "market": "PLAYER",
   "match": "Paraguay – Frankrike",
