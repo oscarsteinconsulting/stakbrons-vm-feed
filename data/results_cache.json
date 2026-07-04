@@ -801,6 +801,18 @@
    "team": "Kap Verde"
   }
  ],
+ "espn:760502": [
+  {
+   "goals": 2,
+   "name": "Azzedine Ounahi",
+   "team": "Marocko"
+  },
+  {
+   "goals": 1,
+   "name": "Soufiane Rahimi",
+   "team": "Marocko"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [
