@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-03T23:39:27Z",
+ "generatedAt": "2026-07-04T00:04:39Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -707,15 +707,15 @@
       "selection": "Halvtid/Fulltid 1/1",
       "detail": "Resultat vid halvtid / vid fulltid",
       "odds": 2.06,
-      "modelProb": 0.4539,
-      "marketProb": 0.3783,
-      "edge": -0.0649,
+      "modelProb": 0.4534,
+      "marketProb": 0.3764,
+      "edge": -0.066,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Halvleksrutnäten (44/56-delning av λ) ger 1/1 45.4% mot marknadens 37.8%.",
+      "rationale": "Halvleksrutnäten (44/56-delning av λ) ger 1/1 45.3% mot marknadens 37.6%.",
       "settleMarket": "HTFT",
       "settlePick": "1/1",
       "settleLine": null,
@@ -3407,7 +3407,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-03T23:39:27Z",
+  "generatedAt": "2026-07-04T00:04:38Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
