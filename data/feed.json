@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-04T23:41:06Z",
+ "generatedAt": "2026-07-05T00:06:48Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -118,7 +118,7 @@
      "pDraw": 0.284,
      "pAway": 0.265,
      "oddsHome": 1.82,
-     "oddsDraw": 3.8,
+     "oddsDraw": 3.75,
      "oddsAway": 4.7,
      "lambdaHome": 1.45,
      "lambdaAway": 1.05,
@@ -678,9 +678,9 @@
      "pHome": 0.578,
      "pDraw": 0.256,
      "pAway": 0.166,
-     "oddsHome": 1.64,
+     "oddsHome": 1.61,
      "oddsDraw": 4.1,
-     "oddsAway": 6.0,
+     "oddsAway": 6.4,
      "lambdaHome": 1.7,
      "lambdaAway": 0.8,
      "mssHome": 83.9,
@@ -2743,7 +2743,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-04T23:41:06Z",
+  "generatedAt": "2026-07-05T00:06:48Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -5219,9 +5219,9 @@
    "winner": "away",
    "scorers": [
     {
+     "goals": 1,
      "name": "Kylian Mbappé",
-     "team": "Frankrike",
-     "goals": 1
+     "team": "Frankrike"
     }
    ]
   }
