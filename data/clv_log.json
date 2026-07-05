@@ -20280,8 +20280,8 @@
   "value": "Undvik"
  },
  "2026-07-05-1028221801-antal_mal-england-över-1-5-mål": {
-  "closeOdds": 2.65,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 2.63,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "TEAM_OU",
   "match": "Mexiko – England",
@@ -20295,8 +20295,8 @@
   "value": "Neutralt"
  },
  "2026-07-05-1028221801-antal_mal-mexiko-över-0-5-mål": {
-  "closeOdds": 1.43,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 1.41,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "TEAM_OU",
   "match": "Mexiko – England",
@@ -20310,8 +20310,8 @@
   "value": "Undvik"
  },
  "2026-07-05-1028221801-antal_mal-över-2-5-mål": {
-  "closeOdds": 2.43,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 2.4,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "OU",
   "match": "Mexiko – England",
@@ -20325,8 +20325,8 @@
   "value": "Neutralt"
  },
  "2026-07-05-1028221801-avancemang-england-går-vidare": {
-  "closeOdds": 1.76,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 1.75,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "ADVANCE",
   "match": "Mexiko – England",
@@ -20340,8 +20340,8 @@
   "value": "Neutralt"
  },
  "2026-07-05-1028221801-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 1.98,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 1.94,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "BTTS",
   "match": "Mexiko – England",
@@ -20356,7 +20356,7 @@
  },
  "2026-07-05-1028221801-dubbelchans-12-mexiko-eller-england-vinner": {
   "closeOdds": 1.38,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "DC",
   "match": "Mexiko – England",
@@ -20386,7 +20386,7 @@
  },
  "2026-07-05-1028221801-fulltid-2-england-vinner": {
   "closeOdds": 2.6,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "1X2",
   "match": "Mexiko – England",
@@ -20400,8 +20400,8 @@
   "value": "Neutralt"
  },
  "2026-07-05-1028221801-halvlek-halvtid-2-england-leder-i-halvtid": {
-  "closeOdds": 3.2,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 3.25,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "1H_1X2",
   "match": "Mexiko – England",
@@ -20415,8 +20415,8 @@
   "value": "Neutralt"
  },
  "2026-07-05-1028221801-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.52,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 1.5,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "1H_OU",
   "match": "Mexiko – England",
@@ -20431,7 +20431,7 @@
  },
  "2026-07-05-1028221801-halvtid_fulltid-halvtid-fulltid-2-2": {
   "closeOdds": 4.1,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "HTFT",
   "match": "Mexiko – England",
@@ -20445,8 +20445,8 @@
   "value": "Undvik"
  },
  "2026-07-05-1028221801-handikapp-england-0-5": {
-  "closeOdds": 2.45,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 2.48,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "AH",
   "match": "Mexiko – England",
@@ -20475,8 +20475,8 @@
   "value": "Undvik"
  },
  "2026-07-05-1028221801-hornor-över-8-5-hörnor": {
-  "closeOdds": 1.68,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 1.8,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "CORNERS",
   "match": "Mexiko – England",
@@ -20505,8 +20505,8 @@
   "value": "Undvik"
  },
  "2026-07-05-1028221801-korrekt_resultat-resultat-0-2": {
-  "closeOdds": 10.0,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 10.5,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "CS",
   "match": "Mexiko – England",
@@ -20535,8 +20535,8 @@
   "value": "Undvik"
  },
  "2026-07-05-1028221801-korrekt_resultat-resultat-1-2": {
-  "closeOdds": 9.0,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeOdds": 9.5,
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "CS",
   "match": "Mexiko – England",
@@ -20566,7 +20566,7 @@
  },
  "2026-07-05-1028221801-kort-under-3-5-kort": {
   "closeOdds": 1.62,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "CARDS",
   "match": "Mexiko – England",
@@ -20596,7 +20596,7 @@
  },
  "2026-07-05-1028221801-kort-över-3-5-kort": {
   "closeOdds": 2.12,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "CARDS",
   "match": "Mexiko – England",
@@ -20611,7 +20611,7 @@
  },
  "2026-07-05-1028221801-malgorare-erik-lira-gör-mål": {
   "closeOdds": 11.0,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "PLAYER",
   "match": "Mexiko – England",
@@ -20626,7 +20626,7 @@
  },
  "2026-07-05-1028221801-malgorare-luis-romo-gör-mål": {
   "closeOdds": 10.0,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "PLAYER",
   "match": "Mexiko – England",
@@ -20641,7 +20641,7 @@
  },
  "2026-07-05-1028221801-spelarspecial-harry-kane-gör-2-mål": {
   "closeOdds": 9.0,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "PLAYER",
   "match": "Mexiko – England",
@@ -20656,7 +20656,7 @@
  },
  "2026-07-05-1028221801-spelarspecial-nico-o-reilly-över-0-5-skott-på-mål": {
   "closeOdds": 3.4,
-  "closeTime": "2026-07-05T22:44:58Z",
+  "closeTime": "2026-07-05T23:10:46Z",
   "kickoff": "2026-07-06T00:00:00Z",
   "market": "PLAYER",
   "match": "Mexiko – England",
