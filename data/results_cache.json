@@ -820,6 +820,18 @@
    "team": "Frankrike"
   }
  ],
+ "espn:760504": [
+  {
+   "goals": 2,
+   "name": "Erling Haaland",
+   "team": "Norge"
+  },
+  {
+   "goals": 1,
+   "name": "Neymar",
+   "team": "Brasilien"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [
