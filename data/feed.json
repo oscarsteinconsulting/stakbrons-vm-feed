@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-05T23:47:12Z",
+ "generatedAt": "2026-07-06T00:13:00Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -33,7 +33,7 @@
     "pAway": 0.423,
     "oddsHome": 3.2,
     "oddsDraw": 3.05,
-    "oddsAway": 2.6,
+    "oddsAway": 2.63,
     "lambdaHome": 1.11,
     "lambdaAway": 1.39,
     "mssHome": 58.8,
@@ -338,16 +338,16 @@
       "category": "Fulltid",
       "selection": "2 (England vinner)",
       "detail": "England vinner",
-      "odds": 2.6,
-      "modelProb": 0.4085,
-      "marketProb": 0.3752,
-      "edge": 0.0622,
+      "odds": 2.63,
+      "modelProb": 0.4077,
+      "marketProb": 0.3726,
+      "edge": 0.0723,
       "value": "Neutralt",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 3,
-      "rationale": "Modellen ger england vinner 41% mot marknadens 38% (MSS 58.8–81.7, målförväntan 1.1–1.4).",
+      "rationale": "Modellen ger england vinner 41% mot marknadens 37% (MSS 58.8–81.7, målförväntan 1.1–1.4).",
       "settleMarket": "1X2",
       "settlePick": "2",
       "settleLine": null,
@@ -821,7 +821,7 @@
     "icon": "🚩",
     "bets": [
      {
-      "id": "2026-07-05-1028221801-hornor-över-8-5-hörnor",
+      "id": "2026-07-05-1028221801-hornor-över-9-5-hörnor",
       "matchId": "1028221801",
       "match": "Mexiko – England",
       "homeFlag": "🇲🇽",
@@ -829,21 +829,21 @@
       "kickoff": "2026-07-06T01:00:00Z",
       "categoryKey": "hornor",
       "category": "Hörnor",
-      "selection": "Över 8.5 hörnor",
+      "selection": "Över 9.5 hörnor",
       "detail": "Totalt antal hörnor i matchen",
-      "odds": 1.8,
-      "modelProb": 0.571,
-      "marketProb": 0.5148,
+      "odds": 2.05,
+      "modelProb": 0.509,
+      "marketProb": 0.4504,
       "edge": 0.0,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.05 från målförväntan: över 8.5 hörnor 57% mot prisade 51%. Rättas manuellt.",
+      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.05 från målförväntan: över 9.5 hörnor 51% mot prisade 45%. Rättas manuellt.",
       "settleMarket": "CORNERS",
       "settlePick": "over",
-      "settleLine": 8.5,
+      "settleLine": 9.5,
       "settlePlayer": null
      }
     ]
@@ -3392,7 +3392,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-05T23:47:12Z",
+  "generatedAt": "2026-07-06T00:13:00Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
