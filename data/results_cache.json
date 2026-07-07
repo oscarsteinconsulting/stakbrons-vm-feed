@@ -839,6 +839,33 @@
    "team": "Spanien"
   }
  ],
+ "espn:760509": [
+  {
+   "goals": 1,
+   "name": "Yasser Ibrahim",
+   "team": "Egypten"
+  },
+  {
+   "goals": 1,
+   "name": "Mostafa Zico",
+   "team": "Egypten"
+  },
+  {
+   "goals": 1,
+   "name": "Cristian Romero",
+   "team": "Argentina"
+  },
+  {
+   "goals": 1,
+   "name": "Lionel Messi",
+   "team": "Argentina"
+  },
+  {
+   "goals": 1,
+   "name": "Enzo Fernández",
+   "team": "Argentina"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [
