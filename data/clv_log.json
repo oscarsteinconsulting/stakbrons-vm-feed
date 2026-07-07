@@ -21764,9 +21764,24 @@
   "settlePlayer": "Lionel Messi",
   "value": "Undvik"
  },
+ "2026-07-07-1028254707-antal_mal-colombia-under-1-5-mål": {
+  "closeOdds": 1.53,
+  "closeTime": "2026-07-07T16:06:52Z",
+  "kickoff": "2026-07-07T20:00:00Z",
+  "market": "TEAM_OU",
+  "match": "Schweiz – Colombia",
+  "recOdds": 1.53,
+  "recTime": "2026-07-07T16:06:52Z",
+  "recommendable": true,
+  "selection": "Colombia under 1.5 mål",
+  "settleLine": 1.5,
+  "settlePick": "away_under",
+  "settlePlayer": null,
+  "value": "Undvik"
+ },
  "2026-07-07-1028254707-antal_mal-schweiz-över-0-5-mål": {
   "closeOdds": 1.47,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "TEAM_OU",
   "match": "Schweiz – Colombia",
@@ -21780,8 +21795,8 @@
   "value": "Neutralt"
  },
  "2026-07-07-1028254707-antal_mal-över-2-5-mål": {
-  "closeOdds": 2.35,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeOdds": 2.33,
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "OU",
   "match": "Schweiz – Colombia",
@@ -21795,8 +21810,8 @@
   "value": "Neutralt"
  },
  "2026-07-07-1028254707-avancemang-schweiz-går-vidare": {
-  "closeOdds": 2.28,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeOdds": 2.3,
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "ADVANCE",
   "match": "Schweiz – Colombia",
@@ -21810,8 +21825,8 @@
   "value": "Neutralt"
  },
  "2026-07-07-1028254707-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 1.96,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeOdds": 1.94,
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "BTTS",
   "match": "Schweiz – Colombia",
@@ -21840,8 +21855,8 @@
   "value": "Neutralt"
  },
  "2026-07-07-1028254707-dubbelchans-1x-schweiz-eller-oavgjort": {
-  "closeOdds": 1.66,
-  "closeTime": "2026-07-07T15:14:24Z",
+  "closeOdds": 1.64,
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "DC",
   "match": "Schweiz – Colombia",
@@ -21855,8 +21870,8 @@
   "value": "Neutralt"
  },
  "2026-07-07-1028254707-fulltid-1-schweiz-vinner": {
-  "closeOdds": 3.7,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeOdds": 3.75,
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "1X2",
   "match": "Schweiz – Colombia",
@@ -21871,7 +21886,7 @@
  },
  "2026-07-07-1028254707-halvlek-halvtid-1-schweiz-leder-i-halvtid": {
   "closeOdds": 4.0,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "1H_1X2",
   "match": "Schweiz – Colombia",
@@ -21885,8 +21900,8 @@
   "value": "Undvik"
  },
  "2026-07-07-1028254707-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.49,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeOdds": 1.48,
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "1H_OU",
   "match": "Schweiz – Colombia",
@@ -21901,7 +21916,7 @@
  },
  "2026-07-07-1028254707-halvtid_fulltid-halvtid-fulltid-1-1": {
   "closeOdds": 5.8,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "HTFT",
   "match": "Schweiz – Colombia",
@@ -21915,8 +21930,8 @@
   "value": "Undvik"
  },
  "2026-07-07-1028254707-handikapp-schweiz-0-5": {
-  "closeOdds": 1.66,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeOdds": 1.67,
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "AH",
   "match": "Schweiz – Colombia",
@@ -21931,7 +21946,7 @@
  },
  "2026-07-07-1028254707-hornor-över-8-5-hörnor": {
   "closeOdds": 1.68,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "CORNERS",
   "match": "Schweiz – Colombia",
@@ -21946,7 +21961,7 @@
  },
  "2026-07-07-1028254707-korrekt_resultat-resultat-1-1": {
   "closeOdds": 5.6,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "CS",
   "match": "Schweiz – Colombia",
@@ -21961,7 +21976,7 @@
  },
  "2026-07-07-1028254707-korrekt_resultat-resultat-2-1": {
   "closeOdds": 11.5,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "CS",
   "match": "Schweiz – Colombia",
@@ -21976,7 +21991,7 @@
  },
  "2026-07-07-1028254707-kort-under-3-5-kort": {
   "closeOdds": 1.58,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "CARDS",
   "match": "Schweiz – Colombia",
@@ -21990,8 +22005,8 @@
   "value": "Undvik"
  },
  "2026-07-07-1028254707-kort-över-3-5-kort": {
-  "closeOdds": 2.18,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeOdds": 2.2,
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "CARDS",
   "match": "Schweiz – Colombia",
@@ -22006,7 +22021,7 @@
  },
  "2026-07-07-1028254707-malgorare-davinson-sánchez-gör-mål": {
   "closeOdds": 11.0,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "PLAYER",
   "match": "Schweiz – Colombia",
@@ -22021,7 +22036,7 @@
  },
  "2026-07-07-1028254707-malgorare-silvan-widmer-gör-mål": {
   "closeOdds": 11.0,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "PLAYER",
   "match": "Schweiz – Colombia",
@@ -22034,9 +22049,24 @@
   "settlePlayer": "Silvan Widmer",
   "value": "Undvik"
  },
+ "2026-07-07-1028254707-spelarspecial-breel-embolo-gör-2-mål": {
+  "closeOdds": 14.0,
+  "closeTime": "2026-07-07T16:06:52Z",
+  "kickoff": "2026-07-07T20:00:00Z",
+  "market": "PLAYER",
+  "match": "Schweiz – Colombia",
+  "recOdds": 14.0,
+  "recTime": "2026-07-07T16:06:52Z",
+  "recommendable": false,
+  "selection": "Breel Embolo gör 2+ mål",
+  "settleLine": null,
+  "settlePick": "twoplus",
+  "settlePlayer": "Breel Embolo",
+  "value": "Undvik"
+ },
  "2026-07-07-1028254707-spelarspecial-luis-díaz-gör-2-mål": {
   "closeOdds": 10.5,
-  "closeTime": "2026-07-07T15:40:38Z",
+  "closeTime": "2026-07-07T16:06:52Z",
   "kickoff": "2026-07-07T20:00:00Z",
   "market": "PLAYER",
   "match": "Schweiz – Colombia",
