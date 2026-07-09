@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-09T10:24:15Z",
+ "generatedAt": "2026-07-09T10:50:51Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -175,10 +175,10 @@
     "category": "Dubbelchans",
     "selection": "X2 (Oavgjort eller Marocko)",
     "detail": "Dubbelchans hela matchen",
-    "odds": 2.4,
-    "modelProb": 0.4124,
-    "marketProb": 0.392,
-    "edge": -0.0101,
+    "odds": 2.38,
+    "modelProb": 0.4132,
+    "marketProb": 0.3947,
+    "edge": -0.0165,
     "value": "Neutralt",
     "recommendable": true,
     "kelly": 0.0,
@@ -404,10 +404,10 @@
       "category": "Dubbelchans",
       "selection": "X2 (Oavgjort eller Marocko)",
       "detail": "Dubbelchans hela matchen",
-      "odds": 2.4,
-      "modelProb": 0.4124,
-      "marketProb": 0.392,
-      "edge": -0.0101,
+      "odds": 2.38,
+      "modelProb": 0.4132,
+      "marketProb": 0.3947,
+      "edge": -0.0165,
       "value": "Neutralt",
       "recommendable": true,
       "kelly": 0.0,
@@ -3330,7 +3330,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-09T10:24:15Z",
+  "generatedAt": "2026-07-09T10:50:50Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
