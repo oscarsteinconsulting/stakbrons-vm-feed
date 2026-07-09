@@ -22110,8 +22110,8 @@
   "value": "Undvik"
  },
  "2026-07-09-1028263739-antal_mal-frankrike-under-1-5-mål": {
-  "closeOdds": 2.1,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeOdds": 2.12,
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "TEAM_OU",
   "match": "Frankrike – Marocko",
@@ -22140,8 +22140,8 @@
   "value": "Undvik"
  },
  "2026-07-09-1028263739-antal_mal-marocko-över-0-5-mål": {
-  "closeOdds": 1.68,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeOdds": 1.7,
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "TEAM_OU",
   "match": "Frankrike – Marocko",
@@ -22155,8 +22155,8 @@
   "value": "Undvik"
  },
  "2026-07-09-1028263739-antal_mal-under-2-5-mål": {
-  "closeOdds": 1.9,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeOdds": 1.89,
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "OU",
   "match": "Frankrike – Marocko",
@@ -22170,8 +22170,8 @@
   "value": "Neutralt"
  },
  "2026-07-09-1028263739-avancemang-marocko-går-vidare": {
-  "closeOdds": 3.85,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeOdds": 3.95,
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "ADVANCE",
   "match": "Frankrike – Marocko",
@@ -22186,7 +22186,7 @@
  },
  "2026-07-09-1028263739-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 1.83,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "BTTS",
   "match": "Frankrike – Marocko",
@@ -22200,8 +22200,8 @@
   "value": "Neutralt"
  },
  "2026-07-09-1028263739-dubbelchans-x2-oavgjort-eller-marocko": {
-  "closeOdds": 2.4,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeOdds": 2.43,
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "DC",
   "match": "Frankrike – Marocko",
@@ -22216,7 +22216,7 @@
  },
  "2026-07-09-1028263739-fulltid-2-marocko-vinner": {
   "closeOdds": 7.0,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "1X2",
   "match": "Frankrike – Marocko",
@@ -22230,8 +22230,8 @@
   "value": "Neutralt"
  },
  "2026-07-09-1028263739-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 2.3,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeOdds": 2.28,
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "1H_1X2",
   "match": "Frankrike – Marocko",
@@ -22246,7 +22246,7 @@
  },
  "2026-07-09-1028263739-halvlek-under-0-5-mål-i-1-a-halvlek": {
   "closeOdds": 2.9,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "1H_OU",
   "match": "Frankrike – Marocko",
@@ -22261,7 +22261,7 @@
  },
  "2026-07-09-1028263739-halvtid_fulltid-halvtid-fulltid-x-x": {
   "closeOdds": 5.4,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "HTFT",
   "match": "Frankrike – Marocko",
@@ -22289,9 +22289,24 @@
   "settlePlayer": null,
   "value": "Neutralt"
  },
+ "2026-07-09-1028263739-handikapp-marocko-1-5": {
+  "closeOdds": 1.54,
+  "closeTime": "2026-07-09T07:06:41Z",
+  "kickoff": "2026-07-09T20:00:00Z",
+  "market": "AH",
+  "match": "Frankrike – Marocko",
+  "recOdds": 1.54,
+  "recTime": "2026-07-09T07:06:41Z",
+  "recommendable": true,
+  "selection": "Marocko +1.5",
+  "settleLine": -1.5,
+  "settlePick": "away",
+  "settlePlayer": null,
+  "value": "Neutralt"
+ },
  "2026-07-09-1028263739-hornor-över-9-5-hörnor": {
   "closeOdds": 1.86,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "CORNERS",
   "match": "Frankrike – Marocko",
@@ -22306,7 +22321,7 @@
  },
  "2026-07-09-1028263739-korrekt_resultat-resultat-0-0": {
   "closeOdds": 10.5,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "CS",
   "match": "Frankrike – Marocko",
@@ -22321,7 +22336,7 @@
  },
  "2026-07-09-1028263739-korrekt_resultat-resultat-1-0": {
   "closeOdds": 6.5,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "CS",
   "match": "Frankrike – Marocko",
@@ -22335,8 +22350,8 @@
   "value": "Undvik"
  },
  "2026-07-09-1028263739-kort-under-3-5-kort": {
-  "closeOdds": 1.73,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeOdds": 1.71,
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "CARDS",
   "match": "Frankrike – Marocko",
@@ -22350,8 +22365,8 @@
   "value": "Undvik"
  },
  "2026-07-09-1028263739-kort-över-3-5-kort": {
-  "closeOdds": 1.95,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeOdds": 1.97,
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "CARDS",
   "match": "Frankrike – Marocko",
@@ -22366,7 +22381,7 @@
  },
  "2026-07-09-1028263739-malgorare-ousmane-dembélé-gör-mål": {
   "closeOdds": 3.0,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Marocko",
@@ -22381,7 +22396,7 @@
  },
  "2026-07-09-1028263739-malgorare-william-saliba-gör-mål": {
   "closeOdds": 10.0,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Marocko",
@@ -22395,8 +22410,8 @@
   "value": "Undvik"
  },
  "2026-07-09-1028263739-spelarspecial-kylian-mbappé-gör-2-mål": {
-  "closeOdds": 4.7,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeOdds": 4.8,
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Marocko",
@@ -22411,7 +22426,7 @@
  },
  "2026-07-09-1028263739-spelarspecial-ousmane-dembélé-gör-2-mål": {
   "closeOdds": 13.0,
-  "closeTime": "2026-07-09T06:40:05Z",
+  "closeTime": "2026-07-09T07:06:41Z",
   "kickoff": "2026-07-09T20:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Marocko",
