@@ -867,6 +867,18 @@
    "team": "Argentina"
   }
  ],
+ "espn:760510": [
+  {
+   "goals": 1,
+   "name": "Kylian Mbappé",
+   "team": "Frankrike"
+  },
+  {
+   "goals": 1,
+   "name": "Ousmane Dembélé",
+   "team": "Frankrike"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [
@@ -1268,7 +1280,7 @@
   ]
  },
  "roster:Belgien": {
-  "date": "2026-07-06",
+  "date": "2026-07-10",
   "players": [
    {
     "apps": null,
@@ -2348,7 +2360,7 @@
   ]
  },
  "roster:England": {
-  "date": "2026-07-06",
+  "date": "2026-07-10",
   "players": [
    {
     "apps": null,
@@ -3698,7 +3710,7 @@
   ]
  },
  "roster:Norge": {
-  "date": "2026-07-06",
+  "date": "2026-07-10",
   "players": [
    {
     "apps": null,
@@ -4103,7 +4115,7 @@
   ]
  },
  "roster:Schweiz": {
-  "date": "2026-07-06",
+  "date": "2026-07-10",
   "players": [
    {
     "apps": null,
@@ -4373,7 +4385,7 @@
   ]
  },
  "roster:Spanien": {
-  "date": "2026-07-06",
+  "date": "2026-07-10",
   "players": [
    {
     "apps": null,
