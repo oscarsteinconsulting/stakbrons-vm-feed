@@ -879,6 +879,23 @@
    "team": "Frankrike"
   }
  ],
+ "espn:760511": [
+  {
+   "goals": 1,
+   "name": "Fabián Ruiz",
+   "team": "Spanien"
+  },
+  {
+   "goals": 1,
+   "name": "Charles De Ketelaere",
+   "team": "Belgien"
+  },
+  {
+   "goals": 1,
+   "name": "Mikel Merino",
+   "team": "Spanien"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [
@@ -2495,7 +2512,7 @@
   ]
  },
  "roster:Frankrike": {
-  "date": "2026-07-06",
+  "date": "2026-07-10",
   "players": [
    {
     "apps": null,

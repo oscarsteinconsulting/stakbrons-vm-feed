@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-10T21:05:04Z",
+ "generatedAt": "2026-07-10T21:31:52Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -154,9 +154,9 @@
        "player": "Jude Bellingham",
        "team": "England",
        "groupGoals": 2,
-       "lambda": 0.226,
-       "pAnytime": 0.202,
-       "p2plus": 0.022,
+       "lambda": 0.219,
+       "pAnytime": 0.196,
+       "p2plus": 0.021,
        "position": "M",
        "apps": null,
        "goalless": false
@@ -176,8 +176,8 @@
        "player": "Thelo Aasgaard",
        "team": "Norge",
        "groupGoals": 1,
-       "lambda": 0.085,
-       "pAnytime": 0.081,
+       "lambda": 0.08,
+       "pAnytime": 0.077,
        "p2plus": 0.003,
        "position": "M",
        "apps": null,
@@ -187,8 +187,8 @@
        "player": "Antonio Nusa",
        "team": "Norge",
        "groupGoals": 1,
-       "lambda": 0.085,
-       "pAnytime": 0.081,
+       "lambda": 0.08,
+       "pAnytime": 0.077,
        "p2plus": 0.003,
        "position": "M",
        "apps": null,
@@ -208,9 +208,9 @@
      "pHome": 0.558,
      "pDraw": 0.262,
      "pAway": 0.18,
-     "oddsHome": 1.72,
-     "oddsDraw": 3.6,
-     "oddsAway": 6.0,
+     "oddsHome": 1.68,
+     "oddsDraw": 3.65,
+     "oddsAway": 6.25,
      "lambdaHome": 1.66,
      "lambdaAway": 0.84,
      "mssHome": 82.3,
@@ -234,9 +234,9 @@
        "player": "Johan Manzambi",
        "team": "Schweiz",
        "groupGoals": 3,
-       "lambda": 0.204,
-       "pAnytime": 0.184,
-       "p2plus": 0.018,
+       "lambda": 0.199,
+       "pAnytime": 0.181,
+       "p2plus": 0.017,
        "position": "M",
        "apps": null,
        "goalless": false
@@ -245,9 +245,9 @@
        "player": "Enzo Fernández",
        "team": "Argentina",
        "groupGoals": 1,
-       "lambda": 0.147,
-       "pAnytime": 0.137,
-       "p2plus": 0.01,
+       "lambda": 0.138,
+       "pAnytime": 0.129,
+       "p2plus": 0.009,
        "position": "M",
        "apps": null,
        "goalless": false
@@ -256,9 +256,9 @@
        "player": "Rubén Vargas",
        "team": "Schweiz",
        "groupGoals": 2,
-       "lambda": 0.139,
-       "pAnytime": 0.13,
-       "p2plus": 0.009,
+       "lambda": 0.135,
+       "pAnytime": 0.126,
+       "p2plus": 0.008,
        "position": "M",
        "apps": null,
        "goalless": false
@@ -267,8 +267,8 @@
        "player": "Lisandro Martínez",
        "team": "Argentina",
        "groupGoals": 1,
-       "lambda": 0.133,
-       "pAnytime": 0.125,
+       "lambda": 0.131,
+       "pAnytime": 0.123,
        "p2plus": 0.008,
        "position": "D",
        "apps": null,
@@ -278,10 +278,106 @@
        "player": "Cristian Romero",
        "team": "Argentina",
        "groupGoals": 1,
-       "lambda": 0.133,
-       "pAnytime": 0.125,
+       "lambda": 0.131,
+       "pAnytime": 0.123,
        "p2plus": 0.008,
        "position": "D",
+       "apps": null,
+       "goalless": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2026-07-14",
+   "matches": [
+    {
+     "id": "1028336497",
+     "kickoff": "2026-07-14T19:00:00Z",
+     "stage": "Semifinal",
+     "home": "Frankrike",
+     "away": "Spanien",
+     "homeFlag": "🇫🇷",
+     "awayFlag": "🇪🇸",
+     "channel": null,
+     "pHome": 0.339,
+     "pDraw": 0.29,
+     "pAway": 0.371,
+     "oddsHome": 2.25,
+     "oddsDraw": 3.45,
+     "oddsAway": 3.35,
+     "lambdaHome": 1.22,
+     "lambdaAway": 1.28,
+     "mssHome": 83.9,
+     "mssAway": 86.5,
+     "knockout": true,
+     "pAdvanceHome": 0.482,
+     "pAdvanceAway": 0.518,
+     "scorerAnalysis": [
+      {
+       "player": "Kylian Mbappé",
+       "team": "Frankrike",
+       "groupGoals": 8,
+       "lambda": 0.462,
+       "pAnytime": 0.37,
+       "p2plus": 0.079,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Mikel Oyarzabal",
+       "team": "Spanien",
+       "groupGoals": 4,
+       "lambda": 0.37,
+       "pAnytime": 0.309,
+       "p2plus": 0.054,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Ousmane Dembélé",
+       "team": "Frankrike",
+       "groupGoals": 5,
+       "lambda": 0.296,
+       "pAnytime": 0.256,
+       "p2plus": 0.036,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Mikel Merino",
+       "team": "Spanien",
+       "groupGoals": 2,
+       "lambda": 0.178,
+       "pAnytime": 0.163,
+       "p2plus": 0.014,
+       "position": "M",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Bradley Barcola",
+       "team": "Frankrike",
+       "groupGoals": 2,
+       "lambda": 0.129,
+       "pAnytime": 0.121,
+       "p2plus": 0.008,
+       "position": "F",
+       "apps": null,
+       "goalless": false
+      },
+      {
+       "player": "Lamine Yamal",
+       "team": "Spanien",
+       "groupGoals": 1,
+       "lambda": 0.114,
+       "pAnytime": 0.108,
+       "p2plus": 0.006,
+       "position": "F",
        "apps": null,
        "goalless": false
       }
@@ -2482,7 +2578,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-10T21:05:04Z",
+  "generatedAt": "2026-07-10T21:31:52Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -4918,6 +5014,34 @@
      "team": "Frankrike"
     }
    ]
+  },
+  {
+   "date": "2026-07-10",
+   "home": "Spanien",
+   "away": "Belgien",
+   "scoreHome": 2,
+   "scoreAway": 1,
+   "htHome": 1,
+   "htAway": 1,
+   "duration": "REGULAR",
+   "winner": "home",
+   "scorers": [
+    {
+     "name": "Fabián Ruiz",
+     "team": "Spanien",
+     "goals": 1
+    },
+    {
+     "name": "Charles De Ketelaere",
+     "team": "Belgien",
+     "goals": 1
+    },
+    {
+     "name": "Mikel Merino",
+     "team": "Spanien",
+     "goals": 1
+    }
+   ]
   }
  ],
  "progress": {
@@ -4999,11 +5123,13 @@
   },
   "topp4": {
    "qualified": [
-    "Frankrike"
+    "Frankrike",
+    "Spanien"
    ],
    "eliminated": [
     "Algeriet",
     "Australien",
+    "Belgien",
     "Bosnien",
     "Brasilien",
     "DR Kongo",
@@ -5034,6 +5160,7 @@
    "eliminated": [
     "Algeriet",
     "Australien",
+    "Belgien",
     "Bosnien",
     "Brasilien",
     "DR Kongo",
@@ -5064,6 +5191,7 @@
    "eliminated": [
     "Algeriet",
     "Australien",
+    "Belgien",
     "Bosnien",
     "Brasilien",
     "DR Kongo",
