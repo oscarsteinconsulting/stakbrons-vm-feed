@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-10T21:31:52Z",
+ "generatedAt": "2026-07-10T21:58:36Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -304,9 +304,9 @@
      "pHome": 0.339,
      "pDraw": 0.29,
      "pAway": 0.371,
-     "oddsHome": 2.25,
-     "oddsDraw": 3.45,
-     "oddsAway": 3.35,
+     "oddsHome": 2.38,
+     "oddsDraw": 3.3,
+     "oddsAway": 3.25,
      "lambdaHome": 1.22,
      "lambdaAway": 1.28,
      "mssHome": 83.9,
@@ -2578,7 +2578,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-10T21:31:52Z",
+  "generatedAt": "2026-07-10T21:58:36Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [
    {
@@ -5027,19 +5027,19 @@
    "winner": "home",
    "scorers": [
     {
+     "goals": 1,
      "name": "Fabián Ruiz",
-     "team": "Spanien",
-     "goals": 1
+     "team": "Spanien"
     },
     {
+     "goals": 1,
      "name": "Charles De Ketelaere",
-     "team": "Belgien",
-     "goals": 1
+     "team": "Belgien"
     },
     {
+     "goals": 1,
      "name": "Mikel Merino",
-     "team": "Spanien",
-     "goals": 1
+     "team": "Spanien"
     }
    ]
   }
