@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-12T06:35:21Z",
+ "generatedAt": "2026-07-12T07:02:25Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -117,7 +117,7 @@
      "pHome": 0.329,
      "pDraw": 0.29,
      "pAway": 0.381,
-     "oddsHome": 2.38,
+     "oddsHome": 2.35,
      "oddsDraw": 3.3,
      "oddsAway": 3.35,
      "lambdaHome": 1.2,
@@ -214,8 +214,8 @@
      "pDraw": 0.289,
      "pAway": 0.402,
      "oddsHome": 2.55,
-     "oddsDraw": 3.05,
-     "oddsAway": 3.15,
+     "oddsDraw": 3.1,
+     "oddsAway": 3.25,
      "lambdaHome": 1.15,
      "lambdaAway": 1.35,
      "mssHome": 81.7,
@@ -2538,7 +2538,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-12T06:35:20Z",
+  "generatedAt": "2026-07-12T07:02:24Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
@@ -4779,14 +4779,14 @@
    "winner": "away",
    "scorers": [
     {
+     "goals": 1,
      "name": "Andreas Schjelderup",
-     "team": "Norge",
-     "goals": 1
+     "team": "Norge"
     },
     {
+     "goals": 2,
      "name": "Jude Bellingham",
-     "team": "England",
-     "goals": 2
+     "team": "England"
     }
    ]
   },
