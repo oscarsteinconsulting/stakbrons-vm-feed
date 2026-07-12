@@ -896,6 +896,18 @@
    "team": "Spanien"
   }
  ],
+ "espn:760512": [
+  {
+   "goals": 1,
+   "name": "Andreas Schjelderup",
+   "team": "Norge"
+  },
+  {
+   "goals": 2,
+   "name": "Jude Bellingham",
+   "team": "England"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [
