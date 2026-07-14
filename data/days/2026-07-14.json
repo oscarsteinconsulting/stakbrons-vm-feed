@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-14T16:15:46Z",
+ "generatedAt": "2026-07-14T16:42:51Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -821,7 +821,7 @@
     "icon": "🚩",
     "bets": [
      {
-      "id": "2026-07-14-1028336497-hornor-över-8-5-hörnor",
+      "id": "2026-07-14-1028336497-hornor-över-9-5-hörnor",
       "matchId": "1028336497",
       "match": "Frankrike – Spanien",
       "homeFlag": "🇫🇷",
@@ -829,21 +829,21 @@
       "kickoff": "2026-07-14T19:00:00Z",
       "categoryKey": "hornor",
       "category": "Hörnor",
-      "selection": "Över 8.5 hörnor",
+      "selection": "Över 9.5 hörnor",
       "detail": "Totalt antal hörnor i matchen",
-      "odds": 1.76,
-      "modelProb": 0.4907,
-      "marketProb": 0.5269,
+      "odds": 2.05,
+      "modelProb": 0.4163,
+      "marketProb": 0.4533,
       "edge": 0.0,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×0.97 från målförväntan: över 8.5 hörnor 49% mot prisade 53%. Rättas manuellt.",
+      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×0.97 från målförväntan: över 9.5 hörnor 42% mot prisade 45%. Rättas manuellt.",
       "settleMarket": "CORNERS",
       "settlePick": "over",
-      "settleLine": 8.5,
+      "settleLine": 9.5,
       "settlePlayer": null
      }
     ]
@@ -3250,7 +3250,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-14T16:15:45Z",
+  "generatedAt": "2026-07-14T16:42:51Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
