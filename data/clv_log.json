@@ -23745,8 +23745,8 @@
   "value": "Undvik"
  },
  "2026-07-14-1028336497-antal_mal-frankrike-under-1-5-mål": {
-  "closeOdds": 1.62,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 1.63,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "TEAM_OU",
   "match": "Frankrike – Spanien",
@@ -23760,8 +23760,8 @@
   "value": "Neutralt"
  },
  "2026-07-14-1028336497-antal_mal-spanien-över-1-5-mål": {
-  "closeOdds": 2.63,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 2.48,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "TEAM_OU",
   "match": "Frankrike – Spanien",
@@ -23772,11 +23772,11 @@
   "settleLine": 1.5,
   "settlePick": "away_over",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Undvik"
  },
  "2026-07-14-1028336497-antal_mal-under-2-5-mål": {
-  "closeOdds": 1.86,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 1.94,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "OU",
   "match": "Frankrike – Spanien",
@@ -23790,8 +23790,8 @@
   "value": "Neutralt"
  },
  "2026-07-14-1028336497-avancemang-spanien-går-vidare": {
-  "closeOdds": 2.2,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 2.12,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "ADVANCE",
   "match": "Frankrike – Spanien",
@@ -23802,11 +23802,11 @@
   "settleLine": null,
   "settlePick": "away",
   "settlePlayer": null,
-  "value": "Spelvärt"
+  "value": "Neutralt"
  },
  "2026-07-14-1028336497-btts-båda-lagen-gör-mål-nej": {
-  "closeOdds": 2.2,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 2.32,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "BTTS",
   "match": "Frankrike – Spanien",
@@ -23820,8 +23820,8 @@
   "value": "Neutralt"
  },
  "2026-07-14-1028336497-dubbelchans-x2-oavgjort-eller-spanien": {
-  "closeOdds": 1.53,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 1.5,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "DC",
   "match": "Frankrike – Spanien",
@@ -23835,8 +23835,8 @@
   "value": "Neutralt"
  },
  "2026-07-14-1028336497-fulltid-2-spanien-vinner": {
-  "closeOdds": 3.35,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 3.2,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "1X2",
   "match": "Frankrike – Spanien",
@@ -23850,8 +23850,8 @@
   "value": "Neutralt"
  },
  "2026-07-14-1028336497-halvlek-halvtid-2-spanien-leder-i-halvtid": {
-  "closeOdds": 3.6,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 3.45,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "1H_1X2",
   "match": "Frankrike – Spanien",
@@ -23880,8 +23880,8 @@
   "value": "Undvik"
  },
  "2026-07-14-1028336497-halvlek-över-0-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.43,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 1.41,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "1H_OU",
   "match": "Frankrike – Spanien",
@@ -23895,8 +23895,8 @@
   "value": "Undvik"
  },
  "2026-07-14-1028336497-halvtid_fulltid-halvtid-fulltid-2-2": {
-  "closeOdds": 5.3,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 5.1,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "HTFT",
   "match": "Frankrike – Spanien",
@@ -23910,8 +23910,8 @@
   "value": "Neutralt"
  },
  "2026-07-14-1028336497-handikapp-spanien-0-5": {
-  "closeOdds": 1.56,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 1.54,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "AH",
   "match": "Frankrike – Spanien",
@@ -23940,8 +23940,8 @@
   "value": "Undvik"
  },
  "2026-07-14-1028336497-hornor-över-9-5-hörnor": {
-  "closeOdds": 2.05,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 2.02,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "CORNERS",
   "match": "Frankrike – Spanien",
@@ -23970,8 +23970,8 @@
   "value": "Undvik"
  },
  "2026-07-14-1028336497-korrekt_resultat-resultat-0-1": {
-  "closeOdds": 9.5,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 10.0,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "CS",
   "match": "Frankrike – Spanien",
@@ -23986,7 +23986,7 @@
  },
  "2026-07-14-1028336497-korrekt_resultat-resultat-0-2": {
   "closeOdds": 14.0,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "CS",
   "match": "Frankrike – Spanien",
@@ -24015,8 +24015,8 @@
   "value": "Undvik"
  },
  "2026-07-14-1028336497-kort-under-3-5-kort": {
-  "closeOdds": 1.57,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 1.55,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "CARDS",
   "match": "Frankrike – Spanien",
@@ -24045,8 +24045,8 @@
   "value": "Undvik"
  },
  "2026-07-14-1028336497-kort-över-3-5-kort": {
-  "closeOdds": 2.2,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 2.25,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "CARDS",
   "match": "Frankrike – Spanien",
@@ -24060,8 +24060,8 @@
   "value": "Undvik"
  },
  "2026-07-14-1028336497-malgorare-adrien-rabiot-gör-mål": {
-  "closeOdds": 8.0,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 8.5,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Spanien",
@@ -24072,6 +24072,21 @@
   "settleLine": null,
   "settlePick": "scorer",
   "settlePlayer": "Adrien Rabiot",
+  "value": "Undvik"
+ },
+ "2026-07-14-1028336497-malgorare-aurélien-tchouaméni-gör-mål": {
+  "closeOdds": 12.5,
+  "closeTime": "2026-07-14T17:52:12Z",
+  "kickoff": "2026-07-14T19:00:00Z",
+  "market": "PLAYER",
+  "match": "Frankrike – Spanien",
+  "recOdds": 12.5,
+  "recTime": "2026-07-14T17:52:12Z",
+  "recommendable": false,
+  "selection": "Aurélien Tchouaméni gör mål",
+  "settleLine": null,
+  "settlePick": "scorer",
+  "settlePlayer": "Aurélien Tchouaméni",
   "value": "Undvik"
  },
  "2026-07-14-1028336497-malgorare-gavi-gör-mål": {
@@ -24091,7 +24106,7 @@
  },
  "2026-07-14-1028336497-spelarspecial-lamine-yamal-gör-2-mål": {
   "closeOdds": 14.0,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Spanien",
@@ -24105,8 +24120,8 @@
   "value": "Undvik"
  },
  "2026-07-14-1028336497-spelarspecial-mikel-oyarzabal-gör-2-mål": {
-  "closeOdds": 14.0,
-  "closeTime": "2026-07-14T17:25:02Z",
+  "closeOdds": 13.0,
+  "closeTime": "2026-07-14T17:52:12Z",
   "kickoff": "2026-07-14T19:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – Spanien",
