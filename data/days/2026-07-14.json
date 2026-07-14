@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-14T11:45:41Z",
+ "generatedAt": "2026-07-14T12:12:38Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -295,7 +295,7 @@
     "settlePlayer": null
    },
    {
-    "id": "2026-07-14-1028336497-halvlek-under-0-5-mål-i-1-a-halvlek",
+    "id": "2026-07-14-1028336497-halvlek-över-0-5-mål-i-1-a-halvlek",
     "matchId": "1028336497",
     "match": "Frankrike – Spanien",
     "homeFlag": "🇫🇷",
@@ -303,20 +303,20 @@
     "kickoff": "2026-07-14T19:00:00Z",
     "categoryKey": "halvlek",
     "category": "Halvlek",
-    "selection": "Under 0.5 mål i 1:a halvlek",
+    "selection": "Över 0.5 mål i 1:a halvlek",
     "detail": "Antal mål i första halvlek",
-    "odds": 2.75,
-    "modelProb": 0.3398,
-    "marketProb": 0.3373,
-    "edge": -0.0654,
+    "odds": 1.41,
+    "modelProb": 0.6584,
+    "marketProb": 0.6569,
+    "edge": -0.0716,
     "value": "Undvik",
     "recommendable": true,
     "kelly": 0.0,
     "stakeWeight": 0.0,
     "confidence": 2,
-    "rationale": "Halvleksrutnätet (λ×0.44) ger under 0.5 i första halvlek 34% mot prisade 34%. Rättas manuellt.",
+    "rationale": "Halvleksrutnätet (λ×0.44) ger över 0.5 i första halvlek 66% mot prisade 66%. Rättas manuellt.",
     "settleMarket": "1H_OU",
-    "settlePick": "under",
+    "settlePick": "over",
     "settleLine": 0.5,
     "settlePlayer": null
    }
@@ -637,7 +637,7 @@
       "settlePlayer": null
      },
      {
-      "id": "2026-07-14-1028336497-halvlek-under-0-5-mål-i-1-a-halvlek",
+      "id": "2026-07-14-1028336497-halvlek-över-0-5-mål-i-1-a-halvlek",
       "matchId": "1028336497",
       "match": "Frankrike – Spanien",
       "homeFlag": "🇫🇷",
@@ -645,20 +645,20 @@
       "kickoff": "2026-07-14T19:00:00Z",
       "categoryKey": "halvlek",
       "category": "Halvlek",
-      "selection": "Under 0.5 mål i 1:a halvlek",
+      "selection": "Över 0.5 mål i 1:a halvlek",
       "detail": "Antal mål i första halvlek",
-      "odds": 2.75,
-      "modelProb": 0.3398,
-      "marketProb": 0.3373,
-      "edge": -0.0654,
+      "odds": 1.41,
+      "modelProb": 0.6584,
+      "marketProb": 0.6569,
+      "edge": -0.0716,
       "value": "Undvik",
       "recommendable": true,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Halvleksrutnätet (λ×0.44) ger under 0.5 i första halvlek 34% mot prisade 34%. Rättas manuellt.",
+      "rationale": "Halvleksrutnätet (λ×0.44) ger över 0.5 i första halvlek 66% mot prisade 66%. Rättas manuellt.",
       "settleMarket": "1H_OU",
-      "settlePick": "under",
+      "settlePick": "over",
       "settleLine": 0.5,
       "settlePlayer": null
      }
@@ -3250,7 +3250,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-14T11:45:40Z",
+  "generatedAt": "2026-07-14T12:12:38Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
