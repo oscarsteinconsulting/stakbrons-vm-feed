@@ -908,6 +908,18 @@
    "team": "England"
   }
  ],
+ "espn:760514": [
+  {
+   "goals": 1,
+   "name": "Mikel Oyarzabal",
+   "team": "Spanien"
+  },
+  {
+   "goals": 1,
+   "name": "Pedro Porro",
+   "team": "Spanien"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [
