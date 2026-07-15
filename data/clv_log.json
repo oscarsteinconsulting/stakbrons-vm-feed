@@ -24165,8 +24165,8 @@
   "value": "Undvik"
  },
  "2026-07-15-1028350631-antal_mal-argentina-över-0-5-mål": {
-  "closeOdds": 1.38,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 1.41,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "TEAM_OU",
   "match": "England – Argentina",
@@ -24180,8 +24180,8 @@
   "value": "Neutralt"
  },
  "2026-07-15-1028350631-antal_mal-england-under-1-5-mål": {
-  "closeOdds": 1.4,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 1.41,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "TEAM_OU",
   "match": "England – Argentina",
@@ -24192,11 +24192,11 @@
   "settleLine": 1.5,
   "settlePick": "home_under",
   "settlePlayer": null,
-  "value": "Undvik"
+  "value": "Neutralt"
  },
  "2026-07-15-1028350631-antal_mal-över-2-5-mål": {
-  "closeOdds": 2.4,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 2.43,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "OU",
   "match": "England – Argentina",
@@ -24210,8 +24210,8 @@
   "value": "Neutralt"
  },
  "2026-07-15-1028350631-avancemang-argentina-går-vidare": {
-  "closeOdds": 1.98,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 2.0,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "ADVANCE",
   "match": "England – Argentina",
@@ -24222,11 +24222,11 @@
   "settleLine": null,
   "settlePick": "away",
   "settlePlayer": null,
-  "value": "Neutralt"
+  "value": "Spelvärt"
  },
  "2026-07-15-1028350631-btts-båda-lagen-gör-mål-ja": {
-  "closeOdds": 1.91,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 1.94,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "BTTS",
   "match": "England – Argentina",
@@ -24240,8 +24240,8 @@
   "value": "Neutralt"
  },
  "2026-07-15-1028350631-dubbelchans-x2-oavgjort-eller-argentina": {
-  "closeOdds": 1.44,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 1.47,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "DC",
   "match": "England – Argentina",
@@ -24255,8 +24255,8 @@
   "value": "Neutralt"
  },
  "2026-07-15-1028350631-fulltid-2-argentina-vinner": {
-  "closeOdds": 3.1,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 3.15,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "1X2",
   "match": "England – Argentina",
@@ -24270,8 +24270,8 @@
   "value": "Neutralt"
  },
  "2026-07-15-1028350631-halvlek-halvtid-2-argentina-leder-i-halvtid": {
-  "closeOdds": 3.55,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 3.6,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "1H_1X2",
   "match": "England – Argentina",
@@ -24286,7 +24286,7 @@
  },
  "2026-07-15-1028350631-halvlek-över-0-5-mål-i-1-a-halvlek": {
   "closeOdds": 1.5,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "1H_OU",
   "match": "England – Argentina",
@@ -24300,8 +24300,8 @@
   "value": "Neutralt"
  },
  "2026-07-15-1028350631-halvtid_fulltid-halvtid-fulltid-2-2": {
-  "closeOdds": 4.8,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 4.9,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "HTFT",
   "match": "England – Argentina",
@@ -24315,8 +24315,8 @@
   "value": "Neutralt"
  },
  "2026-07-15-1028350631-handikapp-argentina-0-5": {
-  "closeOdds": 1.47,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 1.49,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "AH",
   "match": "England – Argentina",
@@ -24328,6 +24328,21 @@
   "settlePick": "away",
   "settlePlayer": null,
   "value": "Neutralt"
+ },
+ "2026-07-15-1028350631-hornor-över-7-5-hörnor": {
+  "closeOdds": 1.72,
+  "closeTime": "2026-07-15T15:24:40Z",
+  "kickoff": "2026-07-15T19:00:00Z",
+  "market": "CORNERS",
+  "match": "England – Argentina",
+  "recOdds": 1.72,
+  "recTime": "2026-07-15T15:24:40Z",
+  "recommendable": false,
+  "selection": "Över 7.5 hörnor",
+  "settleLine": 7.5,
+  "settlePick": "over",
+  "settlePlayer": null,
+  "value": "Undvik"
  },
  "2026-07-15-1028350631-hornor-över-8-5-hörnor": {
   "closeOdds": 2.07,
@@ -24345,8 +24360,8 @@
   "value": "Undvik"
  },
  "2026-07-15-1028350631-korrekt_resultat-resultat-0-2": {
-  "closeOdds": 12.0,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 12.5,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "CS",
   "match": "England – Argentina",
@@ -24375,8 +24390,8 @@
   "value": "Undvik"
  },
  "2026-07-15-1028350631-korrekt_resultat-resultat-1-2": {
-  "closeOdds": 10.0,
-  "closeTime": "2026-07-15T12:40:21Z",
+  "closeOdds": 10.5,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "CS",
   "match": "England – Argentina",
@@ -24391,7 +24406,7 @@
  },
  "2026-07-15-1028350631-kort-under-3-5-kort": {
   "closeOdds": 1.93,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "CARDS",
   "match": "England – Argentina",
@@ -24406,7 +24421,7 @@
  },
  "2026-07-15-1028350631-kort-över-3-5-kort": {
   "closeOdds": 1.75,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "CARDS",
   "match": "England – Argentina",
@@ -24420,8 +24435,8 @@
   "value": "Undvik"
  },
  "2026-07-15-1028350631-malgorare-julián-álvarez-gör-mål": {
-  "closeOdds": 4.1,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 4.2,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "PLAYER",
   "match": "England – Argentina",
@@ -24435,8 +24450,8 @@
   "value": "Undvik"
  },
  "2026-07-15-1028350631-malgorare-leandro-paredes-gör-mål": {
-  "closeOdds": 11.5,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeOdds": 12.0,
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "PLAYER",
   "match": "England – Argentina",
@@ -24451,7 +24466,7 @@
  },
  "2026-07-15-1028350631-spelarspecial-harry-kane-gör-2-mål": {
   "closeOdds": 9.5,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "PLAYER",
   "match": "England – Argentina",
@@ -24466,7 +24481,7 @@
  },
  "2026-07-15-1028350631-spelarspecial-lionel-messi-gör-2-mål": {
   "closeOdds": 9.5,
-  "closeTime": "2026-07-15T14:57:19Z",
+  "closeTime": "2026-07-15T15:24:40Z",
   "kickoff": "2026-07-15T19:00:00Z",
   "market": "PLAYER",
   "match": "England – Argentina",
