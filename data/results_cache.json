@@ -920,6 +920,23 @@
    "team": "Spanien"
   }
  ],
+ "espn:760515": [
+  {
+   "goals": 1,
+   "name": "Anthony Gordon",
+   "team": "England"
+  },
+  {
+   "goals": 1,
+   "name": "Enzo Fernández",
+   "team": "Argentina"
+  },
+  {
+   "goals": 1,
+   "name": "Lautaro Martínez",
+   "team": "Argentina"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [

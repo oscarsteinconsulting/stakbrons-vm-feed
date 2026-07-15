@@ -610,5 +610,17 @@
   "home": "England",
   "kickoff": "2026-07-15T19:00:00Z",
   "stage": "Semifinal"
+ },
+ "1028390669": {
+  "away": "England",
+  "home": "Frankrike",
+  "kickoff": "2026-07-18T21:00:00Z",
+  "stage": "Bronsmatch"
+ },
+ "1028390672": {
+  "away": "Argentina",
+  "home": "Spanien",
+  "kickoff": "2026-07-19T19:00:00Z",
+  "stage": "Final"
  }
 }
