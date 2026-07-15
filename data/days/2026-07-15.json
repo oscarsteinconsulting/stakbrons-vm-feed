@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-15T12:25:13Z",
+ "generatedAt": "2026-07-15T12:52:29Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -713,8 +713,8 @@
       "category": "Målgörare",
       "selection": "Leandro Paredes gör mål",
       "detail": "Målgörare när som helst i matchen",
-      "odds": 11.5,
-      "modelProb": 0.0839,
+      "odds": 11.0,
+      "modelProb": 0.0879,
       "marketProb": null,
       "edge": 0.0,
       "value": "Undvik",
@@ -722,7 +722,7 @@
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Modellen väntar 2.50 mål mot marknadens 2.29. Avvigat pris 8% → justerat 8%.",
+      "rationale": "Modellen väntar 2.50 mål mot marknadens 2.29. Avvigat pris 8% → justerat 9%.",
       "settleMarket": "PLAYER",
       "settlePick": "scorer",
       "settleLine": null,
@@ -3181,7 +3181,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-15T12:25:12Z",
+  "generatedAt": "2026-07-15T12:52:28Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
