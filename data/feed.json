@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-15T10:35:49Z",
+ "generatedAt": "2026-07-15T11:03:08Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -279,10 +279,10 @@
     "category": "Halvlek",
     "selection": "Över 0.5 mål i 1:a halvlek",
     "detail": "Antal mål i första halvlek",
-    "odds": 1.49,
-    "modelProb": 0.648,
-    "marketProb": 0.6218,
-    "edge": -0.0345,
+    "odds": 1.5,
+    "modelProb": 0.6469,
+    "marketProb": 0.6183,
+    "edge": -0.0296,
     "value": "Neutralt",
     "recommendable": true,
     "kelly": 0.0,
@@ -647,10 +647,10 @@
       "category": "Halvlek",
       "selection": "Över 0.5 mål i 1:a halvlek",
       "detail": "Antal mål i första halvlek",
-      "odds": 1.49,
-      "modelProb": 0.648,
-      "marketProb": 0.6218,
-      "edge": -0.0345,
+      "odds": 1.5,
+      "modelProb": 0.6469,
+      "marketProb": 0.6183,
+      "edge": -0.0296,
       "value": "Neutralt",
       "recommendable": true,
       "kelly": 0.0,
@@ -3181,7 +3181,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-15T10:35:49Z",
+  "generatedAt": "2026-07-15T11:03:07Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
