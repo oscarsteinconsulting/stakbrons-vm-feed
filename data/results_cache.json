@@ -937,6 +937,43 @@
    "team": "Argentina"
   }
  ],
+ "espn:760516": [
+  {
+   "goals": 1,
+   "name": "Declan Rice",
+   "team": "England"
+  },
+  {
+   "goals": 1,
+   "name": "Ezri Konsa",
+   "team": "England"
+  },
+  {
+   "goals": 3,
+   "name": "Bukayo Saka",
+   "team": "England"
+  },
+  {
+   "goals": 2,
+   "name": "Kylian Mbappé",
+   "team": "Frankrike"
+  },
+  {
+   "goals": 1,
+   "name": "Bradley Barcola",
+   "team": "Frankrike"
+  },
+  {
+   "goals": 1,
+   "name": "Ousmane Dembélé",
+   "team": "Frankrike"
+  },
+  {
+   "goals": 1,
+   "name": "Jude Bellingham",
+   "team": "England"
+  }
+ ],
  "roster:Algeriet": {
   "date": "2026-07-02",
   "players": [
