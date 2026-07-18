@@ -24495,8 +24495,8 @@
   "value": "Undvik"
  },
  "2026-07-18-1028390669-antal_mal-england-under-1-5-mål": {
-  "closeOdds": 1.5,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 1.48,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "TEAM_OU",
   "match": "Frankrike – England",
@@ -24524,9 +24524,24 @@
   "settlePlayer": null,
   "value": "Spelvärt"
  },
+ "2026-07-18-1028390669-antal_mal-frankrike-under-2-5-mål": {
+  "closeOdds": 1.49,
+  "closeTime": "2026-07-18T20:53:53Z",
+  "kickoff": "2026-07-18T21:00:00Z",
+  "market": "TEAM_OU",
+  "match": "Frankrike – England",
+  "recOdds": 1.49,
+  "recTime": "2026-07-18T20:53:53Z",
+  "recommendable": true,
+  "selection": "Frankrike under 2.5 mål",
+  "settleLine": 2.5,
+  "settlePick": "home_under",
+  "settlePlayer": null,
+  "value": "Spelvärt"
+ },
  "2026-07-18-1028390669-antal_mal-under-3-5-mål": {
-  "closeOdds": 1.73,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 1.75,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "OU",
   "match": "Frankrike – England",
@@ -24541,7 +24556,7 @@
  },
  "2026-07-18-1028390669-btts-båda-lagen-gör-mål-nej": {
   "closeOdds": 2.7,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "BTTS",
   "match": "Frankrike – England",
@@ -24555,8 +24570,8 @@
   "value": "Spelvärt"
  },
  "2026-07-18-1028390669-dubbelchans-x2-oavgjort-eller-england": {
-  "closeOdds": 2.08,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 2.18,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "DC",
   "match": "Frankrike – England",
@@ -24570,8 +24585,8 @@
   "value": "Spelvärt"
  },
  "2026-07-18-1028390669-fulltid-2-england-vinner": {
-  "closeOdds": 4.4,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 4.7,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "1X2",
   "match": "Frankrike – England",
@@ -24585,8 +24600,8 @@
   "value": "Neutralt"
  },
  "2026-07-18-1028390669-halvlek-halvtid-x-oavgjort-i-halvtid": {
-  "closeOdds": 2.5,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 2.55,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "1H_1X2",
   "match": "Frankrike – England",
@@ -24600,8 +24615,8 @@
   "value": "Neutralt"
  },
  "2026-07-18-1028390669-halvlek-under-1-5-mål-i-1-a-halvlek": {
-  "closeOdds": 1.57,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 1.61,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "1H_OU",
   "match": "Frankrike – England",
@@ -24630,8 +24645,8 @@
   "value": "Neutralt"
  },
  "2026-07-18-1028390669-halvtid_fulltid-halvtid-fulltid-x-x": {
-  "closeOdds": 6.75,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 7.0,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "HTFT",
   "match": "Frankrike – England",
@@ -24645,8 +24660,8 @@
   "value": "Neutralt"
  },
  "2026-07-18-1028390669-handikapp-england-0-5": {
-  "closeOdds": 2.12,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 2.23,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "AH",
   "match": "Frankrike – England",
@@ -24675,8 +24690,8 @@
   "value": "Undvik"
  },
  "2026-07-18-1028390669-hornor-över-9-5-hörnor": {
-  "closeOdds": 2.0,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 1.98,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "CORNERS",
   "match": "Frankrike – England",
@@ -24691,7 +24706,7 @@
  },
  "2026-07-18-1028390669-korrekt_resultat-resultat-0-0": {
   "closeOdds": 18.0,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "CS",
   "match": "Frankrike – England",
@@ -24705,8 +24720,8 @@
   "value": "Neutralt"
  },
  "2026-07-18-1028390669-korrekt_resultat-resultat-0-1": {
-  "closeOdds": 15.0,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 16.0,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "CS",
   "match": "Frankrike – England",
@@ -24735,8 +24750,8 @@
   "value": "Undvik"
  },
  "2026-07-18-1028390669-kort-under-2-5-kort": {
-  "closeOdds": 1.57,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 1.75,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "CARDS",
   "match": "Frankrike – England",
@@ -24750,8 +24765,8 @@
   "value": "Undvik"
  },
  "2026-07-18-1028390669-kort-över-2-5-kort": {
-  "closeOdds": 2.2,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 1.93,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "CARDS",
   "match": "Frankrike – England",
@@ -24780,8 +24795,8 @@
   "value": "Undvik"
  },
  "2026-07-18-1028390669-malgorare-marcus-rashford-gör-mål": {
-  "closeOdds": 4.7,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 4.9,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – England",
@@ -24796,7 +24811,7 @@
  },
  "2026-07-18-1028390669-malgorare-théo-hernández-gör-mål": {
   "closeOdds": 8.0,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – England",
@@ -24825,8 +24840,8 @@
   "value": "Undvik"
  },
  "2026-07-18-1028390669-spelarspecial-kylian-mbappé-gör-2-mål": {
-  "closeOdds": 4.1,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 4.0,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – England",
@@ -24840,8 +24855,8 @@
   "value": "Undvik"
  },
  "2026-07-18-1028390669-spelarspecial-michael-olise-gör-2-mål": {
-  "closeOdds": 11.5,
-  "closeTime": "2026-07-18T20:26:34Z",
+  "closeOdds": 11.0,
+  "closeTime": "2026-07-18T20:53:53Z",
   "kickoff": "2026-07-18T21:00:00Z",
   "market": "PLAYER",
   "match": "Frankrike – England",
