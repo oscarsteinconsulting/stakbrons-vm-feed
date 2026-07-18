@@ -1073,8 +1073,18 @@
   ]
  },
  "roster:Argentina": {
-  "date": "2026-07-15",
+  "date": "2026-07-19",
   "players": [
+   {
+    "apps": null,
+    "name": "José Manuel López",
+    "pos": "F"
+   },
+   {
+    "apps": null,
+    "name": "Giuliano Simeone",
+    "pos": "F"
+   },
    {
     "apps": null,
     "name": "Emiliano Martínez",
@@ -1118,6 +1128,11 @@
    {
     "apps": null,
     "name": "Lisandro Martínez",
+    "pos": "D"
+   },
+   {
+    "apps": null,
+    "name": "Marcos Senesi",
     "pos": "D"
    },
    {
@@ -1183,16 +1198,6 @@
    {
     "apps": null,
     "name": "Julián Álvarez",
-    "pos": "F"
-   },
-   {
-    "apps": null,
-    "name": "José Manuel López",
-    "pos": "F"
-   },
-   {
-    "apps": null,
-    "name": "Giuliano Simeone",
     "pos": "F"
    },
    {

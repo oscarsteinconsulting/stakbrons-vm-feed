@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-18T22:20:54Z",
+ "generatedAt": "2026-07-18T22:45:42Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -117,7 +117,7 @@
      "pHome": 0.388,
      "pDraw": 0.29,
      "pAway": 0.322,
-     "oddsHome": 2.28,
+     "oddsHome": 2.25,
      "oddsDraw": 3.1,
      "oddsAway": 3.8,
      "lambdaHome": 1.32,
@@ -166,7 +166,7 @@
        "team": "Spanien",
        "groupGoals": 2,
        "lambda": 0.163,
-       "pAnytime": 0.151,
+       "pAnytime": 0.15,
        "p2plus": 0.012,
        "position": "D",
        "apps": null,
@@ -2526,7 +2526,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-18T22:20:54Z",
+  "generatedAt": "2026-07-18T22:45:41Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
