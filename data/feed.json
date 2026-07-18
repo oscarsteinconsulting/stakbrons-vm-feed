@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-18T13:22:11Z",
+ "generatedAt": "2026-07-18T13:49:28Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -768,7 +768,7 @@
     "icon": "🚩",
     "bets": [
      {
-      "id": "2026-07-18-1028390669-hornor-över-8-5-hörnor",
+      "id": "2026-07-18-1028390669-hornor-över-9-5-hörnor",
       "matchId": "1028390669",
       "match": "Frankrike – England",
       "homeFlag": "🇫🇷",
@@ -776,21 +776,21 @@
       "kickoff": "2026-07-18T21:00:00Z",
       "categoryKey": "hornor",
       "category": "Hörnor",
-      "selection": "Över 8.5 hörnor",
+      "selection": "Över 9.5 hörnor",
       "detail": "Totalt antal hörnor i matchen",
-      "odds": 1.71,
-      "modelProb": 0.4438,
-      "marketProb": 0.5416,
+      "odds": 2.02,
+      "modelProb": 0.3602,
+      "marketProb": 0.4584,
       "edge": 0.0,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×0.92 från målförväntan: över 8.5 hörnor 44% mot prisade 54%. Rättas manuellt.",
+      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×0.92 från målförväntan: över 9.5 hörnor 36% mot prisade 46%. Rättas manuellt.",
       "settleMarket": "CORNERS",
       "settlePick": "over",
-      "settleLine": 8.5,
+      "settleLine": 9.5,
       "settlePlayer": null
      }
     ]
@@ -3253,7 +3253,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-18T13:22:11Z",
+  "generatedAt": "2026-07-18T13:49:27Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
