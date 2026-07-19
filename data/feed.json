@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-19T15:42:55Z",
+ "generatedAt": "2026-07-19T16:10:28Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -676,7 +676,7 @@
       "settlePlayer": "Álex Baena"
      },
      {
-      "id": "2026-07-19-1028390672-malgorare-lisandro-martinez-gör-mål",
+      "id": "2026-07-19-1028390672-malgorare-julián-álvarez-gör-mål",
       "matchId": "1028390672",
       "match": "Spanien – Argentina",
       "homeFlag": "🇪🇸",
@@ -684,10 +684,10 @@
       "kickoff": "2026-07-19T19:00:00Z",
       "categoryKey": "malgorare",
       "category": "Målgörare",
-      "selection": "Lisandro Martinez gör mål",
+      "selection": "Julián Álvarez gör mål",
       "detail": "Målgörare när som helst i matchen",
-      "odds": 15.0,
-      "modelProb": 0.062,
+      "odds": 4.0,
+      "modelProb": 0.2427,
       "marketProb": null,
       "edge": 0.0,
       "value": "Undvik",
@@ -695,11 +695,11 @@
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Modellen väntar 2.50 mål mot marknadens 2.35. Avvigat pris 6% → justerat 6%.",
+      "rationale": "Modellen väntar 2.50 mål mot marknadens 2.35. Avvigat pris 23% → justerat 24%.",
       "settleMarket": "PLAYER",
       "settlePick": "scorer",
       "settleLine": null,
-      "settlePlayer": "Lisandro Martinez"
+      "settlePlayer": "Julián Álvarez"
      }
     ]
    },
@@ -768,7 +768,7 @@
     "icon": "🚩",
     "bets": [
      {
-      "id": "2026-07-19-1028390672-hornor-över-7-5-hörnor",
+      "id": "2026-07-19-1028390672-hornor-över-8-5-hörnor",
       "matchId": "1028390672",
       "match": "Spanien – Argentina",
       "homeFlag": "🇪🇸",
@@ -776,21 +776,21 @@
       "kickoff": "2026-07-19T19:00:00Z",
       "categoryKey": "hornor",
       "category": "Hörnor",
-      "selection": "Över 7.5 hörnor",
+      "selection": "Över 8.5 hörnor",
       "detail": "Totalt antal hörnor i matchen",
-      "odds": 1.67,
-      "modelProb": 0.59,
-      "marketProb": 0.5547,
+      "odds": 1.88,
+      "modelProb": 0.5307,
+      "marketProb": 0.4933,
       "edge": 0.0,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.03 från målförväntan: över 7.5 hörnor 59% mot prisade 55%. Rättas manuellt.",
+      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.03 från målförväntan: över 8.5 hörnor 53% mot prisade 49%. Rättas manuellt.",
       "settleMarket": "CORNERS",
       "settlePick": "over",
-      "settleLine": 7.5,
+      "settleLine": 8.5,
       "settlePlayer": null
      }
     ]
@@ -3184,7 +3184,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-19T15:42:55Z",
+  "generatedAt": "2026-07-19T16:10:28Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
