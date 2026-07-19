@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-19T10:10:30Z",
+ "generatedAt": "2026-07-19T10:40:16Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -768,7 +768,7 @@
     "icon": "🚩",
     "bets": [
      {
-      "id": "2026-07-19-1028390672-hornor-över-8-5-hörnor",
+      "id": "2026-07-19-1028390672-hornor-över-7-5-hörnor",
       "matchId": "1028390672",
       "match": "Spanien – Argentina",
       "homeFlag": "🇪🇸",
@@ -776,21 +776,21 @@
       "kickoff": "2026-07-19T19:00:00Z",
       "categoryKey": "hornor",
       "category": "Hörnor",
-      "selection": "Över 8.5 hörnor",
+      "selection": "Över 7.5 hörnor",
       "detail": "Totalt antal hörnor i matchen",
-      "odds": 2.1,
-      "modelProb": 0.484,
-      "marketProb": 0.4415,
+      "odds": 1.68,
+      "modelProb": 0.5904,
+      "marketProb": 0.5496,
       "edge": 0.0,
       "value": "Undvik",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 2,
-      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.04 från målförväntan: över 8.5 hörnor 48% mot prisade 44%. Rättas manuellt.",
+      "rationale": "Hörnor är marknadsprissatta (ingen hörnmodell) med mjuk modelltilt ×1.04 från målförväntan: över 7.5 hörnor 59% mot prisade 55%. Rättas manuellt.",
       "settleMarket": "CORNERS",
       "settlePick": "over",
-      "settleLine": 8.5,
+      "settleLine": 7.5,
       "settlePlayer": null
      }
     ]
@@ -3184,7 +3184,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-19T10:10:30Z",
+  "generatedAt": "2026-07-19T10:40:15Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
