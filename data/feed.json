@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-19T19:24:07Z",
+ "generatedAt": "2026-07-19T19:52:06Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -2456,7 +2456,96 @@
    ]
   }
  ],
- "tournament": null,
+ "tournament": {
+  "generatedAt": "2026-07-19T19:52:06Z",
+  "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
+  "topBets": [],
+  "markets": [
+   {
+    "key": "vinnare",
+    "name": "Vinnare",
+    "icon": "🏆",
+    "bets": [
+     {
+      "id": "2026-07-19-vm2026-outright-vinnare-argentina-vinner-vm",
+      "matchId": "vm2026-outright",
+      "match": "VM 2026",
+      "homeFlag": "🇦🇷",
+      "awayFlag": "",
+      "kickoff": null,
+      "categoryKey": "vinnare",
+      "category": "Vinnare",
+      "selection": "Argentina vinner VM",
+      "detail": "Vinner hela VM 2026",
+      "odds": 2.5,
+      "modelProb": 0.2771,
+      "marketProb": 0.375,
+      "edge": -0.3072,
+      "value": "Neutralt",
+      "recommendable": false,
+      "kelly": 0.0,
+      "stakeWeight": 0.0,
+      "confidence": 0,
+      "rationale": "Simuleringen (4000 turneringar) ger 19.4% mot marknadens 37.5% (MSS 82). Edge -30.7%.",
+      "settleMarket": "OUTRIGHT",
+      "settlePick": "vinnare",
+      "settleLine": null,
+      "settlePlayer": "Argentina"
+     },
+     {
+      "id": "2026-07-19-vm2026-outright-vinnare-spanien-vinner-vm",
+      "matchId": "vm2026-outright",
+      "match": "VM 2026",
+      "homeFlag": "🇪🇸",
+      "awayFlag": "",
+      "kickoff": null,
+      "categoryKey": "vinnare",
+      "category": "Vinnare",
+      "selection": "Spanien vinner VM",
+      "detail": "Vinner hela VM 2026",
+      "odds": 1.5,
+      "modelProb": 0.4251,
+      "marketProb": 0.625,
+      "edge": -0.3624,
+      "value": "Neutralt",
+      "recommendable": false,
+      "kelly": 0.0,
+      "stakeWeight": 0.0,
+      "confidence": 0,
+      "rationale": "Simuleringen (4000 turneringar) ger 25.8% mot marknadens 62.5% (MSS 86). Edge -36.2%.",
+      "settleMarket": "OUTRIGHT",
+      "settlePick": "vinnare",
+      "settleLine": null,
+      "settlePlayer": "Spanien"
+     }
+    ]
+   },
+   {
+    "key": "topp2",
+    "name": "Topp 2 (final)",
+    "icon": "🥈",
+    "bets": []
+   },
+   {
+    "key": "topp4",
+    "name": "Topp 4 (semifinal)",
+    "icon": "🏅",
+    "bets": []
+   },
+   {
+    "key": "topp8",
+    "name": "Topp 8 (kvartsfinal)",
+    "icon": "🎖",
+    "bets": []
+   },
+   {
+    "key": "topp16",
+    "name": "Topp 16 (åttondelsfinal)",
+    "icon": "⚽",
+    "bets": []
+   }
+  ]
+ },
  "vmtipset": null,
  "results": [
   {
