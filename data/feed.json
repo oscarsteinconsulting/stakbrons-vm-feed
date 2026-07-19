@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-18T23:40:28Z",
+ "generatedAt": "2026-07-19T00:07:48Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -2526,7 +2526,7 @@
   }
  ],
  "tournament": {
-  "generatedAt": "2026-07-18T23:40:28Z",
+  "generatedAt": "2026-07-19T00:07:48Z",
   "note": "Monte Carlo på Oscars funderingar-modellen: hela turneringen simuleras 4000 gånger (slutspelsbracketen approximeras med strukturerad slumpdragning) och vägs mot avvigade Kambi-priser per slutplaceringsmarknad.",
   "topBets": [],
   "markets": [
@@ -2546,16 +2546,16 @@
       "category": "Vinnare",
       "selection": "Argentina vinner VM",
       "detail": "Vinner hela VM 2026",
-      "odds": 2.3,
-      "modelProb": 0.2966,
-      "marketProb": 0.4072,
-      "edge": -0.3177,
+      "odds": 2.28,
+      "modelProb": 0.3004,
+      "marketProb": 0.4154,
+      "edge": -0.3151,
       "value": "Neutralt",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 0,
-      "rationale": "Simuleringen (4000 turneringar) ger 20.3% mot marknadens 40.7% (MSS 82). Edge -31.8%.",
+      "rationale": "Simuleringen (4000 turneringar) ger 20.3% mot marknadens 41.5% (MSS 82). Edge -31.5%.",
       "settleMarket": "OUTRIGHT",
       "settlePick": "vinnare",
       "settleLine": null,
@@ -2572,16 +2572,16 @@
       "category": "Vinnare",
       "selection": "Spanien vinner VM",
       "detail": "Vinner hela VM 2026",
-      "odds": 1.58,
-      "modelProb": 0.4055,
-      "marketProb": 0.5928,
-      "edge": -0.3594,
+      "odds": 1.62,
+      "modelProb": 0.4018,
+      "marketProb": 0.5846,
+      "edge": -0.3491,
       "value": "Neutralt",
       "recommendable": false,
       "kelly": 0.0,
       "stakeWeight": 0.0,
       "confidence": 0,
-      "rationale": "Simuleringen (4000 turneringar) ger 24.8% mot marknadens 59.3% (MSS 86). Edge -35.9%.",
+      "rationale": "Simuleringen (4000 turneringar) ger 24.8% mot marknadens 58.5% (MSS 86). Edge -34.9%.",
       "settleMarket": "OUTRIGHT",
       "settlePick": "vinnare",
       "settleLine": null,
@@ -4722,39 +4722,39 @@
    "winner": "away",
    "scorers": [
     {
+     "goals": 1,
      "name": "Declan Rice",
-     "team": "England",
-     "goals": 1
+     "team": "England"
     },
     {
+     "goals": 1,
      "name": "Ezri Konsa",
-     "team": "England",
-     "goals": 1
+     "team": "England"
     },
     {
+     "goals": 3,
      "name": "Bukayo Saka",
-     "team": "England",
-     "goals": 3
+     "team": "England"
     },
     {
+     "goals": 2,
      "name": "Kylian Mbappé",
-     "team": "Frankrike",
-     "goals": 2
+     "team": "Frankrike"
     },
     {
+     "goals": 1,
      "name": "Bradley Barcola",
-     "team": "Frankrike",
-     "goals": 1
+     "team": "Frankrike"
     },
     {
+     "goals": 1,
      "name": "Ousmane Dembélé",
-     "team": "Frankrike",
-     "goals": 1
+     "team": "Frankrike"
     },
     {
+     "goals": 1,
      "name": "Jude Bellingham",
-     "team": "England",
-     "goals": 1
+     "team": "England"
     }
    ]
   }
