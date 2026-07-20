@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-07-20T06:12:06Z",
+ "generatedAt": "2026-07-20T06:39:39Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -2426,6 +2426,34 @@
      "pAdvanceAway": 0.543
     }
    ]
+  },
+  {
+   "date": "2026-07-19",
+   "matches": [
+    {
+     "id": "1028390672",
+     "kickoff": "2026-07-19T19:00:00Z",
+     "stage": "Final",
+     "home": "Spanien",
+     "away": "Argentina",
+     "homeFlag": "🇪🇸",
+     "awayFlag": "🇦🇷",
+     "channel": null,
+     "pHome": 0.431,
+     "pDraw": 0.286,
+     "pAway": 0.283,
+     "oddsHome": null,
+     "oddsDraw": null,
+     "oddsAway": null,
+     "lambdaHome": 1.41,
+     "lambdaAway": 1.09,
+     "mssHome": 86.5,
+     "mssAway": 82.3,
+     "knockout": true,
+     "pAdvanceHome": 0.586,
+     "pAdvanceAway": 0.414
+    }
+   ]
   }
  ],
  "tournament": null,
@@ -4571,6 +4599,24 @@
      "team": "England"
     }
    ]
+  },
+  {
+   "date": "2026-07-19",
+   "home": "Spanien",
+   "away": "Argentina",
+   "scoreHome": 0,
+   "scoreAway": 0,
+   "htHome": 0,
+   "htAway": 0,
+   "duration": "EXTRA_TIME",
+   "winner": "home",
+   "scorers": [
+    {
+     "name": "Ferran Torres",
+     "team": "Spanien",
+     "goals": 1
+    }
+   ]
   }
  ],
  "progress": {
@@ -4741,9 +4787,12 @@
    ]
   },
   "vinnare": {
-   "qualified": [],
+   "qualified": [
+    "Spanien"
+   ],
    "eliminated": [
     "Algeriet",
+    "Argentina",
     "Australien",
     "Belgien",
     "Bosnien",
