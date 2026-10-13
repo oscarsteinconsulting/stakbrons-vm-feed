@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-13T15:56:35Z",
+ "generatedAt": "2026-10-13T16:24:03Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -2791,7 +2791,23 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 2,
+     "name": "Kylian Mbappé",
+     "team": "Frankrike"
+    },
+    {
+     "goals": 1,
+     "name": "Bradley Barcola",
+     "team": "Frankrike"
+    },
+    {
+     "goals": 1,
+     "name": "Ibrahim Mbaye",
+     "team": "Senegal"
+    }
+   ]
   },
   {
    "date": "2026-06-16",
@@ -2803,7 +2819,23 @@
    "htAway": 2,
    "duration": "REGULAR",
    "winner": "away",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 2,
+     "name": "Erling Haaland",
+     "team": "Norge"
+    },
+    {
+     "goals": 1,
+     "name": "Aymen Hussein",
+     "team": "Irak"
+    },
+    {
+     "goals": 1,
+     "name": "Leo Østigard",
+     "team": "Norge"
+    }
+   ]
   },
   {
    "date": "2026-06-17",
