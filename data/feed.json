@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-30T23:45:39Z",
+ "generatedAt": "2026-10-31T00:15:41Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -4610,13 +4610,7 @@
    "htAway": 0,
    "duration": "EXTRA_TIME",
    "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Ferran Torres",
-     "team": "Spanien"
-    }
-   ]
+   "scorers": null
   }
  ],
  "progress": {
