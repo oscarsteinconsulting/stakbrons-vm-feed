@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-04T00:00:12Z",
+ "generatedAt": "2026-11-04T06:47:32Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -14,7 +14,7 @@
   "shrink": 0.7
  },
  "day": {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "headline": "Vilodag — inga VM-matcher idag",
   "summary": "Vila benen. Statistiken och historiken finns i appen.",
   "matchCount": 0,
@@ -4842,7 +4842,7 @@
   }
  },
  "push": {
-  "title": "VM-vilodag 3 november",
+  "title": "VM-vilodag 4 november",
   "body": "Inga matcher idag."
  }
 }
