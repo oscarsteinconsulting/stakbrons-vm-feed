@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-06T16:02:26Z",
+ "generatedAt": "2026-11-06T16:29:58Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -480,8 +480,8 @@
      "homeFlag": "🇮🇶",
      "awayFlag": "🇳🇴",
      "channel": "TV4",
-     "pHome": 0.083,
-     "pDraw": 0.19,
+     "pHome": 0.082,
+     "pDraw": 0.189,
      "pAway": 0.728,
      "oddsHome": null,
      "oddsDraw": null,
@@ -1010,7 +1010,7 @@
      "homeFlag": "🇳🇴",
      "awayFlag": "🇸🇳",
      "channel": "SVT",
-     "pHome": 0.441,
+     "pHome": 0.442,
      "pDraw": 0.27,
      "pAway": 0.288,
      "oddsHome": null,
@@ -1390,9 +1390,9 @@
      "homeFlag": "🇳🇴",
      "awayFlag": "🇫🇷",
      "channel": "TV4",
-     "pHome": 0.201,
+     "pHome": 0.202,
      "pDraw": 0.252,
-     "pAway": 0.547,
+     "pAway": 0.546,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1748,9 +1748,9 @@
      "homeFlag": "🇨🇮",
      "awayFlag": "🇳🇴",
      "channel": null,
-     "pHome": 0.202,
+     "pHome": 0.201,
      "pDraw": 0.269,
-     "pAway": 0.529,
+     "pAway": 0.53,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1759,8 +1759,8 @@
      "mssHome": 54.8,
      "mssAway": 69.3,
      "knockout": true,
-     "pAdvanceHome": 0.312,
-     "pAdvanceAway": 0.688
+     "pAdvanceHome": 0.311,
+     "pAdvanceAway": 0.689
     },
     {
      "id": "1028163544",
@@ -2106,8 +2106,8 @@
      "mssHome": 79.5,
      "mssAway": 69.3,
      "knockout": true,
-     "pAdvanceHome": 0.614,
-     "pAdvanceAway": 0.386
+     "pAdvanceHome": 0.613,
+     "pAdvanceAway": 0.387
     },
     {
      "id": "1028221801",
@@ -2306,7 +2306,7 @@
      "channel": null,
      "pHome": 0.165,
      "pDraw": 0.256,
-     "pAway": 0.58,
+     "pAway": 0.579,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -2315,8 +2315,8 @@
      "mssHome": 69.3,
      "mssAway": 81.7,
      "knockout": true,
-     "pAdvanceHome": 0.263,
-     "pAdvanceAway": 0.737
+     "pAdvanceHome": 0.264,
+     "pAdvanceAway": 0.736
     },
     {
      "id": "1028297469",
