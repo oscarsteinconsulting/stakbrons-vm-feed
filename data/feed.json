@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-07T14:36:53Z",
+ "generatedAt": "2026-11-07T15:05:04Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -2592,18 +2592,7 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Nestory Irankunda",
-     "team": "Australien"
-    },
-    {
-     "goals": 1,
-     "name": "Connor Metcalfe",
-     "team": "Australien"
-    }
-   ]
+   "scorers": null
   },
   {
    "date": "2026-06-14",
@@ -2615,43 +2604,7 @@
    "htAway": 1,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Felix Nmecha",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 1,
-     "name": "Livano Comenencia",
-     "team": "Curacao"
-    },
-    {
-     "goals": 1,
-     "name": "Nico Schlotterbeck",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 2,
-     "name": "Kai Havertz",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 1,
-     "name": "Jamal Musiala",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 1,
-     "name": "Nathaniel Brown",
-     "team": "Tyskland"
-    },
-    {
-     "goals": 1,
-     "name": "Deniz Undav",
-     "team": "Tyskland"
-    }
-   ]
+   "scorers": null
   },
   {
    "date": "2026-06-14",
@@ -2663,28 +2616,7 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Virgil van Dijk",
-     "team": "Nederländerna"
-    },
-    {
-     "goals": 1,
-     "name": "Keito Nakamura",
-     "team": "Japan"
-    },
-    {
-     "goals": 1,
-     "name": "Crysencio Summerville",
-     "team": "Nederländerna"
-    },
-    {
-     "goals": 1,
-     "name": "Daichi Kamada",
-     "team": "Japan"
-    }
-   ]
+   "scorers": null
   },
   {
    "date": "2026-06-14",
@@ -2696,13 +2628,7 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Amad Diallo",
-     "team": "Elfenbenskusten"
-    }
-   ]
+   "scorers": null
   },
   {
    "date": "2026-06-15",
