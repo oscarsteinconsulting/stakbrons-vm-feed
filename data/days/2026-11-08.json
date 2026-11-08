@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-08T16:01:36Z",
+ "generatedAt": "2026-11-08T16:29:49Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -2469,18 +2469,7 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Julián Quiñones",
-     "team": "Mexiko"
-    },
-    {
-     "goals": 1,
-     "name": "Raúl Jiménez",
-     "team": "Mexiko"
-    }
-   ]
+   "scorers": null
   },
   {
    "date": "2026-06-12",
@@ -2504,18 +2493,7 @@
    "htAway": 1,
    "duration": "REGULAR",
    "winner": "draw",
-   "scorers": [
-    {
-     "goals": 1,
-     "name": "Jovo Lukic",
-     "team": "Bosnien"
-    },
-    {
-     "goals": 1,
-     "name": "Cyle Larin",
-     "team": "Kanada"
-    }
-   ]
+   "scorers": null
   },
   {
    "date": "2026-06-13",
