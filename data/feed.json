@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-08T14:11:26Z",
+ "generatedAt": "2026-11-08T14:38:57Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -270,8 +270,8 @@
      "homeFlag": "🇦🇺",
      "awayFlag": "🇹🇷",
      "channel": "TV4",
-     "pHome": 0.281,
-     "pDraw": 0.269,
+     "pHome": 0.282,
+     "pDraw": 0.27,
      "pAway": 0.449,
      "oddsHome": null,
      "oddsDraw": null,
@@ -715,9 +715,9 @@
      "homeFlag": "🇺🇸",
      "awayFlag": "🇦🇺",
      "channel": "SVT",
-     "pHome": 0.492,
+     "pHome": 0.493,
      "pDraw": 0.263,
-     "pAway": 0.245,
+     "pAway": 0.244,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -775,9 +775,9 @@
      "homeFlag": "🇹🇷",
      "awayFlag": "🇵🇾",
      "channel": "TV4",
-     "pHome": 0.394,
+     "pHome": 0.393,
      "pDraw": 0.274,
-     "pAway": 0.332,
+     "pAway": 0.333,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1365,14 +1365,14 @@
      "homeFlag": "🇹🇷",
      "awayFlag": "🇺🇸",
      "channel": "TV4",
-     "pHome": 0.323,
-     "pDraw": 0.274,
-     "pAway": 0.404,
+     "pHome": 0.322,
+     "pDraw": 0.273,
+     "pAway": 0.405,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
-     "lambdaHome": 1.29,
-     "lambdaAway": 1.46,
+     "lambdaHome": 1.28,
+     "lambdaAway": 1.47,
      "mssHome": 67.4,
      "mssAway": 58.3
     }
@@ -1868,9 +1868,9 @@
      "homeFlag": "🇺🇸",
      "awayFlag": "🇧🇦",
      "channel": null,
-     "pHome": 0.553,
+     "pHome": 0.554,
      "pDraw": 0.263,
-     "pAway": 0.184,
+     "pAway": 0.183,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1879,8 +1879,8 @@
      "mssHome": 58.3,
      "mssAway": 39.8,
      "knockout": true,
-     "pAdvanceHome": 0.711,
-     "pAdvanceAway": 0.289
+     "pAdvanceHome": 0.712,
+     "pAdvanceAway": 0.288
     }
    ]
   },
@@ -2169,9 +2169,9 @@
      "homeFlag": "🇺🇸",
      "awayFlag": "🇧🇪",
      "channel": null,
-     "pHome": 0.292,
+     "pHome": 0.293,
      "pDraw": 0.287,
-     "pAway": 0.42,
+     "pAway": 0.419,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -2180,8 +2180,8 @@
      "mssHome": 58.3,
      "mssAway": 56.6,
      "knockout": true,
-     "pAdvanceHome": 0.426,
-     "pAdvanceAway": 0.574
+     "pAdvanceHome": 0.427,
+     "pAdvanceAway": 0.573
     }
    ]
   },
