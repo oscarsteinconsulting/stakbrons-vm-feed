@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-08T13:43:56Z",
+ "generatedAt": "2026-11-08T14:11:26Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -480,8 +480,8 @@
      "homeFlag": "🇮🇶",
      "awayFlag": "🇳🇴",
      "channel": "TV4",
-     "pHome": 0.082,
-     "pDraw": 0.189,
+     "pHome": 0.083,
+     "pDraw": 0.19,
      "pAway": 0.728,
      "oddsHome": null,
      "oddsDraw": null,
@@ -715,9 +715,9 @@
      "homeFlag": "🇺🇸",
      "awayFlag": "🇦🇺",
      "channel": "SVT",
-     "pHome": 0.493,
+     "pHome": 0.492,
      "pDraw": 0.263,
-     "pAway": 0.244,
+     "pAway": 0.245,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -775,9 +775,9 @@
      "homeFlag": "🇹🇷",
      "awayFlag": "🇵🇾",
      "channel": "TV4",
-     "pHome": 0.393,
+     "pHome": 0.394,
      "pDraw": 0.274,
-     "pAway": 0.333,
+     "pAway": 0.332,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1010,7 +1010,7 @@
      "homeFlag": "🇳🇴",
      "awayFlag": "🇸🇳",
      "channel": "SVT",
-     "pHome": 0.442,
+     "pHome": 0.441,
      "pDraw": 0.27,
      "pAway": 0.288,
      "oddsHome": null,
@@ -1345,9 +1345,9 @@
      "homeFlag": "🇵🇾",
      "awayFlag": "🇦🇺",
      "channel": "TV4",
-     "pHome": 0.418,
+     "pHome": 0.417,
      "pDraw": 0.273,
-     "pAway": 0.309,
+     "pAway": 0.31,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1365,14 +1365,14 @@
      "homeFlag": "🇹🇷",
      "awayFlag": "🇺🇸",
      "channel": "TV4",
-     "pHome": 0.322,
-     "pDraw": 0.273,
-     "pAway": 0.405,
+     "pHome": 0.323,
+     "pDraw": 0.274,
+     "pAway": 0.404,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
-     "lambdaHome": 1.28,
-     "lambdaAway": 1.47,
+     "lambdaHome": 1.29,
+     "lambdaAway": 1.46,
      "mssHome": 67.4,
      "mssAway": 58.3
     }
@@ -1390,9 +1390,9 @@
      "homeFlag": "🇳🇴",
      "awayFlag": "🇫🇷",
      "channel": "TV4",
-     "pHome": 0.202,
+     "pHome": 0.201,
      "pDraw": 0.252,
-     "pAway": 0.546,
+     "pAway": 0.547,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1748,9 +1748,9 @@
      "homeFlag": "🇨🇮",
      "awayFlag": "🇳🇴",
      "channel": null,
-     "pHome": 0.201,
+     "pHome": 0.202,
      "pDraw": 0.269,
-     "pAway": 0.53,
+     "pAway": 0.529,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1759,8 +1759,8 @@
      "mssHome": 54.8,
      "mssAway": 69.3,
      "knockout": true,
-     "pAdvanceHome": 0.311,
-     "pAdvanceAway": 0.689
+     "pAdvanceHome": 0.312,
+     "pAdvanceAway": 0.688
     },
     {
      "id": "1028163544",
@@ -1868,9 +1868,9 @@
      "homeFlag": "🇺🇸",
      "awayFlag": "🇧🇦",
      "channel": null,
-     "pHome": 0.554,
+     "pHome": 0.553,
      "pDraw": 0.263,
-     "pAway": 0.183,
+     "pAway": 0.184,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1879,8 +1879,8 @@
      "mssHome": 58.3,
      "mssAway": 39.8,
      "knockout": true,
-     "pAdvanceHome": 0.712,
-     "pAdvanceAway": 0.288
+     "pAdvanceHome": 0.711,
+     "pAdvanceAway": 0.289
     }
    ]
   },
@@ -1970,9 +1970,9 @@
      "homeFlag": "🇦🇺",
      "awayFlag": "🇪🇬",
      "channel": null,
-     "pHome": 0.405,
+     "pHome": 0.406,
      "pDraw": 0.289,
-     "pAway": 0.307,
+     "pAway": 0.306,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1981,8 +1981,8 @@
      "mssHome": 37.3,
      "mssAway": 39.2,
      "knockout": true,
-     "pAdvanceHome": 0.557,
-     "pAdvanceAway": 0.443
+     "pAdvanceHome": 0.558,
+     "pAdvanceAway": 0.442
     },
     {
      "id": "1028163495",
@@ -2106,8 +2106,8 @@
      "mssHome": 79.5,
      "mssAway": 69.3,
      "knockout": true,
-     "pAdvanceHome": 0.613,
-     "pAdvanceAway": 0.387
+     "pAdvanceHome": 0.614,
+     "pAdvanceAway": 0.386
     },
     {
      "id": "1028221801",
@@ -2169,9 +2169,9 @@
      "homeFlag": "🇺🇸",
      "awayFlag": "🇧🇪",
      "channel": null,
-     "pHome": 0.293,
+     "pHome": 0.292,
      "pDraw": 0.287,
-     "pAway": 0.419,
+     "pAway": 0.42,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -2180,8 +2180,8 @@
      "mssHome": 58.3,
      "mssAway": 56.6,
      "knockout": true,
-     "pAdvanceHome": 0.427,
-     "pAdvanceAway": 0.573
+     "pAdvanceHome": 0.426,
+     "pAdvanceAway": 0.574
     }
    ]
   },
@@ -2306,7 +2306,7 @@
      "channel": null,
      "pHome": 0.165,
      "pDraw": 0.256,
-     "pAway": 0.579,
+     "pAway": 0.58,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -2315,8 +2315,8 @@
      "mssHome": 69.3,
      "mssAway": 81.7,
      "knockout": true,
-     "pAdvanceHome": 0.264,
-     "pAdvanceAway": 0.736
+     "pAdvanceHome": 0.263,
+     "pAdvanceAway": 0.737
     },
     {
      "id": "1028297469",
