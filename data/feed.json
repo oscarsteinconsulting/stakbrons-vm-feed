@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T12:32:15Z",
+ "generatedAt": "2026-11-17T12:59:42Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -225,14 +225,14 @@
      "homeFlag": "🇧🇷",
      "awayFlag": "🇲🇦",
      "channel": "SVT",
-     "pHome": 0.475,
+     "pHome": 0.476,
      "pDraw": 0.266,
-     "pAway": 0.259,
+     "pAway": 0.258,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
-     "lambdaHome": 1.61,
-     "lambdaAway": 1.14,
+     "lambdaHome": 1.62,
+     "lambdaAway": 1.13,
      "mssHome": 79.5,
      "mssAway": 61.6
     },
@@ -755,7 +755,7 @@
      "homeFlag": "🇧🇷",
      "awayFlag": "🇭🇹",
      "channel": "TV4",
-     "pHome": 0.827,
+     "pHome": 0.828,
      "pDraw": 0.138,
      "pAway": 0.034,
      "oddsHome": null,
@@ -1676,7 +1676,7 @@
      "channel": null,
      "pHome": 0.451,
      "pDraw": 0.284,
-     "pAway": 0.266,
+     "pAway": 0.265,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -1685,8 +1685,8 @@
      "mssHome": 79.5,
      "mssAway": 59.7,
      "knockout": true,
-     "pAdvanceHome": 0.607,
-     "pAdvanceAway": 0.393
+     "pAdvanceHome": 0.608,
+     "pAdvanceAway": 0.392
     },
     {
      "id": "1028163543",
@@ -2095,9 +2095,9 @@
      "homeFlag": "🇧🇷",
      "awayFlag": "🇳🇴",
      "channel": null,
-     "pHome": 0.434,
+     "pHome": 0.435,
      "pDraw": 0.286,
-     "pAway": 0.28,
+     "pAway": 0.279,
      "oddsHome": null,
      "oddsDraw": null,
      "oddsAway": null,
@@ -2106,8 +2106,8 @@
      "mssHome": 79.5,
      "mssAway": 69.3,
      "knockout": true,
-     "pAdvanceHome": 0.589,
-     "pAdvanceAway": 0.411
+     "pAdvanceHome": 0.59,
+     "pAdvanceAway": 0.41
     },
     {
      "id": "1028221801",
