@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-23T16:11:01Z",
+ "generatedAt": "2026-11-23T16:38:23Z",
  "model": {
   "name": "Oscars funderingar (MSS + live-Elo)",
   "version": "1.2.0",
@@ -2469,7 +2469,18 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Julián Quiñones",
+     "team": "Mexiko"
+    },
+    {
+     "goals": 1,
+     "name": "Raúl Jiménez",
+     "team": "Mexiko"
+    }
+   ]
   },
   {
    "date": "2026-06-12",
@@ -2493,7 +2504,18 @@
    "htAway": 1,
    "duration": "REGULAR",
    "winner": "draw",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Jovo Lukic",
+     "team": "Bosnien"
+    },
+    {
+     "goals": 1,
+     "name": "Cyle Larin",
+     "team": "Kanada"
+    }
+   ]
   },
   {
    "date": "2026-06-13",
@@ -2517,7 +2539,13 @@
    "htAway": 1,
    "duration": "REGULAR",
    "winner": "draw",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Breel Embolo",
+     "team": "Schweiz"
+    }
+   ]
   },
   {
    "date": "2026-06-13",
@@ -2529,7 +2557,18 @@
    "htAway": 1,
    "duration": "REGULAR",
    "winner": "draw",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Ismael Saibari",
+     "team": "Marocko"
+    },
+    {
+     "goals": 1,
+     "name": "Vinícius Júnior",
+     "team": "Brasilien"
+    }
+   ]
   },
   {
    "date": "2026-06-14",
@@ -2553,7 +2592,18 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Nestory Irankunda",
+     "team": "Australien"
+    },
+    {
+     "goals": 1,
+     "name": "Connor Metcalfe",
+     "team": "Australien"
+    }
+   ]
   },
   {
    "date": "2026-06-14",
@@ -2565,7 +2615,43 @@
    "htAway": 1,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Felix Nmecha",
+     "team": "Tyskland"
+    },
+    {
+     "goals": 1,
+     "name": "Livano Comenencia",
+     "team": "Curacao"
+    },
+    {
+     "goals": 1,
+     "name": "Nico Schlotterbeck",
+     "team": "Tyskland"
+    },
+    {
+     "goals": 2,
+     "name": "Kai Havertz",
+     "team": "Tyskland"
+    },
+    {
+     "goals": 1,
+     "name": "Jamal Musiala",
+     "team": "Tyskland"
+    },
+    {
+     "goals": 1,
+     "name": "Nathaniel Brown",
+     "team": "Tyskland"
+    },
+    {
+     "goals": 1,
+     "name": "Deniz Undav",
+     "team": "Tyskland"
+    }
+   ]
   },
   {
    "date": "2026-06-14",
@@ -2577,7 +2663,28 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "draw",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Virgil van Dijk",
+     "team": "Nederländerna"
+    },
+    {
+     "goals": 1,
+     "name": "Keito Nakamura",
+     "team": "Japan"
+    },
+    {
+     "goals": 1,
+     "name": "Crysencio Summerville",
+     "team": "Nederländerna"
+    },
+    {
+     "goals": 1,
+     "name": "Daichi Kamada",
+     "team": "Japan"
+    }
+   ]
   },
   {
    "date": "2026-06-14",
@@ -2589,7 +2696,13 @@
    "htAway": 0,
    "duration": "REGULAR",
    "winner": "home",
-   "scorers": null
+   "scorers": [
+    {
+     "goals": 1,
+     "name": "Amad Diallo",
+     "team": "Elfenbenskusten"
+    }
+   ]
   },
   {
    "date": "2026-06-15",
